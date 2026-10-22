@@ -1,0 +1,32 @@
+// @vitest-environment jsdom
+import { IDBFactory } from 'fake-indexeddb';
+import { afterEach, expect, it, vi } from 'vitest';
+import { getActive, getCatHouseState, getRecords, getWallet, openDatabase, startStopwatch } from '../src/storage';
+import { INSTALL_REMINDER_KEY } from '../src/pwa-install';
+import { mockDialogs } from './dialog-mocks';
+afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); localStorage.clear(); document.body.replaceChildren(); });
+it('nudges only after saved focus acknowledgement, then preserves a running session and other state when guide is closed', async () => {
+  vi.stubGlobal('indexedDB', new IDBFactory()); vi.stubGlobal('BroadcastChannel', class { onmessage = null; postMessage() {} close() {} });
+  vi.spyOn(globalThis, 'setInterval').mockReturnValue(0 as never); vi.spyOn(document, 'hidden', 'get').mockReturnValue(false); mockDialogs(); localStorage.clear();
+  let now = new Date(2026, 9, 22, 12).getTime(); vi.spyOn(Date, 'now').mockImplementation(() => now);
+  const db = await openDatabase(); await startStopwatch(db, 'builtin-english', now);
+  document.body.innerHTML = '<div id="app"></div>'; await import('../src/main');
+  expect(document.querySelector<HTMLElement>('.install-reminder')!.hidden).toBe(true); expect(localStorage.getItem(INSTALL_REMINDER_KEY)).toBeNull();
+  now += 60_000; document.querySelector<HTMLButtonElement>('#early')!.click();
+  await vi.waitFor(() => expect(document.querySelector<HTMLDialogElement>('.completion-summary')!.open).toBe(true));
+  expect(document.querySelector<HTMLElement>('.install-reminder')!.hidden).toBe(true);
+  document.querySelector<HTMLButtonElement>('#summary-done')!.click();
+  await vi.waitFor(() => expect(document.querySelector<HTMLElement>('.install-reminder')!.hidden).toBe(false));
+  expect(localStorage.getItem(INSTALL_REMINDER_KEY)).toBe('1');
+  document.querySelector<HTMLButtonElement>('[data-reminder-close]')!.click();
+  expect(document.querySelector<HTMLElement>('.install-reminder')!.hidden).toBe(true);
+  document.querySelector<HTMLButtonElement>('#start')!.click(); await vi.waitFor(() => expect(document.querySelector('#pause')).not.toBeNull());
+  const active = await getActive(db), records = await getRecords(db), wallet = await getWallet(db), house = await getCatHouseState(db);
+  document.querySelector<HTMLButtonElement>('[data-page=settings]')!.click(); document.querySelector<HTMLButtonElement>('[data-install-guide]')!.click();
+  expect(document.querySelector<HTMLDialogElement>('.install-dialog')!.open).toBe(true);
+  document.querySelector<HTMLButtonElement>('[data-web-continue]')!.click(); expect(document.querySelector('h1')!.textContent).toBe('设置与备份');
+  expect(await getActive(db)).toEqual(active); expect(await getRecords(db)).toEqual(records); expect(await getWallet(db)).toEqual(wallet); expect(await getCatHouseState(db)).toEqual(house);
+  document.querySelector<HTMLButtonElement>('[data-page=stats]')!.click(); expect(document.querySelector('h1')!.textContent).toBe('专注统计');
+  document.querySelector<HTMLButtonElement>('[data-page=focus]')!.click(); expect(document.querySelector('#pause')!.textContent).toBe('暂停'); expect(document.querySelector<HTMLElement>('.install-reminder')!.hidden).toBe(true);
+  db.close();
+});

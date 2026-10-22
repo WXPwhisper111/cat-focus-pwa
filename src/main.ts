@@ -1,3 +1,6 @@
+import './pwa-install.css';
+import { createInstallController } from './pwa-install';
+import { createInstallView } from './pwa-install-view';
 import './startup.css';
 import { createStartup } from './startup';
 import { applyCatNames, catDisplayName } from './cat-names';
@@ -85,6 +88,10 @@ let checkingDue = false;
 let finishing = false;
 let refreshRevision = 0;
 const stateChannel = 'BroadcastChannel' in window ? new BroadcastChannel('cat-focus-state') : undefined;
+// Capture install opportunities once, before asynchronous database initialization.
+const installController = createInstallController();
+const installView = createInstallView(installController, () => applicationReady && page === 'focus' && !session && !pendingCompletionCount && !pendingWelcome && !document.hidden && !document.querySelector('dialog[open]'));
+
 
 let stableLocations: RoomLocations = {};
 let locationWrites = Promise.resolve();
@@ -197,7 +204,7 @@ function focusMarkup() {
   <div id="focus-goal-slot"></div><section class="timer-card">${!active ? `<div class="timer-modes" role="group" aria-label="计时模式"><button type="button" data-mode="countdown" aria-pressed="${mode === 'countdown'}">倒计时</button><button type="button" data-mode="stopwatch" aria-pressed="${mode === 'stopwatch'}">正计时</button></div>` : `<div class="timer-mode-label">${mode === 'stopwatch' ? '正计时' : '倒计时'}</div>`}<span class="eyebrow">${active ? paused ? '已暂停' : '专注进行中' : '准备开始'}</span><div class="clock${display.length >= 8 ? ' long-clock' : ''}" id="clock">${display}</div>
   <div class="time-note">${active ? `${escapeHtml(session!.category)} · ${mode === 'stopwatch' ? '自由专注，手动结束' : `目标 ${session!.targetMinutes} 分钟`}` : mode === 'stopwatch' ? '不预设时长，按自己的节奏专注' : '选一个小目标，开始专注'}</div>
   ${active ? `<div class="actions"><button class="primary" id="pause">${paused ? '继续专注' : '暂停'}</button><button id="early">${mode === 'stopwatch' ? '结束并保存' : '提前结束并保存'}</button><button class="danger" id="discard">放弃且不保存</button></div>` : `<div class="form"><div class="category-heading"><label for="category">专注类别</label><button id="manage-categories" type="button">管理</button></div><select id="category">${categories.filter(item => !item.archived).map(item => `<option value="${escapeHtml(item.id)}"${item.id === selectedCategoryId ? ' selected' : ''}>${escapeHtml(item.name)}</option>`).join('')}</select>${durationMarkup}<button class="primary wide" id="start">开始专注</button></div>`}</section>
-  <div id="focus-list-slot"></div><p class="hint">${mode === 'stopwatch' ? '正计时不会自动结束。结束并保存会' : '提前结束会'}保存已专注时长并计入统计、奖励；放弃会删除本次时长。</p>`;
+  <div data-install-reminder-slot></div><div id="focus-list-slot"></div><p class="hint">${mode === 'stopwatch' ? '正计时不会自动结束。结束并保存会' : '提前结束会'}保存已专注时长并计入统计、奖励；放弃会删除本次时长。</p>`;
 }
 function statMarkup() {
   return statisticsMarkup(records, categories, statisticsState, new Date(), getCatDefinition(catHouse?.companionCatId) ?? null, coinBalance);
@@ -209,7 +216,7 @@ function houseMarkup() {
 }
 function settingsMarkup() {
   return `<section class="hero"><div class="eyebrow">安心专注</div><h1>设置与备份</h1><p>数据保存在这台设备的浏览器中。</p></section>
-  <section class="panel"><h2>完成提示</h2><p>应用打开或返回前台时，会显示页面内完成提示。</p><button id="notify">${'Notification' in window ? `启用系统通知（当前：${Notification.permission === 'granted' ? '已允许' : Notification.permission === 'denied' ? '已拒绝' : '未设置'}）` : '当前浏览器不支持系统通知'}</button><p class="hint">首版没有推送服务，因此关闭应用后的准时锁屏提醒不在保证范围内。拒绝通知权限不会影响计时或记录。</p></section>
+  <div data-install-card-slot></div><section class="panel"><h2>完成提示</h2><p>应用打开或返回前台时，会显示页面内完成提示。</p><button id="notify">${'Notification' in window ? `启用系统通知（当前：${Notification.permission === 'granted' ? '已允许' : Notification.permission === 'denied' ? '已拒绝' : '未设置'}）` : '当前浏览器不支持系统通知'}</button><p class="hint">首版没有推送服务，因此关闭应用后的准时锁屏提醒不在保证范围内。拒绝通知权限不会影响计时或记录。</p></section>
     <section class="panel"><h2>手动备份</h2><p>浏览器数据可能被用户或系统清除，请定期导出 JSON 备份。</p><div class="actions"><button id="export">导出 JSON</button><label class="file-button">导入 JSON<input id="import" type="file" accept="application/json,.json" hidden /></label></div><p class="hint">仅支持本 PWA 的备份，不读取桌面版数据。导入会合并记录和任务，保留本机有效任务选择；未选择时恢复备份目标。旧备份不会清空清单，任务内容冲突时整批不导入。保留本机其他设置；尚未领养时可恢复备份中的猫咪。备份含钱包、签到历史、购买记录和入住状态。有活动专注时请先结束；恢复时按日期去重签到奖励，钱包、商城、领养状态或记录冲突时整批不导入。</p></section>
   <section class="panel"><h2>安装与离线</h2><p>首次联网打开后，使用浏览器的“添加到主屏幕”或“安装应用”。资源完成缓存后可离线打开。</p><p class="hint">手机上请使用可信 HTTPS 地址。普通局域网 HTTP 地址无法验证所需的安全上下文能力。</p></section>`;
 }
@@ -242,7 +249,8 @@ function render() {
   else { adoption?.destroy(); adoption = undefined; }
   if (page === 'focus') focusCat?.element.remove();
   else { focusCat?.destroy(); focusCat = undefined; }
-  app.innerHTML = `<main>${notice ? `<div class="toast" role="status">${escapeHtml(notice)}<button id="close-notice" aria-label="关闭提示">×</button></div>` : ''}${page === 'focus' ? focusMarkup() : page === 'stats' ? statMarkup() : page === 'room' ? houseMarkup() : page === 'shop' ? '<div id="shop-slot"></div>' : settingsMarkup()}</main><nav><button data-page="focus" class="${page === 'focus' ? 'active' : ''}">⏱<span>专注</span></button><button data-page="stats" class="${page === 'stats' ? 'active' : ''}">${icon('bars')}<span>统计</span></button><button data-page="room" class="${page === 'room' || page === 'shop' ? 'active' : ''}">${icon('cat-house')}<span>猫咪小屋</span></button><button data-page="settings" class="${page === 'settings' ? 'active' : ''}">⚙<span>设置</span></button></nav>`;
+  app.innerHTML = `<main>${notice ? `<div class="toast" role="status">${escapeHtml(notice)}<button id="close-notice" aria-label="关闭提示">×</button></div>` : ''}${page === 'focus' ? focusMarkup() : page === 'stats' ? statMarkup() : page === 'room' ? houseMarkup() : page === 'shop' ? '<div id="shop-slot"></div>' : settingsMarkup()}</main><nav><button data-page="focus" class="${page === 'focus' ? 'active' : ''}">${icon('focus-timer')}<span>专注</span></button><button data-page="stats" class="${page === 'stats' ? 'active' : ''}">${icon('bars')}<span>统计</span></button><button data-page="room" class="${page === 'room' || page === 'shop' ? 'active' : ''}">${icon('cat-house')}<span>猫咪小屋</span></button><button data-page="settings" class="${page === 'settings' ? 'active' : ''}">${icon('settings-gear')}<span>设置</span></button></nav>`;
+  installView.mount();
   if (page === 'focus' && focusGoal) {
     document.querySelector('#focus-goal-slot')!.append(focusGoal.element);
     const selected = focusTasks.find(task => task.id === selectedFocusTaskId && task.status === 'pending');
@@ -429,8 +437,11 @@ async function initializeApplication() {
     stateChannel?.postMessage('changed');
   });
   focusEnding = createFocusEnding(finishSession, async id => {
+    const acknowledged = initialSummaries.find(summary => summary.record.id === id)?.record;
     await acknowledgeCompletion(db, id);
     await refresh(); stateChannel?.postMessage('changed');
+    if (acknowledged && acknowledged.durationSeconds > 0) installController.noteFocusSaved();
+    installView.mount();
   }, {
     getTask: id => focusTasks.find(task => task.id === id),
     completeTask: async record => { const result = await completeSummaryTask(db, record.id); await refresh(); stateChannel?.postMessage('changed'); return result; },

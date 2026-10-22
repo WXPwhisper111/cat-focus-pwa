@@ -12,9 +12,11 @@ export function categoryColor(id: string, name?: string) {
   const matched = index >= 0 ? index : names.indexOf(name || '');
   return CATEGORY_COLORS[matched >= 0 ? matched : categoryHash(`color:${id}`) % CATEGORY_COLORS.length];
 }
-type IconName = 'cat-house' | 'goal' | 'clock' | 'bars' | 'flame' | 'book' | 'computer' | 'star' | 'paw' | 'dumbbell' | 'math' | typeof customIcons[number];
+type IconName = 'focus-timer' | 'settings-gear' | 'cat-house' | 'goal' | 'clock' | 'bars' | 'flame' | 'book' | 'computer' | 'star' | 'paw' | 'dumbbell' | 'math' | typeof customIcons[number];
 export function icon(name: IconName) {
   const paths = {
+    'focus-timer': '<circle cx="12" cy="14" r="8"/><path d="M10 2h4m-2 0v4m6.5 1.5L20 6M12 10v4l3-2"/>',
+    'settings-gear': '<path d="M19.75 9.63L22.14 10.21 22.14 13.79 19.75 14.37 19.15 15.80 20.44 17.91 17.91 20.44 15.80 19.15 14.37 19.75 13.79 22.14 10.21 22.14 9.63 19.75 8.20 19.15 6.09 20.44 3.56 17.91 4.85 15.80 4.25 14.37 1.86 13.79 1.86 10.21 4.25 9.63 4.85 8.20 3.56 6.09 6.09 3.56 8.20 4.85 9.63 4.25 10.21 1.86 13.79 1.86 14.37 4.25 15.80 4.85 17.91 3.56 20.44 6.09 19.15 8.20Z"/><circle cx="12" cy="12" r="3.2"/>',
     'cat-house': '<path d="m2 10 10-8 10 8M4 9v12h16V9M8 17v-5l3 2h2l3-2v5c0 3-8 3-8 0Z"/><path d="M10 16h.01M14 16h.01M11.5 18h1"/>',
     goal: '<path d="M20 11a8 8 0 1 1-7-7M16 12a4 4 0 1 1-4-4M12 12l9-9m-5 0h5v5"/>',
     dumbbell: '<path d="M8 12h8M2 10v4m20-4v4M2 12h2m16 0h2"/><rect x="4" y="7" width="4" height="10" rx="1"/><rect x="16" y="7" width="4" height="10" rx="1"/>',
