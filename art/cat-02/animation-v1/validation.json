@@ -1,0 +1,264 @@
+{
+  "frameCount": 18,
+  "frames": [
+    {
+      "file": "idle/idle_01.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_02.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_03.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_04.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_05.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_06.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_07.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_08.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_09.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "idle/idle_10.png",
+      "alphaBounds": [
+        49,
+        25,
+        1217,
+        1201
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_01.png",
+      "alphaBounds": [
+        77,
+        664,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_02.png",
+      "alphaBounds": [
+        77,
+        664,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_03.png",
+      "alphaBounds": [
+        77,
+        663,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_04.png",
+      "alphaBounds": [
+        77,
+        663,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_05.png",
+      "alphaBounds": [
+        77,
+        663,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_06.png",
+      "alphaBounds": [
+        77,
+        663,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_07.png",
+      "alphaBounds": [
+        77,
+        663,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "file": "sleep_loop/sleep_loop_08.png",
+      "alphaBounds": [
+        77,
+        664,
+        1151,
+        1229
+      ],
+      "feetY": 1200,
+      "size": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "idleBlinkIntervalMs": 9260,
+  "sleepCycleMs": 4800,
+  "maxSleepDisplacementSourcePx": 6,
+  "maxSleepDisplacementAt144px": 0.689,
+  "idleInputYOffset": -33,
+  "sleepInputYOffset": 119,
+  "fixedFeetAndOutsideMotionSupport": true
+}

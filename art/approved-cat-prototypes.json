@@ -1,0 +1,8 @@
+{
+  "note": "Orange-white V4 and the second revisions of both longhaired cats are approved. All three have separate idle/sleep asset batches; no app playback integration in these deliveries.",
+  "cats": [
+    {"id":"cat-01","approvedRevision":4,"prototype":"public/cat/cat_01_prototype_v4.png","animationManifest":"public/cat_01/animations.json"},
+    {"id":"cat-02","approvedRevision":2,"prototype":"public/cat_02/cat_02_prototype_v2.png","animationManifest":"public/cat_02/animations.json"},
+    {"id":"cat-03","approvedRevision":2,"prototype":"public/cat_03/cat_03_prototype.png","animationManifest":"public/cat_03/animations.json"}
+  ]
+}

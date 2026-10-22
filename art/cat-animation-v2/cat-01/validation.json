@@ -1,0 +1,988 @@
+{
+  "id": "cat-01",
+  "frames": [
+    {
+      "file": "idle/idle_001.png",
+      "alphaBounds": [
+        55,
+        38,
+        1194,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_002.png",
+      "alphaBounds": [
+        55,
+        38,
+        1195,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_003.png",
+      "alphaBounds": [
+        55,
+        37,
+        1198,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_004.png",
+      "alphaBounds": [
+        55,
+        36,
+        1202,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_005.png",
+      "alphaBounds": [
+        55,
+        35,
+        1208,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_006.png",
+      "alphaBounds": [
+        55,
+        33,
+        1215,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_007.png",
+      "alphaBounds": [
+        55,
+        32,
+        1221,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_008.png",
+      "alphaBounds": [
+        55,
+        30,
+        1227,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_009.png",
+      "alphaBounds": [
+        55,
+        29,
+        1232,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_010.png",
+      "alphaBounds": [
+        55,
+        28,
+        1236,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_011.png",
+      "alphaBounds": [
+        55,
+        28,
+        1237,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_012.png",
+      "alphaBounds": [
+        55,
+        28,
+        1237,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_013.png",
+      "alphaBounds": [
+        55,
+        29,
+        1234,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_014.png",
+      "alphaBounds": [
+        55,
+        30,
+        1230,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_015.png",
+      "alphaBounds": [
+        55,
+        31,
+        1225,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_016.png",
+      "alphaBounds": [
+        55,
+        32,
+        1218,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_017.png",
+      "alphaBounds": [
+        55,
+        34,
+        1212,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_018.png",
+      "alphaBounds": [
+        55,
+        35,
+        1206,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_019.png",
+      "alphaBounds": [
+        55,
+        37,
+        1200,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_020.png",
+      "alphaBounds": [
+        55,
+        37,
+        1196,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_021.png",
+      "alphaBounds": [
+        55,
+        38,
+        1194,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_022.png",
+      "alphaBounds": [
+        55,
+        38,
+        1194,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_023.png",
+      "alphaBounds": [
+        55,
+        38,
+        1196,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_024.png",
+      "alphaBounds": [
+        55,
+        37,
+        1200,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_025.png",
+      "alphaBounds": [
+        55,
+        36,
+        1205,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_026.png",
+      "alphaBounds": [
+        55,
+        34,
+        1211,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_027.png",
+      "alphaBounds": [
+        55,
+        33,
+        1217,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_028.png",
+      "alphaBounds": [
+        55,
+        31,
+        1224,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_029.png",
+      "alphaBounds": [
+        55,
+        30,
+        1229,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_030.png",
+      "alphaBounds": [
+        55,
+        29,
+        1234,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_031.png",
+      "alphaBounds": [
+        55,
+        28,
+        1236,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_032.png",
+      "alphaBounds": [
+        55,
+        28,
+        1237,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_033.png",
+      "alphaBounds": [
+        55,
+        28,
+        1236,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_034.png",
+      "alphaBounds": [
+        55,
+        29,
+        1233,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_035.png",
+      "alphaBounds": [
+        55,
+        30,
+        1228,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_036.png",
+      "alphaBounds": [
+        55,
+        31,
+        1222,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_037.png",
+      "alphaBounds": [
+        55,
+        33,
+        1216,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_038.png",
+      "alphaBounds": [
+        55,
+        34,
+        1209,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_039.png",
+      "alphaBounds": [
+        55,
+        36,
+        1203,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_040.png",
+      "alphaBounds": [
+        55,
+        37,
+        1199,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_041.png",
+      "alphaBounds": [
+        55,
+        38,
+        1195,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_042.png",
+      "alphaBounds": [
+        55,
+        38,
+        1194,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_043.png",
+      "alphaBounds": [
+        55,
+        38,
+        1195,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_044.png",
+      "alphaBounds": [
+        55,
+        37,
+        1197,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_045.png",
+      "alphaBounds": [
+        55,
+        36,
+        1202,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_046.png",
+      "alphaBounds": [
+        55,
+        36,
+        1205,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_047.png",
+      "alphaBounds": [
+        55,
+        35,
+        1208,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_048.png",
+      "alphaBounds": [
+        55,
+        34,
+        1212,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_049.png",
+      "alphaBounds": [
+        55,
+        32,
+        1218,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_050.png",
+      "alphaBounds": [
+        55,
+        31,
+        1225,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_051.png",
+      "alphaBounds": [
+        55,
+        30,
+        1230,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_052.png",
+      "alphaBounds": [
+        55,
+        29,
+        1234,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_053.png",
+      "alphaBounds": [
+        55,
+        28,
+        1237,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_054.png",
+      "alphaBounds": [
+        55,
+        28,
+        1237,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_055.png",
+      "alphaBounds": [
+        55,
+        28,
+        1236,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_056.png",
+      "alphaBounds": [
+        55,
+        29,
+        1232,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_057.png",
+      "alphaBounds": [
+        55,
+        30,
+        1227,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_058.png",
+      "alphaBounds": [
+        55,
+        32,
+        1221,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_059.png",
+      "alphaBounds": [
+        55,
+        33,
+        1215,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_060.png",
+      "alphaBounds": [
+        55,
+        35,
+        1208,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_061.png",
+      "alphaBounds": [
+        55,
+        36,
+        1202,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_062.png",
+      "alphaBounds": [
+        55,
+        37,
+        1198,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "idle/idle_063.png",
+      "alphaBounds": [
+        55,
+        38,
+        1195,
+        1201
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_001.png",
+      "alphaBounds": [
+        64,
+        623,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_002.png",
+      "alphaBounds": [
+        64,
+        623,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_003.png",
+      "alphaBounds": [
+        64,
+        622,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_004.png",
+      "alphaBounds": [
+        64,
+        620,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_005.png",
+      "alphaBounds": [
+        64,
+        618,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_006.png",
+      "alphaBounds": [
+        64,
+        616,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_007.png",
+      "alphaBounds": [
+        64,
+        613,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_008.png",
+      "alphaBounds": [
+        64,
+        610,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_009.png",
+      "alphaBounds": [
+        64,
+        607,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_010.png",
+      "alphaBounds": [
+        64,
+        604,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_011.png",
+      "alphaBounds": [
+        64,
+        601,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_012.png",
+      "alphaBounds": [
+        64,
+        598,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_013.png",
+      "alphaBounds": [
+        64,
+        596,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_014.png",
+      "alphaBounds": [
+        64,
+        594,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_015.png",
+      "alphaBounds": [
+        64,
+        592,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_016.png",
+      "alphaBounds": [
+        64,
+        591,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_017.png",
+      "alphaBounds": [
+        64,
+        591,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_018.png",
+      "alphaBounds": [
+        64,
+        591,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_019.png",
+      "alphaBounds": [
+        64,
+        592,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_020.png",
+      "alphaBounds": [
+        64,
+        594,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_021.png",
+      "alphaBounds": [
+        64,
+        596,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_022.png",
+      "alphaBounds": [
+        64,
+        598,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_023.png",
+      "alphaBounds": [
+        64,
+        601,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_024.png",
+      "alphaBounds": [
+        64,
+        604,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_025.png",
+      "alphaBounds": [
+        64,
+        607,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_026.png",
+      "alphaBounds": [
+        64,
+        610,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_027.png",
+      "alphaBounds": [
+        64,
+        613,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_028.png",
+      "alphaBounds": [
+        64,
+        616,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_029.png",
+      "alphaBounds": [
+        64,
+        618,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_030.png",
+      "alphaBounds": [
+        64,
+        620,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_031.png",
+      "alphaBounds": [
+        64,
+        622,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    },
+    {
+      "file": "sleep_loop/sleep_loop_032.png",
+      "alphaBounds": [
+        64,
+        623,
+        1225,
+        1223
+      ],
+      "pawY": 1200
+    }
+  ],
+  "metrics": {
+    "idle": {
+      "kind": "chest-right-expansion",
+      "nativeContourPx": 51.0,
+      "mobileContourPx": 11.712918660287082,
+      "cssProjectionAt390": 1.990281100478469,
+      "cssProjectionAt430": 2.219049043062201,
+      "measuredMobileContourPx": 12.0,
+      "measuredCssAt390": 2.0390625,
+      "measuredCssAt430": 2.2734375
+    },
+    "sleep_loop": {
+      "kind": "back-top-rise",
+      "nativeContourPx": 32.0,
+      "mobileContourPx": 7.349282296650718,
+      "cssProjectionAt390": 1.2488038277511961,
+      "cssProjectionAt430": 1.3923444976076556,
+      "measuredMobileContourPx": 8.0,
+      "measuredCssAt390": 1.359375,
+      "measuredCssAt430": 1.515625
+    }
+  },
+  "checks": {
+    "idle-preview-timing": true,
+    "idle-mobile-preview-timing": true,
+    "sleep_loop-preview-timing": true,
+    "sleep_loop-mobile-preview-timing": true,
+    "fixedFeet": true,
+    "realAlpha": true,
+    "unclipped": true,
+    "losslessMobile": true,
+    "sleepHeadPawsTailFixed": true
+  }
+}

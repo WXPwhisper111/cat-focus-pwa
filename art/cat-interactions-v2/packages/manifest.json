@@ -1,0 +1,33 @@
+{
+  "version": "interactions-v2",
+  "clips": 12,
+  "originalFrames": 204,
+  "mobileFrames": 204,
+  "packages": [
+    {
+      "file": "cat-interactions-v2-cat-01.zip",
+      "bytes": 71955980,
+      "entries": 238
+    },
+    {
+      "file": "cat-interactions-v2-cat-02.zip",
+      "bytes": 90664815,
+      "entries": 238
+    },
+    {
+      "file": "cat-interactions-v2-cat-03.zip",
+      "bytes": 66288709,
+      "entries": 238
+    },
+    {
+      "file": "cat-interactions-v2-all.zip",
+      "bytes": 231881360,
+      "entries": 729
+    },
+    {
+      "file": "cat-interactions-v2-mobile-3cats.zip",
+      "bytes": 27392629,
+      "entries": 495
+    }
+  ]
+}

@@ -1,0 +1,728 @@
+{
+  "cat-01": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "feetAnchor": [
+      627,
+      1200
+    ],
+    "animations": {
+      "idle": {
+        "fps": 1.079913606911447,
+        "frames": [
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_01.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_02.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_03.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_04.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_05.webp",
+            "durationMs": 1800,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_06.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_07.webp",
+            "durationMs": 100,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_08.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_09.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/idle/idle_10.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      },
+      "sleep_loop": {
+        "fps": 1.6666666666666667,
+        "frames": [
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_01.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_02.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_03.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_04.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_05.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_06.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_07.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_01/sleep_loop/sleep_loop_08.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      }
+    },
+    "bytes": {
+      "source": 17338300,
+      "mobile": 1031604
+    }
+  },
+  "cat-02": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "feetAnchor": [
+      627,
+      1200
+    ],
+    "animations": {
+      "idle": {
+        "fps": 1.079913606911447,
+        "frames": [
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_01.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_02.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_03.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_04.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_05.webp",
+            "durationMs": 1800,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_06.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_07.webp",
+            "durationMs": 100,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_08.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_09.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/idle/idle_10.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      },
+      "sleep_loop": {
+        "fps": 1.6666666666666667,
+        "frames": [
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_01.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_02.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_03.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_04.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_05.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_06.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_07.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_02/sleep_loop/sleep_loop_08.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      }
+    },
+    "bytes": {
+      "source": 20025876,
+      "mobile": 1111444
+    }
+  },
+  "cat-03": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "feetAnchor": [
+      627,
+      1200
+    ],
+    "animations": {
+      "idle": {
+        "fps": 1.079913606911447,
+        "frames": [
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_01.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_02.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_03.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_04.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_05.webp",
+            "durationMs": 1800,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_06.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_07.webp",
+            "durationMs": 100,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_08.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_09.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/idle/idle_10.webp",
+            "durationMs": 1200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      },
+      "sleep_loop": {
+        "fps": 1.6666666666666667,
+        "frames": [
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_01.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_02.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_03.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_04.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_05.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_06.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_07.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-mobile/cat_03/sleep_loop/sleep_loop_08.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0.0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      }
+    },
+    "bytes": {
+      "source": 15332161,
+      "mobile": 858966
+    }
+  }
+}

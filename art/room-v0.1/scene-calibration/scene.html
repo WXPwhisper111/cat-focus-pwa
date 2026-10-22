@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<title>猫咪小屋 V0.1 房间基准场景</title>
+<style>html,body{margin:0;background:#eee4d5}canvas{display:block;width:1024px;height:768px;image-rendering:pixelated;margin:0 0 24px}#error{color:#a00}</style>
+<canvas id="scene-a" width="1024" height="768" aria-label="纯场景版"></canvas>
+<canvas id="scene-b" width="1024" height="768" aria-label="开发标注版"></canvas>
+<pre id="error"></pre>
+<script>
+window.sceneReady=(async()=>{
+  const layout=await fetch('./layout.json').then(r=>r.json());
+  const assets=new Map();
+  await Promise.all(layout.layers.filter(l=>l.file).map(async l=>{
+    const img=new Image();img.src=l.assetPath||'../../../public/room/'+l.file;
+    await img.decode();assets.set(l.id,img);
+  }));
+  const a=document.getElementById('scene-a'),b=document.getElementById('scene-b');
+  const ctx=a.getContext('2d');ctx.imageSmoothingEnabled=false;
+  for(const layer of layout.layers){
+    if(layer.primitive){
+      const [x,y,w,h]=layer.rect;
+      ctx.fillStyle='rgba(88,56,36,.18)';
+      ctx.fillRect(x+10,y,w-20,h);ctx.fillRect(x+4,y+2,w-8,h-4);ctx.fillRect(x,y+4,w,h-8);
+    }else ctx.drawImage(assets.get(layer.id),...layer.rect);
+  }
+  const c=b.getContext('2d');c.imageSmoothingEnabled=false;c.drawImage(a,0,0);
+  const hexAlpha=(hex,alpha)=>hex+Math.round(alpha*255).toString(16).padStart(2,'0');
+  function rect(r,color,fill=.07,dash=[7,5],width=2){
+    c.save();c.fillStyle=hexAlpha(color,fill);c.fillRect(...r);c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dash);c.strokeRect(...r);c.restore();
+  }
+  function badge(text,x,y,color='#49372f',size=14){
+    c.save();c.font=`600 ${size}px "Microsoft YaHei",sans-serif`;const w=c.measureText(text).width+14;
+    c.fillStyle='rgba(255,251,241,.94)';c.fillRect(x,y,w,size+9);c.fillStyle=color;c.textBaseline='top';c.fillText(text,x+7,y+4);c.restore();
+  }
+  const future=layout.futureClimberEnvelope;
+  rect(future.rect,future.color,.025,[10,6],2);badge(future.label,766,298,future.color,14);
+  for(const z of layout.zones){rect(z.rect,z.color,.075);badge(z.name,...z.label,z.color);}
+  rect(layout.foodStandingSpace.rect,'#aa772f',.02,[3,4],1);
+  rect(layout.transit.rect,'#8b785f',.04,[4,4],1);badge('通行带 →',790,742,'#7c674c',12);
+  rect(layout.wcExit.rect,'#b85866',.18,[4,3],2);
+  badge('隐藏 WC 出口',872,674,'#a14252',13);
+  c.save();c.strokeStyle='#a14252';c.lineWidth=2;c.beginPath();c.moveTo(972,687);c.lineTo(1008,709);c.stroke();c.restore();
+  for(const point of layout.catReferencePoints){
+    rect(point.footprint,'#26735f',.09,[3,3],1);
+    c.save();c.strokeStyle='#26735f';c.lineWidth=1.5;c.setLineDash([3,4]);
+    const [x,y,w,h]=point.spriteRect;c.strokeRect(x+6,y+6,w-12,h-8);c.restore();
+    const [px,py]=point.feet;c.save();c.beginPath();c.arc(px,py,10,0,Math.PI*2);c.fillStyle='#fffaf0';c.fill();c.strokeStyle='#26735f';c.lineWidth=2;c.stroke();
+    c.fillStyle='#26735f';c.font='bold 12px "Microsoft YaHei",sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(point.id,px,py);c.restore();
+  }
+  badge('猫咪小屋 V0.1 · 开发标注',302,354,'#574531',17);
+  badge('色块：落脚范围；猫咪身体可向上伸展',302,389,'#574531',13);
+  badge('蓝色高框：未来猫爬架体量，非可行走墙面',302,419,'#574531',13);
+  badge('①②③：三猫站位预留；当前仅放置一只猫',302,449,'#574531',13);
+  window.sceneLayout=layout;
+  return {width:a.width,height:a.height,catCount:layout.catReferencePoints.filter(p=>p.active).length};
+})().catch(e=>{document.getElementById('error').textContent=e.stack;throw e;});
+</script>
+</html>

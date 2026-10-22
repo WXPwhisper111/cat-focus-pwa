@@ -1,0 +1,23 @@
+{
+  "file": "cat-focus-pwa\\public\\cat\\cat_01_prototype_v2.png",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "alpha": [
+    0,
+    255
+  ],
+  "visibleBounds": [
+    52,
+    62,
+    1206,
+    1222
+  ],
+  "silhouetteAreaAlphaGe128": {
+    "cat01": 826851,
+    "cat02": 882586,
+    "cat03": 637373
+  },
+  "note": "New candidate prototype only. Original idle/sleep and app assets remain unchanged."
+}

@@ -1,0 +1,120 @@
+{
+  "checks": {
+    "functional_ground_zones_pairwise_disjoint": true,
+    "activity_is_largest_ground_zone": true,
+    "one_active_cat": true,
+    "three_sprite_envelopes_within_activity": true,
+    "three_sprite_envelopes_disjoint": true,
+    "food_standing_inside_food_zone": true,
+    "transit_outside_four_ground_zones": true,
+    "wc_at_right_edge": true,
+    "wc_outside_four_ground_zones": true,
+    "transit_reaches_wc": true,
+    "bed_visible_bounds_inside_zone": true,
+    "rug_visible_bounds_inside_zone": true,
+    "foodBowl_visible_bounds_inside_zone": true,
+    "waterBowl_visible_bounds_inside_zone": true,
+    "cat_visible_bounds_inside_zone": true,
+    "scratcher_under_half_future_envelope_height": true,
+    "climber_envelope_clear_of_fixed_wall_decor": true,
+    "room_scene_v01_clean.png_correct_size_and_opaque": true,
+    "room_scene_v01_annotated.png_correct_size_and_opaque": true
+  },
+  "ground_zone_area": {
+    "sleep": 50176,
+    "activity": 98496,
+    "food": 20736,
+    "play": 25920
+  },
+  "visible_bounds_alpha_ge_16": {
+    "base": [
+      0.0,
+      0.0,
+      1024.0,
+      768.0
+    ],
+    "outside": [
+      97.5,
+      81.25,
+      309.0,
+      210.0
+    ],
+    "windowFrame": [
+      85.12,
+      67.75,
+      334.12,
+      232.5
+    ],
+    "curtains": [
+      67.88,
+      68.12,
+      368.25,
+      232.12
+    ],
+    "wallArt": [
+      780.0,
+      67.5,
+      187.5,
+      117.5
+    ],
+    "shelf": [
+      501.81,
+      259.66,
+      205.31,
+      32.81
+    ],
+    "shelfDecor": [
+      513.53,
+      164.03,
+      183.75,
+      97.03
+    ],
+    "plant": [
+      59.7,
+      453.59,
+      95.16,
+      107.19
+    ],
+    "bed": [
+      20.25,
+      571.88,
+      246.94,
+      110.25
+    ],
+    "rug": [
+      318.0,
+      635.0,
+      388.0,
+      83.0
+    ],
+    "scratcher": [
+      830.62,
+      504.75,
+      110.25,
+      98.88
+    ],
+    "foodBowl": [
+      780.0,
+      651.0,
+      81.0,
+      33.5
+    ],
+    "waterBowl": [
+      875.0,
+      650.5,
+      81.5,
+      34.0
+    ],
+    "cat": [
+      449.19,
+      578.09,
+      127.35,
+      136.54
+    ]
+  },
+  "limits": [
+    "Static standing envelopes only; no navigation or collision simulation.",
+    "28px transit band assumes 18px projected foot depth and disallows stopping.",
+    "Existing floor starts near y=512; logical ground zones start at y=520."
+  ]
+}

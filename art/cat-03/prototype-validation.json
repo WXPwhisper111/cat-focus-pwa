@@ -1,0 +1,24 @@
+{
+  "canvas": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "visible_bbox_alpha_ge_16": [
+    110,
+    210,
+    1161,
+    1214
+  ],
+  "visible_height_ratio_to_first": 0.844,
+  "smallest_of_three_by_visible_height": true,
+  "source_canvas": [
+    1254,
+    1254
+  ],
+  "status": "static prototype only; no app integration"
+}

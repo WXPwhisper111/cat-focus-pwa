@@ -1,0 +1,87 @@
+{
+  "tool": "built-in imagegen",
+  "resampling": "nearest",
+  "assets": [
+    {
+      "file": "room_plant.png",
+      "canvas": [
+        384,
+        384
+      ],
+      "visible_bbox_alpha_ge_16": [
+        65,
+        51,
+        326,
+        345
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "minimum_transparent_padding": 16,
+      "source": "exec-1e3a1e5a-edae-4b55-a959-20c00a5a1906.png"
+    },
+    {
+      "file": "room_wall_shelf.png",
+      "canvas": [
+        512,
+        384
+      ],
+      "visible_bbox_alpha_ge_16": [
+        38,
+        187,
+        476,
+        257
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "minimum_transparent_padding": 16,
+      "source": "exec-b1b56a34-a820-48cb-b067-ce152c0334c3.png"
+    },
+    {
+      "file": "room_shelf_decor.png",
+      "canvas": [
+        512,
+        384
+      ],
+      "visible_bbox_alpha_ge_16": [
+        63,
+        103,
+        455,
+        310
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "minimum_transparent_padding": 16,
+      "source": "exec-28ad3616-f043-4a55-bc90-1d62dbc02b5b.png"
+    },
+    {
+      "file": "room_wall_art.png",
+      "canvas": [
+        512,
+        384
+      ],
+      "visible_bbox_alpha_ge_16": [
+        72,
+        87,
+        447,
+        322
+      ],
+      "alpha_range": [
+        0,
+        255
+      ],
+      "minimum_transparent_padding": 16,
+      "source": "exec-56a91799-2304-4987-83f3-a876e41e9c26.png"
+    }
+  ],
+  "shelf_decor_offset_relative_to_shelf_canvas": [
+    0,
+    -120
+  ],
+  "room_layout_modified": false
+}

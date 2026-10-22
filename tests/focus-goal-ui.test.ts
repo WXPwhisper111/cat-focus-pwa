@@ -1,0 +1,36 @@
+// @vitest-environment jsdom
+import { IDBFactory } from 'fake-indexeddb';
+import { afterEach, expect, it, vi } from 'vitest';
+import { addFocusTask, changeFocusTask, getFocusTaskState, selectFocusTask } from '../src/focus-task-storage';
+import { getActive, getRecords, getWallet, openDatabase } from '../src/storage';
+import { mockDialogs } from './dialog-mocks';
+afterEach(()=>{vi.restoreAllMocks();vi.unstubAllGlobals();});
+it('shows live and paused target snapshots, keeps them across navigation and edits, and completes only on explicit summary action',async()=>{
+  mockDialogs();vi.stubGlobal('indexedDB',new IDBFactory());vi.spyOn(document,'hidden','get').mockReturnValue(false);
+  vi.stubGlobal('BroadcastChannel',class{onmessage=null;postMessage(){}close(){}});vi.spyOn(globalThis,'setInterval').mockReturnValue(0 as never);
+  let now=100000;vi.spyOn(Date,'now').mockImplementation(()=>now);document.body.innerHTML='<div id="app"></div>';await import('../src/main');
+  document.querySelector<HTMLButtonElement>('#welcome-start')?.click();const db=await openDatabase();const task=await addFocusTask(db,'最初的标题');await selectFocusTask(db,task.id);window.dispatchEvent(new Event('focus'));
+  await vi.waitFor(()=>expect(document.querySelector('[data-goal-title]')?.textContent).toBe('最初的标题'));
+  const click=(selector:string)=>document.querySelector<HTMLButtonElement>(selector)!.click();
+  expect(document.querySelector('#choose-focus-task')).toBeNull();
+  expect(document.querySelector('.focus-goal-icon svg[data-stats-icon="goal"]')).not.toBeNull();
+  expect(document.querySelector<HTMLButtonElement>('[data-goal-open]')!.hidden).toBe(false);
+  expect(document.querySelector('[data-goal-clear]')!.nextElementSibling).toBe(document.querySelector('[data-goal-open]'));
+  click('[data-goal-clear]');
+  await vi.waitFor(()=>expect(document.querySelector('.focus-goal-shell')!.getAttribute('aria-hidden')).toBe('true'));
+  expect((await getFocusTaskState(db)).selectedId).toBeNull();
+  expect((await getFocusTaskState(db)).tasks[0].status).toBe('pending');
+  expect(await getActive(db)).toBeUndefined();
+  await selectFocusTask(db,task.id);window.dispatchEvent(new Event('focus'));
+  await vi.waitFor(()=>expect(document.querySelector('.focus-goal-shell')!.getAttribute('aria-hidden')).toBe('false'));
+  expect(document.querySelector('[data-goal-phase]')!.textContent).toBe('待开始');click('#start');await vi.waitFor(()=>expect(document.querySelector('#pause')).not.toBeNull());
+  expect(document.querySelector('[data-goal-phase]')!.textContent).toBe('正在专注');now+=30000;click('#pause');await vi.waitFor(()=>expect(document.querySelector('[data-goal-phase]')!.textContent).toBe('已暂停'));
+  expect(document.querySelector<HTMLButtonElement>('[data-goal-open]')!.hidden).toBe(true);
+  expect(document.querySelector<HTMLButtonElement>('[data-goal-clear]')!.hidden).toBe(true);
+  await changeFocusTask(db,task.id,{title:'修改后的标题'});window.dispatchEvent(new Event('focus'));await vi.waitFor(()=>expect((document.querySelector('.focus-list-count')!.textContent)).toContain('1'));
+  click('[data-page=stats]');click('[data-page=focus]');expect(document.querySelector('[data-goal-title]')!.textContent).toBe('最初的标题');expect((await getActive(db))?.taskContext?.titleSnapshot).toBe('最初的标题');
+  click('#early');click('#end-confirm');await vi.waitFor(()=>expect(document.querySelector<HTMLDialogElement>('.completion-summary')!.open).toBe(true));
+  expect(document.querySelector('[data-summary-task-title]')!.textContent).toBe('最初的标题');expect((await getFocusTaskState(db)).tasks[0].status).toBe('pending');expect(document.querySelector('.focus-goal-shell')!.getAttribute('aria-hidden')).toBe('true');
+  const wallet=await getWallet(db);click('#summary-task-complete');await vi.waitFor(async()=>expect((await getFocusTaskState(db)).tasks[0].status).toBe('completed'));await vi.waitFor(()=>expect(document.querySelector<HTMLButtonElement>('#summary-done')!.disabled).toBe(false));
+  expect(await getWallet(db)).toEqual(wallet);expect(await getRecords(db)).toHaveLength(1);click('#summary-done');await vi.waitFor(()=>expect(document.querySelector<HTMLDialogElement>('.completion-summary')!.open).toBe(false));db.close();
+});

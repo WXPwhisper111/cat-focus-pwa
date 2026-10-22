@@ -1,0 +1,43 @@
+// @vitest-environment jsdom
+import { readFileSync } from 'node:fs';
+import { IDBFactory } from 'fake-indexeddb';
+import { afterEach, expect, it, vi } from 'vitest';
+import { getRoomLocations, importBackup, openDatabase } from '../src/storage';
+import { mockDialogs } from './dialog-mocks';
+afterEach(() => { vi.useRealTimers(); vi.restoreAllMocks(); vi.unstubAllGlobals(); Reflect.deleteProperty(HTMLElement.prototype, 'animate'); });
+const flush = async () => { for (let i=0;i<50;i++) await Promise.resolve(); };
+it('stops all autonomous jobs on hide/navigation, restores stable positions, and prevents catch-up after return', async () => {
+  mockDialogs(); vi.stubGlobal('indexedDB', new IDBFactory());
+  vi.stubGlobal('BroadcastChannel', class { onmessage = null; postMessage() {} close() {} });
+  let hidden = false; vi.spyOn(document, 'hidden', 'get').mockImplementation(() => hidden);
+  vi.spyOn(document, 'visibilityState', 'get').mockImplementation(() => hidden ? 'hidden' : 'visible');
+  vi.spyOn(globalThis, 'setInterval').mockReturnValue(0 as never);
+  vi.stubGlobal('Image', class { onload: (()=>void) | null = null; set src(_value:string) { queueMicrotask(()=>this.onload?.()); } decode() { return Promise.resolve(); } });
+  let next = 0; const raf = new Map<number, FrameRequestCallback>();
+  vi.stubGlobal('requestAnimationFrame', (callback:FrameRequestCallback) => { raf.set(++next, callback); return next; });
+  vi.stubGlobal('cancelAnimationFrame', (id:number)=>raf.delete(id));
+  Object.defineProperty(HTMLElement.prototype, 'animate', { configurable: true, value: () => ({ finished: Promise.resolve(), cancel() {}, play() {}, pause() {} }) });
+  const db = await openDatabase(); await importBackup(db, readFileSync('art/release-v0.2/fixtures/owned-three-test-only.json','utf8'));
+  document.body.innerHTML = '<div id="app"></div>'; await import('../src/main');
+  await vi.waitFor(()=>expect(document.querySelector('#welcome-start')).not.toBeNull());
+  document.querySelector<HTMLButtonElement>('#welcome-start')!.click();
+  vi.useFakeTimers({toFake:['Date','setTimeout','clearTimeout']}); vi.setSystemTime(new Date(2026,9,21,12));
+  const click = (selector:string)=>document.querySelector<HTMLButtonElement>(selector)!.click();
+  const cats=()=>[...document.querySelectorAll<HTMLImageElement>('[data-room-cat]')];
+  click('[data-page=room]'); await flush();
+  await vi.advanceTimersByTimeAsync(7999); expect(cats().every(cat=>cat.dataset.animation==='idle')).toBe(true);
+  await vi.advanceTimersByTimeAsync(2100); expect(cats().some(cat=>cat.dataset.animation!=='idle')).toBe(true);
+  hidden=true; document.dispatchEvent(new Event('visibilitychange')); await flush();
+  await vi.waitFor(async()=>expect(await getRoomLocations(db)).toEqual({}));
+  expect(cats().every(cat=>cat.dataset.animation==='idle' && cat.style.opacity!=='0')).toBe(true); expect(raf.size).toBe(0);
+  await vi.advanceTimersByTimeAsync(600000); expect(raf.size).toBe(0);
+  hidden=false; document.dispatchEvent(new Event('visibilitychange')); await flush();
+  await vi.advanceTimersByTimeAsync(7999); expect(cats().every(cat=>cat.dataset.animation==='idle')).toBe(true);
+  const stablePositions = cats().map(cat => ({ id: cat.dataset.roomCat, left: cat.style.left, top: cat.style.top }));
+  click('[data-page=settings]'); await flush(); expect(document.querySelector('.room-scene')).toBeNull(); expect(raf.size).toBe(0);
+  await vi.advanceTimersByTimeAsync(600000); expect(raf.size).toBe(0);
+  click('[data-page=room]'); expect(cats().map(cat => ({ id: cat.dataset.roomCat, left: cat.style.left, top: cat.style.top })).sort((a,b)=>a.id!.localeCompare(b.id!))).toEqual(stablePositions.sort((a,b)=>a.id!.localeCompare(b.id!)));
+  await flush(); expect(cats()).toHaveLength(3); expect(cats().every(cat=>cat.style.opacity!=='0')).toBe(true);
+  click('[data-page=settings]'); await flush(); expect(raf.size).toBe(0); db.close();
+});
+

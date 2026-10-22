@@ -1,0 +1,9 @@
+{
+  "sleepAmplitudeBeforePx": 52,
+  "sleepAmplitudeAfterPx": 32,
+  "idleFilesVerified": 396,
+  "idleByteIdentical": true,
+  "idleTimelineUnchanged": true,
+  "protectedSourcesUnchanged": true,
+  "sourceBaselineNote": "Prior delivery snapshot predates independent app changes; revision baseline captured for packaging verification."
+}

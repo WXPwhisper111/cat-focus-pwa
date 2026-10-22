@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "canvas": [
+    1254,
+    1254
+  ],
+  "feetAnchor": [
+    627,
+    1200
+  ],
+  "cats": [
+    {
+      "id": "cat-01",
+      "name": "橘白短毛猫 V4",
+      "manifest": "cat-01/animations.json"
+    },
+    {
+      "id": "cat-02",
+      "name": "蓝眼灰白长毛猫",
+      "manifest": "cat-02/animations.json"
+    },
+    {
+      "id": "cat-03",
+      "name": "奶油长毛猫",
+      "manifest": "cat-03/animations.json"
+    }
+  ]
+}

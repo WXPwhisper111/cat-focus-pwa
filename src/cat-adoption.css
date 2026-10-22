@@ -1,0 +1,14 @@
+.adoption-choices { display: grid; gap: 12px; }
+.adoption-card { display: grid; grid-template-columns: 88px minmax(0, 1fr) 20px; align-items: center; gap: 10px; width: 100%; padding: 13px 12px; text-align: left; border: 2px solid #ebdccb; border-radius: 22px; background: #fffaf3; box-shadow: 0 7px 20px #6f4d2208; }
+.adoption-card[aria-pressed=true] { border-color: #d98243; background: #fff1dc; }
+.adoption-card:disabled { cursor: wait; }
+.adoption-preview { width: 88px; height: 100px; object-fit: contain; image-rendering: pixelated; }
+.adoption-card-text { display: flex; flex-direction: column; gap: 7px; min-width: 0; }
+.adoption-card-text strong { font-size: 16px; }
+.adoption-card-text > span { font-size: 12px; font-weight: 400; line-height: 1.6; color: #8b715e; }
+.adoption-card-text small { font-size: 10px; font-weight: 500; color: #ac743f; }
+.adoption-check { color: #cb7736; font-size: 20px; text-align: center; }
+.adoption-rule, .adoption-error, .cat-house-error { font-size: 12px; line-height: 1.7; color: #8b715e; }
+.adoption-error, .cat-house-error { color: #a34e39; }
+.cat-house-resident { margin: 13px 4px 0; color: #8b715e; font-size: 13px; }
+@media (max-width: 360px) { .adoption-card { grid-template-columns: 66px minmax(0, 1fr) 16px; gap: 8px; padding: 11px 9px; } .adoption-preview { width: 66px; height: 90px; } .adoption-card-text strong { font-size: 14px; } }

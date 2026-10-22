@@ -1,0 +1,13 @@
+/* Scoped to the initial loading surface; no page or navigation theme changes. */
+.startup-screen[hidden], #app[hidden]{display:none!important;}
+.startup-screen{box-sizing:border-box;min-height:100vh;min-height:100dvh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:calc(24px + env(safe-area-inset-top)) calc(24px + env(safe-area-inset-right)) calc(20px + env(safe-area-inset-bottom)) calc(24px + env(safe-area-inset-left));background:radial-gradient(ellipse at 50% 42%,#fff8e9 0%,#fffaf2 45%,#f7ecd9 100%);color:#49372f;}
+.startup-content{width:min(100%,600px);flex:1;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:clamp(18px,4vh,36px);}
+.startup-eyebrow{margin:0;color:#ae6536;font-size:clamp(16px,2.6vw,20px);font-weight:600;letter-spacing:.08em;}
+.startup-icon{display:block;width:clamp(160px,54vw,280px);border-radius:22%;max-width:100%;height:auto;object-fit:contain;filter:drop-shadow(0 9px 14px #bc81451c);}
+.startup-copy h1{margin:0;font-size:clamp(24px,4.5vw,34px);line-height:1.4;letter-spacing:.015em;}
+.startup-subtitle{max-width:28em;margin:14px auto 0;font-size:clamp(14px,2.5vw,17px);line-height:1.9;color:#8b715e;}
+.startup-screen footer{padding-top:28px;color:#a67551;font-size:13px;letter-spacing:.15em;}
+.startup-error{max-width:27em;color:#885b42;font-size:14px;line-height:1.6;}
+.startup-error[hidden]{display:none;}.startup-error p{margin:0 0 12px;}.startup-error button{min-height:44px;min-width:100px;background:#d47b39;border-color:#d47b39;color:#fff;}
+@media(max-height:650px){.startup-content{gap:16px;}.startup-icon{width:clamp(100px,29vh,190px);}.startup-screen footer{padding-top:18px;}.startup-subtitle{margin-top:8px;}}
+@media(orientation:landscape) and (max-height:550px){.startup-screen{padding-top:calc(16px + env(safe-area-inset-top));padding-bottom:calc(12px + env(safe-area-inset-bottom));}.startup-content{max-width:720px;display:grid;grid-template-columns:minmax(100px,32%) minmax(0,1fr);gap:12px 24px;}.startup-eyebrow{grid-column:1/-1;}.startup-icon{width:min(100%,180px);justify-self:center;}.startup-copy{text-align:left;}.startup-copy h1{font-size:clamp(22px,4vw,30px);}.startup-subtitle{font-size:14px;}.startup-error{grid-column:1/-1;justify-self:center;}.startup-screen footer{padding-top:12px;}}

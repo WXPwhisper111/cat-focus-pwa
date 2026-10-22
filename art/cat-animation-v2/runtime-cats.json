@@ -1,0 +1,3488 @@
+{
+  "cat-01": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "feetAnchor": [
+      627,
+      1200
+    ],
+    "animations": {
+      "idle": {
+        "fps": 6.8034557235421165,
+        "frames": [
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_003.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_004.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_006.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_007.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_008.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_009.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_010.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_011.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_012.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_013.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_015.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_016.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_017.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_018.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_019.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_020.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_021.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_022.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_023.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_024.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_025.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_026.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_027.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_028.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_029.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_030.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_031.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_032.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_033.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_034.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_035.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_036.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_037.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_038.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_039.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_040.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_041.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_042.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_043.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_044.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_045.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_046.webp",
+            "durationMs": 100,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_047.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_048.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_049.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_050.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_051.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_052.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_053.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_054.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_055.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_056.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_057.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_058.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_059.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_060.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_061.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_062.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/idle/idle_063.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      },
+      "sleep_loop": {
+        "fps": 6.666666666666667,
+        "frames": [
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_003.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_004.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_006.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_007.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_008.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_009.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_010.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_011.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_012.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_013.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_015.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_016.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_017.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_018.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_019.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_020.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_021.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_022.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_023.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_024.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_025.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_026.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_027.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_028.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_029.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_030.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_031.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-01/mobile/sleep_loop/sleep_loop_032.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "cat-02": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "feetAnchor": [
+      627,
+      1200
+    ],
+    "animations": {
+      "idle": {
+        "fps": 6.8034557235421165,
+        "frames": [
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_003.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_004.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_006.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_007.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_008.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_009.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_010.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_011.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_012.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_013.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_015.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_016.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_017.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_018.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_019.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_020.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_021.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_022.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_023.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_024.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_025.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_026.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_027.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_028.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_029.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_030.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_031.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_032.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_033.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_034.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_035.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_036.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_037.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_038.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_039.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_040.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_041.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_042.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_043.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_044.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_045.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_046.webp",
+            "durationMs": 100,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_047.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_048.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_049.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_050.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_051.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_052.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_053.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_054.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_055.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_056.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_057.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_058.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_059.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_060.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_061.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_062.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/idle/idle_063.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      },
+      "sleep_loop": {
+        "fps": 6.666666666666667,
+        "frames": [
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_003.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_004.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_006.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_007.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_008.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_009.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_010.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_011.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_012.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_013.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_015.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_016.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_017.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_018.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_019.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_020.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_021.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_022.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_023.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_024.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_025.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_026.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_027.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_028.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_029.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_030.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_031.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-02/mobile/sleep_loop/sleep_loop_032.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "cat-03": {
+    "sourceCanvas": [
+      1254,
+      1254
+    ],
+    "feetAnchor": [
+      627,
+      1200
+    ],
+    "animations": {
+      "idle": {
+        "fps": 6.8034557235421165,
+        "frames": [
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_003.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_004.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_006.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_007.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_008.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_009.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_010.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_011.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_012.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_013.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_015.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_016.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_017.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_018.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_019.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_020.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_021.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_022.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_023.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_024.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_025.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_026.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_027.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_028.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_029.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_030.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_031.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_032.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_033.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_034.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_035.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_036.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_037.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_038.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_039.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_040.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_041.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_042.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_043.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_044.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_045.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_046.webp",
+            "durationMs": 100,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_047.webp",
+            "durationMs": 80,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_048.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_049.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_050.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_051.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_052.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_053.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_054.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_055.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_056.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_057.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_058.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_059.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_060.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_061.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_062.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/idle/idle_063.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      },
+      "sleep_loop": {
+        "fps": 6.666666666666667,
+        "frames": [
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_003.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_004.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_006.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_007.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_008.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_009.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_010.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_011.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_012.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_013.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_015.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_016.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_017.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_018.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_019.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_020.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_021.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_022.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_023.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_024.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_025.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_026.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_027.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_028.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_029.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_030.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_031.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          },
+          {
+            "file": "./cat-animation-v2/cat-03/mobile/sleep_loop/sleep_loop_032.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "offset": [
+              0,
+              6.2009569377990434
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

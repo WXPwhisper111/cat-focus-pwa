@@ -1,0 +1,212 @@
+{
+  "size": 288,
+  "sourceSize": 1254,
+  "spriteSize": 144,
+  "anchorNote": "Front-paw bottom + the idle_01 original 12px bottom margin; x remains canvas center. No per-frame crop or stretch.",
+  "states": {
+    "idle": {
+      "fps": 4,
+      "frames": [
+        {
+          "file": "./cat-mobile/idle/idle_01.webp",
+          "source": "public/cat/idle/idle_01.png",
+          "alphaBounds": [
+            80,
+            53,
+            1189,
+            1242
+          ],
+          "pawBottom": 1242,
+          "sourceAnchor": [
+            627,
+            1254
+          ],
+          "offset": [
+            0,
+            0.0
+          ]
+        },
+        {
+          "file": "./cat-mobile/idle/idle_02.webp",
+          "source": "public/cat/idle/idle_02.png",
+          "alphaBounds": [
+            58,
+            56,
+            1188,
+            1245
+          ],
+          "pawBottom": 1245,
+          "sourceAnchor": [
+            627,
+            1257
+          ],
+          "offset": [
+            0,
+            -0.3444976076555024
+          ]
+        },
+        {
+          "file": "./cat-mobile/idle/idle_03.webp",
+          "source": "public/cat/idle/idle_03.png",
+          "alphaBounds": [
+            67,
+            44,
+            1197,
+            1246
+          ],
+          "pawBottom": 1246,
+          "sourceAnchor": [
+            627,
+            1258
+          ],
+          "offset": [
+            0,
+            -0.45933014354066987
+          ]
+        },
+        {
+          "file": "./cat-mobile/idle/idle_04.webp",
+          "source": "public/cat/idle/idle_04.png",
+          "alphaBounds": [
+            62,
+            53,
+            1207,
+            1244
+          ],
+          "pawBottom": 1244,
+          "sourceAnchor": [
+            627,
+            1256
+          ],
+          "offset": [
+            0,
+            -0.22966507177033493
+          ]
+        },
+        {
+          "file": "./cat-mobile/idle/idle_05.webp",
+          "source": "public/cat/idle/idle_05.png",
+          "alphaBounds": [
+            60,
+            50,
+            1210,
+            1245
+          ],
+          "pawBottom": 1245,
+          "sourceAnchor": [
+            627,
+            1257
+          ],
+          "offset": [
+            0,
+            -0.3444976076555024
+          ]
+        },
+        {
+          "file": "./cat-mobile/idle/idle_06.webp",
+          "source": "public/cat/idle/idle_06.png",
+          "alphaBounds": [
+            78,
+            51,
+            1190,
+            1245
+          ],
+          "pawBottom": 1245,
+          "sourceAnchor": [
+            627,
+            1257
+          ],
+          "offset": [
+            0,
+            -0.3444976076555024
+          ]
+        }
+      ]
+    },
+    "sleep_loop": {
+      "fps": 2,
+      "frames": [
+        {
+          "file": "./cat-mobile/sleep_loop/sleep_loop_01.webp",
+          "source": "public/cat/sleep_loop/sleep_loop_01.png",
+          "alphaBounds": [
+            33,
+            336,
+            1245,
+            1004
+          ],
+          "pawBottom": 955,
+          "sourceAnchor": [
+            627,
+            967
+          ],
+          "offset": [
+            0,
+            32.95693779904306
+          ]
+        },
+        {
+          "file": "./cat-mobile/sleep_loop/sleep_loop_02.webp",
+          "source": "public/cat/sleep_loop/sleep_loop_02.png",
+          "alphaBounds": [
+            20,
+            412,
+            1253,
+            1071
+          ],
+          "pawBottom": 1030,
+          "sourceAnchor": [
+            627,
+            1042
+          ],
+          "offset": [
+            0,
+            24.3444976076555
+          ]
+        },
+        {
+          "file": "./cat-mobile/sleep_loop/sleep_loop_03.webp",
+          "source": "public/cat/sleep_loop/sleep_loop_03.png",
+          "alphaBounds": [
+            25,
+            392,
+            1254,
+            1036
+          ],
+          "pawBottom": 1013,
+          "sourceAnchor": [
+            627,
+            1025
+          ],
+          "offset": [
+            0,
+            26.29665071770335
+          ]
+        },
+        {
+          "file": "./cat-mobile/sleep_loop/sleep_loop_04.webp",
+          "source": "public/cat/sleep_loop/sleep_loop_04.png",
+          "alphaBounds": [
+            30,
+            412,
+            1254,
+            1013
+          ],
+          "pawBottom": 996,
+          "sourceAnchor": [
+            627,
+            1008
+          ],
+          "offset": [
+            0,
+            28.248803827751196
+          ]
+        }
+      ]
+    }
+  },
+  "bytes": {
+    "source": 10510629,
+    "derived": 627284
+  }
+}

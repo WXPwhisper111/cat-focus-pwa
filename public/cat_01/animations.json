@@ -1,0 +1,140 @@
+{
+  "id": "cat-01",
+  "approvedPrototype": "../cat/cat_01_prototype_v4.png",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "feetAnchor": [
+    627,
+    1200
+  ],
+  "timingMode": "per-frame-duration-ms",
+  "note": "Do not play idle at a uniform fps. No app integration in this delivery.",
+  "animations": {
+    "idle": {
+      "loop": true,
+      "cycleDurationMs": 9260,
+      "frameCount": 10,
+      "blinkCountPerCycle": 1,
+      "frames": [
+        {
+          "file": "idle/idle_01.png",
+          "durationMs": 1200,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 0
+        },
+        {
+          "file": "idle/idle_02.png",
+          "durationMs": 1200,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 2
+        },
+        {
+          "file": "idle/idle_03.png",
+          "durationMs": 1200,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 4
+        },
+        {
+          "file": "idle/idle_04.png",
+          "durationMs": 1200,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 2
+        },
+        {
+          "file": "idle/idle_05.png",
+          "durationMs": 1800,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 0
+        },
+        {
+          "file": "idle/idle_06.png",
+          "durationMs": 80,
+          "eyes": "half",
+          "maxBreathOffsetSourcePx": 0
+        },
+        {
+          "file": "idle/idle_07.png",
+          "durationMs": 100,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 0
+        },
+        {
+          "file": "idle/idle_08.png",
+          "durationMs": 80,
+          "eyes": "half",
+          "maxBreathOffsetSourcePx": 0
+        },
+        {
+          "file": "idle/idle_09.png",
+          "durationMs": 1200,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 1
+        },
+        {
+          "file": "idle/idle_10.png",
+          "durationMs": 1200,
+          "eyes": "open",
+          "maxBreathOffsetSourcePx": 0
+        }
+      ]
+    },
+    "sleep_loop": {
+      "loop": true,
+      "cycleDurationMs": 4800,
+      "frameCount": 8,
+      "blinkCountPerCycle": 0,
+      "frames": [
+        {
+          "file": "sleep_loop/sleep_loop_01.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 0
+        },
+        {
+          "file": "sleep_loop/sleep_loop_02.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 1
+        },
+        {
+          "file": "sleep_loop/sleep_loop_03.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 3
+        },
+        {
+          "file": "sleep_loop/sleep_loop_04.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 5
+        },
+        {
+          "file": "sleep_loop/sleep_loop_05.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 6
+        },
+        {
+          "file": "sleep_loop/sleep_loop_06.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 5
+        },
+        {
+          "file": "sleep_loop/sleep_loop_07.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 3
+        },
+        {
+          "file": "sleep_loop/sleep_loop_08.png",
+          "durationMs": 600,
+          "eyes": "closed",
+          "maxBreathOffsetSourcePx": 1
+        }
+      ]
+    }
+  }
+}

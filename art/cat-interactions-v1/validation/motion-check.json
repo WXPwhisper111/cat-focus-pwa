@@ -1,0 +1,998 @@
+{
+  "cat-01": {
+    "eat": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 43547,
+        "mobileAdjacentChangedPixels": [
+          18649,
+          19458,
+          40507,
+          37797,
+          20310,
+          19128,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 16,
+        "durationMs": 2400,
+        "mobilePeakChangedPixels": 18369,
+        "mobileAdjacentChangedPixels": [
+          14364,
+          16465,
+          16713,
+          16481,
+          16376,
+          15925,
+          15173,
+          13621,
+          13621,
+          15173,
+          15925,
+          16376,
+          16481,
+          16713,
+          16465
+        ],
+        "loopSeamChangedPixels": 14364,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 37541,
+        "mobileAdjacentChangedPixels": [
+          0,
+          19128,
+          20310,
+          37797,
+          40507,
+          19458,
+          18649
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "drink": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 43547,
+        "mobileAdjacentChangedPixels": [
+          18649,
+          19458,
+          40507,
+          37797,
+          20310,
+          19128,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 20,
+        "durationMs": 3000,
+        "mobilePeakChangedPixels": 18321,
+        "mobileAdjacentChangedPixels": [
+          12725,
+          15497,
+          16185,
+          16355,
+          16409,
+          15993,
+          15647,
+          15582,
+          14503,
+          12762,
+          12762,
+          14503,
+          15582,
+          15647,
+          15993,
+          16409,
+          16355,
+          16185,
+          15497
+        ],
+        "loopSeamChangedPixels": 12725,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 37541,
+        "mobileAdjacentChangedPixels": [
+          0,
+          19128,
+          20310,
+          37797,
+          40507,
+          19458,
+          18649
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "scratch": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 41065,
+        "mobileAdjacentChangedPixels": [
+          18649,
+          19458,
+          40507,
+          34936,
+          3016,
+          3313,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 16,
+        "durationMs": 1920,
+        "mobilePeakChangedPixels": 8187,
+        "mobileAdjacentChangedPixels": [
+          4391,
+          5877,
+          6214,
+          6333,
+          6299,
+          6086,
+          5585,
+          4427,
+          4427,
+          5585,
+          6086,
+          6299,
+          6333,
+          6214,
+          5877
+        ],
+        "loopSeamChangedPixels": 4391,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 35169,
+        "mobileAdjacentChangedPixels": [
+          0,
+          3313,
+          3016,
+          34936,
+          40507,
+          19458,
+          18649
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "pet": {
+      "once": {
+        "frames": 16,
+        "durationMs": 2400,
+        "mobilePeakChangedPixels": 26555,
+        "mobileAdjacentChangedPixels": [
+          18642,
+          21907,
+          22726,
+          23179,
+          23321,
+          22936,
+          21530,
+          0,
+          21530,
+          22936,
+          23321,
+          23180,
+          22728,
+          21907,
+          18642
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    }
+  },
+  "cat-02": {
+    "eat": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 49070,
+        "mobileAdjacentChangedPixels": [
+          22086,
+          22905,
+          48332,
+          39786,
+          22365,
+          21102,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          276,
+          276,
+          276,
+          276
+        ]
+      },
+      "loop": {
+        "frames": 16,
+        "durationMs": 2400,
+        "mobilePeakChangedPixels": 20241,
+        "mobileAdjacentChangedPixels": [
+          16408,
+          18508,
+          18761,
+          18394,
+          18298,
+          17862,
+          17009,
+          15462,
+          15462,
+          17009,
+          17862,
+          18298,
+          18394,
+          18761,
+          18508
+        ],
+        "loopSeamChangedPixels": 16408,
+        "opaqueBottomRows": [
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 40095,
+        "mobileAdjacentChangedPixels": [
+          0,
+          21102,
+          22365,
+          39786,
+          48332,
+          22905,
+          22086
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          276,
+          276,
+          276,
+          276,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "drink": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 49070,
+        "mobileAdjacentChangedPixels": [
+          22086,
+          22905,
+          48332,
+          39786,
+          22365,
+          21102,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          276,
+          276,
+          276,
+          276
+        ]
+      },
+      "loop": {
+        "frames": 20,
+        "durationMs": 3000,
+        "mobilePeakChangedPixels": 20221,
+        "mobileAdjacentChangedPixels": [
+          14713,
+          17686,
+          18203,
+          18365,
+          18391,
+          17883,
+          17541,
+          17443,
+          16348,
+          14746,
+          14746,
+          16348,
+          17443,
+          17541,
+          17883,
+          18391,
+          18365,
+          18203,
+          17686
+        ],
+        "loopSeamChangedPixels": 14713,
+        "opaqueBottomRows": [
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276,
+          276
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 40095,
+        "mobileAdjacentChangedPixels": [
+          0,
+          21102,
+          22365,
+          39786,
+          48332,
+          22905,
+          22086
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          276,
+          276,
+          276,
+          276,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "scratch": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 48031,
+        "mobileAdjacentChangedPixels": [
+          22086,
+          22905,
+          48332,
+          37454,
+          3797,
+          4152,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 16,
+        "durationMs": 1920,
+        "mobilePeakChangedPixels": 9109,
+        "mobileAdjacentChangedPixels": [
+          5471,
+          6805,
+          7153,
+          7241,
+          7218,
+          7051,
+          6617,
+          5545,
+          5545,
+          6617,
+          7051,
+          7218,
+          7241,
+          7153,
+          6805
+        ],
+        "loopSeamChangedPixels": 5471,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 37653,
+        "mobileAdjacentChangedPixels": [
+          0,
+          4152,
+          3797,
+          37454,
+          48332,
+          22905,
+          22086
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "pet": {
+      "once": {
+        "frames": 16,
+        "durationMs": 2400,
+        "mobilePeakChangedPixels": 32743,
+        "mobileAdjacentChangedPixels": [
+          24562,
+          28525,
+          29320,
+          29834,
+          29999,
+          29532,
+          27924,
+          0,
+          27924,
+          29532,
+          29999,
+          29832,
+          29322,
+          28525,
+          24562
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    }
+  },
+  "cat-03": {
+    "eat": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 37024,
+        "mobileAdjacentChangedPixels": [
+          15093,
+          15659,
+          36170,
+          30796,
+          16983,
+          15734,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 16,
+        "durationMs": 2400,
+        "mobilePeakChangedPixels": 15096,
+        "mobileAdjacentChangedPixels": [
+          11796,
+          13420,
+          13580,
+          13361,
+          13285,
+          12846,
+          12207,
+          10994,
+          10994,
+          12207,
+          12846,
+          13285,
+          13361,
+          13580,
+          13420
+        ],
+        "loopSeamChangedPixels": 11796,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 30807,
+        "mobileAdjacentChangedPixels": [
+          0,
+          15734,
+          16983,
+          30796,
+          36170,
+          15659,
+          15093
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "drink": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 37024,
+        "mobileAdjacentChangedPixels": [
+          15093,
+          15659,
+          36170,
+          30796,
+          16983,
+          15734,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 20,
+        "durationMs": 3000,
+        "mobilePeakChangedPixels": 15046,
+        "mobileAdjacentChangedPixels": [
+          10587,
+          12729,
+          13144,
+          13309,
+          13306,
+          12984,
+          12689,
+          12553,
+          11744,
+          10449,
+          10449,
+          11744,
+          12553,
+          12689,
+          12984,
+          13306,
+          13309,
+          13144,
+          12729
+        ],
+        "loopSeamChangedPixels": 10587,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 30807,
+        "mobileAdjacentChangedPixels": [
+          0,
+          15734,
+          16983,
+          30796,
+          36170,
+          15659,
+          15093
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "scratch": {
+      "enter": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 36666,
+        "mobileAdjacentChangedPixels": [
+          15093,
+          15659,
+          36170,
+          31015,
+          2358,
+          2670,
+          0
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "loop": {
+        "frames": 16,
+        "durationMs": 1920,
+        "mobilePeakChangedPixels": 6442,
+        "mobileAdjacentChangedPixels": [
+          3292,
+          4498,
+          4809,
+          4889,
+          4907,
+          4689,
+          4310,
+          3368,
+          3368,
+          4310,
+          4689,
+          4907,
+          4889,
+          4809,
+          4498
+        ],
+        "loopSeamChangedPixels": 3292,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      },
+      "exit": {
+        "frames": 8,
+        "durationMs": 800,
+        "mobilePeakChangedPixels": 31146,
+        "mobileAdjacentChangedPixels": [
+          0,
+          2670,
+          2358,
+          31015,
+          36170,
+          15659,
+          15093
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    },
+    "pet": {
+      "once": {
+        "frames": 16,
+        "durationMs": 2400,
+        "mobilePeakChangedPixels": 24053,
+        "mobileAdjacentChangedPixels": [
+          17433,
+          20059,
+          20802,
+          21263,
+          21506,
+          21251,
+          20036,
+          0,
+          20036,
+          21251,
+          21506,
+          21258,
+          20803,
+          20059,
+          17433
+        ],
+        "loopSeamChangedPixels": null,
+        "opaqueBottomRows": [
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275,
+          275
+        ]
+      }
+    }
+  }
+}

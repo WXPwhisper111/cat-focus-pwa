@@ -1,0 +1,5 @@
+.timer-modes { display: flex; gap: 4px; background: #f4e7d8; padding: 4px; border-radius: 15px; margin-bottom: 22px; }
+.timer-modes button { flex: 1; border-color: transparent; background: transparent; padding: 9px; color: #8b715e; }
+.timer-modes button[aria-pressed=true] { background: #fffaf3; color: #b7652d; box-shadow: 0 2px 6px #6f4d2215; }
+.timer-mode-label { font-size: 14px; font-weight: 800; color: #8b715e; margin-bottom: 12px; }
+.clock.long-clock { font-size: clamp(28px, 10vw, 52px); letter-spacing: -.03em; }

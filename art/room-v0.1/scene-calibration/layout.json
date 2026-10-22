@@ -1,0 +1,39 @@
+{
+  "version": "0.1",
+  "canvas": [1024, 768],
+  "coordinates": "top-left origin; rectangles [x,y,width,height]; bounds are half-open",
+  "sourceFloorTop": 512,
+  "logicFloorTop": 520,
+  "zones": [
+    {"id":"sleep","name":"睡觉区","rect":[20,540,256,196],"color":"#9c71c6","label":[30,545]},
+    {"id":"activity","name":"活动区 · 三猫预留","rect":[288,520,456,216],"color":"#3a977c","label":[298,525]},
+    {"id":"food","name":"吃饭区","rect":[760,640,216,96],"color":"#b77524","label":[770,710]},
+    {"id":"play","name":"玩耍区","rect":[760,520,240,108],"color":"#3d79b1","label":[770,604]}
+  ],
+  "futureClimberEnvelope":{"rect":[760,292,240,336],"color":"#3d79b1","label":"未来猫爬架体量预留"},
+  "foodStandingSpace":{"rect":[772,696,192,40]},
+  "transit":{"rect":[20,740,1004,28],"name":"通行带（逻辑落脚范围）","standingAllowed":false},
+  "wcExit":{"rect":[992,680,32,88],"triggerPoint":[1008,754],"visibleLitterBox":false},
+  "catReferencePoints":[
+    {"id":1,"feet":[512,716],"footprint":[468,698,88,18],"spriteRect":[440,572,144,144],"active":true},
+    {"id":2,"feet":[365,688],"footprint":[321,670,88,18],"spriteRect":[293,544,144,144],"active":false},
+    {"id":3,"feet":[659,688],"footprint":[615,670,88,18],"spriteRect":[587,544,144,144],"active":false}
+  ],
+  "layers":[
+    {"id":"base","file":"room_base.png","rect":[0,0,1024,768]},
+    {"id":"outside","file":"window_outside_day.png","rect":[97.5,81.25,309,210]},
+    {"id":"windowFrame","file":"window_frame.png","rect":[60,40,384,288]},
+    {"id":"curtains","file":"window_curtains.png","rect":[60,40,384,288]},
+    {"id":"wallArt","file":"room_wall_art.png","rect":[744,24,256,192]},
+    {"id":"shelf","file":"room_wall_shelf.png","rect":[484,172,240,180]},
+    {"id":"shelfDecor","file":"room_shelf_decor.png","rect":[484,115.75,240,180]},
+    {"id":"plant","file":"room_plant.png","rect":[36,435,140,140]},
+    {"id":"bed","file":"zone_sleep_bed_basic.png","rect":[0,492,288,216],"zone":"sleep"},
+    {"id":"rug","file":"zone_activity_rug_basic.png","rect":[256,536,512,256],"zone":"activity"},
+    {"id":"scratcher","file":"zone_play_scratcher_basic.png","rect":[772,440,224,224],"zone":"play"},
+    {"id":"foodBowl","file":"zone_food_bowl_basic.png","rect":[755,607,128,96],"zone":"food"},
+    {"id":"waterBowl","file":"zone_water_bowl_basic.png","rect":[850,607,128,96],"zone":"food"},
+    {"id":"catShadow","primitive":"pixel-contact-shadow","rect":[479,707,68,10]},
+    {"id":"cat","file":"../cat/idle/idle_01.png","assetPath":"../../../public/cat/idle/idle_01.png","rect":[440,572,144,144],"zone":"activity"}
+  ]
+}

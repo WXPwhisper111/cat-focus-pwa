@@ -1,0 +1,14 @@
+{
+  "name": "猫咪专注",
+  "short_name": "猫咪专注",
+  "description": "陪猫咪一起专注，离线记录每一分钟。",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5ede0",
+  "theme_color": "#f5ede0",
+  "icons": [
+    { "src": "./icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "./icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

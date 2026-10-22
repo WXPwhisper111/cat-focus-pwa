@@ -1,0 +1,120 @@
+[
+  {
+    "width": 390,
+    "id": "cat-01",
+    "dimensions": [
+      348,
+      176,
+      348
+    ],
+    "fade": "220/220",
+    "actions": 5,
+    "pet": "instant",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "id": "cat-02",
+    "dimensions": [
+      348,
+      176,
+      348
+    ],
+    "fade": "220/220",
+    "actions": 5,
+    "pet": "instant",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "id": "cat-03",
+    "dimensions": [
+      348,
+      176,
+      348
+    ],
+    "fade": "220/220",
+    "actions": 5,
+    "pet": "instant",
+    "errors": []
+  },
+  {
+    "width": 390,
+    "autonomous": {
+      "cat-01": {
+        "action": "idle",
+        "zone": "activity",
+        "phase": "playing"
+      },
+      "cat-02": {
+        "action": "idle",
+        "zone": "activity",
+        "phase": "playing"
+      },
+      "cat-03": {
+        "action": "idle",
+        "zone": "activity",
+        "phase": "fading-out"
+      }
+    }
+  },
+  {
+    "width": 430,
+    "id": "cat-01",
+    "dimensions": [
+      388,
+      176,
+      384
+    ],
+    "fade": "220/220",
+    "actions": 5,
+    "pet": "instant",
+    "errors": []
+  },
+  {
+    "width": 430,
+    "id": "cat-02",
+    "dimensions": [
+      388,
+      176,
+      384
+    ],
+    "fade": "220/220",
+    "actions": 5,
+    "pet": "instant",
+    "errors": []
+  },
+  {
+    "width": 430,
+    "id": "cat-03",
+    "dimensions": [
+      388,
+      176,
+      384
+    ],
+    "fade": "220/220",
+    "actions": 5,
+    "pet": "instant",
+    "errors": []
+  },
+  {
+    "width": 430,
+    "autonomous": {
+      "cat-01": {
+        "action": "idle",
+        "zone": "activity",
+        "phase": "playing"
+      },
+      "cat-02": {
+        "action": "idle",
+        "zone": "activity",
+        "phase": "playing"
+      },
+      "cat-03": {
+        "action": "idle",
+        "zone": "activity",
+        "phase": "fading-out"
+      }
+    }
+  }
+]

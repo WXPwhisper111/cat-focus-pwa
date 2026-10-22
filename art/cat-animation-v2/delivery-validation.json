@@ -1,0 +1,50 @@
+{
+  "cats": [
+    {
+      "cat": "cat-01",
+      "animations": {
+        "idle": {
+          "frameCount": 63,
+          "cycleDurationMs": 9260,
+          "loopSeamContourMaxNativePx": 1
+        },
+        "sleep_loop": {
+          "frameCount": 32,
+          "cycleDurationMs": 4800,
+          "loopSeamContourMaxNativePx": 0
+        }
+      }
+    },
+    {
+      "cat": "cat-02",
+      "animations": {
+        "idle": {
+          "frameCount": 63,
+          "cycleDurationMs": 9260,
+          "loopSeamContourMaxNativePx": 1
+        },
+        "sleep_loop": {
+          "frameCount": 32,
+          "cycleDurationMs": 4800,
+          "loopSeamContourMaxNativePx": 0
+        }
+      }
+    },
+    {
+      "cat": "cat-03",
+      "animations": {
+        "idle": {
+          "frameCount": 63,
+          "cycleDurationMs": 9260,
+          "loopSeamContourMaxNativePx": 1
+        },
+        "sleep_loop": {
+          "frameCount": 32,
+          "cycleDurationMs": 4800,
+          "loopSeamContourMaxNativePx": 0
+        }
+      }
+    }
+  ],
+  "protectedSourcesUnchanged": true
+}

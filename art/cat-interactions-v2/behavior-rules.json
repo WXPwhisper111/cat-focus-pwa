@@ -1,0 +1,48 @@
+{
+  "version": "interactions-v2",
+  "fadeMs": {
+    "out": 220,
+    "in": 220
+  },
+  "commandMinimumMs": {
+    "eat": 12000,
+    "drink": 8000,
+    "scratch": 10000,
+    "sleep": 60000,
+    "pet": 2400
+  },
+  "autonomous": {
+    "weights": {
+      "idle": 45,
+      "sleep": 25,
+      "eat": 10,
+      "drink": 8,
+      "scratch": 12
+    },
+    "idleDurationMs": [
+      20000,
+      40000
+    ],
+    "sleepDurationMs": [
+      60000,
+      90000
+    ],
+    "postCommandIdleMs": 5000,
+    "avoidImmediateRepeat": true
+  },
+  "capacity": {
+    "activity": 3,
+    "sleep": 1,
+    "food": 1,
+    "play": 1
+  },
+  "locations": {
+    "idle": "activity",
+    "sleep": "sleep",
+    "eat": "food",
+    "drink": "food",
+    "scratch": "play"
+  },
+  "instructionPriority": "latest-command-wins-per-cat; manual-owner-waits; autonomous-owner-yields",
+  "timing": "loop cycles finish at first boundary at or after minimum; page-hidden pauses scene time"
+}

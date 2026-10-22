@@ -1,0 +1,428 @@
+[
+  {
+    "viewportWidth": 390,
+    "cat": "cat-01",
+    "action": "eat",
+    "durationMs": 6400,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:3",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-01",
+    "action": "drink",
+    "durationMs": 7600,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:19",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-01",
+    "action": "scratch",
+    "durationMs": 5440,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:8",
+      "loop:14",
+      "loop:7",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-01",
+    "action": "pet",
+    "durationMs": 2400,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "once:1",
+      "once:4",
+      "once:7",
+      "once:10",
+      "once:13",
+      "once:16"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-02",
+    "action": "eat",
+    "durationMs": 6400,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:3",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-02",
+    "action": "drink",
+    "durationMs": 7600,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:19",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-02",
+    "action": "scratch",
+    "durationMs": 5440,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:8",
+      "loop:14",
+      "loop:7",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-02",
+    "action": "pet",
+    "durationMs": 2400,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "once:1",
+      "once:4",
+      "once:7",
+      "once:10",
+      "once:13",
+      "once:16"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-03",
+    "action": "eat",
+    "durationMs": 6400,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:3",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-03",
+    "action": "drink",
+    "durationMs": 7600,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:19",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-03",
+    "action": "scratch",
+    "durationMs": 5440,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:8",
+      "loop:14",
+      "loop:7",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 390,
+    "cat": "cat-03",
+    "action": "pet",
+    "durationMs": 2400,
+    "roomWidth": 348,
+    "focusWidth": 176,
+    "checkpoints": [
+      "once:1",
+      "once:4",
+      "once:7",
+      "once:10",
+      "once:13",
+      "once:16"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-01",
+    "action": "eat",
+    "durationMs": 6400,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:3",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-01",
+    "action": "drink",
+    "durationMs": 7600,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:19",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-01",
+    "action": "scratch",
+    "durationMs": 5440,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:8",
+      "loop:14",
+      "loop:7",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-01",
+    "action": "pet",
+    "durationMs": 2400,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "once:1",
+      "once:4",
+      "once:7",
+      "once:10",
+      "once:13",
+      "once:16"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-02",
+    "action": "eat",
+    "durationMs": 6400,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:3",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-02",
+    "action": "drink",
+    "durationMs": 7600,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:19",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-02",
+    "action": "scratch",
+    "durationMs": 5440,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:8",
+      "loop:14",
+      "loop:7",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-02",
+    "action": "pet",
+    "durationMs": 2400,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "once:1",
+      "once:4",
+      "once:7",
+      "once:10",
+      "once:13",
+      "once:16"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-03",
+    "action": "eat",
+    "durationMs": 6400,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:3",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-03",
+    "action": "drink",
+    "durationMs": 7600,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:7",
+      "loop:12",
+      "loop:19",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-03",
+    "action": "scratch",
+    "durationMs": 5440,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "enter:1",
+      "enter:8",
+      "loop:3",
+      "loop:8",
+      "loop:14",
+      "loop:7",
+      "exit:8"
+    ],
+    "errors": []
+  },
+  {
+    "viewportWidth": 430,
+    "cat": "cat-03",
+    "action": "pet",
+    "durationMs": 2400,
+    "roomWidth": 388,
+    "focusWidth": 176,
+    "checkpoints": [
+      "once:1",
+      "once:4",
+      "once:7",
+      "once:10",
+      "once:13",
+      "once:16"
+    ],
+    "errors": []
+  }
+]

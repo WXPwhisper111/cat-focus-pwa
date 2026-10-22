@@ -1,0 +1,225 @@
+{
+  "playback": [
+    {
+      "width": 390,
+      "state": "idle",
+      "cat": "cat-01",
+      "elapsedMs": 19000,
+      "observedLoops": 2,
+      "paintEvents": 130
+    },
+    {
+      "width": 390,
+      "state": "idle",
+      "cat": "cat-02",
+      "elapsedMs": 19000,
+      "observedLoops": 2,
+      "paintEvents": 130
+    },
+    {
+      "width": 390,
+      "state": "idle",
+      "cat": "cat-03",
+      "elapsedMs": 19000,
+      "observedLoops": 2,
+      "paintEvents": 130
+    },
+    {
+      "width": 390,
+      "state": "sleep_loop",
+      "cat": "cat-01",
+      "elapsedMs": 10000,
+      "observedLoops": 2,
+      "paintEvents": 68
+    },
+    {
+      "width": 390,
+      "state": "sleep_loop",
+      "cat": "cat-02",
+      "elapsedMs": 10000,
+      "observedLoops": 2,
+      "paintEvents": 68
+    },
+    {
+      "width": 390,
+      "state": "sleep_loop",
+      "cat": "cat-03",
+      "elapsedMs": 10000,
+      "observedLoops": 2,
+      "paintEvents": 68
+    },
+    {
+      "width": 430,
+      "state": "idle",
+      "cat": "cat-01",
+      "elapsedMs": 19000,
+      "observedLoops": 2,
+      "paintEvents": 130
+    },
+    {
+      "width": 430,
+      "state": "idle",
+      "cat": "cat-02",
+      "elapsedMs": 19000,
+      "observedLoops": 2,
+      "paintEvents": 130
+    },
+    {
+      "width": 430,
+      "state": "idle",
+      "cat": "cat-03",
+      "elapsedMs": 19000,
+      "observedLoops": 2,
+      "paintEvents": 130
+    },
+    {
+      "width": 430,
+      "state": "sleep_loop",
+      "cat": "cat-01",
+      "elapsedMs": 10000,
+      "observedLoops": 2,
+      "paintEvents": 66
+    },
+    {
+      "width": 430,
+      "state": "sleep_loop",
+      "cat": "cat-02",
+      "elapsedMs": 10000,
+      "observedLoops": 2,
+      "paintEvents": 66
+    },
+    {
+      "width": 430,
+      "state": "sleep_loop",
+      "cat": "cat-03",
+      "elapsedMs": 10000,
+      "observedLoops": 2,
+      "paintEvents": 66
+    }
+  ],
+  "dimensions": [
+    {
+      "width": 390,
+      "state": "idle",
+      "cat": "cat-01",
+      "roomWidth": 348,
+      "catCanvasCss": 48.9375,
+      "focusWidth": 176
+    },
+    {
+      "width": 390,
+      "state": "idle",
+      "cat": "cat-02",
+      "roomWidth": 348,
+      "catCanvasCss": 48.9375,
+      "focusWidth": 176
+    },
+    {
+      "width": 390,
+      "state": "idle",
+      "cat": "cat-03",
+      "roomWidth": 348,
+      "catCanvasCss": 48.9375,
+      "focusWidth": 176
+    },
+    {
+      "width": 390,
+      "state": "sleep_loop",
+      "cat": "cat-01",
+      "roomWidth": 348,
+      "catCanvasCss": 48.9375,
+      "focusWidth": 176
+    },
+    {
+      "width": 390,
+      "state": "sleep_loop",
+      "cat": "cat-02",
+      "roomWidth": 348,
+      "catCanvasCss": 48.9375,
+      "focusWidth": 176
+    },
+    {
+      "width": 390,
+      "state": "sleep_loop",
+      "cat": "cat-03",
+      "roomWidth": 348,
+      "catCanvasCss": 48.9375,
+      "focusWidth": 176
+    },
+    {
+      "width": 430,
+      "state": "idle",
+      "cat": "cat-01",
+      "roomWidth": 388,
+      "catCanvasCss": 54.5625,
+      "focusWidth": 176
+    },
+    {
+      "width": 430,
+      "state": "idle",
+      "cat": "cat-02",
+      "roomWidth": 388,
+      "catCanvasCss": 54.5625,
+      "focusWidth": 176
+    },
+    {
+      "width": 430,
+      "state": "idle",
+      "cat": "cat-03",
+      "roomWidth": 388,
+      "catCanvasCss": 54.5625,
+      "focusWidth": 176
+    },
+    {
+      "width": 430,
+      "state": "sleep_loop",
+      "cat": "cat-01",
+      "roomWidth": 388,
+      "catCanvasCss": 54.5625,
+      "focusWidth": 176
+    },
+    {
+      "width": 430,
+      "state": "sleep_loop",
+      "cat": "cat-02",
+      "roomWidth": 388,
+      "catCanvasCss": 54.5625,
+      "focusWidth": 176
+    },
+    {
+      "width": 430,
+      "state": "sleep_loop",
+      "cat": "cat-03",
+      "roomWidth": 388,
+      "catCanvasCss": 54.5625,
+      "focusWidth": 176
+    }
+  ],
+  "screenshots": [
+    "cat-01-idle-390-rest.png",
+    "cat-01-idle-390-peak.png",
+    "cat-02-idle-390-rest.png",
+    "cat-02-idle-390-peak.png",
+    "cat-03-idle-390-rest.png",
+    "cat-03-idle-390-peak.png",
+    "cat-01-sleep_loop-390-rest.png",
+    "cat-01-sleep_loop-390-peak.png",
+    "cat-02-sleep_loop-390-rest.png",
+    "cat-02-sleep_loop-390-peak.png",
+    "cat-03-sleep_loop-390-rest.png",
+    "cat-03-sleep_loop-390-peak.png",
+    "cat-01-idle-430-rest.png",
+    "cat-01-idle-430-peak.png",
+    "cat-02-idle-430-rest.png",
+    "cat-02-idle-430-peak.png",
+    "cat-03-idle-430-rest.png",
+    "cat-03-idle-430-peak.png",
+    "cat-01-sleep_loop-430-rest.png",
+    "cat-01-sleep_loop-430-peak.png",
+    "cat-02-sleep_loop-430-rest.png",
+    "cat-02-sleep_loop-430-peak.png",
+    "cat-03-sleep_loop-430-rest.png",
+    "cat-03-sleep_loop-430-peak.png"
+  ],
+  "errors": []
+}

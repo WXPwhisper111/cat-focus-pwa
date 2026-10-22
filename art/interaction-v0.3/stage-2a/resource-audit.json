@@ -1,0 +1,1567 @@
+{
+  "version": "interactions-v2",
+  "clips": 12,
+  "originalFrames": 204,
+  "mobileFrames": 204,
+  "bytes": {
+    "png": 193996294,
+    "webp": 10662056
+  },
+  "errors": [],
+  "rows": [
+    {
+      "catId": "orange-white",
+      "sourceCatId": "cat-01",
+      "behavior": "eat",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-01/animations.json",
+      "frames": 16,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 2400,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "spritePoint": [
+          1069,
+          1149
+        ],
+        "targetItem": "foodBowl",
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "targetRoomPoint": [
+          819,
+          652
+        ],
+        "roomSpriteRect": [
+          696.24,
+          520.06,
+          144,
+          144
+        ],
+        "contactFrame": 8
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/eat/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/eat/loop/loop_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "orange-white",
+      "sourceCatId": "cat-01",
+      "behavior": "drink",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-01/animations.json",
+      "frames": 20,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 3000,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "spritePoint": [
+          1069,
+          1144
+        ],
+        "targetItem": "waterBowl",
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "targetRoomPoint": [
+          914,
+          652
+        ],
+        "roomSpriteRect": [
+          791.24,
+          520.63,
+          144,
+          144
+        ],
+        "contactFrame": 10
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_016.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_017.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_017.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_018.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_018.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_019.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_019.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/drink/loop/loop_020.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/drink/loop/loop_020.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "orange-white",
+      "sourceCatId": "cat-01",
+      "behavior": "scratch",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-01/animations.json",
+      "frames": 16,
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "totalMs": 1920,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "front-paw",
+        "spritePoint": [
+          1153,
+          498
+        ],
+        "targetItem": "scratcher",
+        "itemDisplayPoint": [
+          112,
+          98
+        ],
+        "targetRoomPoint": [
+          884,
+          538
+        ],
+        "roomSpriteRect": [
+          751.6,
+          480.81,
+          144,
+          144
+        ],
+        "contactFrame": 8
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/scratch/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/scratch/loop/loop_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "orange-white",
+      "sourceCatId": "cat-01",
+      "behavior": "pet",
+      "phase": "once",
+      "manifest": "public/cat-interactions-v2/cat-01/animations.json",
+      "frames": 16,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 2400,
+      "loop": false,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": null,
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_001.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_002.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_003.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_004.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_005.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_006.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_007.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_008.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_009.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_010.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_011.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_012.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_013.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_014.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_015.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-01/pet/once/once_016.png",
+          "webp": "public/cat-interactions-v2/cat-01/mobile/pet/once/once_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-02",
+      "sourceCatId": "cat-02",
+      "behavior": "eat",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-02/animations.json",
+      "frames": 16,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 2400,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "spritePoint": [
+          1070,
+          1143
+        ],
+        "targetItem": "foodBowl",
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "targetRoomPoint": [
+          819,
+          652
+        ],
+        "roomSpriteRect": [
+          696.13,
+          520.75,
+          144,
+          144
+        ],
+        "contactFrame": 8
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/eat/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/eat/loop/loop_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-02",
+      "sourceCatId": "cat-02",
+      "behavior": "drink",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-02/animations.json",
+      "frames": 20,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 3000,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "spritePoint": [
+          1070,
+          1137
+        ],
+        "targetItem": "waterBowl",
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "targetRoomPoint": [
+          914,
+          652
+        ],
+        "roomSpriteRect": [
+          791.13,
+          521.44,
+          144,
+          144
+        ],
+        "contactFrame": 10
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_016.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_017.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_017.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_018.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_018.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_019.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_019.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/drink/loop/loop_020.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/drink/loop/loop_020.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-02",
+      "sourceCatId": "cat-02",
+      "behavior": "scratch",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-02/animations.json",
+      "frames": 16,
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "totalMs": 1920,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "front-paw",
+        "spritePoint": [
+          1152,
+          449
+        ],
+        "targetItem": "scratcher",
+        "itemDisplayPoint": [
+          112,
+          98
+        ],
+        "targetRoomPoint": [
+          884,
+          538
+        ],
+        "roomSpriteRect": [
+          751.71,
+          486.44,
+          144,
+          144
+        ],
+        "contactFrame": 8
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/scratch/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/scratch/loop/loop_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-02",
+      "sourceCatId": "cat-02",
+      "behavior": "pet",
+      "phase": "once",
+      "manifest": "public/cat-interactions-v2/cat-02/animations.json",
+      "frames": 16,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 2400,
+      "loop": false,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": null,
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_001.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_002.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_003.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_004.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_005.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_006.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_007.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_008.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_009.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_010.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_011.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_012.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_013.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_014.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_015.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-02/pet/once/once_016.png",
+          "webp": "public/cat-interactions-v2/cat-02/mobile/pet/once/once_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-03",
+      "sourceCatId": "cat-03",
+      "behavior": "eat",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-03/animations.json",
+      "frames": 16,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 2400,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "spritePoint": [
+          1070,
+          1124
+        ],
+        "targetItem": "foodBowl",
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "targetRoomPoint": [
+          819,
+          652
+        ],
+        "roomSpriteRect": [
+          696.13,
+          522.93,
+          144,
+          144
+        ],
+        "contactFrame": 8
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/eat/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/eat/loop/loop_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-03",
+      "sourceCatId": "cat-03",
+      "behavior": "drink",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-03/animations.json",
+      "frames": 20,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 3000,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "spritePoint": [
+          1070,
+          1115
+        ],
+        "targetItem": "waterBowl",
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "targetRoomPoint": [
+          914,
+          652
+        ],
+        "roomSpriteRect": [
+          791.13,
+          523.96,
+          144,
+          144
+        ],
+        "contactFrame": 10
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_016.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_017.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_017.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_018.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_018.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_019.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_019.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/drink/loop/loop_020.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/drink/loop/loop_020.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-03",
+      "sourceCatId": "cat-03",
+      "behavior": "scratch",
+      "phase": "loop",
+      "manifest": "public/cat-interactions-v2/cat-03/animations.json",
+      "frames": 16,
+      "durationMs": [
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120,
+        120
+      ],
+      "totalMs": 1920,
+      "loop": true,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": {
+        "kind": "front-paw",
+        "spritePoint": [
+          1123,
+          535
+        ],
+        "targetItem": "scratcher",
+        "itemDisplayPoint": [
+          112,
+          98
+        ],
+        "targetRoomPoint": [
+          884,
+          538
+        ],
+        "roomSpriteRect": [
+          755.04,
+          476.56,
+          144,
+          144
+        ],
+        "contactFrame": 8
+      },
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_001.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_002.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_003.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_004.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_005.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_006.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_007.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_008.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_009.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_010.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_011.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_012.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_013.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_014.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_015.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/scratch/loop/loop_016.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/scratch/loop/loop_016.webp"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "catId": "cat-03",
+      "sourceCatId": "cat-03",
+      "behavior": "pet",
+      "phase": "once",
+      "manifest": "public/cat-interactions-v2/cat-03/animations.json",
+      "frames": 16,
+      "durationMs": [
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150,
+        150
+      ],
+      "totalMs": 2400,
+      "loop": false,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "mobileCanvas": [
+        288,
+        288
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "contact": null,
+      "files": [
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_001.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_001.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_002.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_002.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_003.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_003.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_004.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_004.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_005.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_005.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_006.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_006.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_007.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_007.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_008.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_008.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_009.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_009.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_010.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_010.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_011.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_011.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_012.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_012.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_013.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_013.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_014.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_014.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_015.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_015.webp"
+        },
+        {
+          "png": "public/cat-interactions-v2/cat-03/pet/once/once_016.png",
+          "webp": "public/cat-interactions-v2/cat-03/mobile/pet/once/once_016.webp"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

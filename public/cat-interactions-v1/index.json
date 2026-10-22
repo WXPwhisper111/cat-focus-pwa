@@ -1,0 +1,20 @@
+{
+  "version": "interactions-v1",
+  "cats": [
+    {
+      "id": "cat-01",
+      "name": "éÙ°×¶ÌÃ«Ã¨ V4",
+      "manifest": "cat-01/animations.json"
+    },
+    {
+      "id": "cat-02",
+      "name": "À¶ÑÛ»Ò°×³¤Ã«Ã¨",
+      "manifest": "cat-02/animations.json"
+    },
+    {
+      "id": "cat-03",
+      "name": "ÄÌÓÍ³¤Ã«Ã¨",
+      "manifest": "cat-03/animations.json"
+    }
+  ]
+}

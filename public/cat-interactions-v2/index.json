@@ -1,0 +1,20 @@
+{
+  "version": "interactions-v2",
+  "cats": [
+    {
+      "id": "cat-01",
+      "applicationCatId": "orange-white",
+      "manifest": "cat-01/animations.json"
+    },
+    {
+      "id": "cat-02",
+      "applicationCatId": "cat-02",
+      "manifest": "cat-02/animations.json"
+    },
+    {
+      "id": "cat-03",
+      "applicationCatId": "cat-03",
+      "manifest": "cat-03/animations.json"
+    }
+  ]
+}

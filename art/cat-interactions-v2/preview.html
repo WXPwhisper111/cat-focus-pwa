@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>猫咪小屋 · 交互动画 V2 淡出换位预览</title>
+<link rel="stylesheet" href="../../src/style.css">
+<style>
+body{margin:0}main{padding:16px 20px 30px}h1{font-size:21px;margin:0 0 8px}p{font-size:13px;line-height:1.55;color:#806a58}.controls{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}.controls button,.controls select{font:inherit;font-size:13px;padding:8px;border:1px solid #ddc9b2;border-radius:10px;background:#fffaf3;color:#49372f}.controls button:disabled{opacity:.5}.controls label{font-size:13px;display:flex;align-items:center;gap:4px}.card{border:1px solid #ebdccb;border-radius:14px;background:#fffaf3;overflow:hidden;margin:8px 0 14px}.scene{display:block;width:100%;height:auto;aspect-ratio:4/3;image-rendering:pixelated}.focus-card{min-height:205px;display:flex;align-items:center;justify-content:center;background:#fff8ea}.focus{display:block;width:176px;height:176px;image-rendering:pixelated}.zoom{display:block;width:min(384px,100%);height:auto;aspect-ratio:1;image-rendering:pixelated;margin:auto}.caption{font-size:12px;color:#7a6553;margin:10px 0 4px}.metric{font:12px ui-monospace,monospace;color:#765d4d;white-space:pre-wrap}.error{color:#a33;font-size:13px}
+</style>
+<main>
+<h1>三只猫交互动画 V2</h1>
+<p>跨功能区仅让猫咪淡出、换位、淡入；抚摸原地即时回应。预览可模拟指令、三猫占用和自主行为，当前应用页面不会因此启用交互。</p>
+<div class="controls">
+<select id="catChoice" aria-label="指定猫咪"><option value="cat-01">橘白短毛</option><option value="cat-02">灰白长毛</option><option value="cat-03">奶油长毛</option></select>
+<button data-command="eat">吃饭</button><button data-command="drink">喝水</button><button data-command="scratch">抓挠</button><button data-command="sleep">睡觉</button><button data-command="pet">抚摸</button>
+</div>
+<div class="controls"><label><input id="threeCats" type="checkbox" checked>三猫同屏</label><label><input id="autonomy" type="checkbox" checked>自主行为</label><label><input id="marker" type="checkbox">接触点</label><label>预览速度 <select id="speed"><option value="1">1×</option><option value="10">10×</option><option value="30">30×</option></select></label></div>
+<div id="metric" class="metric" role="status"></div><div id="error" class="error" role="alert"></div>
+<div class="caption">房间实尺 · 现有 1024 × 768 布局</div><div class="card"><canvas id="room" class="scene" width="1024" height="768"></canvas></div>
+<div class="caption">所选猫的专注卡实尺 · 176 像素</div><div class="card focus-card"><canvas id="focus" class="focus" width="288" height="288"></canvas></div>
+<div class="caption">放大预览 · 查看动作和透明边缘</div><div class="card"><canvas id="zoom" class="zoom" width="384" height="384"></canvas></div>
+</main>
+<script type="module" src="./preview.js"></script>
+</html>

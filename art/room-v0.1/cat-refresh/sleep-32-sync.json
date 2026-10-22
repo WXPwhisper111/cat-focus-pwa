@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-21",
+  "cats": [
+    {
+      "id": "cat-01",
+      "idle": {
+        "frames": 63,
+        "ms": 9260,
+        "sourceBuildMismatches": 0
+      },
+      "sleep_loop": {
+        "frames": 32,
+        "ms": 4800,
+        "sourceBuildMismatches": 0
+      }
+    },
+    {
+      "id": "cat-02",
+      "idle": {
+        "frames": 63,
+        "ms": 9260,
+        "sourceBuildMismatches": 0
+      },
+      "sleep_loop": {
+        "frames": 32,
+        "ms": 4800,
+        "sourceBuildMismatches": 0
+      }
+    },
+    {
+      "id": "cat-03",
+      "idle": {
+        "frames": 63,
+        "ms": 9260,
+        "sourceBuildMismatches": 0
+      },
+      "sleep_loop": {
+        "frames": 32,
+        "ms": 4800,
+        "sourceBuildMismatches": 0
+      }
+    }
+  ],
+  "tests": 92,
+  "build": "passed",
+  "browserRetest": "not performed",
+  "cache": "const CACHE = \"cat-focus-v1-4908572fef43\";"
+}

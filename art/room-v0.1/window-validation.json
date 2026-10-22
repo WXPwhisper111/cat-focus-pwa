@@ -1,0 +1,44 @@
+[
+  {
+    "file": "window_outside_day.png",
+    "size": [
+      1024,
+      768
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "window_outside_night.png",
+    "size": [
+      1024,
+      768
+    ],
+    "mode": "RGB"
+  },
+  {
+    "file": "window_frame.png",
+    "size": [
+      1024,
+      768
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.7546
+  },
+  {
+    "file": "window_curtains.png",
+    "size": [
+      1024,
+      768
+    ],
+    "mode": "RGBA",
+    "alpha_extrema": [
+      0,
+      255
+    ],
+    "transparent_fraction": 0.6165
+  }
+]

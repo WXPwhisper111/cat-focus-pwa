@@ -1,0 +1,154 @@
+{
+  "version": "0.1",
+  "resampling": "nearest",
+  "placement": "local item coordinates only; room layout not changed",
+  "assets": [
+    {
+      "file": "zone_sleep_bed_basic.png",
+      "zone": "sleep",
+      "replacement_slot": "bed",
+      "canvas": [
+        512,
+        384
+      ],
+      "source": "exec-eb0f42b8-47de-4e17-9f05-b7c69192f08f.png",
+      "suggested_display_size": [
+        256,
+        192
+      ],
+      "visible_bbox_alpha_ge_16": [
+        36,
+        142,
+        475,
+        338
+      ],
+      "bottom_anchor": [
+        256,
+        337
+      ],
+      "transparent_padding_min": 16,
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "zone_food_bowl_basic.png",
+      "zone": "food",
+      "replacement_slot": "food_bowl",
+      "canvas": [
+        256,
+        192
+      ],
+      "source": "exec-8b3e1485-d88b-4193-a656-5b252fc88d1b.png",
+      "suggested_display_size": [
+        128,
+        96
+      ],
+      "visible_bbox_alpha_ge_16": [
+        50,
+        88,
+        212,
+        155
+      ],
+      "bottom_anchor": [
+        128,
+        154
+      ],
+      "transparent_padding_min": 16,
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "zone_water_bowl_basic.png",
+      "zone": "food",
+      "replacement_slot": "water_bowl",
+      "canvas": [
+        256,
+        192
+      ],
+      "source": "exec-b4f94327-1ee1-4f62-bcaa-1490ac93b600.png",
+      "suggested_display_size": [
+        128,
+        96
+      ],
+      "visible_bbox_alpha_ge_16": [
+        50,
+        87,
+        213,
+        155
+      ],
+      "bottom_anchor": [
+        128,
+        154
+      ],
+      "transparent_padding_min": 16,
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "zone_activity_rug_basic.png",
+      "zone": "activity",
+      "replacement_slot": "rug",
+      "canvas": [
+        512,
+        256
+      ],
+      "source": "exec-62da7122-9312-4506-8134-333a89cd751b.png",
+      "suggested_display_size": [
+        256,
+        128
+      ],
+      "visible_bbox_alpha_ge_16": [
+        62,
+        99,
+        450,
+        182
+      ],
+      "bottom_anchor": [
+        256,
+        181
+      ],
+      "transparent_padding_min": 16,
+      "alpha_range": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "zone_play_scratcher_basic.png",
+      "zone": "play",
+      "replacement_slot": "scratcher",
+      "canvas": [
+        256,
+        256
+      ],
+      "source": "exec-3beaef89-030c-4074-a66a-429992988d9b.png",
+      "suggested_display_size": [
+        224,
+        224
+      ],
+      "visible_bbox_alpha_ge_16": [
+        67,
+        74,
+        193,
+        187
+      ],
+      "bottom_anchor": [
+        128,
+        186
+      ],
+      "transparent_padding_min": 16,
+      "alpha_range": [
+        0,
+        255
+      ],
+      "suggested_play_area_min_height": 200,
+      "displayed_visible_height": 98.88
+    }
+  ]
+}

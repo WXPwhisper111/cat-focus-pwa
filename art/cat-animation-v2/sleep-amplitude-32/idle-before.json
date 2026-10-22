@@ -1,0 +1,1749 @@
+{
+  "files": {
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_001.png": "353ff3416fbc9a5d998ada28bbdb3cb6b89f81eacc7bb85e5c976ddce895a551",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_002.png": "535ccbf4011d50cc384a68ab73f4270a7ab35953aa9c4504a88bbb0347c50a33",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_003.png": "a129578ee9f16efdaa8152f142f3fe710e1ce28542c4e3d1facd7e22113249d0",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_004.png": "4c655359f832693c7eb3e09861f15ef93b2317c5f070b67c7ec408f70c60c759",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_005.png": "63ae4de8f453b7a6d90e672ce3b99fe131241f4f92787df7a424c39c5c72ea8b",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_006.png": "f7538e04f7ab6449367e0d7aafa741e35edc5aa7d7dd82c0a454f8eccb638621",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_007.png": "0b6544a8df9827fa2e6d30b17b2ce60a6a813c949ec2c74e5a1c0f867810f3e6",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_008.png": "ab2980c83b3d4a77dcf837159d47fa13e8dfde7759c2da4fdcc5ff11f4837f3d",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_009.png": "11388d557cdf38089a217cef8941d8360abe0c0b2ae09fb313e32402c0c9aee9",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_010.png": "105fc263c8b8adf93c8633ff5a43b86304c446ad40c6369e0a6d2207ed549bf3",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_011.png": "265bc58ddd1ec4776c89b83e5ecef72da7a11db179f4b4a318b2d57660100c66",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_012.png": "872052357a41207730fd31d5b74890d851511da45e6d228f4203e6e11a76bacb",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_013.png": "f528783cf0ea11734ad0caaa0ec05ec326625899b3c7c8a8d1ad68ca1a117656",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_014.png": "66b4181ddae05f017977e42465988e66298b50b268cce4eeb4d555c73e404e63",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_015.png": "61ceedb06a58029fb25b7dcde0b6d6abd86df1c65540685d0bcfd642b5230edd",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_016.png": "c8229d7ad24d728e45c216497f80836282a5fc0da179c224c6cd31a3d655cd68",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_017.png": "4cdf4af8eb4540ec9dce0be5a4165d25721cde53858cbf031d7b95cb6fb3708b",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_018.png": "d3ebf29666244db81e036a0c5ee1cbc7c282c200b9bc1f0bb89b07cdbc83e924",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_019.png": "0307e2ab528de778d38e0c4742c059b704898e110f379deb2fee128672d3fa9e",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_020.png": "652556f884cf05b73b80cc3e3e4ee652d70a5525c20afb6dbfe9cd6c07084f62",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_021.png": "214b478bac1b81688e834df9d04895f1dd7d57e65280f8ce97eb5ba8b6d86016",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_022.png": "f3818aae12075c5f552de1fe423e64a25525669f1e1f284d7c5fe2ec6ccadcd3",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_023.png": "3c1d7bbf30c0dff02ae79b3dcbc025931aae660c72c0d8818f73906355bdeef8",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_024.png": "2a47836232207f12fbc65803b84947f2551ec122c7da7ea5379630a154a1ec0f",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_025.png": "84e18355f159faef2413fdc781eff753e78c4f7f358d12c9f513be59d1968172",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_026.png": "ab9feb302554d9611ac5fb26b1307475d7e8381652b12a87f9057e48f96bdb6d",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_027.png": "e51d396d56d72890434faa125d4cf8b7f8e3c325394226b9fde3d520b1997f52",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_028.png": "ad637c0b08aaecab3414f5482de530e9af9ea23ebf3b91523b2ab566704c382c",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_029.png": "1933905e67cd7a70a508f1d85cbdf5d9d34e232af3aa9f02aa44630eb0d5cbb8",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_030.png": "c32010ac0112a26e69d02aeaad1b2dfe7ab74cccd2aaeaf1376a53c5bf7031ca",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_031.png": "3c689747f25ce6f70f79e42296fceda965a6c21435a40eed735a8fd6ba428833",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_032.png": "b69f85b5c420cbf63f69bd5f2e9f97bbecded9915eb04e5bd48112b0d75bc19a",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_033.png": "a4aa09cb587c6e2ac74cd91c04e015913030d5374e8e8fb5820a20e2d44af045",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_034.png": "cecf2e93dc2623f985ec616528b370a49407f83b4fff5e978c085d600d728f51",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_035.png": "79fcb0a4613e72320abc184d18dc530052c4083bc95d4691bd49e3aa2fbb4e17",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_036.png": "27105e79814c182c9f5a590014fae9e4d533463bc4c5397294174e9e84634fad",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_037.png": "0d683f38c07dfd2d40b723b659f947d8c7e72a99fa8eaf12c4025975ba2ea48b",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_038.png": "463e84167a47bfaf49430f3d2f20833378e851b85ffe0353a7bd852cd95727f1",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_039.png": "8a90d0dcb28761304cdd2c44e313126ae3b5ce0ab7adc5a091293e580ed474d9",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_040.png": "8030f611cbbaf0d48ced6cc6b06595b564c2d21914493163ec047ff49328e964",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_041.png": "2cd2b651bde8d94e6b69c6923d45b1cf37b874a37bb963005b516af7e49fe9b7",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_042.png": "353ff3416fbc9a5d998ada28bbdb3cb6b89f81eacc7bb85e5c976ddce895a551",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_043.png": "63b4cf0c3e384bdb43cd72c210a577a78c1a96fac62e3beea4abc95886e2a467",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_044.png": "2e9ee3b2398fee37866ac0dc3a4d86c63bae3fe8bd5e533086ca81cfd92549fa",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_045.png": "2c441a4754ea4e87423948970f15288e7e6a3d2917bbf4e633a2ddb5e7bce7a2",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_046.png": "fd91c584b8dbf8916946514a53bb63814150cb08a7a8def1e6250946ac0de269",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_047.png": "556cad00d47a8c8deecb43344dd84c3e32b7f2fbf382490c44ea5b8a45fcd1aa",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_048.png": "7031624a9b77a2030ce687d51ee72cd346b4800ee59ce82c2ef4cc7ab5ae2e6e",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_049.png": "3b83d5dc60d02c4217fa06984a8027daa63cc9a7457f796c2d165bc6d027eba3",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_050.png": "61ceedb06a58029fb25b7dcde0b6d6abd86df1c65540685d0bcfd642b5230edd",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_051.png": "66b4181ddae05f017977e42465988e66298b50b268cce4eeb4d555c73e404e63",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_052.png": "f528783cf0ea11734ad0caaa0ec05ec326625899b3c7c8a8d1ad68ca1a117656",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_053.png": "872052357a41207730fd31d5b74890d851511da45e6d228f4203e6e11a76bacb",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_054.png": "265bc58ddd1ec4776c89b83e5ecef72da7a11db179f4b4a318b2d57660100c66",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_055.png": "105fc263c8b8adf93c8633ff5a43b86304c446ad40c6369e0a6d2207ed549bf3",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_056.png": "11388d557cdf38089a217cef8941d8360abe0c0b2ae09fb313e32402c0c9aee9",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_057.png": "ab2980c83b3d4a77dcf837159d47fa13e8dfde7759c2da4fdcc5ff11f4837f3d",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_058.png": "0b6544a8df9827fa2e6d30b17b2ce60a6a813c949ec2c74e5a1c0f867810f3e6",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_059.png": "f7538e04f7ab6449367e0d7aafa741e35edc5aa7d7dd82c0a454f8eccb638621",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_060.png": "63ae4de8f453b7a6d90e672ce3b99fe131241f4f92787df7a424c39c5c72ea8b",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_061.png": "4c655359f832693c7eb3e09861f15ef93b2317c5f070b67c7ec408f70c60c759",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_062.png": "a129578ee9f16efdaa8152f142f3fe710e1ce28542c4e3d1facd7e22113249d0",
+    "public\\cat-animation-v2\\cat-01\\idle\\idle_063.png": "535ccbf4011d50cc384a68ab73f4270a7ab35953aa9c4504a88bbb0347c50a33",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_001.webp": "76628ec024bbe1419c1c9c37a1170342c53ad027b665d578fb7fd71494eeffe8",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_002.webp": "b2f666d57e3e7e53be1f7d470221c273b13ee0780bcc88ba588fdfeb788dbfcb",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_003.webp": "f8ec5aa11afac5c4542af15366809c22997bdaeb0ac0b1dbfe0270e176447f97",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_004.webp": "acb3faf23d05cc65469661f632b87708e384dce66fda1cadf553f4ace50513b8",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_005.webp": "f3387f78af8de9fa79885a7becc9c6f932dcb8c8309b7b5f034f2af0c8fcb0f6",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_006.webp": "92511d0165401b514300ce45fdbf12835eb4148ac13556b15e66b12b1ebe17f8",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_007.webp": "164dedbe4b36e9312f02d7102cc153ceef0ff26dc772cbe029a6a52aed04faba",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_008.webp": "b9bbade0f8428092c5be8e6169093402bbb5fecc5ac869c49df27e02ae5e2a86",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_009.webp": "16c38f875bfb971a50076e0679ccc49003d9bfd89f74625ffd224a0bb79e7ce0",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_010.webp": "253ce64c5e9040b0107b337840dfeee034f2c39f8c814354db31cc641a131934",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_011.webp": "a91eba01521ce4ff72619f3b62a6bf133a94500d7cba2706eabad9e566c47be1",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_012.webp": "bdd98a0e71471b96e73ad3246950cdf23d1d65d1cc1155e92e6fc68f8626c8bb",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_013.webp": "a283d2d514ac7fc3d4710a7bd6542786b8842c156832ef1afc53df84e92e2c80",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_014.webp": "e8ad7d3dd26fba0aac0fb3bd82212e542ea582bb2eb7bb0c6fcc5a3ff69a4322",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_015.webp": "ee4835700c7aec3ff936e2b853690bc958efa79bb1b658c715c2e0a25b706388",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_016.webp": "b96bd29ad78af9ddb5ee6384203fa61464b32c0cf5450e220db0ddc7720e0693",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_017.webp": "2178d7e5d14d826e32300b2ad8b7d0f3e428b1a0f18bd6155ac2368e4f5a46a1",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_018.webp": "72a17e714d6aa67e7d84b6d22c674c5178666be0212188f264add1b7ba3fcfd0",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_019.webp": "765b122fb46719e3dc5c1ec60b5d29b078467dc659b811424da5689d3a9446dd",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_020.webp": "d8ce2a6d9dac52e436e6dbef8a931830dcfe1300a1ee3833b92380f2578a562a",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_021.webp": "c17ca5688e8aa5c27729974540aa9c7d6cdc61666a7bbfb32c8a00e837b265af",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_022.webp": "d9621e56a27b1abe205fde9f752041c2647e9c125545ce092c85a3814aae480a",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_023.webp": "033bca88e70b0cb2286e84c45f1366ce2d4cd02d7dd8511ef596a05d769d9e7e",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_024.webp": "8142dadd8534e7bbbe66acecabaed5f93d2d6ce6f1cad1eb731c38534a7b9e05",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_025.webp": "e630056f0143a8276f4e91925afc0f68d3b06833a7132aacffa7bbd8f7b54e50",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_026.webp": "dba0f9315b625a5cf1e34c1edaa3b21f9a5468b02f1726aeb746238537028d20",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_027.webp": "14e152e43cd8479aa114fc3a9cfc4325cc0306e11fb7e13d383e9cafb18602e7",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_028.webp": "7e2937a91742ceac1568320eb126470cc185e28926ead623fa2735265ace20d6",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_029.webp": "88b3900fadfc39f2dd45e2f6f4089cb47b6bf26769b58d719979c4938d748553",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_030.webp": "314af72d4080a963b7db205f7fe5bdff0fcd85259c55f031d479550d572fdd3b",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_031.webp": "2c5fac0ddf4ebf0e4e0304bce0da9843212729d5418adfbfd073b318474e7c9a",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_032.webp": "ef77b84db302c46b5d4b825049dbc53162deb38b3840099a9370b92f600d4c4d",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_033.webp": "757ae207da2ba979c305eff5b03996337135af0456a4ca2c920f0190d7f05e65",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_034.webp": "40ce0610ef0cd172e98059a2b5f009294a80990b170908f34f02fc615f940cae",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_035.webp": "e1484292bd07d9cbf1985469bd5328ae08681dc4fb9e7d161ed4b3a8bfc9d840",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_036.webp": "91a249de4ce2157b9b3bdc6e1de31aa6fe2da4ddf17e402578087f76f5f8dc1c",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_037.webp": "9a0ecdddba3d7b9fef104243bf32c2f3719ccf42cba0f56b7b52c2af763db128",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_038.webp": "d983369b2c08f7051f796390a25d9e5b5b6d28630378fb2577442b83ceec4143",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_039.webp": "67a4052c569f91111cb55a5a4c3696414301d9c9bb1dd637ac391d91ed59bdb4",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_040.webp": "aaa4138b58ec6c32be65ed2cbe1995e1fc8abca6dc604253bc231f99713cbf26",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_041.webp": "66c44050123fc0049f0a3d8f6ddf2e386f79fea4cc549d5a7f165656517d9a58",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_042.webp": "76628ec024bbe1419c1c9c37a1170342c53ad027b665d578fb7fd71494eeffe8",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_043.webp": "bc2215a0ef4631de66aa0a1c81e63f2f97cc1c97c96af5656262e343e945ce2f",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_044.webp": "3a6a75ed79536bab6c291f8379d91546c4096241f07418a917a22c12826d779c",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_045.webp": "9050e89d2cfb18505b230a8317353e5f1d289bf8298a93c1cb1e1d368320d3a7",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_046.webp": "11d422cd8eb72c40eee7ce1d36f1b5aef70a6c7bb638ee1911eddda7e1161f77",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_047.webp": "3cc6cf652051a971124e743b7d2b24650baf06169c527b7c0b55fb31731a837b",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_048.webp": "be9dae8d01467b36f147c0e4fa8d3431b74e242f075164ec0ba9ef227d4abb0d",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_049.webp": "b96bd29ad78af9ddb5ee6384203fa61464b32c0cf5450e220db0ddc7720e0693",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_050.webp": "ee4835700c7aec3ff936e2b853690bc958efa79bb1b658c715c2e0a25b706388",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_051.webp": "e8ad7d3dd26fba0aac0fb3bd82212e542ea582bb2eb7bb0c6fcc5a3ff69a4322",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_052.webp": "a283d2d514ac7fc3d4710a7bd6542786b8842c156832ef1afc53df84e92e2c80",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_053.webp": "bdd98a0e71471b96e73ad3246950cdf23d1d65d1cc1155e92e6fc68f8626c8bb",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_054.webp": "a91eba01521ce4ff72619f3b62a6bf133a94500d7cba2706eabad9e566c47be1",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_055.webp": "253ce64c5e9040b0107b337840dfeee034f2c39f8c814354db31cc641a131934",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_056.webp": "16c38f875bfb971a50076e0679ccc49003d9bfd89f74625ffd224a0bb79e7ce0",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_057.webp": "b9bbade0f8428092c5be8e6169093402bbb5fecc5ac869c49df27e02ae5e2a86",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_058.webp": "164dedbe4b36e9312f02d7102cc153ceef0ff26dc772cbe029a6a52aed04faba",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_059.webp": "92511d0165401b514300ce45fdbf12835eb4148ac13556b15e66b12b1ebe17f8",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_060.webp": "f3387f78af8de9fa79885a7becc9c6f932dcb8c8309b7b5f034f2af0c8fcb0f6",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_061.webp": "acb3faf23d05cc65469661f632b87708e384dce66fda1cadf553f4ace50513b8",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_062.webp": "f8ec5aa11afac5c4542af15366809c22997bdaeb0ac0b1dbfe0270e176447f97",
+    "public\\cat-animation-v2\\cat-01\\mobile\\idle\\idle_063.webp": "b2f666d57e3e7e53be1f7d470221c273b13ee0780bcc88ba588fdfeb788dbfcb",
+    "art\\cat-animation-v2\\cat-01\\idle-breath-peak.png": "8593f28078bccb9d20805434bed9be34fbfd569f8644ba8233e85acd1083ef93",
+    "art\\cat-animation-v2\\cat-01\\idle-mobile-preview.png": "f88ad5e2a269934fce7aaa36077419b26bbd5f0d5f4c4e388d02270cf24069e9",
+    "art\\cat-animation-v2\\cat-01\\idle-motion-sheet.png": "7ba30d3c5b7b1e2013c31018db3b29d4fc1b02073ece83873b93e0205d332fad",
+    "art\\cat-animation-v2\\cat-01\\idle-preview.png": "9469563a813543bf0a53cd0ae0a249729f07d88fbdb0de0fef2eb4da165e8b93",
+    "art\\cat-animation-v2\\cat-01\\idle-preview.webp": "68cf609326b24cf248ef326bb98a4b7bed1e216a0af9ee01c6f22a4398a71355",
+    "art\\cat-animation-v2\\cat-01\\idle-rest.png": "353ff3416fbc9a5d998ada28bbdb3cb6b89f81eacc7bb85e5c976ddce895a551",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_001.png": "20272e376cc989d943b76f10e6d3d2a28736b7e96d97239f2b9b74fab8f841bc",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_002.png": "52f1e5f1cfe7c79cce028285c1ad5d4bf7cfd7c5c3e95e1cb3d0b7cd53c83f8b",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_003.png": "cee1c052491a6daacef9e4fd34b0d7d52bd5420a65f05bdf876cc7db627d9832",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_004.png": "36db871e0f5519de97b909e5b162214e9b77c5a34d4bbf7c0722c7026ccdf38b",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_005.png": "22ff4304775d43f58635dc0d6505df674337fb1e28ec5e7f2ca2292c477b9655",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_006.png": "70a4db03113989b1677287b7ff1a5f7c0efdb40800cf7ecfabd70712c39b9344",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_007.png": "7f4d10b7519fef52e2531f51b299449fa8dd69a216ca2d73cfacd1823a92072c",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_008.png": "681ee3ad6b46b81dcfd82b3ee343d6cf3d01ce6b0ae8776666d03154ecfd3553",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_009.png": "f4fcca785ca1da2de4767e7741287400bc272393bf7f31deaed663e08d328e0e",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_010.png": "772093464e24055bb1e00e01501b0eaf7b892abd2cf85f0d70d2962619dcff11",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_011.png": "fc28afb9eb5437c710f4fa39e8b95cad8a724d1b5e6157f9efe59ccf71840017",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_012.png": "52c633a41e5df998accf3cd799efc50613bc4b84db0bfed325ee5295afa20cf5",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_013.png": "139ad5829fc6052c8e16fa9ac788e4d236c121443dd3cc6b2fccc6babc5cd676",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_014.png": "b4ed62f4ebf47e7df1f6fcfe5b749a8423228353889116989949aced16f900ad",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_015.png": "b5db1f963260d7e7d9e68b80837a6ae9e9f783cc55ffc804205294f3ac1d8294",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_016.png": "49aff94442549efca2233880418ed1ba99b394d9ba9043ed6f11704d1c9d2b90",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_017.png": "ef0eb109d6aee38dc1472b7b80b7926a8d8b3d81d67b31646f99613aeefedac7",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_018.png": "80b582f9d25f326a12cbec85ad48e6873d530b135f217ad01ff5657db7997ab9",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_019.png": "e1f41253d642c94bddf5ba6644af661bd37b27760c50a0071b62161830f9894e",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_020.png": "f49349002d69dfd3e84f8e960b90f7259d2eac6df471d7d2d56e3642d70e50d9",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_021.png": "952afe1be8103e2cd4fdc752ce4d113023d93b3c1208b2f9e8f4fb11663ed0a4",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_022.png": "9e6bf5a381b64093af2cb4f7ecc9654f2a807643541cb12596cf17d94533d3bd",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_023.png": "d44fa732860921cb00c63249f8868cde70fdd8e3ed4049630a40ed8f1bf07b8a",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_024.png": "3c6e2ee7fe02ecdac3791a815de59e867d15c6d503b8896564a619651d86ebe6",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_025.png": "778935b334d3b8848dd0bdb1799b2dcd8fb83ad38c364c422a28f11cf9233ba8",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_026.png": "9a482c81db5e1182e04c2e14fdf9e6b70405954e8c35e74db8851d7338eefd54",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_027.png": "3599efc8b29b4598b6b1f01b3a5c58f12a5708cfe2b823ebaa9e0bdbada27640",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_028.png": "0837456ed288700e53fc84f5364d0e88cb258d00430db73b95048d301ef932d7",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_029.png": "2029dafd5e58bb9d6a8e706a7008f1ff4966afc9b15b6baddf1352d8d0851554",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_030.png": "af75cc61d813255cb0fe38a2f04459f31e636e117f98a6c6177ae0ae53c3391d",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_031.png": "8530f0e2f2a578dd3f8a1705a31bfd499a2e28d918465a61accc484ab3942b47",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_032.png": "f54713a0435ca7bb57d93bd965b072bfb8deb0a16dfbb04541e307835fd66b44",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_033.png": "40840b7a11436f747f07cb9ead0142bb698a1c097a0216c620273a57fecec08b",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_034.png": "611e592e02cc98c58424ac54006f1a3c3d8708a381419f8ca2570795116709ea",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_035.png": "a07c6f7e44cc3d99e20f3ecdf5e5ce353eebaed40d8a19e9efddacf222f38f66",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_036.png": "19648009056629f8f76a2f333ca0fdcc75cd13d2a59178ef3520778a4956e263",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_037.png": "6770aca71a00c83528da4537c9d5918859c720115917fcaa9826afc69ba935fe",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_038.png": "351e00a0426e529141b1181054fe0e5484de256a91b009fb6fc9c606a8504be6",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_039.png": "ac06c1283f26492a80a2081374610aff6f960df90107e185aaf5b5c373697315",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_040.png": "60a325d3d4db92af1a7a372a4b456f9042084fe22450187f29cb06236dab9ed8",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_041.png": "6d48183cfa6636bc98314bc2e6d096c66ec6dbc022e91dbc9340431722e6cece",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_042.png": "20272e376cc989d943b76f10e6d3d2a28736b7e96d97239f2b9b74fab8f841bc",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_043.png": "34941a015799779370dc980bc1a188a75c93f05967d86bc9aad3977d05fa6f08",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_044.png": "db6df6adefa77f3b2d6057bb5225e9a8ace196ced3ecd6f7aa056e575f3192ea",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_045.png": "02540ee331809df69cbec61e6d2b4cf966aa76b8e089560c4ac5870ed55669b0",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_046.png": "9fe4ba49da4557de96bfdf02d7789953a9d0d49703548feea9934a3780ef4398",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_047.png": "85f1200ffc876f0be9a9e57948143bf0cbaba9ece4da6e11421e3b8c8e2d02ad",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_048.png": "206b86726ce26894b0e711e9b29d0dd88d75804bd6b57bd9323a7bcf1ed139b8",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_049.png": "aee7c0cf4a24972f252b0dd6bbd3a35e80cfa3caa296b8c5e494916250e738a1",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_050.png": "b5db1f963260d7e7d9e68b80837a6ae9e9f783cc55ffc804205294f3ac1d8294",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_051.png": "b4ed62f4ebf47e7df1f6fcfe5b749a8423228353889116989949aced16f900ad",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_052.png": "139ad5829fc6052c8e16fa9ac788e4d236c121443dd3cc6b2fccc6babc5cd676",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_053.png": "52c633a41e5df998accf3cd799efc50613bc4b84db0bfed325ee5295afa20cf5",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_054.png": "fc28afb9eb5437c710f4fa39e8b95cad8a724d1b5e6157f9efe59ccf71840017",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_055.png": "772093464e24055bb1e00e01501b0eaf7b892abd2cf85f0d70d2962619dcff11",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_056.png": "f4fcca785ca1da2de4767e7741287400bc272393bf7f31deaed663e08d328e0e",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_057.png": "681ee3ad6b46b81dcfd82b3ee343d6cf3d01ce6b0ae8776666d03154ecfd3553",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_058.png": "7f4d10b7519fef52e2531f51b299449fa8dd69a216ca2d73cfacd1823a92072c",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_059.png": "70a4db03113989b1677287b7ff1a5f7c0efdb40800cf7ecfabd70712c39b9344",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_060.png": "22ff4304775d43f58635dc0d6505df674337fb1e28ec5e7f2ca2292c477b9655",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_061.png": "36db871e0f5519de97b909e5b162214e9b77c5a34d4bbf7c0722c7026ccdf38b",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_062.png": "cee1c052491a6daacef9e4fd34b0d7d52bd5420a65f05bdf876cc7db627d9832",
+    "public\\cat-animation-v2\\cat-02\\idle\\idle_063.png": "52f1e5f1cfe7c79cce028285c1ad5d4bf7cfd7c5c3e95e1cb3d0b7cd53c83f8b",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_001.webp": "d546fcbfbbf0545f89d4bdb348d3c94eb49a573e01ab4b3bd5460b4b30b345b7",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_002.webp": "9e3eda99aec19b6ad41a6bb45ccd96965ebc4d2e443a228ac1a31ff1889ef103",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_003.webp": "65b265cbee45c8b343810c445cc9899a94f75257e07a589a09468f8ec67e8700",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_004.webp": "be5d052433c8e01564d1ee66a74b515572307a61051c8b77f4e6f4cf365f7914",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_005.webp": "60f8b26b3102380ade241e4b7a340397b8d7f8cb48303ef05b00f97f82420c2d",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_006.webp": "b9982853100c737ddfab78675dcef4b5dbcd9671fe2c6b4e8d5e932a349514c2",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_007.webp": "a54c69e41bd8ebf24c2828b8306f94298bae983ce97fcd5c0ceab48809b294e4",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_008.webp": "1ab98f406947361a381531a963d04ac5c6803b14d5b9784d707995ed3eaaee42",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_009.webp": "cd6b6c353117ca6da16ca90bec5f4912a7e8121b866445d11526e471127fc986",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_010.webp": "8f9c4990f04743b7258ec48fea9715b7bc3c93a332b575abf0a5705d3368517e",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_011.webp": "559d1a39a4c9a6b478d48f4182a6745c6aa4d1432e9565a414c855ecaf9af898",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_012.webp": "d4fcb7a0c1e233bbe4cf3e9479a864072f7c0f58bf91258f1f648042e8afe236",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_013.webp": "85858fee7dbdc2542a76c8c738d18423ccb9ab0bbaa58bb77a3ff7cff75f5f16",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_014.webp": "20fc9426dcfc61c13b445dbeeae0c4a7a7a0dd24e2b256f64789fe36e60efa28",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_015.webp": "40b795c6702a5176d6a11cd8c8d5c5682570f18bdfbf2c260cd499ff3a76dc69",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_016.webp": "d85cf4b5b952d86af8b114a3e8103aeb85d45a65383ea18d76c534f1cceb196c",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_017.webp": "5a63c117085fc3c799ec049052adc0bd9b39f185ee2c274a635e58893e6cf3e0",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_018.webp": "72bdf5489b0a3accab24c9e9827c877568f528f1baebdabb741291cb42d89de3",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_019.webp": "97c448ff9c5c693811c0f90e2be6cd58c077a776a2d2d610a9ae99d0008b0482",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_020.webp": "2f8931e6edf76d3715aff1a4c6b3221f05288705b3705aea766c499d84e3955d",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_021.webp": "59f4ca7359de35418309b13e7b49b94839fcea1fe273213795a1be39c55c7491",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_022.webp": "d43b15cd4e711bb28f825f4fd756ec37e77537b82244ac24e947a2992ee022ee",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_023.webp": "d5f13ff62e05298f650c4436a47462e1a4d306f0f3356bca2d48432fc1921d2d",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_024.webp": "da19f0fc7587f21f0c4b315ea22d95d999a43404f35d3ff118da8f6e1682e9bc",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_025.webp": "d99f16dcbdac8540ba74ce4c10c1ec7d6e5da4229a8b058909e78f2225f3e09a",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_026.webp": "10acfc40931717c927315e6ae2df0c2ce30f1df303f628048fd4db0b18dfae57",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_027.webp": "a016a33ff18a1ec207d44ad0a2e9da54c5e3b89cd2e5b96660b3dede92c90a4d",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_028.webp": "aacf4a24b9bcb9ba7a236d501b3dcd2ca9b31b4dd545b408de425c70da910453",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_029.webp": "fd3bdfdcfae9c68ca6fa4e198611167dd74afb1285cfebe1f5b6301b5889e31c",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_030.webp": "ae136d9facfee7eec585acac1c79b5558cdb61afefa5173be564e589b0f8d736",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_031.webp": "0eefec122f5c6f20b93fa997cf19c6fedc2c6611a31bf7083942d1abc71795b9",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_032.webp": "7ffc76f8ba5d2cd1b8b3e78ba7d2465916be1c5956f3edf98cedaa92d1250fc9",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_033.webp": "314f6f6f886d10ba5c200b6182160a49eef7ae950412ca26f8429b5946b4c44d",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_034.webp": "fdaf4087311a62cf119992bf0a95ac93046c286e10cfcb942a9ea5b5fec7d813",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_035.webp": "fc16b6214bbaa257696493f4c28fe87e8ed190a8c855f9bbd9b1f8f31ba20b83",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_036.webp": "dc54e872fd5623a9a1a38d6b82f0e04d2609fd09f7c603cd2db97fea8e4f6934",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_037.webp": "065f6cbfeb7b8c991754308d6707a0a6f84edd95ab4388bc049eedfa216eacc8",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_038.webp": "94b3a316224ae12e3791d5826f960b119ee1b0fe6b7a7d7833a336dfb2f3cb55",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_039.webp": "a0d5ffafc124c060264581708add3535baa3e3e09e0deb4f9d499e1a8841cc1a",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_040.webp": "7f96dc6422876b08f18f47f66ba8a5265c8b632dfbfbeccece1cf457fc0e6006",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_041.webp": "726bb9e93938731e950001cd473e0223cdf8de27e04d3d1a636577a9615adf4a",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_042.webp": "d546fcbfbbf0545f89d4bdb348d3c94eb49a573e01ab4b3bd5460b4b30b345b7",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_043.webp": "cdad213577a7407240cf680ac326831b4dfd3f30ff5860e0079a05ef3135df01",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_044.webp": "240ea0c67fe451a22ae7b17a8e23676add1be0139c3f4b95b33a76a2e751ecc7",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_045.webp": "7979247371298a43d4620481f1187be63d963c0ef0c5a7b303a44dd3a9894811",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_046.webp": "074604ba6f63c434ef7c56aa681ee23d347a911b6c7bb8a25956753d6dd1bcb7",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_047.webp": "dd51b0504452815fa2fd2dc6c6361b60a9c821252593c0818b7fa7c094b3967b",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_048.webp": "d5685bf2a3fc026aed2be06c23575cbe9c9ef030fd143e94114322b3b73d56f1",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_049.webp": "9bc89439913b141ebe6c09fc38c94ce3183c3b15ce7228724493e605557f4637",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_050.webp": "40b795c6702a5176d6a11cd8c8d5c5682570f18bdfbf2c260cd499ff3a76dc69",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_051.webp": "20fc9426dcfc61c13b445dbeeae0c4a7a7a0dd24e2b256f64789fe36e60efa28",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_052.webp": "85858fee7dbdc2542a76c8c738d18423ccb9ab0bbaa58bb77a3ff7cff75f5f16",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_053.webp": "d4fcb7a0c1e233bbe4cf3e9479a864072f7c0f58bf91258f1f648042e8afe236",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_054.webp": "559d1a39a4c9a6b478d48f4182a6745c6aa4d1432e9565a414c855ecaf9af898",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_055.webp": "8f9c4990f04743b7258ec48fea9715b7bc3c93a332b575abf0a5705d3368517e",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_056.webp": "cd6b6c353117ca6da16ca90bec5f4912a7e8121b866445d11526e471127fc986",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_057.webp": "1ab98f406947361a381531a963d04ac5c6803b14d5b9784d707995ed3eaaee42",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_058.webp": "a54c69e41bd8ebf24c2828b8306f94298bae983ce97fcd5c0ceab48809b294e4",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_059.webp": "b9982853100c737ddfab78675dcef4b5dbcd9671fe2c6b4e8d5e932a349514c2",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_060.webp": "60f8b26b3102380ade241e4b7a340397b8d7f8cb48303ef05b00f97f82420c2d",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_061.webp": "be5d052433c8e01564d1ee66a74b515572307a61051c8b77f4e6f4cf365f7914",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_062.webp": "65b265cbee45c8b343810c445cc9899a94f75257e07a589a09468f8ec67e8700",
+    "public\\cat-animation-v2\\cat-02\\mobile\\idle\\idle_063.webp": "9e3eda99aec19b6ad41a6bb45ccd96965ebc4d2e443a228ac1a31ff1889ef103",
+    "art\\cat-animation-v2\\cat-02\\idle-breath-peak.png": "7432eeb87a0578dee0d031f0851c47b576543f4e2e5cd3f37cf1a515ea381d43",
+    "art\\cat-animation-v2\\cat-02\\idle-mobile-preview.png": "e79d9761cb08770488958794dcdca371637b26d321c28dcd1084540ad69d9754",
+    "art\\cat-animation-v2\\cat-02\\idle-motion-sheet.png": "b6dd0b484f188349f0c4b4c3a5336bbd50abced4e6d2919c5bba767dd6cf183b",
+    "art\\cat-animation-v2\\cat-02\\idle-preview.png": "ebf6c0a92a2d2aaf44435dece269a5a075d0a3481fce77729d2dce09e1a33107",
+    "art\\cat-animation-v2\\cat-02\\idle-preview.webp": "27b08831bc8edc81e9648ad72bf57356899e2fee0c685c983f09b0eadd8a7140",
+    "art\\cat-animation-v2\\cat-02\\idle-rest.png": "20272e376cc989d943b76f10e6d3d2a28736b7e96d97239f2b9b74fab8f841bc",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_001.png": "cae8ec76983521e8f56d0cb059bf29b2ad841b67318efa2dd18fb177c4f7ea4e",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_002.png": "62b11d695d149c397f42b6df68f35b29f2174b73472550c336e0aceb67eb9ddb",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_003.png": "26fd8fd5630a54bd7945b5b0d534d197c16d03874c49ca963c99267767e5cb82",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_004.png": "9f0926dcc8310562f339a51c9798a19c025582f2bb4fd991e3e806012ebbf57d",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_005.png": "7f3505d2526f2e832d4e86c20837e4f507998892cc82f187c3abd9d0b42bb501",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_006.png": "ac355fd306d9997262b5645cafe488719422857691754dde3ffd355089961247",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_007.png": "511bca14da080a4e26776064427dd5f458b044f8676f46702d364c43c06fc630",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_008.png": "1dc1172551ff24c645b671473f01d64d46769eb2e107e2148b7fb64b276f17e2",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_009.png": "469d0fa0f0a33a2074e9ee76b90819e56f7302d0599f3a7adb5c5bef8cb7955f",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_010.png": "21fa34f745a5360b9f2ba1bf08f04a11db09a40252366a89943014b9a2fda45a",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_011.png": "17953fdbd8e3b60dc17e1c894336861fb2bec924799c053ca8edf28cc9992fa9",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_012.png": "cb47eac49a08bfea2e3821dcdd603e04799ca24172ffe4c1d9f62994800bac2d",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_013.png": "df2b0668879d2cedb5a87904f363ce47af109c9185eb01dda1aa78f3da538364",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_014.png": "8554f9d83b5bfe8c11632554adce12b4084403f9d1bfcbb5680d6bea192d9d55",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_015.png": "a5aab0eb9e189a53a9c33b775fa6f6dc1af0932e788c74ec103cd33ac2f6d180",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_016.png": "52efe535e2a9f2afe86d964bd1492769667ef5fbf97ff5ba246a7f2410dc85ce",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_017.png": "302c32152d1e8a7ddc10b356574c0340ea9d7b0884dbb6d87bb3740739508c20",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_018.png": "425f0718350111d8179deffac5a7bdfa3e8d2adb2eb7317b23dbcd1a54be7534",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_019.png": "9691fe21d0c47014e501fdcc0c04e46f283152ef39721f4a738bcb35a310216b",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_020.png": "ea55155c98adf01c2ccf54b25be8570ff842ffff886525a607cdbb7cbeba8f2a",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_021.png": "ce8a355b022e1c526f7170725b452af98afe1b112084441f7137f9f4b3994308",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_022.png": "e13467e283c67685c2934ac655a520d6bfaac1445d23a63ab7b604034b0990a0",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_023.png": "7f7522eaf471fb2d5b2ffefdf87baeaa453eb1cbf0439f2b705f3a6ec92c3a54",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_024.png": "6195ade25a3447c431c622a90b759eed1f814cab1a58f777d94c0fe455715a3d",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_025.png": "a911265306b690268a93d9f86a030b8f63fb7b89e3dca57d6a6e8cad2ee15849",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_026.png": "b15ecf60fd0801af5ecf605c4bb873c424360ed53bf9115259bfa10133af9d1c",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_027.png": "3030f33275ca68f4a6251f5fae42705f56d8b0ecf08c2dea3edfe3f3340af7dd",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_028.png": "3ddf40b5f035e246e0008ba24fefb8e085beb2eff34d54c9a913962969514286",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_029.png": "d7451404fedc8b5f62ae432f6e07fab3e99c6bc0fe535ee7d1371a9417c44262",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_030.png": "d4e84c8dbf34802332ab190e905b24e1d23e440bc2ef461ed7d8ccfe80ab70a4",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_031.png": "2ed43b32fd8942f4b644816eb65dfb08e31376701d753fd4f25faff39d465515",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_032.png": "98dd9eb07832bafbe0dc1d1b47275dc8c65b5639d23dbffbafd0a5c57bf2b76f",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_033.png": "d176a654a94006a30389dc47413cfcaeda43c881ca1a4f9744e003d56e06746c",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_034.png": "ae6f6d72bdba3c83078f75c8d8a2b6bf58d19308d155f306d047933ab8da71ca",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_035.png": "66962b6a080135eb8b06949a4dd7c708a677707e53c0daf58922adaf5e4973af",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_036.png": "db8737955a69c5b0cc171a3d0ce7d13d034abc0b5133b51d82d2eb9a51fb3511",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_037.png": "89d4d7137b906202ed4d86649c26c4c28d67c2766a22ba347be6c71c6af7c07e",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_038.png": "8eb690d5078cf9299f5dc2a5c3973cd4b2f90ec3dc8fe365edcc894675d0eef9",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_039.png": "f2bb856bd3db838aa743497047f91ded9cdd94d23a3b76ed353cb7f9e0c0fdde",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_040.png": "4080bfe261b3204b126219fb9507c49c1525a1ebe12d4af3854c32944f5651cb",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_041.png": "ae920abfdfa564883ae37038b52180f01bdd2c7931c329da1f8392793fdef42e",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_042.png": "cae8ec76983521e8f56d0cb059bf29b2ad841b67318efa2dd18fb177c4f7ea4e",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_043.png": "d6c4b8b6bfa91094032a85bc398a961752c860d9ea822068bcacf6d131db4509",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_044.png": "2236975c0018fa09924ed2b41309e29c6fbfbfd34681d0dce3062c14eee7465f",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_045.png": "9ac845c8a34f353329785ce8f1bd3f7b257580420680160d1093f65c16eb0fd1",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_046.png": "f461090e6630845c9446db383c4e8b66818eb171e9384a6d6894e3a0b42618f3",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_047.png": "306279bd81aafb59fae07f0659f6ed8ce56e4bde7d8928fce36e7b0d33e2bf5a",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_048.png": "0eb7ef4c029fce1f061f4aa5bfe81881e8ce49dca0d4bd429e0540f170d59675",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_049.png": "c848c92053c08bd325a2ee9e02709a2ed20a8cd3fd6ec490c78266dffc26f058",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_050.png": "a5aab0eb9e189a53a9c33b775fa6f6dc1af0932e788c74ec103cd33ac2f6d180",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_051.png": "8554f9d83b5bfe8c11632554adce12b4084403f9d1bfcbb5680d6bea192d9d55",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_052.png": "df2b0668879d2cedb5a87904f363ce47af109c9185eb01dda1aa78f3da538364",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_053.png": "cb47eac49a08bfea2e3821dcdd603e04799ca24172ffe4c1d9f62994800bac2d",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_054.png": "17953fdbd8e3b60dc17e1c894336861fb2bec924799c053ca8edf28cc9992fa9",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_055.png": "21fa34f745a5360b9f2ba1bf08f04a11db09a40252366a89943014b9a2fda45a",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_056.png": "469d0fa0f0a33a2074e9ee76b90819e56f7302d0599f3a7adb5c5bef8cb7955f",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_057.png": "1dc1172551ff24c645b671473f01d64d46769eb2e107e2148b7fb64b276f17e2",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_058.png": "511bca14da080a4e26776064427dd5f458b044f8676f46702d364c43c06fc630",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_059.png": "ac355fd306d9997262b5645cafe488719422857691754dde3ffd355089961247",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_060.png": "7f3505d2526f2e832d4e86c20837e4f507998892cc82f187c3abd9d0b42bb501",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_061.png": "9f0926dcc8310562f339a51c9798a19c025582f2bb4fd991e3e806012ebbf57d",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_062.png": "26fd8fd5630a54bd7945b5b0d534d197c16d03874c49ca963c99267767e5cb82",
+    "public\\cat-animation-v2\\cat-03\\idle\\idle_063.png": "62b11d695d149c397f42b6df68f35b29f2174b73472550c336e0aceb67eb9ddb",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_001.webp": "f34072147854f78510c75020481fe02c170beb01123fe10acc9339fdaf1c891c",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_002.webp": "0417ab429644203d58a62346f98a47364ea888890e641482e0312a7f17bb1b3c",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_003.webp": "e968dd1083be2efa4acb4fefba29d2a9a5d2ffc856f9e640006cc389e846f9b1",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_004.webp": "26f60b6d8754d2aca2723c278927ec1b911a117b551fd465e032befd57e1d2cd",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_005.webp": "c48ba9ea6d67528b25a369ce31097bc0660ed52ea08d2c001b32fbdd70a514b0",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_006.webp": "7e3c6b88cdaab3b63b88f22285ef4d26c8664635d07cd44bbfe8ac418fd61ce6",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_007.webp": "32ae029df5ab0767afb62ccd05c9e6845d720de1ca364f09a66c59a08fccf05b",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_008.webp": "3c51d0d94ae0f205a8310532612a7fa36059f1f27dacfbd94f19ca9b62481050",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_009.webp": "bc681d6c8697d65f76144ff5d895f36b74cf88b43934d3c60831bba3ee416557",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_010.webp": "0988a582607cc3bc0ea20784b46a33f0be130ad15dd07a5533d4bd038c7bd9f7",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_011.webp": "582f985b116457c6af7d4eab37a2fc67fd51b654eb31bc334dff851ca3d83f40",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_012.webp": "fe85ce3052d61b85013e50f2b4f9edef05b7ec14c822c3534c111254dd1f0af4",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_013.webp": "e973a6eec9ca933585499307d682e545d15df728f72998a53a320c1848c22642",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_014.webp": "0b4cbc6c3094c3c1af86b7faf470a1fc12df61f42ced95c409026937476860f1",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_015.webp": "70bfbea79b0af8fd6ab2f4a0c3412d606256e99f425fa84dd9ce448db70ae292",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_016.webp": "495b3149f7038721141c0eb04af9be2278ecf2c46a10dd767bca9d09769e689b",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_017.webp": "29a36f9cc9437d621c3d516b13191653d7c2abdecf16b219b4da4cb8339c5df2",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_018.webp": "32528332fcf29cd832f083754ddcd089e2c5bad33dea07ab4571184b4203af97",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_019.webp": "a1a2c56505f119aec42e5e98247cbac5ca5c56f86610eca122d81ebc9a7cf72b",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_020.webp": "5691026b83e6fd91d6647e5b58a360142445b83eab3f22019b573351ed759412",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_021.webp": "1a0ca42b6214cc2118eda77754b0ce3dea32400b71e46ff24e1f683033aea725",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_022.webp": "9531573baac25322a16f471b8cb32864079e30f69fa1d33fe66ac14fe3ff8631",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_023.webp": "27132406930edd087e5a9a6cc62425f4680d68e2e6d3afd417d55cdde2f0b7f4",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_024.webp": "b2a23800b8cdbc4b6025add1aa22ceaea55066c294e0ff429deefabd33d34177",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_025.webp": "520b4620fc41ef400e41126350df49224763c04cd41a7ac4c4f139dbcd00b7a8",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_026.webp": "141de421d9999376378aa19bcd7d2d9e54af0f755be45b467202b4b7749aa4a9",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_027.webp": "d6d154fab44bd44fcc67861400b55057bc0fa1c719559dd6df0dcfad004c3de6",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_028.webp": "e325f52b0f1c3acef93c0649c243907ca9937028a04399a35793c30865912e25",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_029.webp": "a1c829925c7e757e1dedabf801e488728239a639fde7c2bb99f5e83580b70172",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_030.webp": "ee2eed2fec87754c2a823f9f434ccc155221fade71a9fc24613034868f5391ff",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_031.webp": "d32cd3cffda62cbcb2823af3743ca7648c7cd6e699a10f6550647f6813adeb48",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_032.webp": "d92be057f6fc4dbc8e02532e86fd6d94a04c24df1c0441bf11ee16f274b17d2d",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_033.webp": "58ce3e25cc4fdd76f732fb085b6df1cc92ed3276419e3e3c99a0786827df1778",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_034.webp": "f0fda32638e9a52d0fcfd7087f287ab19d2bf053041a0b4b8f52e60637e02d1a",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_035.webp": "c1492e2a083a791dc99315881984c5a6de9ff98b9f023b502db17aa8e167d82c",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_036.webp": "0445c98338fdfbe983821780f8c089aa442a56ce6eb28b4f24f1622184feb1f5",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_037.webp": "bdab59e8adb26dd0feb8b2ded85a3a5473cc4400fa01075477d6fa7459bac499",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_038.webp": "edd8ab004e75c38de5f427f2fa037ef5bf32b4b251680d57a4c411a70ff0e418",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_039.webp": "69e90cadcd15bf06ba01a16e7f7c3fbdc17ea6c937d1fbe70ca8a4030e930348",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_040.webp": "687867343726d3b5202d525150c9087acedd19a98caecbf8838a5d8e2e30a83f",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_041.webp": "5c966fe401fac7910e21b26d77051685b3afe092525661befb423e725b941efc",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_042.webp": "f34072147854f78510c75020481fe02c170beb01123fe10acc9339fdaf1c891c",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_043.webp": "7053f8aa674a61309825b476d2714a9bd3a3408a51730a3dcb9d3c8dac7e73b9",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_044.webp": "c90dbf9fcf8da7dfba2bda6a1e762ff71d5fd91866bc79fb50102c6f9cf7e5e6",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_045.webp": "b51c66bbaf3de21da1a83ec8527ef12b5214f5389f518bb5bd5afeb2883cd052",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_046.webp": "9550ac2a1ce721a408e2f4b4b57ccc005593975366cf4ce67294cb7ca70188f1",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_047.webp": "2ad19c55068256de17ce859be693072cdbac14e940c64860e4e617008c451b75",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_048.webp": "5182058e6ee7a0be5d5c9d2392cf8bc4c570e7a0e18098858b9025f802df032d",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_049.webp": "f304b313abb5496a6215007245c584be30ddf751549ec4ca573f1ea595a86022",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_050.webp": "70bfbea79b0af8fd6ab2f4a0c3412d606256e99f425fa84dd9ce448db70ae292",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_051.webp": "0b4cbc6c3094c3c1af86b7faf470a1fc12df61f42ced95c409026937476860f1",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_052.webp": "e973a6eec9ca933585499307d682e545d15df728f72998a53a320c1848c22642",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_053.webp": "fe85ce3052d61b85013e50f2b4f9edef05b7ec14c822c3534c111254dd1f0af4",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_054.webp": "582f985b116457c6af7d4eab37a2fc67fd51b654eb31bc334dff851ca3d83f40",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_055.webp": "0988a582607cc3bc0ea20784b46a33f0be130ad15dd07a5533d4bd038c7bd9f7",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_056.webp": "bc681d6c8697d65f76144ff5d895f36b74cf88b43934d3c60831bba3ee416557",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_057.webp": "3c51d0d94ae0f205a8310532612a7fa36059f1f27dacfbd94f19ca9b62481050",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_058.webp": "32ae029df5ab0767afb62ccd05c9e6845d720de1ca364f09a66c59a08fccf05b",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_059.webp": "7e3c6b88cdaab3b63b88f22285ef4d26c8664635d07cd44bbfe8ac418fd61ce6",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_060.webp": "c48ba9ea6d67528b25a369ce31097bc0660ed52ea08d2c001b32fbdd70a514b0",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_061.webp": "26f60b6d8754d2aca2723c278927ec1b911a117b551fd465e032befd57e1d2cd",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_062.webp": "e968dd1083be2efa4acb4fefba29d2a9a5d2ffc856f9e640006cc389e846f9b1",
+    "public\\cat-animation-v2\\cat-03\\mobile\\idle\\idle_063.webp": "0417ab429644203d58a62346f98a47364ea888890e641482e0312a7f17bb1b3c",
+    "art\\cat-animation-v2\\cat-03\\idle-breath-peak.png": "8ee139ed3ab6d98efd185b98408402f35cb48d1467ca9709e23032c7ddbbea22",
+    "art\\cat-animation-v2\\cat-03\\idle-mobile-preview.png": "8c07c95150376fd20f523c6ea5a4e83c1f3515649265faee2c5709e5b6ac7f4d",
+    "art\\cat-animation-v2\\cat-03\\idle-motion-sheet.png": "361cb910ff17d4e2f46b159f9c83b848654f53e63d31f5315d569554de0fdb5e",
+    "art\\cat-animation-v2\\cat-03\\idle-preview.png": "110b8174cd28a2e19eed15b8da2fd76c2cd03f7fdf220242823cb3b0899c8189",
+    "art\\cat-animation-v2\\cat-03\\idle-preview.webp": "aaf36881fd1778fd40d1ad9e438afa8e4217724d572bcdae63e7b48c11bd25c1",
+    "art\\cat-animation-v2\\cat-03\\idle-rest.png": "cae8ec76983521e8f56d0cb059bf29b2ad841b67318efa2dd18fb177c4f7ea4e"
+  },
+  "timelines": {
+    "cat-01": {
+      "loop": true,
+      "frameCount": 63,
+      "cycleDurationMs": 9260,
+      "blinkCountPerCycle": 1,
+      "frames": [
+        {
+          "file": "idle/idle_001.png",
+          "mobileFile": "mobile/idle/idle_001.webp",
+          "durationMs": 150,
+          "timeMs": 0,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_002.png",
+          "mobileFile": "mobile/idle/idle_002.webp",
+          "durationMs": 150,
+          "timeMs": 150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_003.png",
+          "mobileFile": "mobile/idle/idle_003.webp",
+          "durationMs": 150,
+          "timeMs": 300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_004.png",
+          "mobileFile": "mobile/idle/idle_004.webp",
+          "durationMs": 150,
+          "timeMs": 450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_005.png",
+          "mobileFile": "mobile/idle/idle_005.webp",
+          "durationMs": 150,
+          "timeMs": 600,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_006.png",
+          "mobileFile": "mobile/idle/idle_006.webp",
+          "durationMs": 150,
+          "timeMs": 750,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_007.png",
+          "mobileFile": "mobile/idle/idle_007.webp",
+          "durationMs": 150,
+          "timeMs": 900,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_008.png",
+          "mobileFile": "mobile/idle/idle_008.webp",
+          "durationMs": 150,
+          "timeMs": 1050,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_009.png",
+          "mobileFile": "mobile/idle/idle_009.webp",
+          "durationMs": 150,
+          "timeMs": 1200,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_010.png",
+          "mobileFile": "mobile/idle/idle_010.webp",
+          "durationMs": 150,
+          "timeMs": 1350,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_011.png",
+          "mobileFile": "mobile/idle/idle_011.webp",
+          "durationMs": 150,
+          "timeMs": 1500,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_012.png",
+          "mobileFile": "mobile/idle/idle_012.webp",
+          "durationMs": 150,
+          "timeMs": 1650,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_013.png",
+          "mobileFile": "mobile/idle/idle_013.webp",
+          "durationMs": 150,
+          "timeMs": 1800,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_014.png",
+          "mobileFile": "mobile/idle/idle_014.webp",
+          "durationMs": 150,
+          "timeMs": 1950,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_015.png",
+          "mobileFile": "mobile/idle/idle_015.webp",
+          "durationMs": 150,
+          "timeMs": 2100,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_016.png",
+          "mobileFile": "mobile/idle/idle_016.webp",
+          "durationMs": 150,
+          "timeMs": 2250,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_017.png",
+          "mobileFile": "mobile/idle/idle_017.webp",
+          "durationMs": 150,
+          "timeMs": 2400,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_018.png",
+          "mobileFile": "mobile/idle/idle_018.webp",
+          "durationMs": 150,
+          "timeMs": 2550,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_019.png",
+          "mobileFile": "mobile/idle/idle_019.webp",
+          "durationMs": 150,
+          "timeMs": 2700,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_020.png",
+          "mobileFile": "mobile/idle/idle_020.webp",
+          "durationMs": 150,
+          "timeMs": 2850,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_021.png",
+          "mobileFile": "mobile/idle/idle_021.webp",
+          "durationMs": 150,
+          "timeMs": 3000,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_022.png",
+          "mobileFile": "mobile/idle/idle_022.webp",
+          "durationMs": 150,
+          "timeMs": 3150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_023.png",
+          "mobileFile": "mobile/idle/idle_023.webp",
+          "durationMs": 150,
+          "timeMs": 3300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_024.png",
+          "mobileFile": "mobile/idle/idle_024.webp",
+          "durationMs": 150,
+          "timeMs": 3450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_025.png",
+          "mobileFile": "mobile/idle/idle_025.webp",
+          "durationMs": 150,
+          "timeMs": 3600,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_026.png",
+          "mobileFile": "mobile/idle/idle_026.webp",
+          "durationMs": 150,
+          "timeMs": 3750,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_027.png",
+          "mobileFile": "mobile/idle/idle_027.webp",
+          "durationMs": 150,
+          "timeMs": 3900,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_028.png",
+          "mobileFile": "mobile/idle/idle_028.webp",
+          "durationMs": 150,
+          "timeMs": 4050,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_029.png",
+          "mobileFile": "mobile/idle/idle_029.webp",
+          "durationMs": 150,
+          "timeMs": 4200,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_030.png",
+          "mobileFile": "mobile/idle/idle_030.webp",
+          "durationMs": 150,
+          "timeMs": 4350,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_031.png",
+          "mobileFile": "mobile/idle/idle_031.webp",
+          "durationMs": 150,
+          "timeMs": 4500,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_032.png",
+          "mobileFile": "mobile/idle/idle_032.webp",
+          "durationMs": 150,
+          "timeMs": 4650,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_033.png",
+          "mobileFile": "mobile/idle/idle_033.webp",
+          "durationMs": 150,
+          "timeMs": 4800,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_034.png",
+          "mobileFile": "mobile/idle/idle_034.webp",
+          "durationMs": 150,
+          "timeMs": 4950,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_035.png",
+          "mobileFile": "mobile/idle/idle_035.webp",
+          "durationMs": 150,
+          "timeMs": 5100,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_036.png",
+          "mobileFile": "mobile/idle/idle_036.webp",
+          "durationMs": 150,
+          "timeMs": 5250,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_037.png",
+          "mobileFile": "mobile/idle/idle_037.webp",
+          "durationMs": 150,
+          "timeMs": 5400,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_038.png",
+          "mobileFile": "mobile/idle/idle_038.webp",
+          "durationMs": 150,
+          "timeMs": 5550,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_039.png",
+          "mobileFile": "mobile/idle/idle_039.webp",
+          "durationMs": 150,
+          "timeMs": 5700,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_040.png",
+          "mobileFile": "mobile/idle/idle_040.webp",
+          "durationMs": 150,
+          "timeMs": 5850,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_041.png",
+          "mobileFile": "mobile/idle/idle_041.webp",
+          "durationMs": 150,
+          "timeMs": 6000,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_042.png",
+          "mobileFile": "mobile/idle/idle_042.webp",
+          "durationMs": 150,
+          "timeMs": 6150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_043.png",
+          "mobileFile": "mobile/idle/idle_043.webp",
+          "durationMs": 150,
+          "timeMs": 6300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_044.png",
+          "mobileFile": "mobile/idle/idle_044.webp",
+          "durationMs": 150,
+          "timeMs": 6450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_045.png",
+          "mobileFile": "mobile/idle/idle_045.webp",
+          "durationMs": 80,
+          "timeMs": 6600,
+          "eyes": "half"
+        },
+        {
+          "file": "idle/idle_046.png",
+          "mobileFile": "mobile/idle/idle_046.webp",
+          "durationMs": 100,
+          "timeMs": 6680,
+          "eyes": "closed"
+        },
+        {
+          "file": "idle/idle_047.png",
+          "mobileFile": "mobile/idle/idle_047.webp",
+          "durationMs": 80,
+          "timeMs": 6780,
+          "eyes": "half"
+        },
+        {
+          "file": "idle/idle_048.png",
+          "mobileFile": "mobile/idle/idle_048.webp",
+          "durationMs": 150,
+          "timeMs": 6860,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_049.png",
+          "mobileFile": "mobile/idle/idle_049.webp",
+          "durationMs": 150,
+          "timeMs": 7010,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_050.png",
+          "mobileFile": "mobile/idle/idle_050.webp",
+          "durationMs": 150,
+          "timeMs": 7160,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_051.png",
+          "mobileFile": "mobile/idle/idle_051.webp",
+          "durationMs": 150,
+          "timeMs": 7310,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_052.png",
+          "mobileFile": "mobile/idle/idle_052.webp",
+          "durationMs": 150,
+          "timeMs": 7460,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_053.png",
+          "mobileFile": "mobile/idle/idle_053.webp",
+          "durationMs": 150,
+          "timeMs": 7610,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_054.png",
+          "mobileFile": "mobile/idle/idle_054.webp",
+          "durationMs": 150,
+          "timeMs": 7760,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_055.png",
+          "mobileFile": "mobile/idle/idle_055.webp",
+          "durationMs": 150,
+          "timeMs": 7910,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_056.png",
+          "mobileFile": "mobile/idle/idle_056.webp",
+          "durationMs": 150,
+          "timeMs": 8060,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_057.png",
+          "mobileFile": "mobile/idle/idle_057.webp",
+          "durationMs": 150,
+          "timeMs": 8210,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_058.png",
+          "mobileFile": "mobile/idle/idle_058.webp",
+          "durationMs": 150,
+          "timeMs": 8360,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_059.png",
+          "mobileFile": "mobile/idle/idle_059.webp",
+          "durationMs": 150,
+          "timeMs": 8510,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_060.png",
+          "mobileFile": "mobile/idle/idle_060.webp",
+          "durationMs": 150,
+          "timeMs": 8660,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_061.png",
+          "mobileFile": "mobile/idle/idle_061.webp",
+          "durationMs": 150,
+          "timeMs": 8810,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_062.png",
+          "mobileFile": "mobile/idle/idle_062.webp",
+          "durationMs": 150,
+          "timeMs": 8960,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_063.png",
+          "mobileFile": "mobile/idle/idle_063.webp",
+          "durationMs": 150,
+          "timeMs": 9110,
+          "eyes": "open"
+        }
+      ]
+    },
+    "cat-02": {
+      "loop": true,
+      "frameCount": 63,
+      "cycleDurationMs": 9260,
+      "blinkCountPerCycle": 1,
+      "frames": [
+        {
+          "file": "idle/idle_001.png",
+          "mobileFile": "mobile/idle/idle_001.webp",
+          "durationMs": 150,
+          "timeMs": 0,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_002.png",
+          "mobileFile": "mobile/idle/idle_002.webp",
+          "durationMs": 150,
+          "timeMs": 150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_003.png",
+          "mobileFile": "mobile/idle/idle_003.webp",
+          "durationMs": 150,
+          "timeMs": 300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_004.png",
+          "mobileFile": "mobile/idle/idle_004.webp",
+          "durationMs": 150,
+          "timeMs": 450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_005.png",
+          "mobileFile": "mobile/idle/idle_005.webp",
+          "durationMs": 150,
+          "timeMs": 600,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_006.png",
+          "mobileFile": "mobile/idle/idle_006.webp",
+          "durationMs": 150,
+          "timeMs": 750,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_007.png",
+          "mobileFile": "mobile/idle/idle_007.webp",
+          "durationMs": 150,
+          "timeMs": 900,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_008.png",
+          "mobileFile": "mobile/idle/idle_008.webp",
+          "durationMs": 150,
+          "timeMs": 1050,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_009.png",
+          "mobileFile": "mobile/idle/idle_009.webp",
+          "durationMs": 150,
+          "timeMs": 1200,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_010.png",
+          "mobileFile": "mobile/idle/idle_010.webp",
+          "durationMs": 150,
+          "timeMs": 1350,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_011.png",
+          "mobileFile": "mobile/idle/idle_011.webp",
+          "durationMs": 150,
+          "timeMs": 1500,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_012.png",
+          "mobileFile": "mobile/idle/idle_012.webp",
+          "durationMs": 150,
+          "timeMs": 1650,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_013.png",
+          "mobileFile": "mobile/idle/idle_013.webp",
+          "durationMs": 150,
+          "timeMs": 1800,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_014.png",
+          "mobileFile": "mobile/idle/idle_014.webp",
+          "durationMs": 150,
+          "timeMs": 1950,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_015.png",
+          "mobileFile": "mobile/idle/idle_015.webp",
+          "durationMs": 150,
+          "timeMs": 2100,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_016.png",
+          "mobileFile": "mobile/idle/idle_016.webp",
+          "durationMs": 150,
+          "timeMs": 2250,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_017.png",
+          "mobileFile": "mobile/idle/idle_017.webp",
+          "durationMs": 150,
+          "timeMs": 2400,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_018.png",
+          "mobileFile": "mobile/idle/idle_018.webp",
+          "durationMs": 150,
+          "timeMs": 2550,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_019.png",
+          "mobileFile": "mobile/idle/idle_019.webp",
+          "durationMs": 150,
+          "timeMs": 2700,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_020.png",
+          "mobileFile": "mobile/idle/idle_020.webp",
+          "durationMs": 150,
+          "timeMs": 2850,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_021.png",
+          "mobileFile": "mobile/idle/idle_021.webp",
+          "durationMs": 150,
+          "timeMs": 3000,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_022.png",
+          "mobileFile": "mobile/idle/idle_022.webp",
+          "durationMs": 150,
+          "timeMs": 3150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_023.png",
+          "mobileFile": "mobile/idle/idle_023.webp",
+          "durationMs": 150,
+          "timeMs": 3300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_024.png",
+          "mobileFile": "mobile/idle/idle_024.webp",
+          "durationMs": 150,
+          "timeMs": 3450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_025.png",
+          "mobileFile": "mobile/idle/idle_025.webp",
+          "durationMs": 150,
+          "timeMs": 3600,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_026.png",
+          "mobileFile": "mobile/idle/idle_026.webp",
+          "durationMs": 150,
+          "timeMs": 3750,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_027.png",
+          "mobileFile": "mobile/idle/idle_027.webp",
+          "durationMs": 150,
+          "timeMs": 3900,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_028.png",
+          "mobileFile": "mobile/idle/idle_028.webp",
+          "durationMs": 150,
+          "timeMs": 4050,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_029.png",
+          "mobileFile": "mobile/idle/idle_029.webp",
+          "durationMs": 150,
+          "timeMs": 4200,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_030.png",
+          "mobileFile": "mobile/idle/idle_030.webp",
+          "durationMs": 150,
+          "timeMs": 4350,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_031.png",
+          "mobileFile": "mobile/idle/idle_031.webp",
+          "durationMs": 150,
+          "timeMs": 4500,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_032.png",
+          "mobileFile": "mobile/idle/idle_032.webp",
+          "durationMs": 150,
+          "timeMs": 4650,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_033.png",
+          "mobileFile": "mobile/idle/idle_033.webp",
+          "durationMs": 150,
+          "timeMs": 4800,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_034.png",
+          "mobileFile": "mobile/idle/idle_034.webp",
+          "durationMs": 150,
+          "timeMs": 4950,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_035.png",
+          "mobileFile": "mobile/idle/idle_035.webp",
+          "durationMs": 150,
+          "timeMs": 5100,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_036.png",
+          "mobileFile": "mobile/idle/idle_036.webp",
+          "durationMs": 150,
+          "timeMs": 5250,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_037.png",
+          "mobileFile": "mobile/idle/idle_037.webp",
+          "durationMs": 150,
+          "timeMs": 5400,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_038.png",
+          "mobileFile": "mobile/idle/idle_038.webp",
+          "durationMs": 150,
+          "timeMs": 5550,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_039.png",
+          "mobileFile": "mobile/idle/idle_039.webp",
+          "durationMs": 150,
+          "timeMs": 5700,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_040.png",
+          "mobileFile": "mobile/idle/idle_040.webp",
+          "durationMs": 150,
+          "timeMs": 5850,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_041.png",
+          "mobileFile": "mobile/idle/idle_041.webp",
+          "durationMs": 150,
+          "timeMs": 6000,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_042.png",
+          "mobileFile": "mobile/idle/idle_042.webp",
+          "durationMs": 150,
+          "timeMs": 6150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_043.png",
+          "mobileFile": "mobile/idle/idle_043.webp",
+          "durationMs": 150,
+          "timeMs": 6300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_044.png",
+          "mobileFile": "mobile/idle/idle_044.webp",
+          "durationMs": 150,
+          "timeMs": 6450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_045.png",
+          "mobileFile": "mobile/idle/idle_045.webp",
+          "durationMs": 80,
+          "timeMs": 6600,
+          "eyes": "half"
+        },
+        {
+          "file": "idle/idle_046.png",
+          "mobileFile": "mobile/idle/idle_046.webp",
+          "durationMs": 100,
+          "timeMs": 6680,
+          "eyes": "closed"
+        },
+        {
+          "file": "idle/idle_047.png",
+          "mobileFile": "mobile/idle/idle_047.webp",
+          "durationMs": 80,
+          "timeMs": 6780,
+          "eyes": "half"
+        },
+        {
+          "file": "idle/idle_048.png",
+          "mobileFile": "mobile/idle/idle_048.webp",
+          "durationMs": 150,
+          "timeMs": 6860,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_049.png",
+          "mobileFile": "mobile/idle/idle_049.webp",
+          "durationMs": 150,
+          "timeMs": 7010,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_050.png",
+          "mobileFile": "mobile/idle/idle_050.webp",
+          "durationMs": 150,
+          "timeMs": 7160,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_051.png",
+          "mobileFile": "mobile/idle/idle_051.webp",
+          "durationMs": 150,
+          "timeMs": 7310,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_052.png",
+          "mobileFile": "mobile/idle/idle_052.webp",
+          "durationMs": 150,
+          "timeMs": 7460,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_053.png",
+          "mobileFile": "mobile/idle/idle_053.webp",
+          "durationMs": 150,
+          "timeMs": 7610,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_054.png",
+          "mobileFile": "mobile/idle/idle_054.webp",
+          "durationMs": 150,
+          "timeMs": 7760,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_055.png",
+          "mobileFile": "mobile/idle/idle_055.webp",
+          "durationMs": 150,
+          "timeMs": 7910,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_056.png",
+          "mobileFile": "mobile/idle/idle_056.webp",
+          "durationMs": 150,
+          "timeMs": 8060,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_057.png",
+          "mobileFile": "mobile/idle/idle_057.webp",
+          "durationMs": 150,
+          "timeMs": 8210,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_058.png",
+          "mobileFile": "mobile/idle/idle_058.webp",
+          "durationMs": 150,
+          "timeMs": 8360,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_059.png",
+          "mobileFile": "mobile/idle/idle_059.webp",
+          "durationMs": 150,
+          "timeMs": 8510,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_060.png",
+          "mobileFile": "mobile/idle/idle_060.webp",
+          "durationMs": 150,
+          "timeMs": 8660,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_061.png",
+          "mobileFile": "mobile/idle/idle_061.webp",
+          "durationMs": 150,
+          "timeMs": 8810,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_062.png",
+          "mobileFile": "mobile/idle/idle_062.webp",
+          "durationMs": 150,
+          "timeMs": 8960,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_063.png",
+          "mobileFile": "mobile/idle/idle_063.webp",
+          "durationMs": 150,
+          "timeMs": 9110,
+          "eyes": "open"
+        }
+      ]
+    },
+    "cat-03": {
+      "loop": true,
+      "frameCount": 63,
+      "cycleDurationMs": 9260,
+      "blinkCountPerCycle": 1,
+      "frames": [
+        {
+          "file": "idle/idle_001.png",
+          "mobileFile": "mobile/idle/idle_001.webp",
+          "durationMs": 150,
+          "timeMs": 0,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_002.png",
+          "mobileFile": "mobile/idle/idle_002.webp",
+          "durationMs": 150,
+          "timeMs": 150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_003.png",
+          "mobileFile": "mobile/idle/idle_003.webp",
+          "durationMs": 150,
+          "timeMs": 300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_004.png",
+          "mobileFile": "mobile/idle/idle_004.webp",
+          "durationMs": 150,
+          "timeMs": 450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_005.png",
+          "mobileFile": "mobile/idle/idle_005.webp",
+          "durationMs": 150,
+          "timeMs": 600,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_006.png",
+          "mobileFile": "mobile/idle/idle_006.webp",
+          "durationMs": 150,
+          "timeMs": 750,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_007.png",
+          "mobileFile": "mobile/idle/idle_007.webp",
+          "durationMs": 150,
+          "timeMs": 900,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_008.png",
+          "mobileFile": "mobile/idle/idle_008.webp",
+          "durationMs": 150,
+          "timeMs": 1050,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_009.png",
+          "mobileFile": "mobile/idle/idle_009.webp",
+          "durationMs": 150,
+          "timeMs": 1200,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_010.png",
+          "mobileFile": "mobile/idle/idle_010.webp",
+          "durationMs": 150,
+          "timeMs": 1350,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_011.png",
+          "mobileFile": "mobile/idle/idle_011.webp",
+          "durationMs": 150,
+          "timeMs": 1500,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_012.png",
+          "mobileFile": "mobile/idle/idle_012.webp",
+          "durationMs": 150,
+          "timeMs": 1650,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_013.png",
+          "mobileFile": "mobile/idle/idle_013.webp",
+          "durationMs": 150,
+          "timeMs": 1800,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_014.png",
+          "mobileFile": "mobile/idle/idle_014.webp",
+          "durationMs": 150,
+          "timeMs": 1950,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_015.png",
+          "mobileFile": "mobile/idle/idle_015.webp",
+          "durationMs": 150,
+          "timeMs": 2100,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_016.png",
+          "mobileFile": "mobile/idle/idle_016.webp",
+          "durationMs": 150,
+          "timeMs": 2250,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_017.png",
+          "mobileFile": "mobile/idle/idle_017.webp",
+          "durationMs": 150,
+          "timeMs": 2400,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_018.png",
+          "mobileFile": "mobile/idle/idle_018.webp",
+          "durationMs": 150,
+          "timeMs": 2550,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_019.png",
+          "mobileFile": "mobile/idle/idle_019.webp",
+          "durationMs": 150,
+          "timeMs": 2700,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_020.png",
+          "mobileFile": "mobile/idle/idle_020.webp",
+          "durationMs": 150,
+          "timeMs": 2850,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_021.png",
+          "mobileFile": "mobile/idle/idle_021.webp",
+          "durationMs": 150,
+          "timeMs": 3000,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_022.png",
+          "mobileFile": "mobile/idle/idle_022.webp",
+          "durationMs": 150,
+          "timeMs": 3150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_023.png",
+          "mobileFile": "mobile/idle/idle_023.webp",
+          "durationMs": 150,
+          "timeMs": 3300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_024.png",
+          "mobileFile": "mobile/idle/idle_024.webp",
+          "durationMs": 150,
+          "timeMs": 3450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_025.png",
+          "mobileFile": "mobile/idle/idle_025.webp",
+          "durationMs": 150,
+          "timeMs": 3600,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_026.png",
+          "mobileFile": "mobile/idle/idle_026.webp",
+          "durationMs": 150,
+          "timeMs": 3750,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_027.png",
+          "mobileFile": "mobile/idle/idle_027.webp",
+          "durationMs": 150,
+          "timeMs": 3900,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_028.png",
+          "mobileFile": "mobile/idle/idle_028.webp",
+          "durationMs": 150,
+          "timeMs": 4050,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_029.png",
+          "mobileFile": "mobile/idle/idle_029.webp",
+          "durationMs": 150,
+          "timeMs": 4200,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_030.png",
+          "mobileFile": "mobile/idle/idle_030.webp",
+          "durationMs": 150,
+          "timeMs": 4350,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_031.png",
+          "mobileFile": "mobile/idle/idle_031.webp",
+          "durationMs": 150,
+          "timeMs": 4500,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_032.png",
+          "mobileFile": "mobile/idle/idle_032.webp",
+          "durationMs": 150,
+          "timeMs": 4650,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_033.png",
+          "mobileFile": "mobile/idle/idle_033.webp",
+          "durationMs": 150,
+          "timeMs": 4800,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_034.png",
+          "mobileFile": "mobile/idle/idle_034.webp",
+          "durationMs": 150,
+          "timeMs": 4950,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_035.png",
+          "mobileFile": "mobile/idle/idle_035.webp",
+          "durationMs": 150,
+          "timeMs": 5100,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_036.png",
+          "mobileFile": "mobile/idle/idle_036.webp",
+          "durationMs": 150,
+          "timeMs": 5250,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_037.png",
+          "mobileFile": "mobile/idle/idle_037.webp",
+          "durationMs": 150,
+          "timeMs": 5400,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_038.png",
+          "mobileFile": "mobile/idle/idle_038.webp",
+          "durationMs": 150,
+          "timeMs": 5550,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_039.png",
+          "mobileFile": "mobile/idle/idle_039.webp",
+          "durationMs": 150,
+          "timeMs": 5700,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_040.png",
+          "mobileFile": "mobile/idle/idle_040.webp",
+          "durationMs": 150,
+          "timeMs": 5850,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_041.png",
+          "mobileFile": "mobile/idle/idle_041.webp",
+          "durationMs": 150,
+          "timeMs": 6000,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_042.png",
+          "mobileFile": "mobile/idle/idle_042.webp",
+          "durationMs": 150,
+          "timeMs": 6150,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_043.png",
+          "mobileFile": "mobile/idle/idle_043.webp",
+          "durationMs": 150,
+          "timeMs": 6300,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_044.png",
+          "mobileFile": "mobile/idle/idle_044.webp",
+          "durationMs": 150,
+          "timeMs": 6450,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_045.png",
+          "mobileFile": "mobile/idle/idle_045.webp",
+          "durationMs": 80,
+          "timeMs": 6600,
+          "eyes": "half"
+        },
+        {
+          "file": "idle/idle_046.png",
+          "mobileFile": "mobile/idle/idle_046.webp",
+          "durationMs": 100,
+          "timeMs": 6680,
+          "eyes": "closed"
+        },
+        {
+          "file": "idle/idle_047.png",
+          "mobileFile": "mobile/idle/idle_047.webp",
+          "durationMs": 80,
+          "timeMs": 6780,
+          "eyes": "half"
+        },
+        {
+          "file": "idle/idle_048.png",
+          "mobileFile": "mobile/idle/idle_048.webp",
+          "durationMs": 150,
+          "timeMs": 6860,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_049.png",
+          "mobileFile": "mobile/idle/idle_049.webp",
+          "durationMs": 150,
+          "timeMs": 7010,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_050.png",
+          "mobileFile": "mobile/idle/idle_050.webp",
+          "durationMs": 150,
+          "timeMs": 7160,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_051.png",
+          "mobileFile": "mobile/idle/idle_051.webp",
+          "durationMs": 150,
+          "timeMs": 7310,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_052.png",
+          "mobileFile": "mobile/idle/idle_052.webp",
+          "durationMs": 150,
+          "timeMs": 7460,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_053.png",
+          "mobileFile": "mobile/idle/idle_053.webp",
+          "durationMs": 150,
+          "timeMs": 7610,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_054.png",
+          "mobileFile": "mobile/idle/idle_054.webp",
+          "durationMs": 150,
+          "timeMs": 7760,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_055.png",
+          "mobileFile": "mobile/idle/idle_055.webp",
+          "durationMs": 150,
+          "timeMs": 7910,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_056.png",
+          "mobileFile": "mobile/idle/idle_056.webp",
+          "durationMs": 150,
+          "timeMs": 8060,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_057.png",
+          "mobileFile": "mobile/idle/idle_057.webp",
+          "durationMs": 150,
+          "timeMs": 8210,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_058.png",
+          "mobileFile": "mobile/idle/idle_058.webp",
+          "durationMs": 150,
+          "timeMs": 8360,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_059.png",
+          "mobileFile": "mobile/idle/idle_059.webp",
+          "durationMs": 150,
+          "timeMs": 8510,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_060.png",
+          "mobileFile": "mobile/idle/idle_060.webp",
+          "durationMs": 150,
+          "timeMs": 8660,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_061.png",
+          "mobileFile": "mobile/idle/idle_061.webp",
+          "durationMs": 150,
+          "timeMs": 8810,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_062.png",
+          "mobileFile": "mobile/idle/idle_062.webp",
+          "durationMs": 150,
+          "timeMs": 8960,
+          "eyes": "open"
+        },
+        {
+          "file": "idle/idle_063.png",
+          "mobileFile": "mobile/idle/idle_063.webp",
+          "durationMs": 150,
+          "timeMs": 9110,
+          "eyes": "open"
+        }
+      ]
+    }
+  }
+}

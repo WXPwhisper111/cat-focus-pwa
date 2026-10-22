@@ -1,0 +1,23 @@
+{
+  "file": "cat-focus-pwa\\public\\cat_02\\cat_02_prototype.png",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "mode": "RGBA",
+  "alpha": [
+    0,
+    255
+  ],
+  "visible_bbox_alpha_ge_16": [
+    50,
+    55,
+    1216,
+    1234
+  ],
+  "original_canvas": [
+    1254,
+    1254
+  ],
+  "status": "static prototype only; not an animation; not integrated into app"
+}

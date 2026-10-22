@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><head><base href="/"/><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"/><title>启动页独立验收预览</title></head><body><div id="app" hidden inert></div><script type="module">
+// Isolated visual harness, never imported by the production entry or build.
+// Enter completes the pending initialization; Escape simulates failure; retry repeats it.
+import '../../src/style.css';
+import '../../src/startup.css';
+import { createStartup } from '../../src/startup.ts';
+const app=document.querySelector('#app');
+const startup=createStartup(app,()=>new Promise((resolve,reject)=>{
+ const key=event=>{if(event.key!=='Enter'&&event.key!=='Escape')return;window.removeEventListener('keydown',key);event.preventDefault();event.key==='Enter'?resolve():reject(Error('Preview failure'));};window.addEventListener('keydown',key);
+}),()=>{app.innerHTML='<main><h1>测试初始化完成</h1><p>这是独立视觉验收页面，不连接数据库。</p></main>';});
+void startup.start();
+</script></body></html>

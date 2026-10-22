@@ -1,0 +1,14 @@
+.daily-welcome { position: relative; box-sizing: border-box; width: min(410px, calc(100% - 32px)); max-height: calc(100dvh - 36px); overflow-y: auto; padding: 30px 26px 24px; text-align: center; color: #49372f; border: 1px solid #e7d2b8; border-radius: 28px; background: radial-gradient(ellipse at 50% 25%, #fff0d4, #fffaf3 65%); box-shadow: 0 20px 65px #49372f30; }
+.daily-welcome::backdrop { background: #36291f66; }
+.daily-welcome .welcome-close { position: absolute; right: 12px; top: 10px; width: 36px; height: 36px; padding: 0; border: 0; background: transparent; font-size: 26px; color: #967b65; }
+.welcome-eyebrow { color: #b9743c; font-size: 12px; font-weight: 700; letter-spacing: .06em; margin: 10px 0 0; }
+.welcome-cat { height: 122px; display: flex; justify-content: center; align-items: center; }
+.welcome-cat img { width: 128px; height: 128px; object-fit: contain; image-rendering: pixelated; }
+.welcome-paw { display: grid; place-items: center; width: 86px; height: 86px; border-radius: 50%; background: #ffebcf; color: #c77735; }
+.welcome-paw svg { width: 50px; height: 50px; }
+.welcome-reward svg { display: block; width: 24px; height: 24px; }
+.daily-welcome h2 { margin: 2px 0 16px; font-size: 25px; }
+.welcome-reward { display: inline-flex; align-items: center; gap: 8px; padding: 10px 22px; border-radius: 18px; background: #ffebcf; color: #c77735; font-size: 32px; font-weight: 800; }
+.welcome-reward span { font-size: 18px; }
+.daily-welcome p { margin: 20px 0; color: #8b715e; line-height: 1.7; }
+.daily-welcome small { display: block; margin-top: 14px; color: #9b826d; font-size: 12px; }

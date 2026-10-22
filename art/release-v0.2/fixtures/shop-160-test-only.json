@@ -1,0 +1,536 @@
+{
+  "format": "cat-focus-pwa",
+  "version": 8,
+  "tasks": [],
+  "selectedTaskId": null,
+  "catNames": {},
+  "versions": {
+    "database": 6,
+    "wallet": 1,
+    "commerce": 1,
+    "growth": "focus-minutes-v1"
+  },
+  "growth": {
+    "experience": 0,
+    "level": 1
+  },
+  "commerce": {
+    "version": 1,
+    "inventory": {
+      "ownedFurnitureIds": [
+        "basic-bed",
+        "basic-tableware",
+        "basic-rug",
+        "basic-scratcher"
+      ],
+      "equipped": {
+        "sleep": "basic-bed",
+        "food": "basic-tableware",
+        "activity": "basic-rug",
+        "play": "basic-scratcher"
+      }
+    },
+    "purchases": []
+  },
+  "checkins": [
+    {
+      "date": "2026-09-01",
+      "claimedAt": 1788235200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-01"
+    },
+    {
+      "date": "2026-09-02",
+      "claimedAt": 1788321600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-02"
+    },
+    {
+      "date": "2026-09-03",
+      "claimedAt": 1788408000000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-03"
+    },
+    {
+      "date": "2026-09-04",
+      "claimedAt": 1788494400000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-04"
+    },
+    {
+      "date": "2026-09-05",
+      "claimedAt": 1788580800000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-05"
+    },
+    {
+      "date": "2026-09-06",
+      "claimedAt": 1788667200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-06"
+    },
+    {
+      "date": "2026-09-07",
+      "claimedAt": 1788753600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-07"
+    },
+    {
+      "date": "2026-09-08",
+      "claimedAt": 1788840000000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-08"
+    },
+    {
+      "date": "2026-09-09",
+      "claimedAt": 1788926400000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-09"
+    },
+    {
+      "date": "2026-09-10",
+      "claimedAt": 1789012800000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-10"
+    },
+    {
+      "date": "2026-09-11",
+      "claimedAt": 1789099200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-11"
+    },
+    {
+      "date": "2026-09-12",
+      "claimedAt": 1789185600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-12"
+    },
+    {
+      "date": "2026-09-13",
+      "claimedAt": 1789272000000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-13"
+    },
+    {
+      "date": "2026-09-14",
+      "claimedAt": 1789358400000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-14"
+    },
+    {
+      "date": "2026-09-15",
+      "claimedAt": 1789444800000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-15"
+    },
+    {
+      "date": "2026-09-16",
+      "claimedAt": 1789531200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-16"
+    },
+    {
+      "date": "2026-09-17",
+      "claimedAt": 1789617600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-17"
+    },
+    {
+      "date": "2026-09-18",
+      "claimedAt": 1789704000000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-18"
+    },
+    {
+      "date": "2026-09-19",
+      "claimedAt": 1789790400000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-19"
+    },
+    {
+      "date": "2026-09-20",
+      "claimedAt": 1789876800000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-20"
+    },
+    {
+      "date": "2026-09-21",
+      "claimedAt": 1789963200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-21"
+    },
+    {
+      "date": "2026-09-22",
+      "claimedAt": 1790049600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-22"
+    },
+    {
+      "date": "2026-09-23",
+      "claimedAt": 1790136000000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-23"
+    },
+    {
+      "date": "2026-09-24",
+      "claimedAt": 1790222400000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-24"
+    },
+    {
+      "date": "2026-09-25",
+      "claimedAt": 1790308800000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-25"
+    },
+    {
+      "date": "2026-09-26",
+      "claimedAt": 1790395200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-26"
+    },
+    {
+      "date": "2026-09-27",
+      "claimedAt": 1790481600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-27"
+    },
+    {
+      "date": "2026-09-28",
+      "claimedAt": 1790568000000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-28"
+    },
+    {
+      "date": "2026-09-29",
+      "claimedAt": 1790654400000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-29"
+    },
+    {
+      "date": "2026-09-30",
+      "claimedAt": 1790740800000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-09-30"
+    },
+    {
+      "date": "2026-10-01",
+      "claimedAt": 1790827200000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-10-01"
+    },
+    {
+      "date": "2026-10-02",
+      "claimedAt": 1790913600000,
+      "reward": 5,
+      "transactionId": "daily_checkin:2026-10-02"
+    }
+  ],
+  "wallet": {
+    "state": {
+      "version": 1,
+      "balance": 160,
+      "totalIncome": 160,
+      "totalSpent": 0,
+      "remainderMs": 0,
+      "migratedAt": 1792555200000,
+      "baseline": null
+    },
+    "transactions": [
+      {
+        "id": "daily_checkin:2026-09-01",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-01",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788235200000
+      },
+      {
+        "id": "daily_checkin:2026-09-02",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-02",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788321600000
+      },
+      {
+        "id": "daily_checkin:2026-09-03",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-03",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788408000000
+      },
+      {
+        "id": "daily_checkin:2026-09-04",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-04",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788494400000
+      },
+      {
+        "id": "daily_checkin:2026-09-05",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-05",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788580800000
+      },
+      {
+        "id": "daily_checkin:2026-09-06",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-06",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788667200000
+      },
+      {
+        "id": "daily_checkin:2026-09-07",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-07",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788753600000
+      },
+      {
+        "id": "daily_checkin:2026-09-08",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-08",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788840000000
+      },
+      {
+        "id": "daily_checkin:2026-09-09",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-09",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1788926400000
+      },
+      {
+        "id": "daily_checkin:2026-09-10",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-10",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789012800000
+      },
+      {
+        "id": "daily_checkin:2026-09-11",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-11",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789099200000
+      },
+      {
+        "id": "daily_checkin:2026-09-12",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-12",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789185600000
+      },
+      {
+        "id": "daily_checkin:2026-09-13",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-13",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789272000000
+      },
+      {
+        "id": "daily_checkin:2026-09-14",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-14",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789358400000
+      },
+      {
+        "id": "daily_checkin:2026-09-15",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-15",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789444800000
+      },
+      {
+        "id": "daily_checkin:2026-09-16",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-16",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789531200000
+      },
+      {
+        "id": "daily_checkin:2026-09-17",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-17",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789617600000
+      },
+      {
+        "id": "daily_checkin:2026-09-18",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-18",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789704000000
+      },
+      {
+        "id": "daily_checkin:2026-09-19",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-19",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789790400000
+      },
+      {
+        "id": "daily_checkin:2026-09-20",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-20",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789876800000
+      },
+      {
+        "id": "daily_checkin:2026-09-21",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-21",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1789963200000
+      },
+      {
+        "id": "daily_checkin:2026-09-22",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-22",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790049600000
+      },
+      {
+        "id": "daily_checkin:2026-09-23",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-23",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790136000000
+      },
+      {
+        "id": "daily_checkin:2026-09-24",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-24",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790222400000
+      },
+      {
+        "id": "daily_checkin:2026-09-25",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-25",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790308800000
+      },
+      {
+        "id": "daily_checkin:2026-09-26",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-26",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790395200000
+      },
+      {
+        "id": "daily_checkin:2026-09-27",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-27",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790481600000
+      },
+      {
+        "id": "daily_checkin:2026-09-28",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-28",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790568000000
+      },
+      {
+        "id": "daily_checkin:2026-09-29",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-29",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790654400000
+      },
+      {
+        "id": "daily_checkin:2026-09-30",
+        "kind": "daily_checkin",
+        "sourceId": "2026-09-30",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790740800000
+      },
+      {
+        "id": "daily_checkin:2026-10-01",
+        "kind": "daily_checkin",
+        "sourceId": "2026-10-01",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790827200000
+      },
+      {
+        "id": "daily_checkin:2026-10-02",
+        "kind": "daily_checkin",
+        "sourceId": "2026-10-02",
+        "amount": 5,
+        "description": "每日自动签到",
+        "createdAt": 1790913600000
+      }
+    ],
+    "receipts": []
+  },
+  "exportedAt": "2026-10-21T04:00:00.000Z",
+  "categories": [
+    {
+      "id": "builtin-english",
+      "name": "英语",
+      "archived": false,
+      "order": 0
+    },
+    {
+      "id": "builtin-computer",
+      "name": "计算机",
+      "archived": false,
+      "order": 1
+    },
+    {
+      "id": "builtin-fitness",
+      "name": "健身",
+      "archived": false,
+      "order": 2
+    },
+    {
+      "id": "builtin-math",
+      "name": "数学",
+      "archived": false,
+      "order": 3
+    }
+  ],
+  "records": [],
+  "catHouse": {
+    "ownedCatIds": [
+      "orange-white"
+    ],
+    "residentCatIds": [
+      "orange-white"
+    ],
+    "companionCatId": "orange-white"
+  }
+}

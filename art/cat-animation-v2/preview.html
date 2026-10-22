@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>三猫睡眠 V2.1 · 32px 对比 52px</title>
+<link rel="stylesheet" href="../../src/style.css">
+<style>
+.controls #cat{position:static;width:auto;height:auto;object-fit:initial;z-index:auto}
+body{margin:0}main{padding-top:16px;padding-bottom:30px}h1{font-size:21px;margin:0 0 10px}h2{font-size:17px;margin:22px 0 8px}.intro{font-size:13px;color:#826e60;line-height:1.6}.controls{display:flex;gap:8px;flex-wrap:wrap;margin:12px 0}.controls select{font:inherit;font-size:14px;min-width:0;padding:8px;border-radius:10px;border:1px solid #ddc9b2;background:#fffaf3;color:#49372f}.controls label{font-size:13px;display:flex;gap:5px;align-items:center}figure{margin:8px 0 16px}figcaption{font-size:12px;color:#826e60;line-height:1.7;margin:3px 0 5px}.room-card{border:1px solid #ebdccb;border-radius:12px;overflow:hidden;background:#fffaf3}.room-canvas{display:block;width:100%;height:auto;aspect-ratio:4/3;image-rendering:pixelated}.focus-sprite{width:176px;height:176px;image-rendering:pixelated;position:relative;z-index:1}.focus-cat-view{display:flex;flex-direction:column;align-items:center}.zoom{display:block;max-width:100%;width:384px;height:auto;image-rendering:pixelated;background:#fff7e8;border-radius:12px}.measure{font:12px ui-monospace,monospace;color:#826e60;margin:8px 0}#loading{font-size:14px}#error{color:#a33;white-space:pre-wrap}button{font-size:13px;padding:7px 12px}.old-tag{color:#90785c}.new-tag{color:#38785e}footer{font-size:12px;line-height:1.7;color:#826e60;border-top:1px solid #ddc9b2;padding-top:12px}
+</style>
+<main>
+<h1>睡眠微调 V2.1｜32px ↔ 52px</h1>
+<p class="intro">上图是新版 32px，下图是上一版 52px。两版使用同一猫咪形象和 4.8 秒节奏；切换到放大预览可看清背部峰值。待机与眨眼保持不变。</p>
+<div class="controls">
+<select id="cat" aria-label="猫咪"><option value="all">三只猫</option><option value="cat-01">橘白短毛猫</option><option value="cat-02">蓝眼灰白猫</option><option value="cat-03">奶油长毛猫</option></select>
+<select id="state" aria-label="动作"><option value="sleep_loop">睡觉</option><option value="idle">待机</option></select>
+<select id="context" aria-label="显示场景"><option value="both">房间＋专注卡</option><option value="room">房间实尺</option><option value="focus">专注卡实尺</option><option value="zoom">放大预览</option></select>
+<label><input type="checkbox" id="compare" checked>显示上一版 52px</label>
+<button id="pause" type="button">暂停</button>
+</div>
+<div class="measure" id="measure"></div><div id="loading">正在加载帧图…</div><div id="error"></div><div id="gallery"></div>
+<footer>睡眠对照使用微调前的 52px 呼吸帧；待机对照使用上一批正式帧图。本页只用于查看独立素材，不修改应用。</footer>
+</main>
+<script>
+window.previewReady=(async()=>{
+  const [data,layout]=await Promise.all([
+    fetch('./preview-data.json').then(r=>r.json()),
+    fetch('../room-v0.1/scene-calibration/layout.json').then(r=>r.json())]);
+  const cache=new Map();
+  function image(url){if(!cache.has(url))cache.set(url,new Promise((resolve,reject)=>{const im=new Image();im.onload=()=>im.decode().then(()=>resolve(im),reject);im.onerror=()=>reject(Error(url));im.src=url;}));return cache.get(url);}
+  const allUrls=data.cats.flatMap(cat=>['old','new'].flatMap(v=>Object.values(cat[v].animations).flatMap(s=>s.frames.map(f=>f.url))));
+  const roomImages=new Map();
+  await Promise.all([...new Set(allUrls)].map(image));
+  await Promise.all(layout.layers.filter(l=>l.file&&l.id!=='cat').map(async l=>roomImages.set(l.id,await image('../../public/room/'+l.file))));
+  const background=document.createElement('canvas');background.width=1024;background.height=768;const bg=background.getContext('2d');bg.imageSmoothingEnabled=false;
+  for(const l of layout.layers){
+    if(l.id==='cat')continue;
+    if(l.primitive){const[x,y,w,h]=l.rect;bg.fillStyle='rgba(88,56,36,.18)';bg.fillRect(x+10,y,w-20,h);bg.fillRect(x+4,y+2,w-8,h-4);bg.fillRect(x,y+4,w,h-8);}
+    else bg.drawImage(roomImages.get(l.id),...l.rect);
+  }
+  // Resolve image promises once. Painting only touches decoded frames.
+  const decoded=new Map();for(const [url,pending] of cache)decoded.set(url,await pending);
+  let config={cat:'all',state:'sleep_loop',context:'both',compare:true};
+  let active=[],epoch=performance.now(),frozen=null,forced=null,stats=[];
+  function at(sequence,time){const cycle=sequence.cycleDurationMs||sequence.frames.reduce((n,f)=>n+f.durationMs,0);let t=((time%cycle)+cycle)%cycle;for(let i=0;i<sequence.frames.length;i++){if(t<sequence.frames[i].durationMs)return{i,frame:sequence.frames[i],cycle};t-=sequence.frames[i].durationMs;}return{i:0,frame:sequence.frames[0],cycle};}
+  function canvas(kind){const c=document.createElement('canvas');c.dataset.kind=kind;c.width=kind==='room'?1024:kind==='focus'?288:384;c.height=kind==='room'?768:c.width;c.className=kind==='room'?'room-canvas':kind==='focus'?'focus-sprite':'zoom';return c;}
+  function makeView(host,cat,version,kind){
+    const f=document.createElement('figure');f.dataset.version=version;f.dataset.kind=kind;
+    const label=document.createElement('figcaption');label.className=version==='new'?'new-tag':'old-tag';label.textContent=`${version==='new'?(config.state==='sleep_loop'?'新版 32px':'新版 idle'):(config.state==='sleep_loop'?'上一版 52px':'上一版 idle')} · ${kind==='room'?'房间实尺':kind==='focus'?'专注卡实尺':'放大预览'}`;f.append(label);
+    const c=canvas(kind);
+    if(kind==='room'){const card=document.createElement('div');card.className='room-card';card.append(c);f.append(card);}
+    else if(kind==='focus'){const card=document.createElement('div');card.className='cat-card';const wrap=document.createElement('div');wrap.className='focus-cat-view';const floor=document.createElement('div');floor.className='cat-floor';wrap.append(c,floor);card.append(wrap);f.append(card);}
+    else f.append(c);
+    host.append(f);const sequence=cat[version].animations[config.state];const ctx=c.getContext('2d');ctx.imageSmoothingEnabled=false;active.push({cat:cat.id,version,kind,c,ctx,sequence,last:-1});
+  }
+  function rebuild(){
+    active=[];stats=[];const gallery=document.getElementById('gallery');gallery.replaceChildren();
+    for(const cat of data.cats.filter(c=>config.cat==='all'||c.id===config.cat)){
+      const section=document.createElement('section');section.dataset.cat=cat.id;const h=document.createElement('h2');h.textContent=cat.name;section.append(h);gallery.append(section);
+      const kinds=config.context==='both'?['room','focus']:[config.context];
+      for(const kind of kinds){makeView(section,cat,'new',kind);if(config.compare)makeView(section,cat,'old',kind);}
+    }
+    epoch=performance.now();frozen=null;forced=null;document.getElementById('pause').textContent='暂停';paint(0);
+    const r=document.querySelector('.room-canvas')?.getBoundingClientRect();document.getElementById('measure').textContent=r?`视口 ${innerWidth}px · 房间 ${r.width.toFixed(1)}px · 猫画布 ${(r.width*144/1024).toFixed(1)}px`:`视口 ${innerWidth}px · 专注卡猫画布 176px`;
+  }
+  function paint(t){
+    for(const v of active){
+      const {i,frame,cycle}=at(v.sequence,t);if(v.last===i)continue;v.last=i;const im=decoded.get(frame.url);v.ctx.clearRect(0,0,v.c.width,v.c.height);
+      if(v.kind==='room'){v.ctx.drawImage(background,0,0);const rect=layout.layers.find(l=>l.id==='cat').rect;const offset=(1254-1200)*144/1254;v.ctx.drawImage(im,rect[0],rect[1]+offset,rect[2],rect[3]);}
+      else v.ctx.drawImage(im,0,0,v.c.width,v.c.height);
+      if(v.version==='new'&&v.kind===active.find(x=>x.cat===v.cat&&x.version==='new').kind)stats.push({cat:v.cat,state:config.state,frame:i,timeMs:t,loop:Math.floor(t/cycle)});
+    }
+  }
+  function tick(now){paint(forced??frozen??(now-epoch));requestAnimationFrame(tick);}
+  for(const id of ['cat','state','context','compare'])document.getElementById(id).addEventListener('change',()=>{config[id]=id==='compare'?document.getElementById(id).checked:document.getElementById(id).value;rebuild();});
+  document.getElementById('pause').onclick=()=>{if(frozen===null){frozen=performance.now()-epoch;document.getElementById('pause').textContent='继续';}else{epoch=performance.now()-frozen;frozen=null;document.getElementById('pause').textContent='暂停';}};
+  window.previewApi={
+    set(next){config={...config,...next};for(const id of ['cat','state','context','compare']){const el=document.getElementById(id);if(id==='compare')el.checked=config[id];else el.value=config[id];}rebuild();return{config,canvases:active.length};},
+    sample(t){forced=t;for(const v of active)v.last=-1;paint(t);},
+    resume(){forced=null;epoch=performance.now();frozen=null;stats=[];},
+    stats(){return stats;},
+    dimensions(){return [...document.querySelectorAll('canvas')].map(c=>({kind:c.dataset.kind,width:c.getBoundingClientRect().width,height:c.getBoundingClientRect().height}));},
+    config(){return config;},
+  };
+  document.getElementById('loading').hidden=true;rebuild();requestAnimationFrame(tick);return{cats:data.cats.length,decoded:decoded.size};
+})().catch(e=>{document.getElementById('error').textContent=e.stack;throw e;});
+</script>
+</html>
