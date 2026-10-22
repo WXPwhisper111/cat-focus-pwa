@@ -3,3 +3,19 @@ dist/
 .env.local
 *.pem
 *.key
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+credentials.json
+.npmrc
+
+# Local logs and temporary files
+*.log
+*.tmp
+*.swp
+.DS_Store
+Thumbs.db
