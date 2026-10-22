@@ -1,3 +1,6 @@
+import './app-update.css';
+import { createAppUpdate } from './app-update';
+import { createAppUpdateView } from './app-update-view';
 import './pwa-install.css';
 import { createInstallController } from './pwa-install';
 import { createInstallView } from './pwa-install-view';
@@ -88,6 +91,9 @@ let checkingDue = false;
 let finishing = false;
 let refreshRevision = 0;
 const stateChannel = 'BroadcastChannel' in window ? new BroadcastChannel('cat-focus-state') : undefined;
+const appUpdate = createAppUpdate({ enabled: import.meta.env.PROD, hasActiveSession: async () => !!(await getActive(db)), canReload: () => applicationReady && !pendingCompletionCount && !document.querySelector('dialog[open]') });
+const appUpdateView = createAppUpdateView(appUpdate, () => !!session);
+
 // Capture install opportunities once, before asynchronous database initialization.
 const installController = createInstallController();
 const installView = createInstallView(installController, () => applicationReady && page === 'focus' && !session && !pendingCompletionCount && !pendingWelcome && !document.hidden && !document.querySelector('dialog[open]'));
@@ -216,7 +222,7 @@ function houseMarkup() {
 }
 function settingsMarkup() {
   return `<section class="hero"><div class="eyebrow">安心专注</div><h1>设置与备份</h1><p>数据保存在这台设备的浏览器中。</p></section>
-  <div data-install-card-slot></div><section class="panel"><h2>完成提示</h2><p>应用打开或返回前台时，会显示页面内完成提示。</p><button id="notify">${'Notification' in window ? `启用系统通知（当前：${Notification.permission === 'granted' ? '已允许' : Notification.permission === 'denied' ? '已拒绝' : '未设置'}）` : '当前浏览器不支持系统通知'}</button><p class="hint">首版没有推送服务，因此关闭应用后的准时锁屏提醒不在保证范围内。拒绝通知权限不会影响计时或记录。</p></section>
+  <div data-install-card-slot></div><div data-update-card-slot></div><section class="panel"><h2>完成提示</h2><p>应用打开或返回前台时，会显示页面内完成提示。</p><button id="notify">${'Notification' in window ? `启用系统通知（当前：${Notification.permission === 'granted' ? '已允许' : Notification.permission === 'denied' ? '已拒绝' : '未设置'}）` : '当前浏览器不支持系统通知'}</button><p class="hint">首版没有推送服务，因此关闭应用后的准时锁屏提醒不在保证范围内。拒绝通知权限不会影响计时或记录。</p></section>
     <section class="panel"><h2>手动备份</h2><p>浏览器数据可能被用户或系统清除，请定期导出 JSON 备份。</p><div class="actions"><button id="export">导出 JSON</button><label class="file-button">导入 JSON<input id="import" type="file" accept="application/json,.json" hidden /></label></div><p class="hint">仅支持本 PWA 的备份，不读取桌面版数据。导入会合并记录和任务，保留本机有效任务选择；未选择时恢复备份目标。旧备份不会清空清单，任务内容冲突时整批不导入。保留本机其他设置；尚未领养时可恢复备份中的猫咪。备份含钱包、签到历史、购买记录和入住状态。有活动专注时请先结束；恢复时按日期去重签到奖励，钱包、商城、领养状态或记录冲突时整批不导入。</p></section>
   <section class="panel"><h2>安装与离线</h2><p>首次联网打开后，使用浏览器的“添加到主屏幕”或“安装应用”。资源完成缓存后可离线打开。</p><p class="hint">手机上请使用可信 HTTPS 地址。普通局域网 HTTP 地址无法验证所需的安全上下文能力。</p></section>`;
 }
@@ -249,8 +255,8 @@ function render() {
   else { adoption?.destroy(); adoption = undefined; }
   if (page === 'focus') focusCat?.element.remove();
   else { focusCat?.destroy(); focusCat = undefined; }
-  app.innerHTML = `<main>${notice ? `<div class="toast" role="status">${escapeHtml(notice)}<button id="close-notice" aria-label="关闭提示">×</button></div>` : ''}${page === 'focus' ? focusMarkup() : page === 'stats' ? statMarkup() : page === 'room' ? houseMarkup() : page === 'shop' ? '<div id="shop-slot"></div>' : settingsMarkup()}</main><nav><button data-page="focus" class="${page === 'focus' ? 'active' : ''}">${icon('focus-timer')}<span>专注</span></button><button data-page="stats" class="${page === 'stats' ? 'active' : ''}">${icon('bars')}<span>统计</span></button><button data-page="room" class="${page === 'room' || page === 'shop' ? 'active' : ''}">${icon('cat-house')}<span>猫咪小屋</span></button><button data-page="settings" class="${page === 'settings' ? 'active' : ''}">${icon('settings-gear')}<span>设置</span></button></nav>`;
-  installView.mount();
+  app.innerHTML = `<main>${notice ? `<div class="toast" role="status">${escapeHtml(notice)}<button id="close-notice" aria-label="关闭提示">×</button></div>` : ''}<div data-update-banner-slot></div>${page === 'focus' ? focusMarkup() : page === 'stats' ? statMarkup() : page === 'room' ? houseMarkup() : page === 'shop' ? '<div id="shop-slot"></div>' : settingsMarkup()}</main><nav><button data-page="focus" class="${page === 'focus' ? 'active' : ''}">${icon('focus-timer')}<span>专注</span></button><button data-page="stats" class="${page === 'stats' ? 'active' : ''}">${icon('bars')}<span>统计</span></button><button data-page="room" class="${page === 'room' || page === 'shop' ? 'active' : ''}">${icon('cat-house')}<span>猫咪小屋</span></button><button data-page="settings" class="${page === 'settings' ? 'active' : ''}">${icon('settings-gear')}<span>设置</span></button></nav>`;
+  installView.mount(); appUpdateView.mount();
   if (page === 'focus' && focusGoal) {
     document.querySelector('#focus-goal-slot')!.append(focusGoal.element);
     const selected = focusTasks.find(task => task.id === selectedFocusTaskId && task.status === 'pending');
@@ -491,6 +497,6 @@ const startup = createStartup(app, initializeApplication, () => {
   window.addEventListener('focus', () => void returnToForeground());
   window.addEventListener('pageshow', () => void returnToForeground());
   window.addEventListener('storage', () => void checkDue());
-  if (import.meta.env.PROD && 'serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js').catch(() => setNotice('离线资源注册失败，请联网刷新后重试。'));
+  void appUpdate.start();
 });
 await startup.start();

@@ -7,7 +7,7 @@ async function files(dir) {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
     const path = join(dir, entry.name);
     if (entry.isDirectory()) result.push(...await files(path));
-    else if (entry.name !== 'sw.js') {
+    else if (entry.name !== 'sw.js' && entry.name !== 'update-manifest.json') {
       const asset = './' + relative('dist', path).replaceAll('\\', '/');
       // Keep original artwork in the distribution, but cache only mobile derivatives.
       if (/^\.\/cat(?:\/|_\d+\/)/.test(asset) || asset.startsWith('./cat-mobile/')) continue;
@@ -19,22 +19,20 @@ async function files(dir) {
   }
   return result;
 }
-const assets = ['./', ...await files('dist')];
-const hash = createHash('sha256');
-for (const asset of assets.sort()) {
-  hash.update(asset);
-  hash.update(await readFile(join('dist', asset.slice(2) || 'index.html')));
+const assets = ['./', ...await files('dist')].sort();
+const runtime = await readFile(new URL('./sw-runtime.js', import.meta.url), 'utf8');
+const hash = createHash('sha256').update(runtime);
+const integrity = {};
+for (const asset of assets) {
+  const bytes = await readFile(join('dist', asset.slice(2) || 'index.html'));
+  integrity[asset] = 'sha256-' + createHash('sha256').update(bytes).digest('base64');
+  hash.update(asset); hash.update(bytes);
 }
-const version = 'cat-focus-v1-' + hash.digest('hex').slice(0, 12);
-await writeFile('dist/sw.js', `const CACHE = ${JSON.stringify(version)};
-const ASSETS = ${JSON.stringify(assets)};
-const STATIC_URLS = new Set(ASSETS.map(asset => new URL(asset, self.location.href).href));
-self.addEventListener('install', event => event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(ASSETS)).then(() => self.skipWaiting())));
-self.addEventListener('activate', event => event.waitUntil(Promise.all([caches.keys().then(keys => Promise.all(keys.filter(key => key.startsWith('cat-focus-') && key !== CACHE).map(key => caches.delete(key)))), self.clients.claim()])));
-self.addEventListener('fetch', event => {
-  if (event.request.method !== 'GET' || !STATIC_URLS.has(event.request.url)) return;
-  // Public precached files do not vary by Origin. Module loads can send Origin
-  // while cache.addAll does not; Vite's Vary: Origin must not cause offline misses.
-  event.respondWith(caches.open(CACHE).then(cache => cache.match(event.request, { ignoreVary: true })).then(hit => hit || fetch(event.request)));
-});
-`);
+const version = hash.digest('hex').slice(0, 12);
+const media = assets.filter(asset => /^\.\/(?:room|cat-animation-v2|cat-interactions-v2)\//.test(asset));
+const core = assets.filter(asset => !media.includes(asset));
+const html = await readFile('dist/index.html', 'utf8');
+const entry = /<script[^>]*src="([^"]+)"/.exec(html)?.[1] || './index.html';
+const config = { version, entry, assets, core, media, integrity, coreCache: `cat-focus-core-${version}`, mediaCache: `cat-focus-media-${version}` };
+await writeFile('dist/sw.js', `const CONFIG = ${JSON.stringify(config)};\n` + runtime);
+console.log(`Offline core: ${core.length} files; optional media: ${media.length} files; version: ${version}`);
