@@ -1,0 +1,16 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>新三只猫 · 完整动作素材预览</title>
+<style>
+body{margin:0;background:#f5ead9;color:#49392f;font:15px system-ui,sans-serif}main{max-width:1100px;margin:auto;padding:16px}h1{font-size:23px;margin:0 0 8px}p{line-height:1.55}.controls{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0}button,select{background:#fff9f1;border:1px solid #d4baa0;border-radius:8px;padding:8px;font:inherit;color:inherit}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}.card{background:#fff8ee;border:1px solid #dfcdb9;border-radius:12px;padding:10px;text-align:center}.card img{display:block;width:176px;height:176px;object-fit:contain;image-rendering:pixelated;margin:auto}.card strong{display:block;margin-bottom:7px}.card small{display:block;color:#806955;margin-top:8px}.zoom{width:288px;height:288px;image-rendering:pixelated;object-fit:contain;display:block;margin:12px auto;background:#fff8ee;border-radius:12px}#status{color:#8a6f5b}
+</style><main><h1>新三只猫 · 动作素材预览</h1><p>待机、睡觉、进食、喝水、磨爪循环播放；抚摸反馈为 2.4 秒单次动作。素材为独立透明图层，未接入应用。</p>
+<div class="controls"><select id="cat" aria-label="选择猫咪"><option value="cat-04">黑猫</option><option value="cat-05">珍珠</option><option value="cat-06">狸花白简州猫</option></select><select id="action" aria-label="选择动作"><option value="idle">待机</option><option value="sleep">睡觉</option><option value="eat">进食</option><option value="drink">喝水</option><option value="scratch">磨爪</option><option value="pet">抚摸反馈</option></select><button id="replay">重播当前动作</button></div>
+<p id="status"></p><img id="zoom" class="zoom" alt="放大动作预览"><p>手机实尺：176 像素</p><div id="grid" class="grid"></div></main>
+<script>
+const cats=['cat-04','cat-05','cat-06'],actions=['idle','sleep','eat','drink','scratch','pet'];
+const labels={idle:'待机',sleep:'睡觉',eat:'进食',drink:'喝水',scratch:'磨爪',pet:'抚摸反馈'};
+const $=id=>document.getElementById(id);let serial=0;
+function src(cat,action){return `./previews/${cat}/${action}.webp?v=${serial}`}
+function render(){const cat=$('cat').value,action=$('action').value;$('zoom').src=src(cat,action);$('status').textContent=`${cat} · ${labels[action]} · ${action==='pet'?'单次 2.4 秒':'循环'}`;
+ $('grid').innerHTML=actions.map(a=>`<div class="card"><strong>${labels[a]}</strong><img src="${src(cat,a)}" alt="${labels[a]} 动画"><small>${a==='pet'?'单次':'循环'} · 176 像素</small></div>`).join('');}
+function replay(){serial++;render()};$('cat').onchange=render;$('action').onchange=render;$('replay').onclick=replay;render();
+</script></html>

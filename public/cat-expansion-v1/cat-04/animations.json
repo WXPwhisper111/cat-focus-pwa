@@ -1,0 +1,978 @@
+{
+  "id": "cat-04",
+  "name": "吉吉灵感黑猫",
+  "version": "cat-expansion-v1",
+  "canvas": [
+    1254,
+    1254
+  ],
+  "feetAnchor": [
+    627,
+    1200
+  ],
+  "mobileCanvas": [
+    288,
+    288
+  ],
+  "mobileFeetAnchor": [
+    144,
+    275.59809
+  ],
+  "timingMode": "per-frame-duration-ms",
+  "sourcePrototype": "public/cat_04/cat_04_prototype.png",
+  "actions": {
+    "idle": {
+      "loop": true,
+      "frameCount": 63,
+      "cycleDurationMs": 9260,
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "facing": "front",
+      "frames": [
+        {
+          "file": "idle/idle_001.png",
+          "mobileFile": "mobile/idle/idle_001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_002.png",
+          "mobileFile": "mobile/idle/idle_002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_003.png",
+          "mobileFile": "mobile/idle/idle_003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_004.png",
+          "mobileFile": "mobile/idle/idle_004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_005.png",
+          "mobileFile": "mobile/idle/idle_005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_006.png",
+          "mobileFile": "mobile/idle/idle_006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_007.png",
+          "mobileFile": "mobile/idle/idle_007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_008.png",
+          "mobileFile": "mobile/idle/idle_008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_009.png",
+          "mobileFile": "mobile/idle/idle_009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_010.png",
+          "mobileFile": "mobile/idle/idle_010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_011.png",
+          "mobileFile": "mobile/idle/idle_011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_012.png",
+          "mobileFile": "mobile/idle/idle_012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_013.png",
+          "mobileFile": "mobile/idle/idle_013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_014.png",
+          "mobileFile": "mobile/idle/idle_014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_015.png",
+          "mobileFile": "mobile/idle/idle_015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_016.png",
+          "mobileFile": "mobile/idle/idle_016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_017.png",
+          "mobileFile": "mobile/idle/idle_017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_018.png",
+          "mobileFile": "mobile/idle/idle_018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_019.png",
+          "mobileFile": "mobile/idle/idle_019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_020.png",
+          "mobileFile": "mobile/idle/idle_020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_021.png",
+          "mobileFile": "mobile/idle/idle_021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_022.png",
+          "mobileFile": "mobile/idle/idle_022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_023.png",
+          "mobileFile": "mobile/idle/idle_023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_024.png",
+          "mobileFile": "mobile/idle/idle_024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_025.png",
+          "mobileFile": "mobile/idle/idle_025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_026.png",
+          "mobileFile": "mobile/idle/idle_026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_027.png",
+          "mobileFile": "mobile/idle/idle_027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_028.png",
+          "mobileFile": "mobile/idle/idle_028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_029.png",
+          "mobileFile": "mobile/idle/idle_029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_030.png",
+          "mobileFile": "mobile/idle/idle_030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_031.png",
+          "mobileFile": "mobile/idle/idle_031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_032.png",
+          "mobileFile": "mobile/idle/idle_032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_033.png",
+          "mobileFile": "mobile/idle/idle_033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_034.png",
+          "mobileFile": "mobile/idle/idle_034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_035.png",
+          "mobileFile": "mobile/idle/idle_035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_036.png",
+          "mobileFile": "mobile/idle/idle_036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_037.png",
+          "mobileFile": "mobile/idle/idle_037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_038.png",
+          "mobileFile": "mobile/idle/idle_038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_039.png",
+          "mobileFile": "mobile/idle/idle_039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_040.png",
+          "mobileFile": "mobile/idle/idle_040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_041.png",
+          "mobileFile": "mobile/idle/idle_041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_042.png",
+          "mobileFile": "mobile/idle/idle_042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_043.png",
+          "mobileFile": "mobile/idle/idle_043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_044.png",
+          "mobileFile": "mobile/idle/idle_044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_045.png",
+          "mobileFile": "mobile/idle/idle_045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "idle/idle_046.png",
+          "mobileFile": "mobile/idle/idle_046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "idle/idle_047.png",
+          "mobileFile": "mobile/idle/idle_047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "idle/idle_048.png",
+          "mobileFile": "mobile/idle/idle_048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_049.png",
+          "mobileFile": "mobile/idle/idle_049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_050.png",
+          "mobileFile": "mobile/idle/idle_050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_051.png",
+          "mobileFile": "mobile/idle/idle_051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_052.png",
+          "mobileFile": "mobile/idle/idle_052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_053.png",
+          "mobileFile": "mobile/idle/idle_053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_054.png",
+          "mobileFile": "mobile/idle/idle_054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_055.png",
+          "mobileFile": "mobile/idle/idle_055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_056.png",
+          "mobileFile": "mobile/idle/idle_056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_057.png",
+          "mobileFile": "mobile/idle/idle_057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_058.png",
+          "mobileFile": "mobile/idle/idle_058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_059.png",
+          "mobileFile": "mobile/idle/idle_059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_060.png",
+          "mobileFile": "mobile/idle/idle_060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_061.png",
+          "mobileFile": "mobile/idle/idle_061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_062.png",
+          "mobileFile": "mobile/idle/idle_062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "idle/idle_063.png",
+          "mobileFile": "mobile/idle/idle_063.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    "sleep": {
+      "loop": true,
+      "frameCount": 32,
+      "cycleDurationMs": 4800,
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "facing": "front",
+      "frames": [
+        {
+          "file": "sleep/sleep_001.png",
+          "mobileFile": "mobile/sleep/sleep_001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_002.png",
+          "mobileFile": "mobile/sleep/sleep_002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_003.png",
+          "mobileFile": "mobile/sleep/sleep_003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_004.png",
+          "mobileFile": "mobile/sleep/sleep_004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_005.png",
+          "mobileFile": "mobile/sleep/sleep_005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_006.png",
+          "mobileFile": "mobile/sleep/sleep_006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_007.png",
+          "mobileFile": "mobile/sleep/sleep_007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_008.png",
+          "mobileFile": "mobile/sleep/sleep_008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_009.png",
+          "mobileFile": "mobile/sleep/sleep_009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_010.png",
+          "mobileFile": "mobile/sleep/sleep_010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_011.png",
+          "mobileFile": "mobile/sleep/sleep_011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_012.png",
+          "mobileFile": "mobile/sleep/sleep_012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_013.png",
+          "mobileFile": "mobile/sleep/sleep_013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_014.png",
+          "mobileFile": "mobile/sleep/sleep_014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_015.png",
+          "mobileFile": "mobile/sleep/sleep_015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_016.png",
+          "mobileFile": "mobile/sleep/sleep_016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_017.png",
+          "mobileFile": "mobile/sleep/sleep_017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_018.png",
+          "mobileFile": "mobile/sleep/sleep_018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_019.png",
+          "mobileFile": "mobile/sleep/sleep_019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_020.png",
+          "mobileFile": "mobile/sleep/sleep_020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_021.png",
+          "mobileFile": "mobile/sleep/sleep_021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_022.png",
+          "mobileFile": "mobile/sleep/sleep_022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_023.png",
+          "mobileFile": "mobile/sleep/sleep_023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_024.png",
+          "mobileFile": "mobile/sleep/sleep_024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_025.png",
+          "mobileFile": "mobile/sleep/sleep_025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_026.png",
+          "mobileFile": "mobile/sleep/sleep_026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_027.png",
+          "mobileFile": "mobile/sleep/sleep_027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_028.png",
+          "mobileFile": "mobile/sleep/sleep_028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_029.png",
+          "mobileFile": "mobile/sleep/sleep_029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_030.png",
+          "mobileFile": "mobile/sleep/sleep_030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_031.png",
+          "mobileFile": "mobile/sleep/sleep_031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "sleep/sleep_032.png",
+          "mobileFile": "mobile/sleep/sleep_032.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    "eat": {
+      "loop": true,
+      "frameCount": 16,
+      "cycleDurationMs": 2400,
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "facing": "right-three-quarter",
+      "frames": [
+        {
+          "file": "eat/eat_001.png",
+          "mobileFile": "mobile/eat/eat_001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_002.png",
+          "mobileFile": "mobile/eat/eat_002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_003.png",
+          "mobileFile": "mobile/eat/eat_003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_004.png",
+          "mobileFile": "mobile/eat/eat_004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_005.png",
+          "mobileFile": "mobile/eat/eat_005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_006.png",
+          "mobileFile": "mobile/eat/eat_006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_007.png",
+          "mobileFile": "mobile/eat/eat_007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_008.png",
+          "mobileFile": "mobile/eat/eat_008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_009.png",
+          "mobileFile": "mobile/eat/eat_009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_010.png",
+          "mobileFile": "mobile/eat/eat_010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_011.png",
+          "mobileFile": "mobile/eat/eat_011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_012.png",
+          "mobileFile": "mobile/eat/eat_012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_013.png",
+          "mobileFile": "mobile/eat/eat_013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_014.png",
+          "mobileFile": "mobile/eat/eat_014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_015.png",
+          "mobileFile": "mobile/eat/eat_015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "eat/eat_016.png",
+          "mobileFile": "mobile/eat/eat_016.webp",
+          "durationMs": 150
+        }
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "targetItem": "foodBowl",
+        "spritePoint": [
+          1080,
+          1120
+        ],
+        "targetRoomPoint": [
+          819,
+          652
+        ],
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "roomSpriteRect": [
+          694.98,
+          523.39,
+          144,
+          144
+        ]
+      }
+    },
+    "drink": {
+      "loop": true,
+      "frameCount": 20,
+      "cycleDurationMs": 3000,
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "facing": "right-three-quarter",
+      "frames": [
+        {
+          "file": "drink/drink_001.png",
+          "mobileFile": "mobile/drink/drink_001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_002.png",
+          "mobileFile": "mobile/drink/drink_002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_003.png",
+          "mobileFile": "mobile/drink/drink_003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_004.png",
+          "mobileFile": "mobile/drink/drink_004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_005.png",
+          "mobileFile": "mobile/drink/drink_005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_006.png",
+          "mobileFile": "mobile/drink/drink_006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_007.png",
+          "mobileFile": "mobile/drink/drink_007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_008.png",
+          "mobileFile": "mobile/drink/drink_008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_009.png",
+          "mobileFile": "mobile/drink/drink_009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_010.png",
+          "mobileFile": "mobile/drink/drink_010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_011.png",
+          "mobileFile": "mobile/drink/drink_011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_012.png",
+          "mobileFile": "mobile/drink/drink_012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_013.png",
+          "mobileFile": "mobile/drink/drink_013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_014.png",
+          "mobileFile": "mobile/drink/drink_014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_015.png",
+          "mobileFile": "mobile/drink/drink_015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_016.png",
+          "mobileFile": "mobile/drink/drink_016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_017.png",
+          "mobileFile": "mobile/drink/drink_017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_018.png",
+          "mobileFile": "mobile/drink/drink_018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_019.png",
+          "mobileFile": "mobile/drink/drink_019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "drink/drink_020.png",
+          "mobileFile": "mobile/drink/drink_020.webp",
+          "durationMs": 150
+        }
+      ],
+      "contact": {
+        "kind": "muzzle",
+        "targetItem": "waterBowl",
+        "spritePoint": [
+          1080,
+          1120
+        ],
+        "targetRoomPoint": [
+          914,
+          652
+        ],
+        "itemDisplayPoint": [
+          64,
+          45
+        ],
+        "roomSpriteRect": [
+          789.98,
+          523.39,
+          144,
+          144
+        ]
+      }
+    },
+    "scratch": {
+      "loop": true,
+      "frameCount": 16,
+      "cycleDurationMs": 1920,
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "facing": "right-three-quarter",
+      "frames": [
+        {
+          "file": "scratch/scratch_001.png",
+          "mobileFile": "mobile/scratch/scratch_001.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_002.png",
+          "mobileFile": "mobile/scratch/scratch_002.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_003.png",
+          "mobileFile": "mobile/scratch/scratch_003.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_004.png",
+          "mobileFile": "mobile/scratch/scratch_004.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_005.png",
+          "mobileFile": "mobile/scratch/scratch_005.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_006.png",
+          "mobileFile": "mobile/scratch/scratch_006.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_007.png",
+          "mobileFile": "mobile/scratch/scratch_007.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_008.png",
+          "mobileFile": "mobile/scratch/scratch_008.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_009.png",
+          "mobileFile": "mobile/scratch/scratch_009.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_010.png",
+          "mobileFile": "mobile/scratch/scratch_010.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_011.png",
+          "mobileFile": "mobile/scratch/scratch_011.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_012.png",
+          "mobileFile": "mobile/scratch/scratch_012.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_013.png",
+          "mobileFile": "mobile/scratch/scratch_013.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_014.png",
+          "mobileFile": "mobile/scratch/scratch_014.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_015.png",
+          "mobileFile": "mobile/scratch/scratch_015.webp",
+          "durationMs": 120
+        },
+        {
+          "file": "scratch/scratch_016.png",
+          "mobileFile": "mobile/scratch/scratch_016.webp",
+          "durationMs": 120
+        }
+      ],
+      "contact": {
+        "kind": "front-paw",
+        "targetItem": "scratcher",
+        "spritePoint": [
+          1160,
+          360
+        ],
+        "targetRoomPoint": [
+          884,
+          538
+        ],
+        "itemDisplayPoint": [
+          112,
+          98
+        ],
+        "roomSpriteRect": [
+          750.79,
+          496.66,
+          144,
+          144
+        ]
+      }
+    },
+    "pet": {
+      "loop": false,
+      "frameCount": 16,
+      "cycleDurationMs": 2400,
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "facing": "front",
+      "frames": [
+        {
+          "file": "pet/pet_001.png",
+          "mobileFile": "mobile/pet/pet_001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_002.png",
+          "mobileFile": "mobile/pet/pet_002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_003.png",
+          "mobileFile": "mobile/pet/pet_003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_004.png",
+          "mobileFile": "mobile/pet/pet_004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_005.png",
+          "mobileFile": "mobile/pet/pet_005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_006.png",
+          "mobileFile": "mobile/pet/pet_006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_007.png",
+          "mobileFile": "mobile/pet/pet_007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_008.png",
+          "mobileFile": "mobile/pet/pet_008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_009.png",
+          "mobileFile": "mobile/pet/pet_009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_010.png",
+          "mobileFile": "mobile/pet/pet_010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_011.png",
+          "mobileFile": "mobile/pet/pet_011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_012.png",
+          "mobileFile": "mobile/pet/pet_012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_013.png",
+          "mobileFile": "mobile/pet/pet_013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_014.png",
+          "mobileFile": "mobile/pet/pet_014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_015.png",
+          "mobileFile": "mobile/pet/pet_015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "pet/pet_016.png",
+          "mobileFile": "mobile/pet/pet_016.webp",
+          "durationMs": 150
+        }
+      ]
+    }
+  }
+}

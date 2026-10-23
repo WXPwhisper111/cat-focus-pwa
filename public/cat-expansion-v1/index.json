@@ -1,0 +1,20 @@
+{
+  "version": "cat-expansion-v1",
+  "cats": [
+    {
+      "id": "cat-04",
+      "name": "吉吉灵感黑猫",
+      "manifest": "cat-04/animations.json"
+    },
+    {
+      "id": "cat-05",
+      "name": "珍珠·布偶猫",
+      "manifest": "cat-05/animations.json"
+    },
+    {
+      "id": "cat-06",
+      "name": "简州猫·狸花白",
+      "manifest": "cat-06/animations.json"
+    }
+  ]
+}
