@@ -7,3 +7,22 @@
 .focus-cat-empty p { max-width: 25em; margin: 12px auto 18px; color: #826e60; line-height: 1.6; }
 
 nav button svg{display:block;width:26px;height:26px;margin:0 auto;pointer-events:none;}
+
+.backup-preview { width: min(92vw, 520px); max-height: 85dvh; overflow: auto; box-sizing: border-box; padding: 24px; border: 1px solid #d8bfa6; border-radius: 24px; background: #fff8ee; color: #49382e; }
+.backup-preview button { min-height:44px; margin:6px; }
+#data-manager label { display:block; margin:16px 0; }
+#data-manager input { width:24px; height:24px; vertical-align:middle; }
+
+/* Settings layout only: preserve all existing controls and business handlers. */
+.settings-stack { display:grid; gap:16px; min-width:0; }
+.settings-stack .panel { margin:0; padding:22px; min-width:0; }
+.settings-stack h2 { line-height:1.4; margin:6px 0 12px; font-size:21px; }
+.settings-stack p { overflow-wrap:anywhere; }
+.settings-actions { display:flex; flex-wrap:wrap; gap:10px; margin:16px 0; align-items:stretch; }
+.settings-actions button,.settings-actions .file-button { flex:1 1 150px; min-height:44px; text-align:center; }
+.settings-actions #backup-actions { display:contents; }
+.settings-stack .data-counts { padding:12px; border-radius:12px; background:#fff0db; font-weight:700; line-height:1.9; }
+.backup-preferences { border-top:1px solid #e4cdb3; margin-top:16px; padding-top:2px; }
+.settings-details { border-top:1px solid #e4cdb3; padding-top:12px; margin-top:16px; }
+.settings-details summary { cursor:pointer; min-height:44px; display:flex; align-items:center; font-weight:700; }
+@media(max-width:360px) { .settings-stack .panel{padding:17px;} .settings-actions{flex-direction:column;} .settings-actions button,.settings-actions .file-button{flex:auto;width:100%;} }

@@ -483,9 +483,10 @@ export async function exportBackup(db: IDBDatabase) {
     return JSON.stringify({ format: 'cat-focus-pwa', version: 8, tasks, selectedTaskId, catNames, versions: { database: DB_VERSION, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' }, growth: { experience, level }, commerce, checkins, wallet, exportedAt: new Date().toISOString(), categories, records, ...(catHouse ? { catHouse } : {}) }, null, 2);
   });
 }
-export async function importBackup(db: IDBDatabase, raw: string) {
+export async function importBackup(db: IDBDatabase, raw: string, preview = false, requireIdle = false) {
   const incoming = parseBackup(raw); // Validate all records before the first write.
   return transact(db, ['records', 'categories', 'settings', 'wallet', 'walletTransactions', 'coinReceipts', 'active', 'focusTasks'], 'readwrite', async tx => {
+    if ((preview || requireIdle) && await request(tx.objectStore('active').get(ACTIVE_KEY))) throw Error('请先结束当前专注，再导入备份');
     if (incoming.wallet) {
       const local = await walletSnapshotIn(tx);
       await checkinHistoryIn(tx, local);
@@ -573,7 +574,9 @@ export async function importBackup(db: IDBDatabase, raw: string) {
         }
       } else { store.add(record); added++; }
     }
-    return { added, skipped: incoming.records.length - added };
+    const result = { added, skipped: incoming.records.length - added };
+    if (preview) throw new BackupPreview(result);
+    return result;
   });
 }
 
@@ -608,4 +611,15 @@ export async function grantDevelopmentCoins(db: IDBDatabase, now = Date.now()) {
     tx.objectStore('wallet').put(snapshot.state, 'only'); tx.objectStore('walletTransactions').add(entry);
     return { created: true, balance: snapshot.state.balance };
   });
+}
+
+class BackupPreview extends Error {
+  constructor(public result: { added: number; skipped: number }) { super('preview'); }
+}
+export async function previewBackup(db: IDBDatabase, raw: string) {
+  try { await importBackup(db, raw, true); } catch (error) {
+    if (error instanceof BackupPreview) return error.result;
+    throw error;
+  }
+  throw Error('无法预览备份');
 }

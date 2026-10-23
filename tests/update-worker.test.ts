@@ -75,3 +75,19 @@ it('does not remove caches used by unknown live clients, and retains the previou
   await b.message('WARM_MEDIA'); await b.message('WARM_MEDIA');
   await b.message('STATUS', { entry: base + 'assets/b.js' }); expect(await b.caches.keys()).not.toContain('cat-focus-v1-old'); expect(await b.caches.keys()).toContain('cat-focus-core-a'); expect(await b.caches.keys()).toContain('cat-focus-core-b');
 });
+
+it('notification clicks focus an existing same-origin client without reloading, or open the app', async () => {
+  const handlers = new Map<string, (event: any) => void>();
+  const client = {url:base, focus:vi.fn(async () => {}), postMessage:vi.fn()};
+  const windows: typeof client[] = [client], openWindow = vi.fn(async () => {});
+  runInNewContext(await readFile(new URL('../scripts/sw-runtime.js', import.meta.url), 'utf8'), {
+    CONFIG: {assets:[],core:[]}, URL, Map, Set,
+    self: {location: new URL(base+'sw.js'), clients: {matchAll:async () => windows, openWindow}, addEventListener:(type:string, fn:any) => handlers.set(type,fn)},
+  });
+  const close = vi.fn(); let pending: Promise<void> = Promise.resolve();
+  const event = {notification:{close},waitUntil:(value:Promise<void>) => {pending=value;}};
+  handlers.get('notificationclick')!(event); await pending;
+  expect(close).toHaveBeenCalledOnce(); expect(client.focus).toHaveBeenCalledOnce();
+  expect(client.postMessage).toHaveBeenCalledWith({type:'FOCUS_NOTIFICATION_OPEN'}); expect(openWindow).not.toHaveBeenCalled();
+  windows.length=0; handlers.get('notificationclick')!(event); await pending; expect(openWindow).toHaveBeenCalledWith(base);
+});

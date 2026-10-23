@@ -1,0 +1,42 @@
+{
+  "edge-permission": {
+    "src": "./install-guide/edge-permission.webp",
+    "width": 720,
+    "height": 1439
+  },
+  "edge-menu": {
+    "src": "./install-guide/edge-menu.webp",
+    "width": 720,
+    "height": 745
+  },
+  "edge-swipe": {
+    "src": "./install-guide/edge-swipe.webp",
+    "width": 720,
+    "height": 935
+  },
+  "edge-add": {
+    "src": "./install-guide/edge-add.webp",
+    "width": 720,
+    "height": 926
+  },
+  "edge-install": {
+    "src": "./install-guide/edge-install.webp",
+    "width": 720,
+    "height": 572
+  },
+  "edge-result": {
+    "src": "./install-guide/edge-result.webp",
+    "width": 720,
+    "height": 423
+  },
+  "safari-share": {
+    "src": "./install-guide/safari-share.webp",
+    "width": 720,
+    "height": 716
+  },
+  "safari-add": {
+    "src": "./install-guide/safari-add.webp",
+    "width": 720,
+    "height": 967
+  }
+}

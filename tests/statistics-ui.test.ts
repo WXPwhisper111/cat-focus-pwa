@@ -108,6 +108,9 @@ it('uses stored records for working range controls, chart details, growth and pr
   click('[data-page=settings]');
   expect(document.querySelector('#export')).not.toBeNull();
   expect(document.body.textContent).toContain('手动备份');
+  expect(document.body.textContent).not.toContain('安装与离线');
+  expect(document.querySelector('#diagnostics')?.closest('section')?.getAttribute('aria-label')).toBe('应用更新');
+  expect(document.querySelector<HTMLDetailsElement>('.settings-details')?.open).toBe(false);
   db.close();
 });
 

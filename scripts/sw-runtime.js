@@ -133,3 +133,13 @@ self.addEventListener('message', event => {
   };
   event.waitUntil(run().then(result => port.postMessage({ ok: true, ...result }), () => port.postMessage({ ok: false })));
 });
+
+self.addEventListener('notificationclick', event => {
+  event.notification.close();
+  event.waitUntil((async () => {
+    const windows = await self.clients.matchAll({ type: 'window', includeUncontrolled: true });
+    const client = windows.find(client => new URL(client.url).origin === self.location.origin);
+    if (client) { await client.focus(); client.postMessage({ type: 'FOCUS_NOTIFICATION_OPEN' }); }
+    else await self.clients.openWindow(new URL('./', self.location.href).href);
+  })());
+});

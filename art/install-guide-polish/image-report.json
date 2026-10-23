@@ -1,0 +1,106 @@
+[
+  {
+    "asset": "edge-permission",
+    "originalDimensions": [
+      1440,
+      2878
+    ],
+    "dimensions": [
+      720,
+      1439
+    ],
+    "originalBytes": 448316,
+    "webpBytes": 34040
+  },
+  {
+    "asset": "edge-menu",
+    "originalDimensions": [
+      1440,
+      1490
+    ],
+    "dimensions": [
+      720,
+      745
+    ],
+    "originalBytes": 270986,
+    "webpBytes": 19218
+  },
+  {
+    "asset": "edge-swipe",
+    "originalDimensions": [
+      1440,
+      1869
+    ],
+    "dimensions": [
+      720,
+      935
+    ],
+    "originalBytes": 348289,
+    "webpBytes": 28032
+  },
+  {
+    "asset": "edge-add",
+    "originalDimensions": [
+      1440,
+      1851
+    ],
+    "dimensions": [
+      720,
+      926
+    ],
+    "originalBytes": 315410,
+    "webpBytes": 24400
+  },
+  {
+    "asset": "edge-install",
+    "originalDimensions": [
+      1440,
+      1144
+    ],
+    "dimensions": [
+      720,
+      572
+    ],
+    "originalBytes": 239511,
+    "webpBytes": 17724
+  },
+  {
+    "asset": "edge-result",
+    "originalDimensions": [
+      927,
+      544
+    ],
+    "dimensions": [
+      720,
+      423
+    ],
+    "originalBytes": 87664,
+    "webpBytes": 50216
+  },
+  {
+    "asset": "safari-share",
+    "originalDimensions": [
+      1179,
+      1172
+    ],
+    "dimensions": [
+      720,
+      716
+    ],
+    "originalBytes": 266364,
+    "webpBytes": 26772
+  },
+  {
+    "asset": "safari-add",
+    "originalDimensions": [
+      1179,
+      1584
+    ],
+    "dimensions": [
+      720,
+      967
+    ],
+    "originalBytes": 317720,
+    "webpBytes": 26570
+  }
+]

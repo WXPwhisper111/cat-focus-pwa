@@ -46,6 +46,7 @@ import { createRoomInteractionPanel } from './room-interaction-panel';
 import { createFocusCat } from './focus-cat';
 import { dateKey, formatClock, isDue, sessionClock, type ActiveSession, type FocusRecord, type TimerMode } from './domain';
 import { acknowledgeCompletion, checkinToday, getWallet, exportBackup, getActive, getPendingCompletions, getRecords, getTimerMode, importBackup, openDatabase, selectTimerMode, settle, startSession, startStopwatch, togglePause } from './storage';
+import { downloadBackup, previewImport, mountDataManager } from './data-manager';
 import { notifyCompletion, requestOptionalNotification } from './notifications';
 import { DEFAULT_CATEGORIES, type FocusCategory } from './categories';
 import { getCategoryState, selectCategory } from './storage';
@@ -63,7 +64,7 @@ let records: FocusRecord[] = [];
 let coinBalance = 0;
 const previewValue = import.meta.env.DEV ? new URLSearchParams(location.search).get('roomPreview') : null;
 const roomPreview: RoomTheme | undefined = previewValue === 'day' || previewValue === 'night' ? previewValue : undefined;
-let page: 'focus' | 'stats' | 'room' | 'shop' | 'settings' = roomPreview ? 'room' : 'focus';
+let page: 'focus' | 'stats' | 'room' | 'shop' | 'settings' = roomPreview ? 'room' : location.hash === '#settings-update' ? 'settings' : 'focus';
 const statisticsState: StatisticsState = { range: 'week', month: dateKey(new Date()).slice(0, 7), selectedBucket: null };
 let notice = '';
 let catHouse: CatHouseState | null = null;
@@ -91,8 +92,11 @@ let checkingDue = false;
 let finishing = false;
 let refreshRevision = 0;
 const stateChannel = 'BroadcastChannel' in window ? new BroadcastChannel('cat-focus-state') : undefined;
-const appUpdate = createAppUpdate({ enabled: import.meta.env.PROD, hasActiveSession: async () => !!(await getActive(db)), canReload: () => applicationReady && !pendingCompletionCount && !document.querySelector('dialog[open]') });
-const appUpdateView = createAppUpdateView(appUpdate, () => !!session);
+const appUpdate = createAppUpdate({ enabled: import.meta.env.PROD, hasActiveSession: async () => !!(await getActive(db)), canReload: () => applicationReady && !pendingWelcome && !pendingCompletionCount && !document.querySelector('dialog[open]') });
+const appUpdateView = createAppUpdateView(appUpdate, () => !!session, {
+  canShow: () => applicationReady && !pendingWelcome && !pendingCompletionCount && !document.querySelector('dialog[open]'),
+  openSettings: () => { history.replaceState(history.state, '', '#settings-update'); page = 'settings'; render(); },
+});
 
 // Capture install opportunities once, before asynchronous database initialization.
 const installController = createInstallController();
@@ -170,7 +174,7 @@ async function checkDue() {
     if (result.created && result.record && notifiedId !== result.record.id) {
       notifiedId = result.record.id;
       assignNotice('');
-      notifyCompletion();
+      void notifyCompletion(result.record.id);
       stateChannel?.postMessage('changed');
     }
     await refresh();
@@ -184,7 +188,7 @@ async function finishSession(action: EndAction, id: string) {
     assignNotice(result.created ? '' : result.discarded ? '已放弃，本次时长未保存。' : '本次未新增记录，已刷新当前状态。');
     if (result.created && result.record?.completed && notifiedId !== result.record.id) {
       notifiedId = result.record.id;
-      notifyCompletion();
+      void notifyCompletion(result.record.id);
     }
     await refresh(); stateChannel?.postMessage('changed');
   } finally { finishing = false; }
@@ -222,13 +226,13 @@ function houseMarkup() {
 }
 function settingsMarkup() {
   return `<section class="hero"><div class="eyebrow">安心专注</div><h1>设置与备份</h1><p>数据保存在这台设备的浏览器中。</p></section>
-  <div data-install-card-slot></div><div data-update-card-slot></div><section class="panel"><h2>完成提示</h2><p>应用打开或返回前台时，会显示页面内完成提示。</p><button id="notify">${'Notification' in window ? `启用系统通知（当前：${Notification.permission === 'granted' ? '已允许' : Notification.permission === 'denied' ? '已拒绝' : '未设置'}）` : '当前浏览器不支持系统通知'}</button><p class="hint">首版没有推送服务，因此关闭应用后的准时锁屏提醒不在保证范围内。拒绝通知权限不会影响计时或记录。</p></section>
-    <section class="panel"><h2>手动备份</h2><p>浏览器数据可能被用户或系统清除，请定期导出 JSON 备份。</p><div class="actions"><button id="export">导出 JSON</button><label class="file-button">导入 JSON<input id="import" type="file" accept="application/json,.json" hidden /></label></div><p class="hint">仅支持本 PWA 的备份，不读取桌面版数据。导入会合并记录和任务，保留本机有效任务选择；未选择时恢复备份目标。旧备份不会清空清单，任务内容冲突时整批不导入。保留本机其他设置；尚未领养时可恢复备份中的猫咪。备份含钱包、签到历史、购买记录和入住状态。有活动专注时请先结束；恢复时按日期去重签到奖励，钱包、商城、领养状态或记录冲突时整批不导入。</p></section>
-  <section class="panel"><h2>安装与离线</h2><p>首次联网打开后，使用浏览器的“添加到主屏幕”或“安装应用”。资源完成缓存后可离线打开。</p><p class="hint">手机上请使用可信 HTTPS 地址。普通局域网 HTTP 地址无法验证所需的安全上下文能力。</p></section>`;
+  <div class="settings-stack"><div data-install-card-slot></div><div data-update-card-slot></div><section class="panel settings-notifications"><div class="eyebrow">提醒与权限</div><h2>完成提示</h2><p>应用打开或返回前台时，会显示页面内完成提示。</p><p class="hint">系统通知的横幅、声音与锁屏显示取决于手机设置；当前不保证后台或锁屏准时提醒。</p><div class="settings-actions"><button id="notify">${'Notification' in window ? `启用系统通知（当前：${Notification.permission === 'granted' ? '已允许' : Notification.permission === 'denied' ? '已拒绝' : '未设置'}）` : '当前浏览器不支持系统通知'}</button><button id="test-notify">发送测试通知</button></div><p class="hint">拒绝通知权限不会影响计时或记录。</p></section>
+    <section class="panel settings-data"><div class="eyebrow">本机数据</div><h2>数据管理 · 手动备份</h2><div id="data-manager"></div><p>浏览器数据可能被用户或系统清除，请定期导出 JSON 备份。</p><div class="actions" id="backup-actions"><button id="export">导出 JSON</button><label class="file-button">导入 JSON<input id="import" type="file" accept="application/json,.json" hidden /></label></div><details class="settings-details"><summary>备份与恢复说明</summary><p class="hint">仅支持本 PWA 的备份，不读取桌面版数据。导入会合并记录和任务，保留本机有效任务选择；未选择时恢复备份目标。旧备份不会清空清单，任务内容冲突时整批不导入。保留本机其他设置；尚未领养时可恢复备份中的猫咪。备份含钱包、签到历史、购买记录和入住状态。有活动专注时请先结束；恢复时按日期去重签到奖励，钱包、商城、领养状态或记录冲突时整批不导入。</p></details></section>
+  </div>`;
 }
 
 function render() {
-  if (!applicationReady) return;
+  if (!applicationReady || !app.isConnected) return;
   focusTaskList?.element.remove(); focusGoal?.element.remove();
   if (page !== 'focus') focusTaskList?.close();
   categoryPicker?.destroy(); categoryPicker = undefined;
@@ -363,7 +367,7 @@ function render() {
     });
   });
   document.querySelector<HTMLButtonElement>('#retry-cat-house')?.addEventListener('click', () => void refresh());
-  document.querySelectorAll<HTMLButtonElement>('[data-page]').forEach(button => button.onclick = () => { page = button.dataset.page as typeof page; render(); });
+  document.querySelectorAll<HTMLButtonElement>('[data-page]').forEach(button => button.onclick = () => { page = button.dataset.page as typeof page; if (location.hash === '#settings-update') history.replaceState(history.state, '', location.pathname + location.search); render(); });
   if (page === 'stats') bindStatisticsEvents(app, statisticsState, render);
   document.querySelector<HTMLButtonElement>('#close-notice')?.addEventListener('click', () => { assignNotice(''); render(); });
   document.querySelector<HTMLButtonElement>('#manage-categories')?.addEventListener('click', () => categoryManager?.open());
@@ -407,17 +411,27 @@ function render() {
   });
   document.querySelector<HTMLButtonElement>('#early')?.addEventListener('click', () => { if (displayedSession) void requestEnd('early', displayedSession); });
   document.querySelector<HTMLButtonElement>('#discard')?.addEventListener('click', () => { if (displayedSession) void requestEnd('discard', displayedSession); });
+  if (page === 'settings') void mountDataManager(db, setNotice);
+  document.querySelector('#test-notify')?.addEventListener('click', async () => {
+    const result = await notifyCompletion(`test-${Date.now()}`);
+    setNotice(result === 'sent' ? '通知已提交给系统；横幅、声音与锁屏显示取决于系统设置。' : `通知未发送：${result === 'denied' ? '请允许通知权限' : result === 'unsupported' ? '当前环境没有可用的通知方式' : '系统调用失败，请重试'}`);
+  });
+  document.querySelector('#diagnostics')?.addEventListener('click', async () => {
+    try {
+      const registration = await navigator.serviceWorker?.getRegistration();
+      await navigator.clipboard.writeText(JSON.stringify({ version: document.querySelector('script[type="module"][src]')?.getAttribute('src'), online: navigator.onLine, standalone: matchMedia('(display-mode: standalone)').matches, notification: 'Notification' in window ? Notification.permission : 'unsupported', worker: registration?.active?.state ?? 'none', cacheNames: await caches.keys() }, null, 2));
+      setNotice('诊断信息已复制，不包含任务和专注记录。');
+    } catch { setNotice('无法复制诊断信息，请检查浏览器权限。'); }
+  });
   document.querySelector<HTMLButtonElement>('#notify')?.addEventListener('click', async () => {
     const permission = await requestOptionalNotification(); setNotice(permission === 'granted' ? '系统通知已允许。' : permission === 'unsupported' ? '当前环境不支持系统通知。' : '系统通知未获允许，计时仍可正常使用。');
   });
   document.querySelector<HTMLButtonElement>('#export')?.addEventListener('click', async () => {
-    const blob = new Blob([await exportBackup(db)], { type: 'application/json' }); const url = URL.createObjectURL(blob);
-    const a = document.createElement('a'); a.href = url; a.download = `猫咪专注备份-${dateKey(new Date())}.json`; a.click(); setTimeout(() => URL.revokeObjectURL(url), 1000);
+    try { await downloadBackup(db); setNotice('已发起备份下载，请确认文件已保存。'); } catch { setNotice('备份导出失败，请重试。'); }
   });
   document.querySelector<HTMLInputElement>('#import')?.addEventListener('change', async event => {
-    const file = (event.target as HTMLInputElement).files?.[0]; if (!file) return;
-    try { const result = await importBackup(db, await file.text()); assignNotice(`导入完成：新增 ${result.added} 条，跳过重复 ${result.skipped} 条。`); await refresh(); stateChannel?.postMessage('changed'); }
-    catch (error) { setNotice(`导入失败：${(error as Error).message}`); }
+    const input = event.target as HTMLInputElement, file = input.files?.[0]; input.value = ''; if (!file) return;
+    await previewImport(db, file, async () => { await refresh(); stateChannel?.postMessage('changed'); }, setNotice);
   });
 }
 
@@ -500,3 +514,7 @@ const startup = createStartup(app, initializeApplication, () => {
   void appUpdate.start();
 });
 await startup.start();
+
+navigator.serviceWorker?.addEventListener('message', event => {
+  if (event.data?.type === 'FOCUS_NOTIFICATION_OPEN' && applicationReady) { page = 'focus'; render(); }
+});
