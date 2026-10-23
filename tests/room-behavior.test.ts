@@ -9,7 +9,8 @@ const ids = ['orange-white', 'cat-02', 'cat-03'];
 const runners: ReturnType<typeof createRoomBehavior>[] = [];
 afterEach(() => { runners.splice(0).forEach(runner => runner.destroy()); });
 const flush = async () => { for (let i = 0; i < 30; i++) await Promise.resolve(); };
-function fixture() {
+function fixture(roster = ids) {
+  const ids=roster;
   const homes = new Map<string, AnimationPoint>([[ids[0], [512, 716]], [ids[1], [365, 688]], [ids[2], [659, 688]]]);
   const positions = new Map(homes), nodes = new Map(ids.map(id => [id, document.createElement('div')]));
   const pending = new Map<string, PlayOptions>(), played: string[] = [];
@@ -19,19 +20,19 @@ function fixture() {
     play: vi.fn(async (id, clip, options = {}) => { played.push(`${id}/${clip.id}`); pending.set(id, options); return { status: 'started' as const }; }),
     stop: vi.fn(id => { pending.delete(id); }), idle: vi.fn(async () => {}),
   };
-  const teleport = { move: vi.fn(async (id: string, target: AnimationPoint, _signal: AbortSignal, placed?: () => Promise<void>) => { port.setFeet(id, target); await placed?.(); }), isMoving: () => false, destroy: vi.fn() };
+  const teleport = { move: vi.fn(async (id: string, target: AnimationPoint, _signal: AbortSignal, placed?: () => Promise<void>, resolveTarget?:()=>AnimationPoint) => { port.setFeet(id, resolveTarget?resolveTarget():target); await placed?.(); }), isMoving: () => false, destroy: vi.fn() };
   const runner = createRoomBehavior(port, { teleport }); runners.push(runner);
   return { port, teleport, runner, positions, nodes, pending, played, finish(id = ids[0]) { pending.get(id)?.onComplete?.(); } };
 }
 
-it('all cats complete real loops, return home and release action occupancy', async () => {
+it('all cats complete real loops, rest nearby and release action occupancy', async () => {
   for (const id of ids) for (const action of ['eat', 'drink', 'scratch', 'sleep'] as const) {
     const app = fixture(), stages: string[] = [];
     const running = app.runner.execute({ catId: id, behavior: action, source: 'manual' }, new AbortController().signal, stage => stages.push(stage));
     await flush(); expect(app.runner.stage(id)).toBe('loop'); expect(app.runner.anchors.snapshot()).toHaveLength(1);
     expect(app.positions.get(id)).not.toEqual(app.port.home(id)); expect(app.pending.get(id)!.iterations).toBe(2);
     app.finish(id); await running;
-    expect(app.positions.get(id)).toEqual(app.port.home(id)); expect(app.runner.anchors.snapshot()).toHaveLength(0);
+    expect(app.positions.get(id)).not.toEqual(app.port.home(id)); expect(app.runner.anchors.snapshot()).toHaveLength(0);
     expect(stages).toEqual(['loading', 'teleporting', 'loop', 'recovering', 'recovering']);
     expect(app.played).toHaveLength(1); app.runner.destroy();
   }
@@ -182,7 +183,7 @@ it('finishes the exit stage then runs only the last valid command received durin
   app.finish();await replaced;await skipped;await flush();
   expect(app.played.some(value=>value.includes('drink'))).toBe(false);expect(app.played.at(-1)).toContain('scratch');
   app.finish();await flush();expect(runner.stage(ids[0])).toBe('exit');app.finish();await third;
-  expect(runner.anchors.snapshot()).toEqual([]);expect(app.positions.get(ids[0])).toEqual(app.port.home(ids[0]));
+  expect(runner.anchors.snapshot()).toEqual([]);expect(app.positions.get(ids[0])).not.toEqual(app.port.home(ids[0]));
 });
 it('serializes two cats requesting the same water bowl and sends its previous user home', async () => {
   const app=fixture();
@@ -202,7 +203,7 @@ it('restores default homes and permits return to a rug already holding the other
   const app=fixture();const run=app.runner.execute({catId:ids[0],behavior:'eat',source:'manual'},new AbortController().signal);await flush();app.finish();await run;
   const locations=app.runner.locations(), point=app.positions.get(ids[0]);app.runner.destroy();
   const runner=createRoomBehavior(app.port,{teleport:app.teleport,initialLocations:locations});runners.push(runner);
-  expect(runner.locations()).toEqual(locations);expect(app.positions.get(ids[0])).toEqual(point);expect(runner.anchors.snapshot()).toEqual([]);
+  expect(runner.locations()).toEqual(locations);expect(app.positions.get(ids[0])).toEqual(app.port.home(ids[0]));expect(runner.anchors.snapshot()).toEqual([]);
   await runner.execute({catId:ids[0],behavior:'return-home',source:'manual'},new AbortController().signal);
   expect(app.positions.get(ids[0])).toEqual(app.port.home(ids[0]));expect(app.positions.get(ids[1])).toEqual(app.port.home(ids[1]));expect(app.positions.get(ids[2])).toEqual(app.port.home(ids[2]));
 });
@@ -223,7 +224,7 @@ it('switches eat to scratch with exactly one direct transfer and no intermediate
   await replaced;await flush();expect(app.runner.stage(ids[0])).toBe('loop');
   expect(app.teleport.move).toHaveBeenCalledTimes(1);expect(app.teleport.move.mock.calls[0][1]).not.toEqual(app.port.home(ids[0]));
   expect(app.positions.get(ids[0])).not.toEqual(origin);expect(app.port.idle).not.toHaveBeenCalled();
-  app.finish();await next;expect(app.positions.get(ids[0])).toEqual(app.port.home(ids[0]));
+  app.finish();await next;expect(app.positions.get(ids[0])).not.toEqual(app.port.home(ids[0]));
 });
 it('keeps the old furniture locked until its displaced user has actually reached the rug',async()=>{
   const app=fixture();const first=app.runner.execute({catId:ids[0],behavior:'drink',source:'manual'},new AbortController().signal);
@@ -252,4 +253,44 @@ it('returns a replacement with failed loading to home and frees the previous fur
   const next=app.runner.execute({catId:ids[0],behavior:'drink',source:'manual'},new AbortController().signal);
   await expect(next).rejects.toThrow('offline target');await replaced;
   expect(app.positions.get(ids[0])).toEqual(app.port.home(ids[0]));expect(app.runner.anchors.snapshot()).toEqual([]);expect(app.runner.busy(ids[0])).toBe(false);
+});
+
+it('retargets a natural nearby recovery at the invisible checkpoint without a second transfer or idle',async()=>{
+  const app=fixture(),id=ids[0];const first=app.runner.execute({catId:id,behavior:'eat',source:'manual'},new AbortController().signal);await flush();
+  let releaseFade!:()=>void;
+  app.teleport.move.mockImplementationOnce(async(cat,target,_signal,placed,resolveTarget)=>{
+    await new Promise<void>(resolve=>releaseFade=resolve);app.port.setFeet(cat,resolveTarget?resolveTarget():target);await placed?.();
+  });
+  vi.mocked(app.port.idle).mockClear();app.finish();await flush();expect(app.runner.stage(id)).toBe('recovering');
+  const next=app.runner.execute({catId:id,behavior:'drink',source:'manual'},new AbortController().signal);await flush();releaseFade();await first;await flush();
+  expect(app.runner.stage(id)).toBe('loop');expect(app.played.at(-1)).toContain('drink');expect(app.teleport.move).toHaveBeenCalledTimes(2);expect(app.port.idle).not.toHaveBeenCalled();
+  app.finish();await next;expect(app.runner.anchors.snapshot()).toEqual([]);
+});
+it('leaves a finished cat nearby without blocking furniture and pets it at the same stable position',async()=>{
+  const app=fixture(),id=ids[0];const eat=app.runner.execute({catId:id,behavior:'eat',source:'manual'},new AbortController().signal);await flush();app.finish();await eat;
+  const nearby=app.positions.get(id);expect(nearby).not.toEqual(app.port.home(id));expect(app.runner.anchors.snapshot()).toEqual([]);
+  const pet=app.runner.execute({catId:id,behavior:'pet',source:'manual'},new AbortController().signal);await flush();app.finish();await pet;expect(app.positions.get(id)).toEqual(nearby);
+  await app.runner.execute({catId:id,behavior:'return-home',source:'manual'},new AbortController().signal);expect(app.positions.get(id)).toEqual(app.port.home(id));
+});
+
+it('returns home when cancel arrives during nearby recovery instead of leaving an idle detour',async()=>{
+  const app=fixture(),id=ids[0];const run=app.runner.execute({catId:id,behavior:'eat',source:'manual'},new AbortController().signal);await flush();
+  let release!:()=>void;
+  app.teleport.move.mockImplementationOnce(async(cat,target)=>{await new Promise<void>(r=>release=r);app.port.setFeet(cat,target);});
+  app.finish();await flush();expect(app.runner.stage(id)).toBe('recovering');app.runner.executor.cancel?.(id);release();await run;
+  expect(app.positions.get(id)).toEqual(app.port.home(id));expect(app.runner.anchors.snapshot()).toEqual([]);
+});
+
+it('executes each new cat own five interactions and preserves its independent home',async()=>{
+  for(const id of ['cat-04','cat-05','cat-06'])for(const behavior of ['eat','drink','scratch','sleep','pet'] as const){
+    const app=fixture([id,'orange-white','cat-02']);
+    const run=app.runner.execute({catId:id,behavior,source:'manual'},new AbortController().signal);
+    await flush();expect(app.runner.stage(id)).toBe(behavior==='pet'?'once':'loop');
+    expect(app.played[0]).toMatch(new RegExp('^'+id+'/'));
+    const plan=behaviorPlan(id,behavior)!;
+    if(plan.loop)expect(app.pending.get(id)?.iterations).toBe(Math.ceil(plan.minimumMs/plan.loop.frames.reduce((sum,f)=>sum+f.durationMs,0)));
+    app.finish(id);await run;expect(app.runner.anchors.snapshot()).toEqual([]);expect(app.runner.busy(id)).toBe(false);
+    expect(app.positions.get('orange-white')).toEqual(app.port.home('orange-white'));
+    app.runner.destroy();
+  }
 });

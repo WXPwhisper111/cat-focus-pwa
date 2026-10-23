@@ -1,5 +1,5 @@
 import { clipDuration, type AnimationClip, type AnimationPoint } from './cat-animation';
-import { createAnchorManager, furnitureAnchors } from './room-anchors';
+import { anchorFeet, createAnchorManager, furnitureAnchors, nearbyCandidates, positionsOverlap } from './room-anchors';
 import { baseClip, behaviorPlan, behaviorLimits, type BehaviorPlan, type ManualBehavior } from './room-behavior-config';
 import { createTeleportController, cancelled, checkSignal, awaitAbortable, type TeleportPort } from './cat-teleport';
 import type { PlayOptions, PlaybackStart } from './cat-player';
@@ -21,7 +21,9 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
   onLocations?: (locations: Record<string, string>) => void;
   onSettled?: (id: string, action?: ManualBehavior) => void;
 } = {}) {
-  const teleport = dependencies.teleport || createTeleportController(port), anchors = createAnchorManager(port.positions, furnitureAnchors, new Map(port.ids.map(id => [id, port.home(id)])));
+  const nearbyReservations=new Map<string,AnimationPoint>();
+  const anchorHomes=new Map(port.ids.map(id=>[id,port.home(id)]));
+  const teleport = dependencies.teleport || createTeleportController(port), anchors = createAnchorManager(()=>new Map([...port.positions(),...[...nearbyReservations].map(([id,point])=>[`${id}#nearby`,point] as [string,AnimationPoint])]), furnitureAnchors, anchorHomes);
   const lifetime = new AbortController(); let destroyed = false, suspended = false;
   const listeners = new Set<() => void>();
   const emit = () => { for (const listener of listeners) listener(); };
@@ -32,6 +34,8 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
   type Task = { reason: RecoveryReason; abort: AbortController; recovery: AbortController; source: BehaviorRequest['source']; stage: BehaviorStage; behavior: BehaviorRequest['behavior']; preempt: boolean; done: Promise<void> };
   const tasks = new Map<string, Task>();
   const carry = new Map<string, Lease>();
+  const carryTokens=new Map<string,number>();
+  const nextMoves=new Map<string,{token:number;request:BehaviorRequest;plan:BehaviorPlan;ready:boolean;signal:AbortSignal}>();
   // Serialize only preparation/handovers, never whole behavior loops.
   let preparation: Promise<void> = Promise.resolve();
   const commands = new Map<string, number>();
@@ -49,11 +53,35 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
   async function home(id: string, signal: AbortSignal, animate = true) {
     if (animate && !destroyed && !suspended) await teleport.move(id, port.home(id), signal);
     else port.setFeet(id, port.home(id));
-    stable.get(id)?.lease?.release(); carry.get(id)?.release(); carry.delete(id);
+    stable.get(id)?.lease?.release(); carry.get(id)?.release(); carry.delete(id);carryTokens.delete(id);
     stable.set(id, { feet: port.home(id) });
     port.fadeElements(id).forEach(node => { node.style.opacity = '1'; });
     dependencies.onLocations?.(locations());
     if (!destroyed) await awaitAbortable(port.idle(id), lifetime.signal);
+  }
+  async function restNearby(id:string,item:InteractionItem,task:Task) {
+    const free=nearbyCandidates(item).find(point=>
+      ![...port.positions()].some(([other,current])=>other!==id&&positionsOverlap(current,point)) &&
+      ![...nearbyReservations].some(([other,current])=>other!==id&&positionsOverlap(current,point)) &&
+      ![...anchorHomes].some(([other,current])=>other!==id&&positionsOverlap(current,point)) &&
+      !anchors.snapshot().some(lease=>lease.catId!==id&&positionsOverlap(lease.feet,point)));
+    if(!free){await home(id,task.recovery.signal);return;}
+    nearbyReservations.set(id,free);
+    try {
+      await teleport.move(id,free,task.recovery.signal,undefined,()=>{
+        const next=nextMoves.get(id);
+        if(next?.ready && !next.signal.aborted && commands.get(id)===next.token && task.reason==='replace' && next.plan.item && anchors.available(id,next.plan.item,next.plan.loop||next.plan.once!,next.request.anchorId)) {
+          const lease=anchors.reserve(id,next.plan.item,next.plan.loop||next.plan.once!,next.request.anchorId);
+          carry.set(id,lease);carryTokens.set(id,next.token);return lease.feet;
+        }
+        return free;
+      });
+      if(task.reason!=='complete' && task.reason!=='replace'){await home(id,task.recovery.signal);return;}
+      if(carryTokens.has(id))return; // Successor starts at the already reached target, without an intermediate idle.
+      stable.set(id,{feet:port.getFeet(id)});
+      if(task.reason==='replace'&&pendingManual.has(id))return;
+      await awaitAbortable(port.idle(id),lifetime.signal);
+    } finally {nearbyReservations.delete(id);}
   }
   function interrupt(task: Task, reason: RecoveryReason = 'cancel') {
     // A displaced cat must leave the furniture even if its own next command is queued.
@@ -100,6 +128,17 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
       if (occupiedTask) { interrupt(occupiedTask, 'displace'); await occupiedTask.done.catch(() => {}); checkSignal(signal); return executeInternal(request, signal, report, token, prepared); }
       if (occupant && carry.has(occupant.catId)) { await home(occupant.catId, lifetime.signal); checkSignal(signal); return executeInternal(request, signal, report, token, prepared); }
     }
+    if(request.source==='manual' && requestedPlan?.item && !anchors.available(request.catId,requestedPlan.item,requestedPlan.loop||requestedPlan.once!,request.anchorId)) {
+      const target=furnitureAnchors.find(anchor=>anchor.itemId===requestedPlan.item);
+      if(target){
+        const feet=anchorFeet(target,requestedPlan.loop||requestedPlan.once!);
+        for(const [id,point] of port.positions())if(id!==request.catId && positionsOverlap(point,feet)) {
+          const other=tasks.get(id);
+          if(other){interrupt(other,'displace');await other.done.catch(()=>{});}else await home(id,lifetime.signal);
+          checkSignal(signal);
+        }
+      }
+    }
     if (tasks.size >= behaviorLimits.maxActive) {
       const automatic = [...tasks.values()].find(task => task.source === 'autonomous');
       if (request.source === 'manual' && automatic) { interrupt(automatic, 'displace'); await automatic.done.catch(() => {}); checkSignal(signal); return executeInternal(request, signal, report, token, prepared); }
@@ -119,17 +158,21 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
     const status = (stage: BehaviorStage) => { task.stage = stage; report(stage); emit(); };
     const run = async () => {
       const id = request.catId;
-      let lease: ReturnType<typeof anchors.reserve> | undefined, entered = false;
+      let lease: ReturnType<typeof anchors.reserve> | undefined, entered = false, completed = false;
       try {
         status('loading');
         const targetClip = plan.loop || plan.once!;
-        if (plan.item) lease = anchors.reserve(id, plan.item, targetClip, request.anchorId);
+        if (plan.item) {
+          if(token!==undefined && carryTokens.get(id)===token){lease=carry.get(id);carry.delete(id);carryTokens.delete(id);}
+          else lease=anchors.reserve(id,plan.item,targetClip,request.anchorId);
+        }
+        if(plan.once && !plan.item && carry.has(id)){lease=carry.get(id);carry.delete(id);carryTokens.delete(id);}
         await awaitAbortable(Promise.all([idle, plan.enter, plan.loop, plan.exit, plan.once].filter((clip): clip is AnimationClip => !!clip).map(clip => port.preload(id, clip))), task.abort.signal);
         checkSignal(task.abort.signal);
-        if (lease || returning) { status('teleporting'); await teleport.move(id, lease?.feet || port.home(id), task.abort.signal); }
+        if (lease || returning) { status('teleporting'); const target=lease?.feet || port.home(id); if(Math.hypot(port.getFeet(id)[0]-target[0],port.getFeet(id)[1]-target[1])>.01)await teleport.move(id,target,task.abort.signal); }
         checkSignal(task.abort.signal);
         if (lease || returning) {
-          stable.get(id)?.lease?.release(); carry.get(id)?.release(); carry.delete(id); stable.set(id, { feet: port.getFeet(id), ...(lease ? { lease, anchorId: lease.anchor.id } : {}) });
+          stable.get(id)?.lease?.release(); carry.get(id)?.release(); carry.delete(id); carryTokens.delete(id); stable.set(id, { feet: port.getFeet(id), ...(lease ? { lease, anchorId: lease.anchor.id } : {}) });
           if(returning)dependencies.onLocations?.(locations());
         }
         if (task.preempt) task.abort.abort();
@@ -137,10 +180,11 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
         if (plan.enter) { entered = true; status('enter'); await playUntilComplete(id, plan.enter, task.abort.signal); if (task.preempt) { task.abort.abort(); checkSignal(task.abort.signal); } }
         if (plan.once) { entered = true; prepared(); status('once'); await playUntilComplete(id, plan.once, task.abort.signal); }
         if (plan.loop) { entered = true; prepared(); status('loop'); await playUntilComplete(id, plan.loop, task.abort.signal, Math.max(1, Math.ceil(plan.minimumMs / clipDuration(plan.loop)))); }
+        completed = true;
       } finally {
         try {
           port.stop(id);
-          if (!destroyed) {
+          if (!destroyed && port.ids.includes(id)) {
             status('recovering');
             try {
               if (entered && plan.exit && !suspended) { status('exit'); await playUntilComplete(id, plan.exit, task.recovery.signal); }
@@ -149,7 +193,9 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
               if (continuing) {
                 if (lease) carry.set(id, lease);
                 // Keep this pose/position for the successor. No idle or detour here.
-              } else await home(id, task.recovery.signal);
+              } else if(completed && task.reason==='complete' && !suspended && plan.item) await restNearby(id,plan.item,task);
+              else if(completed && task.reason==='complete' && plan.once && !suspended) await awaitAbortable(port.idle(id),lifetime.signal);
+              else await home(id, task.recovery.signal);
             } catch {
               if (!destroyed) await home(id, lifetime.signal, false).catch(() => {});
             }
@@ -192,8 +238,13 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
     const current = tasks.get(request.catId);
     if (!previous && current?.behavior === request.behavior && !current.preempt) return current.done;
     const token = (commands.get(request.catId) || 0) + 1; commands.set(request.catId, token); pendingManual.add(request.catId); if(current)interrupt(current, 'replace'); emit();
+    if(request.behavior!=='return-home' && current?.stage==='recovering'){
+      const nextPlan=planFor(request.catId,request.behavior)!;
+      const move={token,request,plan:nextPlan,ready:false,signal};nextMoves.set(request.catId,move);
+      void Promise.all([baseClip(request.catId,'idle'),nextPlan.enter,nextPlan.loop,nextPlan.exit,nextPlan.once].filter((clip):clip is AnimationClip=>!!clip).map(clip=>port.preload(request.catId,clip))).then(()=>{if(!signal.aborted)move.ready=true;},()=>{});
+    } else nextMoves.delete(request.catId);
     const done = startPrepared(request, signal, report, token).finally(() => {
-      if (commands.get(request.catId) === token) { pendingManual.delete(request.catId); latestRequests.delete(request.catId); emit(); }
+      if (commands.get(request.catId) === token) { pendingManual.delete(request.catId); latestRequests.delete(request.catId); nextMoves.delete(request.catId); emit(); }
     });
     latestRequests.set(request.catId, { key, done });
     return done;
@@ -210,6 +261,11 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
   };
   return {
     executor, execute, anchors, available, locations,
+    async stopCat(id:string) { commands.set(id,(commands.get(id)||0)+1); pendingManual.delete(id);nextMoves.delete(id); const pending=latestRequests.get(id);latestRequests.delete(id); const task=tasks.get(id);if(task)interrupt(task,'cancel');await Promise.allSettled([task?.done,pending?.done].filter((value):value is Promise<void>=>!!value)); },
+    reconcile() {
+      for(const id of [...stable.keys()])if(!port.ids.includes(id)){tasks.get(id)?.abort.abort();stable.get(id)?.lease?.release();carry.get(id)?.release();carry.delete(id);stable.delete(id);anchorHomes.delete(id);}
+      for(const id of port.ids)if(!stable.has(id)){stable.set(id,{feet:port.home(id)});anchorHomes.set(id,port.home(id));}
+    },
     activeCount: () => tasks.size,
     busy: (id: string) => tasks.has(id) || pendingManual.has(id),
     atFurniture: (id: string) => !!stable.get(id)?.anchorId,
@@ -224,7 +280,7 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
     destroy() {
       if (destroyed) return; destroyed = true; lifetime.abort(); teleport.destroy();
       for (const id of port.ids) { port.stop(id); port.setFeet(id, port.home(id)); port.fadeElements(id).forEach(node => { node.style.opacity = '1'; }); }
-      for (const lease of carry.values())lease.release(); carry.clear(); anchors.clear(); listeners.clear();
+      for (const lease of carry.values())lease.release(); carry.clear(); carryTokens.clear(); nextMoves.clear(); nearbyReservations.clear(); anchors.clear(); listeners.clear();
     },
   };
 }

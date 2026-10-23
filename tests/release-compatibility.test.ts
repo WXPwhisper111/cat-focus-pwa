@@ -17,7 +17,7 @@ async function purchasedBackup() {
 
 it('restores all v6 fields atomically, reopens offline-ready local data, and deduplicates same-day rewards and repeated import', async () => {
   const backup = await purchasedBackup(), target = await openDatabase('target');
-  expect(backup.version).toBe(8); expect(backup.versions).toEqual({ database: 6, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' });
+  expect(backup.version).toBe(9); expect(backup.versions).toEqual({ database: 6, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' });
   expect(backup.commerce.purchases).toHaveLength(2); expect(backup.checkins).toHaveLength(1);
   expect(backup.growth).toEqual({ experience: progress(backup.records).experience, level: progress(backup.records).level });
   await checkinToday(target, now + 1000); await importBackup(target, JSON.stringify(backup)); await importBackup(target, JSON.stringify(backup));

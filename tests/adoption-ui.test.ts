@@ -34,7 +34,7 @@ it('lets old users choose once, previews one cat, persists confirmation and shar
   expect(document.querySelector('.stats-unadopted')).not.toBeNull();
   click('[data-page=focus]'); click('.focus-cat-empty button'); await flush();
   expect(document.querySelector('h1')!.textContent).toBe('领养一位小伙伴');
-  expect(document.querySelectorAll('[data-cat-choice]')).toHaveLength(3); expect(callbacks.size).toBe(1);
+  expect(document.querySelectorAll('[data-cat-choice]')).toHaveLength(6); expect(callbacks.size).toBe(1);
   expect(await getCatHouseState(db)).toBeNull();
   for (const id of ['cat-02', 'cat-03', 'orange-white', 'cat-03']) {
     click(`[data-cat-choice="${id}"]`); await flush();

@@ -151,7 +151,7 @@ it('backs up and restores wallet v5 without replaying income; imports old record
   db = await openDatabase('wallet'); await adoptInitialCat(db, 'cat-03'); await save(720_000);
   await spendCoins(db, 'expense-backup', 1, '测试支出'); const wallet = await getWallet(db);
   const raw = await exportBackup(db), backup = JSON.parse(raw);
-  expect(backup.version).toBe(8); expect(DAILY_CHECKIN_COINS).toBe(5);
+  expect(backup.version).toBe(9); expect(DAILY_CHECKIN_COINS).toBe(5);
   const target = await openDatabase('target'); await importBackup(target, raw); await importBackup(target, raw);
   expect(await getWallet(target)).toEqual(wallet); expect((await getCatHouseState(target))!.companionCatId).toBe('cat-03');
   await spendCoins(target, 'expense-local', 1, '测试支出'); const local = await getWallet(target);

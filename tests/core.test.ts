@@ -86,7 +86,7 @@ describe('calendar and backups', () => {
   it('exposes a versioned IndexedDB schema and backup format', async () => {
     expect(DB_VERSION).toBe(6);
     expect(Array.from(db.objectStoreNames)).toEqual(['active', 'categories', 'coinReceipts', 'focusTasks', 'records', 'settings', 'wallet', 'walletTransactions']);
-    expect(JSON.parse(await exportBackup(db)).version).toBe(8);
+    expect(JSON.parse(await exportBackup(db)).version).toBe(9);
   });
 
   it('upgrades a version 1 database without losing its records', async () => {

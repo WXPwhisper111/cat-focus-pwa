@@ -14,6 +14,8 @@ async function files(dir) {
       if (asset.startsWith('./cat-animation-v2/') && !/^\.\/cat-animation-v2\/cat-0[123]\/mobile\/.+\.webp$/.test(asset)) continue;
       if (asset.startsWith('./cat-interactions-v1/')) continue;
       if (asset.startsWith('./cat-interactions-v2/') && !/^\.\/cat-interactions-v2\/(?:index\.json|cat-0[123]\/(?:animations\.json|mobile\/.+\.webp))$/.test(asset)) continue;
+      if (/^\.\/cat_0[456]\//.test(asset) || asset.startsWith('./cat-expansion-v1/')) continue;
+      if (asset.startsWith('./cat-expansion-v2/') && !/^\.\/cat-expansion-v2\/cat-0[456]\/(?:animations\.json|mobile\/[a-f0-9]{64}\.webp)$/.test(asset)) continue;
       result.push(asset);
     }
   }
@@ -29,7 +31,7 @@ for (const asset of assets) {
   hash.update(asset); hash.update(bytes);
 }
 const version = hash.digest('hex').slice(0, 12);
-const media = assets.filter(asset => /^\.\/(?:room|cat-animation-v2|cat-interactions-v2)\//.test(asset));
+const media = assets.filter(asset => /^\.\/(?:room|cat-animation-v2|cat-interactions-v2|cat-expansion-v2)\//.test(asset));
 const core = assets.filter(asset => !media.includes(asset));
 const html = await readFile('dist/index.html', 'utf8');
 const entry = /<script[^>]*src="([^"]+)"/.exec(html)?.[1] || './index.html';

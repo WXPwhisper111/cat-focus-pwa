@@ -83,7 +83,7 @@ export type RoomRuntime = CatRuntime & {
 export function createRoomScene(initialState: RoomAnimation, options: RoomOptions = {}, runtime: Partial<RoomRuntime> = {}) {
   const date = runtime.date || (() => new Date());
   const definition = options.cat || orangeWhiteCat;
-  const definitions = [...new Map([definition, ...(options.cats || [])].map(cat => [cat.id, cat])).values()].slice(0, 3);
+  let definitions = [...new Map([definition, ...(options.cats || [])].map(cat => [cat.id, cat])).values()].slice(0, 3);
   const loadImage = runtime.loadImage || loadCatImage;
   const setTimer = runtime.setTimer || ((callback, delay) => setTimeout(callback, delay));
   const clearTimer = runtime.clearTimer || (id => clearTimeout(id));
@@ -131,14 +131,15 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
     const shadows = [[x + 10 + dx, y + dy, width - 20, height], [x + 4 + dx, y + 2 + dy, width - 8, height - 4], [x + dx, y + 4 + dy, width, height - 8]];
     scene.querySelectorAll<HTMLElement>(`[data-cat-shadow="${id}"]`).forEach((node, index) => setRect(node, shadows[index]));
   }
-  const players = definitions.map((cat, slot) => {
+  function createPlayer(cat: CatDefinition) {
     const image = scene.querySelector<HTMLImageElement>(`[data-room-cat="${cat.id}"]`)!;
     return createCatPlayer(image, initialState, {
       definition: cat, onError: showError,
       onPlayback: (clip, event) => { petFeedback.event(cat.id, clip.id, event); paintPosition(cat.id); },
       onClipFrame: (clip, frame) => { rendered.set(cat.id, { clip, frame }); paintPosition(cat.id); },
     }, runtime);
-  });
+  }
+  let players=definitions.map(createPlayer);
   async function refreshEnvironment() {
     if (destroyed) return;
     const revision = ++themeRevision;
@@ -219,7 +220,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   const playerFor = (id: string) => players[definitions.findIndex(cat => cat.id === id)];
   for (const cat of definitions) paintPosition(cat.id);
   const behaviorPort: BehaviorPort = {
-    ids: definitions.map(cat => cat.id),
+    get ids(){return definitions.map(cat=>cat.id);},
     home: id => homes.get(id)!, getFeet: id => feet.get(id)!, positions: () => new Map(feet),
     setFeet(id, point) {
       if (destroyed || !feet.has(id)) return;
@@ -234,6 +235,31 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   };
   return {
     behaviorPort,
+    updateResidents(next: readonly CatDefinition[]) {
+      if(destroyed || !next.length || next.length>3)return;
+      const oldPlayers=new Map(definitions.map((cat,index)=>[cat.id,players[index]]));
+      for(const cat of definitions) if(!next.some(value=>value.id===cat.id)) {
+        oldPlayers.get(cat.id)?.destroy(); oldPlayers.delete(cat.id); petFeedback.event(cat.id,'pet:once','stop');
+        scene.querySelectorAll(`[data-room-cat="${cat.id}"],[data-cat-shadow="${cat.id}"],[data-room-cat-target="${cat.id}"]`).forEach(node=>node.remove());
+        for(let index=targets.length-1;index>=0;index--)if(targets[index].target.kind==='cat'&&targets[index].target.id===cat.id)targets.splice(index,1);
+        homes.delete(cat.id);feet.delete(cat.id);rendered.delete(cat.id);
+      }
+      const added=next.filter(cat=>!oldPlayers.has(cat.id));definitions=[...next];
+      for(const cat of added) {
+        const home=layout.catReferencePoints.find(ref=>![...homes.values()].some(point=>point[0]===ref.feet[0]&&point[1]===ref.feet[1]))!;
+        homes.set(cat.id,[...home.feet] as unknown as AnimationPoint);feet.set(cat.id,homes.get(cat.id)!);
+        const temp=document.createElement('div');temp.innerHTML=roomMarkup('idle',appliedTheme,cat,[cat]);
+        const image=temp.querySelector<HTMLImageElement>('[data-room-cat]')!;image.removeAttribute('id');scene.insertBefore(image,scene.querySelector('.room-night-shade'));
+        temp.querySelectorAll(`[data-cat-shadow="${cat.id}"]`).forEach(node=>scene.querySelector('.room-contact-shadow')!.append(node));
+        const sequence=catSequence(cat,'idle');rendered.set(cat.id,{clip:{id:'idle',catId:cat.id,loop:true,sourceCanvas:cat.sourceCanvas,feetAnchor:cat.feetAnchor,frames:sequence.frames.map((frame,index)=>({...frame,durationMs:frameDuration(sequence,index)}))},frame:0});
+        if(options.onCatAction){const button=buttonFor({kind:'cat',id:cat.id},[0,0,100,100],`与${catDisplayName(cat)}互动`);button.dataset.roomCatTarget=cat.id;}
+        oldPlayers.set(cat.id,createPlayer(cat));paintPosition(cat.id);
+      }
+      players=definitions.map(cat=>oldPlayers.get(cat.id)!);
+      scene.dataset.catId=definitions[0].id;
+      scene.querySelectorAll('#cat').forEach(node=>node.removeAttribute('id'));scene.querySelector(`[data-room-cat="${definitions[0].id}"]`)!.id='cat';
+      scene.setAttribute('aria-label',roomLabel(appliedTheme,definitions.length));
+    },
     refreshNames() {
       players.forEach(player => player.refreshName());
       scene.querySelectorAll<HTMLButtonElement>('[data-room-cat-target]').forEach(button => {
@@ -242,7 +268,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
         button.querySelector('span')!.textContent = name;
       });
     },
-    element, catId: definition.id, residentKey: definitions.map(cat => cat.id).join('|'), updateState: (state: CatAnimation) => Promise.all(players.map(player => player.updateState(state))), refreshEnvironment,
+    element, get catId(){return definitions[0].id;}, get residentKey(){return definitions.map(cat=>cat.id).join('|');}, updateState: (state: CatAnimation) => Promise.all(players.map(player => player.updateState(state))), refreshEnvironment,
     updateCatState: (id: string, state: CatAnimation) => players[definitions.findIndex(cat => cat.id === id)]?.updateState(state) ?? Promise.resolve(),
     // Resource-only entry point. Callers own location/behavior policy; no UI invokes this in 2A.
     playCatInteraction(id: string, behavior: InteractionBehavior, phase?: InteractionPhase, playOptions?: PlayOptions) {

@@ -22,7 +22,7 @@ it('buys two real cats, renders three residents, shares the companion with focus
   click('#welcome-close'); click('[data-page=room]'); click('#confirm-adoption');
   await vi.waitFor(() => expect(document.querySelector('.room-scene')).not.toBeNull());
   click('[data-page=shop]'); expect(document.querySelectorAll('nav button')).toHaveLength(4);
-  expect(document.querySelectorAll('[data-shop-detail]')).toHaveLength(3);
+  expect(document.querySelectorAll('[data-shop-detail]')).toHaveLength(6);
   click('[data-shop-detail=cat-cat-02]'); expect(document.querySelector<HTMLButtonElement>('#shop-buy')!.disabled).toBe(true);
   expect(document.querySelector('.shop-purchase-note')!.textContent).toContain('余额不足'); click('#shop-detail-close');
   const db = await openDatabase();

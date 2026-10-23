@@ -1,3 +1,4 @@
+import { EXPANSION_KEY, expansionState, validateExpansion, mergeExpansion, newCatIds, type ExpansionState } from './cat-expansion-state';
 import { CAT_NAMES_KEY, normalizeCatName, validateCatNames } from './cat-names';
 import { SELECTED_FOCUS_TASK_KEY, taskSignature, validateFocusTask, validateFocusTasks } from './focus-tasks';
 import { validateRoomLocations, type RoomLocations } from './room-locations';
@@ -105,10 +106,53 @@ export function openDatabase(name = DB_NAME): Promise<IDBDatabase> {
     };
     req.onsuccess = () => {
       req.result.onversionchange = () => req.result.close();
-      void ensureDefaultCategories(req.result).then(() => resolve(req.result), error => { req.result.close(); reject(error); });
+      void ensureDefaultCategories(req.result).then(() => ensureCatExpansion(req.result)).then(() => resolve(req.result), error => { req.result.close(); reject(error); });
     };
     req.onerror = () => reject(req.error);
     req.onblocked = () => reject(Error('请关闭其他旧版本页面后重试'));
+  });
+}
+
+async function ensureCatExpansion(db: IDBDatabase) {
+  await transact(db,['settings'],'readwrite',async tx=>{
+    const settings=tx.objectStore('settings'); if(await request(settings.get(EXPANSION_KEY))!==undefined)return;
+    const house=await request(settings.get(CAT_HOUSE_KEY));
+    settings.put(expansionState(house!==undefined && hasAdoptedCat(validateCatHouseState(house))),EXPANSION_KEY);
+  });
+}
+export async function getCatExpansion(db:IDBDatabase) {
+  return validateExpansion(await request(db.transaction('settings').objectStore('settings').get(EXPANSION_KEY)));
+}
+export async function claimExpansionCat(db:IDBDatabase,id:string,now=Date.now()) {
+  if(!newCatIds.includes(id as typeof newCatIds[number]))throw Error('免费名额仅适用于新增三只猫');
+  return transact(db,['settings'],'readwrite',async tx=>{
+    const settings=tx.objectStore('settings'), house=validateCatHouseState(await request(settings.get(CAT_HOUSE_KEY)));
+    const grant=validateExpansion(await request(settings.get(EXPANSION_KEY)),house.ownedCatIds);
+    if(!grant.eligible || grant.claimed)throw Error('没有可用的免费名额');
+    if(house.ownedCatIds.includes(id))throw Error('已经拥有这只猫，请选择其他猫');
+    const next=validateExpansion({...grant,claimed:{catId:id,claimedAt:now}});
+    house.ownedCatIds.push(id);if(house.residentCatIds.length<3)house.residentCatIds.push(id);
+    settings.put(validateCatHouseState(house),CAT_HOUSE_KEY);settings.put(next,EXPANSION_KEY);return house;
+  });
+}
+export async function manageResidents(db:IDBDatabase,id:string,operation:'in'|'out',replaceId?:string) {
+  return transact(db,['settings'],'readwrite',async tx=>{
+    const settings=tx.objectStore('settings'), house=validateCatHouseState(await request(settings.get(CAT_HOUSE_KEY)));
+    if(!house.ownedCatIds.includes(id))throw Error('只能安排已拥有的猫');
+    if(operation==='out') {
+      if(!house.residentCatIds.includes(id))return house;
+      if(house.residentCatIds.length<=1)throw Error('请至少保留一只猫入住');
+      house.residentCatIds=house.residentCatIds.filter(value=>value!==id);
+    } else if(!house.residentCatIds.includes(id)) {
+      if(replaceId) {
+        const index=house.residentCatIds.indexOf(replaceId);if(index<0)throw Error('入住名单已变化，请重新选择');
+        house.residentCatIds[index]=id;
+      } else {
+        if(house.residentCatIds.length>=3)throw Error('小屋已满，请选择要暂离的猫');
+        house.residentCatIds.push(id);
+      }
+    }
+    settings.put(validateCatHouseState(house),CAT_HOUSE_KEY);return house;
   });
 }
 
@@ -439,12 +483,12 @@ export async function purchaseProduct(db: IDBDatabase, productId: string, now = 
     const owned = product.kind === 'cat' ? house?.ownedCatIds.includes(product.catId) : shop.inventory.ownedFurnitureIds.includes(product.id);
     if (owned) return { created: false, balance: snapshot.state.balance };
     if (!house?.companionCatId) throw Error('请先完成首次免费领养');
-    if (product.kind === 'cat' && house.residentCatIds.length >= 3) throw Error('小屋最多入住三只猫');
+
     const operationId = `purchase_${product.id}`;
     const payment = await spendCoinsIn(tx, snapshot, operationId, product.price, `购买${productName(product)}`, now);
     if (!payment.created) throw Error('购买流水与所有权不一致，请检查备份');
     if (product.kind === 'cat') {
-      house.ownedCatIds.push(product.catId); house.residentCatIds.push(product.catId);
+      house.ownedCatIds.push(product.catId); if(house.residentCatIds.length<3)house.residentCatIds.push(product.catId);
       settings.put(validateCatHouseState(house), CAT_HOUSE_KEY);
     } else {
       shop.inventory.ownedFurnitureIds.push(product.id);
@@ -480,12 +524,14 @@ export async function exportBackup(db: IDBDatabase) {
     const savedSelection = await request(tx.objectStore('settings').get(SELECTED_FOCUS_TASK_KEY));
     const catNames = validateCatNames(await request(tx.objectStore('settings').get(CAT_NAMES_KEY)));
     const selectedTaskId = tasks.find(task => task.id === savedSelection && task.status === 'pending')?.id ?? null;
-    return JSON.stringify({ format: 'cat-focus-pwa', version: 8, tasks, selectedTaskId, catNames, versions: { database: DB_VERSION, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' }, growth: { experience, level }, commerce, checkins, wallet, exportedAt: new Date().toISOString(), categories, records, ...(catHouse ? { catHouse } : {}) }, null, 2);
+    const expansion=validateExpansion(await request(tx.objectStore('settings').get(EXPANSION_KEY)),catHouse?.ownedCatIds ?? []);
+    return JSON.stringify({ format: 'cat-focus-pwa', version: 9, expansion, tasks, selectedTaskId, catNames, versions: { database: DB_VERSION, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' }, growth: { experience, level }, commerce, checkins, wallet, exportedAt: new Date().toISOString(), categories, records, ...(catHouse ? { catHouse } : {}) }, null, 2);
   });
 }
 export async function importBackup(db: IDBDatabase, raw: string, preview = false, requireIdle = false) {
   const incoming = parseBackup(raw); // Validate all records before the first write.
   return transact(db, ['records', 'categories', 'settings', 'wallet', 'walletTransactions', 'coinReceipts', 'active', 'focusTasks'], 'readwrite', async tx => {
+    const beforeHouse = await request(tx.objectStore('settings').get(CAT_HOUSE_KEY));
     if ((preview || requireIdle) && await request(tx.objectStore('active').get(ACTIVE_KEY))) throw Error('请先结束当前专注，再导入备份');
     if (incoming.wallet) {
       const local = await walletSnapshotIn(tx);
@@ -525,6 +571,11 @@ export async function importBackup(db: IDBDatabase, raw: string, preview = false
       }
       if (!hasAdoptedCat(localHouse)) settings.put(incoming.catHouse, CAT_HOUSE_KEY);
     }
+    const mergedHouseValue=await request(tx.objectStore('settings').get(CAT_HOUSE_KEY));
+    const mergedHouse=mergedHouseValue===undefined?null:validateCatHouseState(mergedHouseValue);
+    const localExpansion=validateExpansion(await request(tx.objectStore('settings').get(EXPANSION_KEY)));
+    const restoredExpansion=incoming.expansion ?? expansionState(beforeHouse===undefined && !!incoming.catHouse?.companionCatId);
+    tx.objectStore('settings').put(validateExpansion(mergeExpansion(localExpansion,restoredExpansion),mergedHouse?.ownedCatIds ?? []),EXPANSION_KEY);
     if (incoming.catNames) {
       const settings = tx.objectStore('settings');
       const localNames = validateCatNames(await request(settings.get(CAT_NAMES_KEY)));

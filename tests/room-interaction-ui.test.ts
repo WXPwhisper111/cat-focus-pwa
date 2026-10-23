@@ -25,7 +25,7 @@ it('connects five accessible furniture buttons and three cats, keeping per-cat a
   expect(panel.element.hidden).toBe(true);
   expect(room.element.querySelector('[data-room-cat-target=cat-02]')!.getAttribute('aria-pressed')).toBe('true');
   expect(panel.element.querySelector('.interaction-actions')).toBeNull();
-  for (const cat of catDefinitions) { press(`[data-room-cat-target="${cat.id}"]`); expect(controller.snapshot().selectedCatId).toBe(cat.id); }
+  for (const cat of catDefinitions.slice(0,3)) { press(`[data-room-cat-target="${cat.id}"]`); expect(controller.snapshot().selectedCatId).toBe(cat.id); }
   await room.updateCatState('cat-02', 'sleep_loop');
   expect(room.element.querySelector('[data-room-cat=cat-02]')!.getAttribute('data-animation')).toBe('sleep_loop');
   expect(room.element.querySelector('[data-room-cat=cat-03]')!.getAttribute('data-animation')).toBe('idle');

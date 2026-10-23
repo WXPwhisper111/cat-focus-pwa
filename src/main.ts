@@ -1,3 +1,4 @@
+import { openResidentManager } from './resident-manager';
 import './app-update.css';
 import { createAppUpdate } from './app-update';
 import { createAppUpdateView } from './app-update-view';
@@ -222,7 +223,7 @@ function statMarkup() {
 function houseMarkup() {
   if (catHouseIssue) return `<section class="hero"><h1>猫咪小屋</h1><p class="cat-house-error">暂时无法读取领养状态：${escapeHtml(catHouseIssue)}。现有记录仍保留，请重试。</p><button id="retry-cat-house">重新读取</button></section>`;
   if (!hasAdoptedCat(catHouse)) return '<div id="adoption-slot"></div>';
-  return `<section class="hero"><div class="eyebrow">猫咪的日常</div><h1>猫咪小屋</h1><p>一个安静的小角落。</p>${roomPreview ? `<p class="room-preview-note">开发预览 · ${roomPreview === 'day' ? '白天' : '夜间'}</p>` : ''}</section><section class="room-card"><div id="room-slot" class="room-slot"></div></section><div id="interaction-slot"></div><div class="house-actions"><p>已入住 ${catHouse!.residentCatIds.length} / 3</p><button type="button" data-page="shop">猫咪商城</button></div><div class="house-companions" aria-label="选择行动猫">${catHouse!.residentCatIds.map(id => { const cat = getCatDefinition(id)!, selected = roomInteraction?.snapshot().selectedCatId === id; return `<div class="house-cat-card"><button type="button" data-action-cat="${id}" aria-pressed="${selected}" class="${selected ? 'is-selected' : ''}"><img src="${cat.preview}" alt=""/>${escapeHtml(catDisplayName(cat))}<small>选择行动猫</small></button><button type="button" class="cat-rename-button" data-rename-cat="${id}" aria-label="修改${escapeHtml(catDisplayName(cat))}的名称">改名</button></div>`; }).join('')}</div>`;
+  return `<section class="hero"><div class="eyebrow">猫咪的日常</div><h1>猫咪小屋</h1><p>一个安静的小角落。</p>${roomPreview ? `<p class="room-preview-note">开发预览 · ${roomPreview === 'day' ? '白天' : '夜间'}</p>` : ''}</section><section class="room-card"><div id="room-slot" class="room-slot"></div></section><div id="interaction-slot"></div><div class="house-actions"><p>已入住 ${catHouse!.residentCatIds.length} / 3</p><button type="button" id="manage-residents">管理入住与新伙伴</button><button type="button" data-page="shop">猫咪商城</button></div><div class="house-companions" aria-label="选择行动猫">${catHouse!.residentCatIds.map(id => { const cat = getCatDefinition(id)!, selected = roomInteraction?.snapshot().selectedCatId === id; return `<div class="house-cat-card"><button type="button" data-action-cat="${id}" aria-pressed="${selected}" class="${selected ? 'is-selected' : ''}"><img src="${cat.preview}" alt=""/>${escapeHtml(catDisplayName(cat))}<small>选择行动猫</small></button><button type="button" class="cat-rename-button" data-rename-cat="${id}" aria-label="修改${escapeHtml(catDisplayName(cat))}的名称">改名</button></div>`; }).join('')}</div>`;
 }
 function settingsMarkup() {
   return `<section class="hero"><div class="eyebrow">安心专注</div><h1>设置与备份</h1><p>数据保存在这台设备的浏览器中。</p></section>
@@ -242,7 +243,7 @@ function render() {
   const residentKey = residents.map(cat => cat.id).join('|');
   if (page === 'shop') catShop?.element.remove(); else { catShop?.destroy(); catShop = undefined; }
   const showRoom = page === 'room' && hasAdoptedCat(catHouse) && !catHouseIssue;
-  if (roomScene && (roomScene.residentKey !== residentKey || !showRoom)) {
+  if (roomScene && !showRoom) {
     roomAutonomy?.destroy(); roomAutonomy = undefined; roomLifecycleCleanup?.(); roomLifecycleCleanup = undefined;
     roomInteraction?.setExecutor(undefined); roomBehavior?.destroy(); roomBehavior = undefined;
     roomScene.destroy(); roomScene = undefined;
@@ -253,7 +254,10 @@ function render() {
     interactionPanel?.destroy(); interactionPanel = undefined;
     roomInteraction.destroy(); roomInteraction = undefined;
   }
-  if (showRoom) { roomScene?.element.remove(); interactionPanel?.element.remove(); }
+  if (showRoom) {
+    if(roomScene && roomScene.residentKey!==residentKey){ roomScene.updateResidents(residents);roomBehavior?.reconcile(); }
+    roomScene?.element.remove(); interactionPanel?.element.remove();
+  }
   else { roomScene?.destroy(); roomScene = undefined; }
   if (page === 'room' && !hasAdoptedCat(catHouse) && !catHouseIssue) adoption?.element.remove();
   else { adoption?.destroy(); adoption = undefined; }
@@ -279,7 +283,7 @@ function render() {
       roomInteraction = createRoomInteraction(residents.map(cat => cat.id), undefined, catHouse?.companionCatId || '');
       interactionPanel = createRoomInteractionPanel(roomInteraction);
       unsubscribeInteraction = roomInteraction.subscribe(state => { roomScene?.setSelected(state.selectedCatId); document.querySelectorAll<HTMLButtonElement>('[data-action-cat]').forEach(button => { const selected = button.dataset.actionCat === state.selectedCatId; button.classList.toggle('is-selected', selected); button.setAttribute('aria-pressed', String(selected)); }); roomAutonomy?.changed(); });
-    } else roomInteraction.reconcile(residents.map(cat => cat.id));
+    } else { roomInteraction.reconcile(residents.map(cat => cat.id)); if(!roomInteraction.snapshot().selectedCatId)roomInteraction.selectCat(residents.find(cat=>cat.id===catHouse?.companionCatId)?.id || residents[0].id); }
     roomScene ??= createRoomScene('idle', {
       theme: roomPreview || 'auto', cat: residents[0], cats: residents, homeOrder: catHouse?.residentCatIds,
       hotspots: roomHotspots.filter(hotspot => hotspot.itemId !== 'curtains'),
@@ -305,7 +309,7 @@ function render() {
       roomBehavior = runner;
       roomInteraction.setExecutor(runner.executor);
       const scheduler = createRoomAutonomy({
-        ids: scene.behaviorPort.ids, activeCount: runner.activeCount, busy: runner.busy,
+        get ids(){return scene.behaviorPort.ids;}, activeCount: runner.activeCount, busy: runner.busy,
         protectedCat: () => roomInteraction?.snapshot().open ? roomInteraction.snapshot().selectedCatId : null,
         available: runner.available, atFurniture: runner.atFurniture, vacate: runner.vacate,
         execute: (catId, behavior, signal) => runner.execute({ catId, behavior, source: 'autonomous' }, signal),
@@ -347,12 +351,13 @@ function render() {
     else {
       catShop ??= createCatShop({ balance: coinBalance, house: catHouse, commerce }, {
         back: () => { page = 'room'; render(); },
-        buy: async id => { const result = await purchaseProduct(db, id); assignNotice(result.created ? '购买成功，猫咪已自动入住。' : '已经拥有这只猫咪，无需重复购买。'); await refresh(); stateChannel?.postMessage('changed'); },
+        buy: async id => { const result = await purchaseProduct(db, id); assignNotice(result.created ? '购买成功，已永久拥有；满员时可在管理入住中安排。' : '已经拥有这只猫咪，无需重复购买。'); await refresh(); stateChannel?.postMessage('changed'); },
         companion: async id => { await setCompanionCat(db, id); await refresh(); stateChannel?.postMessage('changed'); },
       });
       catShop.update({ balance: coinBalance, house: catHouse, commerce }); host.append(catShop.element);
     }
   }
+  document.querySelector('#manage-residents')?.addEventListener('click',()=> { roomAutonomy?.userInteraction();openResidentManager(db,async id=>{roomInteraction?.cancel(id);await roomBehavior?.stopCat(id);},async()=>{await refresh();stateChannel?.postMessage('changed');}); });
   document.querySelectorAll<HTMLButtonElement>('[data-rename-cat]').forEach(button => button.onclick = () => {
     const cat = getCatDefinition(button.dataset.renameCat)!;
     roomAutonomy?.userInteraction();

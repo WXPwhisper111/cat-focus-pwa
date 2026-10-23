@@ -11,6 +11,7 @@ export function validateCatHouseState(value: unknown): CatHouseState {
     if (ids.some(id => typeof id !== 'string' || !getCatDefinition(id))) throw Error('猫咪小屋包含未知的猫咪 ID');
     if (new Set(ids).size !== ids.length) throw Error('猫咪小屋包含重复的猫咪 ID');
   }
+  if (state.ownedCatIds.length && !state.residentCatIds.length) throw Error('请至少保留一只猫入住');
   if (state.residentCatIds.length > 3) throw Error('最多允许三只猫入住');
   if (state.residentCatIds.some(id => !state.ownedCatIds!.includes(id))) throw Error('入住猫必须属于已拥有的猫');
   if (state.companionCatId !== null && !state.ownedCatIds.includes(state.companionCatId)) throw Error('主陪伴猫必须属于已拥有的猫');

@@ -24,7 +24,7 @@ it('serializes edits, detects stale operations and preserves all non-task state'
 });
 it('round-trips v8 tasks, deduplicates import, rejects content conflicts atomically and accepts v6 without clearing local tasks',async()=>{
   const source=await openDatabase('source');const task=await addFocusTask(source,'测试清单',1000);const raw=await exportBackup(source),backup=JSON.parse(raw);
-  expect(backup.version).toBe(8);expect(backup.versions.database).toBe(6);
+  expect(backup.version).toBe(9);expect(backup.versions.database).toBe(6);
   const target=await openDatabase('target');await importBackup(target,raw);await importBackup(target,raw);expect(await getFocusTasks(target)).toEqual([task]);
   backup.tasks[0].title='冲突标题';await expect(importBackup(target,JSON.stringify(backup))).rejects.toThrow('任务 ID');expect(await getFocusTasks(target)).toEqual([task]);
   backup.version=6;backup.versions.database=5;delete backup.tasks;await importBackup(target,JSON.stringify(backup));expect(await getFocusTasks(target)).toEqual([task]);source.close();target.close();

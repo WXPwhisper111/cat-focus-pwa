@@ -1,3 +1,4 @@
+import { validateExpansion, type ExpansionState } from './cat-expansion-state';
 import { validateCatNames, type CatNames } from './cat-names';
 import { validateFocusTasks, validateTaskContext, type FocusTaskContext, type FocusTask } from './focus-tasks';
 import { validateCommerce, validateCommerceLinks, type CommerceState } from './shop';
@@ -127,13 +128,13 @@ export function isRecord(value: unknown): value is FocusRecord {
   return true;
 }
 
-export type BackupData = { catNames?: CatNames; tasks?: FocusTask[]; selectedTaskId?: string | null; categories: FocusCategory[]; records: FocusRecord[]; catHouse?: CatHouseState; wallet?: WalletSnapshot; commerce?: CommerceState; checkins?: DailyCheckinRecord[] };
+export type BackupData = { expansion?: ExpansionState; catNames?: CatNames; tasks?: FocusTask[]; selectedTaskId?: string | null; categories: FocusCategory[]; records: FocusRecord[]; catHouse?: CatHouseState; wallet?: WalletSnapshot; commerce?: CommerceState; checkins?: DailyCheckinRecord[] };
 
 export function parseBackup(raw: string): BackupData {
   const data: unknown = JSON.parse(raw);
   if (!data || typeof data !== 'object') throw Error('备份格式错误');
-  const backup = data as { catNames?: unknown; format?: unknown; version?: unknown; records?: unknown; categories?: unknown; catHouse?: unknown; wallet?: unknown; commerce?: unknown; checkins?: unknown; growth?: unknown; versions?: unknown; tasks?: unknown; selectedTaskId?: unknown };
-  if (backup.format !== 'cat-focus-pwa' || ![1, 2, 3, 4, 5, 6, 7, 8].includes(backup.version as number) || !Array.isArray(backup.records)) throw Error('不支持的备份版本或格式');
+  const backup = data as { expansion?: unknown; catNames?: unknown; format?: unknown; version?: unknown; records?: unknown; categories?: unknown; catHouse?: unknown; wallet?: unknown; commerce?: unknown; checkins?: unknown; growth?: unknown; versions?: unknown; tasks?: unknown; selectedTaskId?: unknown };
+  if (backup.format !== 'cat-focus-pwa' || ![1, 2, 3, 4, 5, 6, 7, 8, 9].includes(backup.version as number) || !Array.isArray(backup.records)) throw Error('不支持的备份版本或格式');
   const catNames = backup.catNames === undefined ? undefined : validateCatNames(backup.catNames);
   const catHouse = (backup.version as number) >= 4 && backup.catHouse !== undefined ? validateCatHouseState(backup.catHouse) : undefined;
   const wallet = (backup.version as number) >= 5 ? validateWalletSnapshot(backup.wallet) : undefined;
@@ -193,7 +194,8 @@ export function parseBackup(raw: string): BackupData {
     validateCommerceLinks(commerce!, catHouse, wallet!);
   }
   const tasks = (backup.version as number) >= 7 ? validateFocusTasks(backup.tasks) : undefined;
-  const selectedTaskId = backup.version === 8 ? tasks?.find(task => task.id === backup.selectedTaskId && task.status === 'pending')?.id ?? null : undefined;
+  const selectedTaskId = (backup.version as number) >= 8 ? tasks?.find(task => task.id === backup.selectedTaskId && task.status === 'pending')?.id ?? null : undefined;
   if (catNames && Object.keys(catNames).some(id => !catHouse?.ownedCatIds.includes(id))) throw Error('备份名称必须属于已拥有的猫咪');
-  return { ...(catNames ? { catNames } : {}), ...(selectedTaskId !== undefined ? { selectedTaskId } : {}), ...(tasks ? { tasks } : {}), ...(commerce ? { commerce } : {}), ...(checkins ? { checkins } : {}), ...(wallet ? { wallet } : {}), categories, records: uniqueRecords, ...(catHouse ? { catHouse } : {}) };
+  const expansion=backup.version===9?validateExpansion(backup.expansion,catHouse?.ownedCatIds ?? []):undefined;
+  return { ...(expansion?{expansion}:{}), ...(catNames ? { catNames } : {}), ...(selectedTaskId !== undefined ? { selectedTaskId } : {}), ...(tasks ? { tasks } : {}), ...(commerce ? { commerce } : {}), ...(checkins ? { checkins } : {}), ...(wallet ? { wallet } : {}), categories, records: uniqueRecords, ...(catHouse ? { catHouse } : {}) };
 }

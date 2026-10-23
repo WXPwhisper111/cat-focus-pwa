@@ -4,12 +4,12 @@ export type AnimationContact = {
   kind: 'muzzle' | 'front-paw'; spritePoint: AnimationPoint;
   targetItem: 'foodBowl' | 'waterBowl' | 'scratcher'; itemDisplayPoint: AnimationPoint;
   targetRoomPoint: AnimationPoint; roomSpriteRect: readonly [number, number, number, number];
-  contactFrame: number; // Source generator uses a zero-based reference frame index.
+  contactFrame?: number; // Source generator uses a zero-based reference frame index.
 };
 export type AnimationClip = {
   id: string; catId: string; loop: boolean; sourceCanvas: readonly number[];
   feetAnchor: readonly number[]; frames: readonly AnimationFrame[];
-  contact?: AnimationContact; facing?: string;
+  contact?: AnimationContact; facing?: string; contactPointsByFrame?: readonly (readonly (readonly number[])[])[];
 };
 export function clipDuration(clip: AnimationClip) { return clip.frames.reduce((sum, frame) => sum + frame.durationMs, 0); }
 export function validateClip(clip: AnimationClip) {

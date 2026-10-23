@@ -26,7 +26,7 @@ it('persists names across reopen while leaving companion, residents, active time
 });
 it('roundtrips optional names in v8 backups and preserves local names when importing old or differently named backups', async () => {
   const source = await openDatabase('source'); await adoptInitialCat(source, 'orange-white'); await renameCat(source, 'orange-white', '糖糖');
-  const raw = await exportBackup(source); expect(JSON.parse(raw).version).toBe(8);
+  const raw = await exportBackup(source); expect(JSON.parse(raw).version).toBe(9);
   const target = await openDatabase('target'); await importBackup(target, raw);
   expect(await getCatNames(target)).toEqual({ 'orange-white': '糖糖' });
   await renameCat(target, 'orange-white', '小布'); await importBackup(target, raw);

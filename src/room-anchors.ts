@@ -21,13 +21,13 @@ export function anchorFeet(anchor: RoomAnchor, clip: AnimationClip): AnimationPo
 }
 export function createAnchorManager(positions: () => ReadonlyMap<string, AnimationPoint>, definitions = furnitureAnchors, homes: ReadonlyMap<string, AnimationPoint> = new Map()) {
   const leases = new Map<string, { catId: string; anchor: RoomAnchor; feet: AnimationPoint; released: boolean }>();
-  const overlap = (a: AnimationPoint, b: AnimationPoint) => Math.abs(a[0] - b[0]) < 88 && Math.abs(a[1] - b[1]) < 18;
+  const overlap = positionsOverlap;
   function available(catId: string, itemId: InteractionItem, clip: AnimationClip, requestedId?: string) {
       for (const anchor of definitions.filter(anchor => anchor.itemId === itemId && (!requestedId || anchor.id === requestedId))) {
         const feet = anchorFeet(anchor, clip);
         if ([...leases.values()].some(lease => lease.catId !== catId && (lease.anchor.id === anchor.id || lease.anchor.group === anchor.group || overlap(lease.feet, feet)))) continue;
-        if ([...positions()].some(([id, point]) => id !== catId && overlap(point, feet))) continue;
-        if ([...homes].some(([id, point]) => id !== catId && overlap(point, feet))) continue;
+        if ([...positions()].some(([id, point]) => id.split('#')[0] !== catId && overlap(point, feet))) continue;
+        if ([...homes].some(([id, point]) => id.split('#')[0] !== catId && overlap(point, feet))) continue;
         return { anchor, feet };
       }
       return undefined;
@@ -48,4 +48,13 @@ export function createAnchorManager(positions: () => ReadonlyMap<string, Animati
     snapshot: () => [...leases.values()].map(lease => ({ ...lease })),
     clear: () => leases.clear(),
   };
+}
+
+export const positionsOverlap = (a:AnimationPoint,b:AnimationPoint) => Math.abs(a[0]-b[0])<88 && Math.abs(a[1]-b[1])<18;
+const nearbyOffsets:Partial<Record<InteractionItem,readonly AnimationPoint[]>>={
+  bed:[[1.04,.78],[.5,1.08]],foodBowl:[[.5,1.16],[-.4,1.2]],waterBowl:[[.5,1.16],[.8,.8]],scratcher:[[.5,1.12],[.05,1.04],[-.15,.75]],
+};
+export function nearbyCandidates(item:InteractionItem):AnimationPoint[]{
+  const layer=layout.layers.find(layer=>layer.id===item)!;
+  return (nearbyOffsets[item]||[]).map(([x,y])=>[layer.rect[0]+x*layer.rect[2],layer.rect[1]+y*layer.rect[3]] as AnimationPoint).filter(([x,y])=>x>=72&&x<=952&&y>=520&&y<=736);
 }

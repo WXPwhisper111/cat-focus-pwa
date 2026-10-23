@@ -11,7 +11,7 @@ it('persists only known stable anchors across reopen and preserves timer, owners
   const reopened = await openDatabase(); expect(reopened.version).toBe(6);
   expect(await getRoomLocations(reopened)).toEqual({ 'cat-02': 'bed-0' });
   expect(await getActive(reopened)).toEqual(active); expect(await getWallet(reopened)).toEqual(wallet);
-  const backup = JSON.parse(await exportBackup(reopened)); expect(backup.version).toBe(8); expect(backup.roomLocations).toBeUndefined(); reopened.close();
+  const backup = JSON.parse(await exportBackup(reopened)); expect(backup.version).toBe(9); expect(backup.roomLocations).toBeUndefined(); reopened.close();
 });
 it('rejects unknown cats, transient state, shared capacity, and cats not resident', async () => {
   for (const invalid of [null, [], { unknown: 'bed-0' }, { 'cat-02': 'teleporting' }, { 'cat-02': 'food-0', 'cat-03': 'water-0' }]) expect(() => validateRoomLocations(invalid)).toThrow();

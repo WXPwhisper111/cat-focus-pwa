@@ -1,0 +1,153 @@
+{
+  "segments": 18,
+  "frames": 537,
+  "originalBytes": 438148584,
+  "mobileBeforeBytes": 22813416,
+  "mobileUniqueBytes": 9999016,
+  "rows": [
+    {
+      "seamMeanChannelDifference": 0.0051,
+      "catId": "cat-04",
+      "action": "idle",
+      "frames": 63,
+      "durationMs": 9260,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0,
+      "catId": "cat-04",
+      "action": "sleep",
+      "frames": 32,
+      "durationMs": 4800,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0038,
+      "catId": "cat-04",
+      "action": "eat",
+      "frames": 16,
+      "durationMs": 1600,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.01,
+      "catId": "cat-04",
+      "action": "drink",
+      "frames": 20,
+      "durationMs": 1500,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.028,
+      "catId": "cat-04",
+      "action": "scratch",
+      "frames": 24,
+      "durationMs": 1200,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0,
+      "catId": "cat-04",
+      "action": "pet",
+      "frames": 24,
+      "durationMs": 2400,
+      "loop": false
+    },
+    {
+      "seamMeanChannelDifference": 0.0058,
+      "catId": "cat-05",
+      "action": "idle",
+      "frames": 63,
+      "durationMs": 9260,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0,
+      "catId": "cat-05",
+      "action": "sleep",
+      "frames": 32,
+      "durationMs": 4800,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.007,
+      "catId": "cat-05",
+      "action": "eat",
+      "frames": 16,
+      "durationMs": 1600,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0054,
+      "catId": "cat-05",
+      "action": "drink",
+      "frames": 20,
+      "durationMs": 1500,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0264,
+      "catId": "cat-05",
+      "action": "scratch",
+      "frames": 24,
+      "durationMs": 1200,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0,
+      "catId": "cat-05",
+      "action": "pet",
+      "frames": 24,
+      "durationMs": 2400,
+      "loop": false
+    },
+    {
+      "seamMeanChannelDifference": 0.0162,
+      "catId": "cat-06",
+      "action": "idle",
+      "frames": 63,
+      "durationMs": 9260,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0,
+      "catId": "cat-06",
+      "action": "sleep",
+      "frames": 32,
+      "durationMs": 4800,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0051,
+      "catId": "cat-06",
+      "action": "eat",
+      "frames": 16,
+      "durationMs": 1600,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0177,
+      "catId": "cat-06",
+      "action": "drink",
+      "frames": 20,
+      "durationMs": 1500,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0431,
+      "catId": "cat-06",
+      "action": "scratch",
+      "frames": 24,
+      "durationMs": 1200,
+      "loop": true
+    },
+    {
+      "seamMeanChannelDifference": 0.0,
+      "catId": "cat-06",
+      "action": "pet",
+      "frames": 24,
+      "durationMs": 2400,
+      "loop": false
+    }
+  ]
+}

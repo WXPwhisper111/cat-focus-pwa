@@ -15,7 +15,7 @@ async function fund(coins: number) {
 
 it('uses three real cat definitions at 80 coins and four default-owned one-per-zone furniture slots', async () => {
   const cats = shopProducts.filter(product => product.kind === 'cat');
-  expect(cats.map(product => product.price)).toEqual([80, 80, 80]);
+  expect(cats.map(product => product.price)).toEqual([80, 80, 80, 80, 80, 80]);
   expect(cats.map(product => product.kind === 'cat' && product.catId)).toEqual(catDefinitions.map(cat => cat.id));
   const shop = await getCommerceState(db); expect(shop.inventory.ownedFurnitureIds).toHaveLength(4);
   expect(Object.keys(shop.inventory.equipped)).toEqual(['sleep', 'food', 'activity', 'play']);

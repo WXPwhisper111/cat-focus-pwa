@@ -1,4 +1,5 @@
 // @vitest-environment jsdom
+import { catDefinitions } from '../src/cat-definition';
 import { afterEach, expect, it, vi } from 'vitest';
 import { createRoomScene, roomCatRect, roomHotspots, roomLayout, roomMarkup, roomSprites, type RoomRuntime } from '../src/room-scene';
 
@@ -128,5 +129,20 @@ it('positions restored cats before image decoding and keeps home slots independe
   room.behaviorPort.setFeet('orange-white', [200, 700]);
   expect(parseFloat(image.style.left)).toBeCloseTo((200 - 72) / 1024 * 100, 2);
   expect(parseFloat(image.style.top)).toBeCloseTo((700 - 144 * 1200 / 1254) / 768 * 100, 2);
+  room.destroy();
+});
+
+it('updates residents without recreating remaining cats or moving their homes', async () => {
+  const room=createRoomScene('idle',{cat:catDefinitions[3],cats:[catDefinitions[3],catDefinitions[4],catDefinitions[5]],onCatAction:()=>{}},{loadImage:async()=>{}});
+  document.body.append(room.element);
+  const kept=room.element.querySelector('[data-room-cat="cat-05"]');
+  const home=room.behaviorPort.home('cat-05');
+  room.updateResidents([catDefinitions[0],catDefinitions[4],catDefinitions[5]]);
+  expect(room.element.querySelector('[data-room-cat="cat-05"]')).toBe(kept);
+  expect(room.behaviorPort.home('cat-05')).toEqual(home);
+  expect(room.element.querySelector('[data-room-cat="cat-04"]')).toBeNull();
+  expect(room.element.querySelectorAll('[data-room-cat]')).toHaveLength(3);
+  expect(room.element.querySelectorAll('[data-room-cat-target]')).toHaveLength(3);
+  expect(room.behaviorPort.ids).toEqual(['orange-white','cat-05','cat-06']);
   room.destroy();
 });

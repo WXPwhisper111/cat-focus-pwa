@@ -1,0 +1,3214 @@
+{
+  "cats": [
+    {
+      "id": "cat-04",
+      "name": "吉吉",
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "actions": {
+        "idle": {
+          "loop": true,
+          "frameCount": 63,
+          "cycleDurationMs": 9260,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4cef1801bcc2f1e26b3ae753599f6cbaf18f4a082c42a2f130f9c44e71a8b854.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/d4f4972973a0db5d37c96593268ca13b92edc8f07c10c187402e85863fddd217.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/9e3ff5603992acef5918a672ca03fc78e6598c27a7960c1718e1bec8c9967879.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/48de957aacd777e0641dc0756e247be30ca5a4d651bb7c52e0b5d418b57a116a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/17e53a38591cd2b020ec501cc1455a2f78065119fac8730c6aa3ba7795c9e405.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/333cc77c7cdf673d4924693758fabf0828346e57db93d123e1379d3c67daf475.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/32572d2a04e4e868a933f5dfcc92e246c9cf72369fca31dcfc1d41581c70757e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/0e0abe9f04b5a757428032de8587cf487089a65c984c53795fcba72f201c3655.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c34c20506e1b314867c8fe1c718f875e45d0021269f8ec940a7454240bb3ce0d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e6ffe09177b02d124ed5235a36a2336c1c920c34c57a4ffa7ed45802ffd822ed.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bf228b16c8856bcfae8e1e0ce0295bfc11adbaa23c04e96dd8b578312e5711c4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bf228b16c8856bcfae8e1e0ce0295bfc11adbaa23c04e96dd8b578312e5711c4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e6ffe09177b02d124ed5235a36a2336c1c920c34c57a4ffa7ed45802ffd822ed.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c34c20506e1b314867c8fe1c718f875e45d0021269f8ec940a7454240bb3ce0d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/0e0abe9f04b5a757428032de8587cf487089a65c984c53795fcba72f201c3655.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/32572d2a04e4e868a933f5dfcc92e246c9cf72369fca31dcfc1d41581c70757e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/333cc77c7cdf673d4924693758fabf0828346e57db93d123e1379d3c67daf475.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/17e53a38591cd2b020ec501cc1455a2f78065119fac8730c6aa3ba7795c9e405.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/48de957aacd777e0641dc0756e247be30ca5a4d651bb7c52e0b5d418b57a116a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/9e3ff5603992acef5918a672ca03fc78e6598c27a7960c1718e1bec8c9967879.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/d4f4972973a0db5d37c96593268ca13b92edc8f07c10c187402e85863fddd217.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/fee61e992a5b2d19779efe24c3ec41855e912a3fc8f129b02feb08f0ce33fd3a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bc02269e470ac7147c34f7e34a933e67d32f2af9a46aa9a9b0483b0ebdefc927.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e2cb6d30925e64bca6e4ac1812d52ba81e9cd11e27324b7b1230af4464e10ed6.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3659154dd06aa1f0c86c3ae2b82ef812369b0801b20fe4aec27d17a05e409acb.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e957da0150b8a7cde19559f981284a5103030a727edf34d82749535209ade534.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3bb001337f48c0ffdef56c5a0033fca99a687a98f9576f33eb952ec060b86cd5.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/cc85c2219bc813d3afbe32af130b896538fe1562cd69a6b2850a8cd592b8b22a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/f24fe32e6c360456239deece1aafc0bb01b709501de3ee3de9aa1e20fb7f2700.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/29cb6b75e4b272888da0de44c1082854b0187ef1768b2bce61d2a960de541753.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4e2f126ac136d9a175acc7a660a9d22f01372727f0467fb8f8372523f9a78117.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/1707b799c81bba3232f669e648aa0a3e6078febb4c8adf7aaf63e830fdaf6b76.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/8b2f1af9447105d4270188f2b7c8b20a33305356d7131843aeedf9c14655e26b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e6ffe09177b02d124ed5235a36a2336c1c920c34c57a4ffa7ed45802ffd822ed.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c34c20506e1b314867c8fe1c718f875e45d0021269f8ec940a7454240bb3ce0d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/0e0abe9f04b5a757428032de8587cf487089a65c984c53795fcba72f201c3655.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/32572d2a04e4e868a933f5dfcc92e246c9cf72369fca31dcfc1d41581c70757e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/333cc77c7cdf673d4924693758fabf0828346e57db93d123e1379d3c67daf475.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/17e53a38591cd2b020ec501cc1455a2f78065119fac8730c6aa3ba7795c9e405.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/48de957aacd777e0641dc0756e247be30ca5a4d651bb7c52e0b5d418b57a116a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/9e3ff5603992acef5918a672ca03fc78e6598c27a7960c1718e1bec8c9967879.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/d4f4972973a0db5d37c96593268ca13b92edc8f07c10c187402e85863fddd217.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4cef1801bcc2f1e26b3ae753599f6cbaf18f4a082c42a2f130f9c44e71a8b854.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/d4f4972973a0db5d37c96593268ca13b92edc8f07c10c187402e85863fddd217.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/052018c47b828e62fd8d836002470678f88a4bf45c4dfdd21b9957d654e04e26.webp",
+              "durationMs": 80
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/b7b15eb891dd4a6b19cb4b1390d179460deaeda876a43e3046cfe39d8fcc0e3e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/2b767f7af4c6ae2e4e79ce0e8bf8710a2001149773fb47d3d94a55457880704c.webp",
+              "durationMs": 80
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/333cc77c7cdf673d4924693758fabf0828346e57db93d123e1379d3c67daf475.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/32572d2a04e4e868a933f5dfcc92e246c9cf72369fca31dcfc1d41581c70757e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/0e0abe9f04b5a757428032de8587cf487089a65c984c53795fcba72f201c3655.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c34c20506e1b314867c8fe1c718f875e45d0021269f8ec940a7454240bb3ce0d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e6ffe09177b02d124ed5235a36a2336c1c920c34c57a4ffa7ed45802ffd822ed.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bf228b16c8856bcfae8e1e0ce0295bfc11adbaa23c04e96dd8b578312e5711c4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bf228b16c8856bcfae8e1e0ce0295bfc11adbaa23c04e96dd8b578312e5711c4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e6ffe09177b02d124ed5235a36a2336c1c920c34c57a4ffa7ed45802ffd822ed.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c34c20506e1b314867c8fe1c718f875e45d0021269f8ec940a7454240bb3ce0d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/0e0abe9f04b5a757428032de8587cf487089a65c984c53795fcba72f201c3655.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/32572d2a04e4e868a933f5dfcc92e246c9cf72369fca31dcfc1d41581c70757e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/333cc77c7cdf673d4924693758fabf0828346e57db93d123e1379d3c67daf475.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/17e53a38591cd2b020ec501cc1455a2f78065119fac8730c6aa3ba7795c9e405.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/48de957aacd777e0641dc0756e247be30ca5a4d651bb7c52e0b5d418b57a116a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/9e3ff5603992acef5918a672ca03fc78e6598c27a7960c1718e1bec8c9967879.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/d4f4972973a0db5d37c96593268ca13b92edc8f07c10c187402e85863fddd217.webp",
+              "durationMs": 150
+            }
+          ]
+        },
+        "sleep": {
+          "loop": true,
+          "frameCount": 32,
+          "cycleDurationMs": 4800,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/79277dc460fb37d7eda21904824d73bc074b78ddf0ed8dc634b466cd00f36334.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/79277dc460fb37d7eda21904824d73bc074b78ddf0ed8dc634b466cd00f36334.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/33a8ade594d18c688c557452360950b5cb874390a233a8df99b79d4e1902a86c.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a85f3c7c35b7c6d6a184c4baa855467d95a566eecfb4541ceccf4fbc8965cd15.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/220436bfba9efd03bbb467bf14cbf95cb63d68d0249e37ac899dbf33eea334fe.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/b358ba3b49290ea67f97e60aec5224fb1399c94220956124215905f9bcf742ee.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c03574f46cc9a741a2619b5c5f5078fd79856ecb62551678a700d7154f602dc7.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/79109a147ec107bab9cb71331a42fe4d9dc81d0c649d6ca55f310b2f44e88eda.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/714fe6f8d536ebbf3658e56a7e37e9827653620ef4592962e1dd0dba4d79701e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e026030c847da18abb7650277c0204f6b2c921ee7dce152059b0bcfdc5f387d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c232057255aafac8444da093b82a02e1d5c58ad7d08ec95ca53e788d72ac96f4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/77fe5a3bfcc268cf66bcd68487c38eff001df0f4bd092c08d68408a456470ece.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/6c92ae73d3dce48742bef47f50aab1d47c692d3cdf5d7260ae47ebfd03dfc642.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/9af3f16801ab33bb63fe42f4250ddde24b45d64dda9db59a46b9ad8fa2527a8a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/09e4f2ce402306fb590274a005b46a57550be00d5580a29d30ddfdede0662fe6.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/6d27379eec536dec92d2ecc367ad72eeef7d2456fa920c7d811ce13646c8b86f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/86f2b93cd128ab96dab49cf17d1a59fc526e37e9b3962e0df5de6bcc4a894129.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/6d27379eec536dec92d2ecc367ad72eeef7d2456fa920c7d811ce13646c8b86f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/09e4f2ce402306fb590274a005b46a57550be00d5580a29d30ddfdede0662fe6.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/9af3f16801ab33bb63fe42f4250ddde24b45d64dda9db59a46b9ad8fa2527a8a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/6c92ae73d3dce48742bef47f50aab1d47c692d3cdf5d7260ae47ebfd03dfc642.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/77fe5a3bfcc268cf66bcd68487c38eff001df0f4bd092c08d68408a456470ece.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c232057255aafac8444da093b82a02e1d5c58ad7d08ec95ca53e788d72ac96f4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e026030c847da18abb7650277c0204f6b2c921ee7dce152059b0bcfdc5f387d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/714fe6f8d536ebbf3658e56a7e37e9827653620ef4592962e1dd0dba4d79701e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/79109a147ec107bab9cb71331a42fe4d9dc81d0c649d6ca55f310b2f44e88eda.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/c03574f46cc9a741a2619b5c5f5078fd79856ecb62551678a700d7154f602dc7.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/b358ba3b49290ea67f97e60aec5224fb1399c94220956124215905f9bcf742ee.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/220436bfba9efd03bbb467bf14cbf95cb63d68d0249e37ac899dbf33eea334fe.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a85f3c7c35b7c6d6a184c4baa855467d95a566eecfb4541ceccf4fbc8965cd15.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/33a8ade594d18c688c557452360950b5cb874390a233a8df99b79d4e1902a86c.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/79277dc460fb37d7eda21904824d73bc074b78ddf0ed8dc634b466cd00f36334.webp",
+              "durationMs": 150
+            }
+          ]
+        },
+        "eat": {
+          "loop": true,
+          "frameCount": 16,
+          "cycleDurationMs": 1600,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5fcd51b5a05d95d04ca9f4cc1da0161788b8064ebe5538f8ba85dba0bb123107.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3f9384cf70e9555b694aca5f759247f466ecd9ca12d38a6fc593b1198f21b010.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/76d305d7d0a476cb8745c093d345de39600747a43611103725dea0799439befc.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bc152e54bc4d043220c622053d7bbf8b92b20f85c740d00b1b7846073a686866.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/1b8a5e79e18f089f9e3ac49edd01cd99050439709e7cb6e63c627ed839e4da6c.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bc152e54bc4d043220c622053d7bbf8b92b20f85c740d00b1b7846073a686866.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/76d305d7d0a476cb8745c093d345de39600747a43611103725dea0799439befc.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3f9384cf70e9555b694aca5f759247f466ecd9ca12d38a6fc593b1198f21b010.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5fcd51b5a05d95d04ca9f4cc1da0161788b8064ebe5538f8ba85dba0bb123107.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3f9384cf70e9555b694aca5f759247f466ecd9ca12d38a6fc593b1198f21b010.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/76d305d7d0a476cb8745c093d345de39600747a43611103725dea0799439befc.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bc152e54bc4d043220c622053d7bbf8b92b20f85c740d00b1b7846073a686866.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/1b8a5e79e18f089f9e3ac49edd01cd99050439709e7cb6e63c627ed839e4da6c.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/bc152e54bc4d043220c622053d7bbf8b92b20f85c740d00b1b7846073a686866.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/76d305d7d0a476cb8745c093d345de39600747a43611103725dea0799439befc.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3f9384cf70e9555b694aca5f759247f466ecd9ca12d38a6fc593b1198f21b010.webp",
+              "durationMs": 100
+            }
+          ],
+          "contact": {
+            "kind": "muzzle",
+            "spritePoint": [
+              1037,
+              1177
+            ],
+            "facing": "right"
+          }
+        },
+        "drink": {
+          "loop": true,
+          "frameCount": 20,
+          "cycleDurationMs": 1500,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5fcd51b5a05d95d04ca9f4cc1da0161788b8064ebe5538f8ba85dba0bb123107.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5fcd51b5a05d95d04ca9f4cc1da0161788b8064ebe5538f8ba85dba0bb123107.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5fcd51b5a05d95d04ca9f4cc1da0161788b8064ebe5538f8ba85dba0bb123107.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5fcd51b5a05d95d04ca9f4cc1da0161788b8064ebe5538f8ba85dba0bb123107.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ca9610ebf80795c2d0af6d48339c77003294add761c8e9a1b70cab4326f4d50f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4ac9da526020e0a0d056c4e42167a7b8d9ea65c91de75929b2b23af74ad40d7c.webp",
+              "durationMs": 75
+            }
+          ],
+          "contact": {
+            "kind": "muzzle",
+            "spritePoint": [
+              1037,
+              1177
+            ],
+            "facing": "right"
+          }
+        },
+        "scratch": {
+          "loop": true,
+          "frameCount": 24,
+          "cycleDurationMs": 1200,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/f737f6c431da1ee3c78cdd87de8ae9cd1c53d1647ac4079eff8d550f46c57a67.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4fbaf52ea56f63ad95b542a41b47a59e8c2528def67c7d3ce095fd214cbd4fcf.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/71ddd0953222ae4d9250c0170e00a2616684ccc0f283ce68ebc341ab39944061.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/06d9f07738ab293fbaccd4fca489cd270378e413213f20688b10bdae3bb831c8.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/67b4a5b1b17ceb9c2328585086271858070068af0e51a2d352f1a3b483bb9217.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e12c01bb6989b3b5f7fbf7e0dd6e3c72397f82f1248211d0ad7ff013cd22fccc.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/f5a7b47fedf6fda4ed1cb5d139420983eaa33293a22126d81b559562dc63d978.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5abc239b145ad92be324833e24b66119c760019661afe084b1b5e1773f9daa8c.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a9284786637bb1e769d0665e63f45476d57eb5e05849a26990b5a578e3e38271.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/7ddb11468a5a2c7e1a48a750f0ed22f9255c3281a31bb8fb20b7b9514bb512d6.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/691c6631bc22ee94e90eeb0bddc13de23bfc519db60df0e8aa8a1e1eb467724d.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e70642bbe930cd8c56217c914775fb3fb5cd638a7474f85a38f0092647c86a17.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/31db58cdb07cfea3361a5f92ce1938923ebd285323bb9af4389e727f97954853.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e70642bbe930cd8c56217c914775fb3fb5cd638a7474f85a38f0092647c86a17.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/691c6631bc22ee94e90eeb0bddc13de23bfc519db60df0e8aa8a1e1eb467724d.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/7ddb11468a5a2c7e1a48a750f0ed22f9255c3281a31bb8fb20b7b9514bb512d6.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a9284786637bb1e769d0665e63f45476d57eb5e05849a26990b5a578e3e38271.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/5abc239b145ad92be324833e24b66119c760019661afe084b1b5e1773f9daa8c.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/f5a7b47fedf6fda4ed1cb5d139420983eaa33293a22126d81b559562dc63d978.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/e12c01bb6989b3b5f7fbf7e0dd6e3c72397f82f1248211d0ad7ff013cd22fccc.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/67b4a5b1b17ceb9c2328585086271858070068af0e51a2d352f1a3b483bb9217.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/06d9f07738ab293fbaccd4fca489cd270378e413213f20688b10bdae3bb831c8.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/71ddd0953222ae4d9250c0170e00a2616684ccc0f283ce68ebc341ab39944061.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4fbaf52ea56f63ad95b542a41b47a59e8c2528def67c7d3ce095fd214cbd4fcf.webp",
+              "durationMs": 50
+            }
+          ],
+          "contact": {
+            "kind": "front-paws",
+            "spritePoint": [
+              1049,
+              401
+            ],
+            "facing": "right"
+          },
+          "contactPointsByFrame": [
+            [
+              [
+                1049,
+                401
+              ],
+              [
+                1103,
+                620
+              ]
+            ],
+            [
+              [
+                1049,
+                401
+              ],
+              [
+                1103,
+                619
+              ]
+            ],
+            [
+              [
+                1051,
+                402
+              ],
+              [
+                1102,
+                618
+              ]
+            ],
+            [
+              [
+                1053,
+                404
+              ],
+              [
+                1101,
+                615
+              ]
+            ],
+            [
+              [
+                1055,
+                406
+              ],
+              [
+                1099,
+                612
+              ]
+            ],
+            [
+              [
+                1058,
+                409
+              ],
+              [
+                1098,
+                608
+              ]
+            ],
+            [
+              [
+                1061,
+                411
+              ],
+              [
+                1096,
+                604
+              ]
+            ],
+            [
+              [
+                1064,
+                414
+              ],
+              [
+                1093,
+                600
+              ]
+            ],
+            [
+              [
+                1067,
+                417
+              ],
+              [
+                1091,
+                596
+              ]
+            ],
+            [
+              [
+                1069,
+                419
+              ],
+              [
+                1090,
+                593
+              ]
+            ],
+            [
+              [
+                1071,
+                421
+              ],
+              [
+                1088,
+                591
+              ]
+            ],
+            [
+              [
+                1072,
+                422
+              ],
+              [
+                1087,
+                590
+              ]
+            ],
+            [
+              [
+                1072,
+                423
+              ],
+              [
+                1087,
+                589
+              ]
+            ],
+            [
+              [
+                1072,
+                422
+              ],
+              [
+                1087,
+                590
+              ]
+            ],
+            [
+              [
+                1071,
+                421
+              ],
+              [
+                1088,
+                591
+              ]
+            ],
+            [
+              [
+                1069,
+                419
+              ],
+              [
+                1090,
+                593
+              ]
+            ],
+            [
+              [
+                1067,
+                417
+              ],
+              [
+                1091,
+                596
+              ]
+            ],
+            [
+              [
+                1064,
+                414
+              ],
+              [
+                1093,
+                600
+              ]
+            ],
+            [
+              [
+                1061,
+                411
+              ],
+              [
+                1096,
+                604
+              ]
+            ],
+            [
+              [
+                1058,
+                409
+              ],
+              [
+                1098,
+                608
+              ]
+            ],
+            [
+              [
+                1055,
+                406
+              ],
+              [
+                1099,
+                612
+              ]
+            ],
+            [
+              [
+                1053,
+                404
+              ],
+              [
+                1101,
+                615
+              ]
+            ],
+            [
+              [
+                1051,
+                402
+              ],
+              [
+                1102,
+                618
+              ]
+            ],
+            [
+              [
+                1049,
+                401
+              ],
+              [
+                1103,
+                619
+              ]
+            ]
+          ]
+        },
+        "pet": {
+          "loop": false,
+          "frameCount": 24,
+          "cycleDurationMs": 2400,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4cef1801bcc2f1e26b3ae753599f6cbaf18f4a082c42a2f130f9c44e71a8b854.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/1c19dda8efbd9c62f1d1fed21157545df2a7ec04390190045a7bd4abbcae4214.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/fb06894e76e80a916e64175f4e77edb6dfc563c78613ec8a20a1ee94662a4da1.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a539c93f9d4aee7c328ff97171abbd7fbab3037d8e9a807edc0e9e184b089ce5.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/f56c66d32f8f17b67e2f59ca222f41f2fabc2660185aefd9cbb0e66215347bee.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/cd34b9aeeb26f6d752ee170451fb469648ce5bd9ddaade411f0a15cdb9e5cbff.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/3815bc564b58d0a485620669ac3c89dd6ae7ac00bb27db1375b737d2906379a6.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a835979e8c01524338646359c1067aef6c607ed22d44335565a4e583ac2abf8e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/2b2781174f0a6fcb0c6c81c9e467bd05e44f96641ba523c5df9fdc441553f6a1.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/267eb5ca81e3ba50e27ed9f4f0886f3f01196caea4134e6fe6d02034ba88b022.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ad1b41fb0a3f24949aeb511124aca0856a156ffab8337cddf93e09e396390a18.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4504809db8770552a40de2d409f1baa114e81df00228b238163c9aada3ce1d40.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4504809db8770552a40de2d409f1baa114e81df00228b238163c9aada3ce1d40.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/ad1b41fb0a3f24949aeb511124aca0856a156ffab8337cddf93e09e396390a18.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/267eb5ca81e3ba50e27ed9f4f0886f3f01196caea4134e6fe6d02034ba88b022.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/2b2781174f0a6fcb0c6c81c9e467bd05e44f96641ba523c5df9fdc441553f6a1.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a835979e8c01524338646359c1067aef6c607ed22d44335565a4e583ac2abf8e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/99501157c8b37084584c36f500b7c2c6b647a5964af799e0c781934d6b8b5f3b.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/cd34b9aeeb26f6d752ee170451fb469648ce5bd9ddaade411f0a15cdb9e5cbff.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/f56c66d32f8f17b67e2f59ca222f41f2fabc2660185aefd9cbb0e66215347bee.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/a4363856125db9936f02ec371d6da3e73a1197b99c214a21614c5a6ddbffd3c6.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/fb06894e76e80a916e64175f4e77edb6dfc563c78613ec8a20a1ee94662a4da1.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/1c19dda8efbd9c62f1d1fed21157545df2a7ec04390190045a7bd4abbcae4214.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-04/mobile/4cef1801bcc2f1e26b3ae753599f6cbaf18f4a082c42a2f130f9c44e71a8b854.webp",
+              "durationMs": 100
+            }
+          ],
+          "startPose": "idle-first-frame",
+          "endPose": "idle-first-frame"
+        }
+      }
+    },
+    {
+      "id": "cat-05",
+      "name": "珍珠",
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "actions": {
+        "idle": {
+          "loop": true,
+          "frameCount": 63,
+          "cycleDurationMs": 9260,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b792bec6c0a3ebaeb2d3c3e30fa2513025747b94b51f579198b7b339a1c6771b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7ff9194dfd6ac4bdee6dc1b50485e24d443dd17e42690c7798f555c18f6760e3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/095835ad7eeb777fc0fd7292954fc48912e62733d1ebf72f94b44ee1a1a7d9c5.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/428da381f000f56d9509d4a378efade47b81d1dd34eb507c51cb642c4de4e62f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/60563a2f17bf3ac757c20928d284c906ff6f22df9b0c4e0a4ab47fc82bfe1815.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/71cea4d8bcbc1ccc72c179295abc027da7159fcf6ee9c91cd8ad484fea2c5bc1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/caff0e780e5e02d6b345ee3ad8213d7afad56aebb7830df41602b99e46d3fb69.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/0d5432107d2f6a36d22eb3ad173aca675b624df8d9e809a6737930425909354e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c826ad83d96b42f7237ac83cf4728b85c32736944d42ddb24c7c6ae7cbfd1868.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c38e0d9104fa0103a5fe4b322a37c4ffd6eda5e10e3e94f9388526f17a3cee9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e7157eddf64e5007cad210f95cf1587bb027fd3039d25b6df8e14b06efa6dedf.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e7157eddf64e5007cad210f95cf1587bb027fd3039d25b6df8e14b06efa6dedf.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c38e0d9104fa0103a5fe4b322a37c4ffd6eda5e10e3e94f9388526f17a3cee9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c826ad83d96b42f7237ac83cf4728b85c32736944d42ddb24c7c6ae7cbfd1868.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/0d5432107d2f6a36d22eb3ad173aca675b624df8d9e809a6737930425909354e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/caff0e780e5e02d6b345ee3ad8213d7afad56aebb7830df41602b99e46d3fb69.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/71cea4d8bcbc1ccc72c179295abc027da7159fcf6ee9c91cd8ad484fea2c5bc1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/60563a2f17bf3ac757c20928d284c906ff6f22df9b0c4e0a4ab47fc82bfe1815.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/428da381f000f56d9509d4a378efade47b81d1dd34eb507c51cb642c4de4e62f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/095835ad7eeb777fc0fd7292954fc48912e62733d1ebf72f94b44ee1a1a7d9c5.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7ff9194dfd6ac4bdee6dc1b50485e24d443dd17e42690c7798f555c18f6760e3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b84bf4b035f200b655b7006e01846b0d458fa090072177161ac1d64e89c92467.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/840d8e0d800e0474ca0bba1badf54d1f1d27b91d2ef2fac580460780e93bb813.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/234f526c97f83853ff35b3f5e67b5cc64212bc1e7410d251ac96a5bcdb21c567.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8db8f8e9e5d2660f64412649a54e5bb53884c9950b9e55632dd901047ae70293.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/1c8827ba3f57d168c5e0c3e018023fbc842753e9342bf87b83f872301ec143c3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/ebba0f5d92a393ede04c5731914c3b288e15c893064fc6b74fa4cbb8cc911606.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3ac688991eeea7d6e3a2448bd39e5fd4985461507f5c2076cc7e6f44bbb5569c.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b1ebdcb428bb3aee74d449f7e12a9e7ee90d5e827ce13ba4f0d86665545a5694.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/570a2d6f2cabe116400314b13598b6a8069d110bc484e7ff989ec2d38957ebd0.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c17485101396f30a6be9e81250ea33a7d70eb79f3507ea7a39ccd2901e93cf2e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/6174948d77549341e8cb1d7d962df397b0456cf3c9f7e16d8966289faa489c72.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/ce042fc37afc604e52fa9f842ccfcbe9277e195a1684852f9f9f4d77bd512c17.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c38e0d9104fa0103a5fe4b322a37c4ffd6eda5e10e3e94f9388526f17a3cee9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c826ad83d96b42f7237ac83cf4728b85c32736944d42ddb24c7c6ae7cbfd1868.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/0d5432107d2f6a36d22eb3ad173aca675b624df8d9e809a6737930425909354e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/caff0e780e5e02d6b345ee3ad8213d7afad56aebb7830df41602b99e46d3fb69.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/71cea4d8bcbc1ccc72c179295abc027da7159fcf6ee9c91cd8ad484fea2c5bc1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/60563a2f17bf3ac757c20928d284c906ff6f22df9b0c4e0a4ab47fc82bfe1815.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/428da381f000f56d9509d4a378efade47b81d1dd34eb507c51cb642c4de4e62f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/095835ad7eeb777fc0fd7292954fc48912e62733d1ebf72f94b44ee1a1a7d9c5.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7ff9194dfd6ac4bdee6dc1b50485e24d443dd17e42690c7798f555c18f6760e3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b792bec6c0a3ebaeb2d3c3e30fa2513025747b94b51f579198b7b339a1c6771b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7ff9194dfd6ac4bdee6dc1b50485e24d443dd17e42690c7798f555c18f6760e3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/ed3dbb581b40b866c0c4c1aa6907f0c51c0ca257b2d38b4045882f1b06faca79.webp",
+              "durationMs": 80
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/a93aa37d76fda75a20b238e639c2e8e88948baa920e36baaf7059c8632d16d57.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b8dbcf7e9e74962fa010b800a44d4a1df8876c23feab5a10905eec6ed1b9f3d9.webp",
+              "durationMs": 80
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/71cea4d8bcbc1ccc72c179295abc027da7159fcf6ee9c91cd8ad484fea2c5bc1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/caff0e780e5e02d6b345ee3ad8213d7afad56aebb7830df41602b99e46d3fb69.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/0d5432107d2f6a36d22eb3ad173aca675b624df8d9e809a6737930425909354e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c826ad83d96b42f7237ac83cf4728b85c32736944d42ddb24c7c6ae7cbfd1868.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c38e0d9104fa0103a5fe4b322a37c4ffd6eda5e10e3e94f9388526f17a3cee9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e7157eddf64e5007cad210f95cf1587bb027fd3039d25b6df8e14b06efa6dedf.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e7157eddf64e5007cad210f95cf1587bb027fd3039d25b6df8e14b06efa6dedf.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c38e0d9104fa0103a5fe4b322a37c4ffd6eda5e10e3e94f9388526f17a3cee9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c826ad83d96b42f7237ac83cf4728b85c32736944d42ddb24c7c6ae7cbfd1868.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/0d5432107d2f6a36d22eb3ad173aca675b624df8d9e809a6737930425909354e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/caff0e780e5e02d6b345ee3ad8213d7afad56aebb7830df41602b99e46d3fb69.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/71cea4d8bcbc1ccc72c179295abc027da7159fcf6ee9c91cd8ad484fea2c5bc1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/60563a2f17bf3ac757c20928d284c906ff6f22df9b0c4e0a4ab47fc82bfe1815.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/428da381f000f56d9509d4a378efade47b81d1dd34eb507c51cb642c4de4e62f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/095835ad7eeb777fc0fd7292954fc48912e62733d1ebf72f94b44ee1a1a7d9c5.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7ff9194dfd6ac4bdee6dc1b50485e24d443dd17e42690c7798f555c18f6760e3.webp",
+              "durationMs": 150
+            }
+          ]
+        },
+        "sleep": {
+          "loop": true,
+          "frameCount": 32,
+          "cycleDurationMs": 4800,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/47844ba65a5fe2d80a5650569062d9684a4654659fe46a0668dc1757fc518c2e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/47844ba65a5fe2d80a5650569062d9684a4654659fe46a0668dc1757fc518c2e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/67f22428e2f1daaa6ddd4ec272955243fd6721a9db2c27f8d1398d15d0363746.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83cfcbb568eab7871c61131da6c735a4c966149a8670a28b1339d4463fac30fb.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f0f50f836cdf440ebdd961c93b33122394fcf54624872ae5a9fa7674f85d698a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/1e9cda25bea8d9674ebd0a572bd0e6bb01291e315dc440220c3eb74e24637364.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/300b1fde32bbdffcd5d6882b80f5a4643933cf3d7924dbcfb876496df7b03deb.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e5ba34f234745fe1d1c2c43cfd520349f4461edbebee09bd22c0783a7ea50069.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/181735ae3dc8fd0102776dcc204d2216160aae068e492279c34f486ad1584125.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c159c712e498d3335b406d1c80d0b9b17f5f73b0804c027cb7675b131e6aaa51.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/5cdbd94b6f14b03bf6dd57324c6a4e197354cca32a26fa8fb76b6d909870842d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f8cdb32c8aa642e38e952fef9832d19078920143092dc5769c38728b24ae0e1d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/fac9df2d007ef8ecb7ed6f60a579acdbe849fe47e023fafb3a74e57847999aa6.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/4f45cceb62b2993aa0e3060cb938532b434aa57c31a6f2345ebfdffd81f1c9c9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c881bd16263a8527759ea8da31b1a068dea909d0f0902782168572fd6eef1e01.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/ef1ddaacee4313cc4bf0232464764a3ec7aa6b9f2129bb33361446cda0cd1f2d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/d7d49ce525b497b51fdc54da66a91fa323b4c4a1feb6fdf8752f301e5c36bfa8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/ef1ddaacee4313cc4bf0232464764a3ec7aa6b9f2129bb33361446cda0cd1f2d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c881bd16263a8527759ea8da31b1a068dea909d0f0902782168572fd6eef1e01.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/4f45cceb62b2993aa0e3060cb938532b434aa57c31a6f2345ebfdffd81f1c9c9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/fac9df2d007ef8ecb7ed6f60a579acdbe849fe47e023fafb3a74e57847999aa6.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f8cdb32c8aa642e38e952fef9832d19078920143092dc5769c38728b24ae0e1d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/5cdbd94b6f14b03bf6dd57324c6a4e197354cca32a26fa8fb76b6d909870842d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/c159c712e498d3335b406d1c80d0b9b17f5f73b0804c027cb7675b131e6aaa51.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/181735ae3dc8fd0102776dcc204d2216160aae068e492279c34f486ad1584125.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e5ba34f234745fe1d1c2c43cfd520349f4461edbebee09bd22c0783a7ea50069.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/300b1fde32bbdffcd5d6882b80f5a4643933cf3d7924dbcfb876496df7b03deb.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/1e9cda25bea8d9674ebd0a572bd0e6bb01291e315dc440220c3eb74e24637364.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f0f50f836cdf440ebdd961c93b33122394fcf54624872ae5a9fa7674f85d698a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83cfcbb568eab7871c61131da6c735a4c966149a8670a28b1339d4463fac30fb.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/67f22428e2f1daaa6ddd4ec272955243fd6721a9db2c27f8d1398d15d0363746.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/47844ba65a5fe2d80a5650569062d9684a4654659fe46a0668dc1757fc518c2e.webp",
+              "durationMs": 150
+            }
+          ]
+        },
+        "eat": {
+          "loop": true,
+          "frameCount": 16,
+          "cycleDurationMs": 1600,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3dfddb9cc45693b895eb2e1241cbe8fee30c56ed36a75372237ea8688926a7f9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/117cbdd2997e751e833620af8e9b1fe72baccd9379aac6bc8ce900cc7e2e1e00.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7804a6395e0e6ef183488253fded51715291bda62000ddb81ca9f0d44c3b5ef9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f3e8ebce3bec9ac8caee0a7e6faa349dbb65298bd4514c9e385c40a2768f8f55.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f0a858ed37e1c7dc347b7058435f0558c72705a69b2fbd2c5b494f41333661cd.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f3e8ebce3bec9ac8caee0a7e6faa349dbb65298bd4514c9e385c40a2768f8f55.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7804a6395e0e6ef183488253fded51715291bda62000ddb81ca9f0d44c3b5ef9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/117cbdd2997e751e833620af8e9b1fe72baccd9379aac6bc8ce900cc7e2e1e00.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3dfddb9cc45693b895eb2e1241cbe8fee30c56ed36a75372237ea8688926a7f9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/117cbdd2997e751e833620af8e9b1fe72baccd9379aac6bc8ce900cc7e2e1e00.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7804a6395e0e6ef183488253fded51715291bda62000ddb81ca9f0d44c3b5ef9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f3e8ebce3bec9ac8caee0a7e6faa349dbb65298bd4514c9e385c40a2768f8f55.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f0a858ed37e1c7dc347b7058435f0558c72705a69b2fbd2c5b494f41333661cd.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f3e8ebce3bec9ac8caee0a7e6faa349dbb65298bd4514c9e385c40a2768f8f55.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/7804a6395e0e6ef183488253fded51715291bda62000ddb81ca9f0d44c3b5ef9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/117cbdd2997e751e833620af8e9b1fe72baccd9379aac6bc8ce900cc7e2e1e00.webp",
+              "durationMs": 100
+            }
+          ],
+          "contact": {
+            "kind": "muzzle",
+            "spritePoint": [
+              1049,
+              1128
+            ],
+            "facing": "right"
+          }
+        },
+        "drink": {
+          "loop": true,
+          "frameCount": 20,
+          "cycleDurationMs": 1500,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3dfddb9cc45693b895eb2e1241cbe8fee30c56ed36a75372237ea8688926a7f9.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3dfddb9cc45693b895eb2e1241cbe8fee30c56ed36a75372237ea8688926a7f9.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3dfddb9cc45693b895eb2e1241cbe8fee30c56ed36a75372237ea8688926a7f9.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3dfddb9cc45693b895eb2e1241cbe8fee30c56ed36a75372237ea8688926a7f9.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/83a109584240eb3129aa92a3ff90f24e815f21251ab52a0337b61d49a5393609.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b948ee91f827e201b037315e2746260ff264622e72ffbb5dc37ed060e4ee735b.webp",
+              "durationMs": 75
+            }
+          ],
+          "contact": {
+            "kind": "muzzle",
+            "spritePoint": [
+              1049,
+              1128
+            ],
+            "facing": "right"
+          }
+        },
+        "scratch": {
+          "loop": true,
+          "frameCount": 24,
+          "cycleDurationMs": 1200,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/9f8d61a9a765d18b271af17386684cd93ee4b530235735b437f4b3d62a026c83.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c67781254a68947cbf098738c98503fb6515c5c69285d60e3fdbb8374c702f8.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/9606d5e9b84ed31c3abf7cb2dd7ec69c667c161b54975988dc2bb9ebfa0b86d5.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/2a69b81e5296e6da0b6e2dd8309c91a5e0990a22737ac7cd40f6f879d9969f16.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/2e353ead6eca65793c6b34810b9cf356bc235ab44b43cfc862cc6f20fedcc44e.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3c31d03ef80a5f3f68ca89e4b4687c23325c4f63a4e5e868f77399a6425dc862.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/6236859d479314c022b6d3668b8f1c1c49e44093c0b983606141dba054d99f32.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8e1a31cd17a5aab87856b16e5cc3a568a400729491c093fcde11db1a3df1372d.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/9ebdd94e41ea3c5e4fe3373e0244cdd02091a2510e35d6d4e5acfebbb6906ac3.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/04b5510019f2c927f03be3a100ad734b5466e51647c4a9f06e67183525d4ddf5.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/d758d784c31a9cf4b132cff0b00b3ad0f9acf746ba4146c3540746cb4c65b66a.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/d7ac38b88801787e01b0c0437895aaf6a8bea359a1a130d6fbdeb73c3f4b0b3b.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/a462d6b14e6032151950b490dd80a7e80e847ff57bb4ec1247652558d032a314.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/d7ac38b88801787e01b0c0437895aaf6a8bea359a1a130d6fbdeb73c3f4b0b3b.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/d758d784c31a9cf4b132cff0b00b3ad0f9acf746ba4146c3540746cb4c65b66a.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/04b5510019f2c927f03be3a100ad734b5466e51647c4a9f06e67183525d4ddf5.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/9ebdd94e41ea3c5e4fe3373e0244cdd02091a2510e35d6d4e5acfebbb6906ac3.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8e1a31cd17a5aab87856b16e5cc3a568a400729491c093fcde11db1a3df1372d.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/6236859d479314c022b6d3668b8f1c1c49e44093c0b983606141dba054d99f32.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3c31d03ef80a5f3f68ca89e4b4687c23325c4f63a4e5e868f77399a6425dc862.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/2e353ead6eca65793c6b34810b9cf356bc235ab44b43cfc862cc6f20fedcc44e.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/2a69b81e5296e6da0b6e2dd8309c91a5e0990a22737ac7cd40f6f879d9969f16.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/9606d5e9b84ed31c3abf7cb2dd7ec69c667c161b54975988dc2bb9ebfa0b86d5.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/8c67781254a68947cbf098738c98503fb6515c5c69285d60e3fdbb8374c702f8.webp",
+              "durationMs": 50
+            }
+          ],
+          "contact": {
+            "kind": "front-paws",
+            "spritePoint": [
+              1117,
+              406
+            ],
+            "facing": "right"
+          },
+          "contactPointsByFrame": [
+            [
+              [
+                1117,
+                406
+              ],
+              [
+                1130,
+                586
+              ]
+            ],
+            [
+              [
+                1117,
+                406
+              ],
+              [
+                1130,
+                585
+              ]
+            ],
+            [
+              [
+                1119,
+                407
+              ],
+              [
+                1129,
+                584
+              ]
+            ],
+            [
+              [
+                1120,
+                409
+              ],
+              [
+                1127,
+                581
+              ]
+            ],
+            [
+              [
+                1123,
+                411
+              ],
+              [
+                1125,
+                579
+              ]
+            ],
+            [
+              [
+                1125,
+                413
+              ],
+              [
+                1122,
+                575
+              ]
+            ],
+            [
+              [
+                1128,
+                416
+              ],
+              [
+                1120,
+                572
+              ]
+            ],
+            [
+              [
+                1131,
+                419
+              ],
+              [
+                1117,
+                568
+              ]
+            ],
+            [
+              [
+                1134,
+                421
+              ],
+              [
+                1114,
+                565
+              ]
+            ],
+            [
+              [
+                1136,
+                424
+              ],
+              [
+                1111,
+                563
+              ]
+            ],
+            [
+              [
+                1137,
+                425
+              ],
+              [
+                1110,
+                561
+              ]
+            ],
+            [
+              [
+                1138,
+                426
+              ],
+              [
+                1108,
+                559
+              ]
+            ],
+            [
+              [
+                1139,
+                427
+              ],
+              [
+                1108,
+                559
+              ]
+            ],
+            [
+              [
+                1138,
+                426
+              ],
+              [
+                1108,
+                559
+              ]
+            ],
+            [
+              [
+                1137,
+                425
+              ],
+              [
+                1110,
+                561
+              ]
+            ],
+            [
+              [
+                1136,
+                424
+              ],
+              [
+                1111,
+                563
+              ]
+            ],
+            [
+              [
+                1134,
+                421
+              ],
+              [
+                1114,
+                565
+              ]
+            ],
+            [
+              [
+                1131,
+                419
+              ],
+              [
+                1117,
+                568
+              ]
+            ],
+            [
+              [
+                1128,
+                416
+              ],
+              [
+                1120,
+                572
+              ]
+            ],
+            [
+              [
+                1125,
+                413
+              ],
+              [
+                1122,
+                575
+              ]
+            ],
+            [
+              [
+                1123,
+                411
+              ],
+              [
+                1125,
+                579
+              ]
+            ],
+            [
+              [
+                1120,
+                409
+              ],
+              [
+                1127,
+                581
+              ]
+            ],
+            [
+              [
+                1119,
+                407
+              ],
+              [
+                1129,
+                584
+              ]
+            ],
+            [
+              [
+                1117,
+                406
+              ],
+              [
+                1130,
+                585
+              ]
+            ]
+          ]
+        },
+        "pet": {
+          "loop": false,
+          "frameCount": 24,
+          "cycleDurationMs": 2400,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b792bec6c0a3ebaeb2d3c3e30fa2513025747b94b51f579198b7b339a1c6771b.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/a7ec7630d61a57b86e7154609028b5b10182cd692df45115b12d8830cec59984.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3550da09c72d40014c0872f8bdd583794fac2fb5548b37ffd03bd0255020f09b.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3de693907af67aac0013cf644599848b71a811a37b15949f98e265643f90b44c.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f8fd8aa72cd1ddd560b22eec6faf5e192e0f8044a2c71216901e6f9e86e4ef0e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/4b1fc1536fbcb2636e6b9ca65502117973cf8eaa70257e0066ec78861ec482d8.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f67675adbbe009180b8e8f1690ed892e88267c695e2c74549d3bfe1ecf21963d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/97be366e65109f46e5022f1008d2bc3cc2cf4d83037ed9cfd735235b099c4504.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e8d10bf990f7d5ac9ce72c8f3252f1771067f1367e10c3e52a5ef2f2822ca107.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/583e07f570453304d0711a4bc69424bc405d21b5eca2ea52187a28410c05f506.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/61275510c389c1bb9b2603643317dc33084377a68fb16e4d2f7baa98e820fa47.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/38f5e0952af9bf10869d01f5cc7e302f9910d0d0be528f98a2f2b6b946f1547e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/38f5e0952af9bf10869d01f5cc7e302f9910d0d0be528f98a2f2b6b946f1547e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/61275510c389c1bb9b2603643317dc33084377a68fb16e4d2f7baa98e820fa47.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/583e07f570453304d0711a4bc69424bc405d21b5eca2ea52187a28410c05f506.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/e8d10bf990f7d5ac9ce72c8f3252f1771067f1367e10c3e52a5ef2f2822ca107.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/97be366e65109f46e5022f1008d2bc3cc2cf4d83037ed9cfd735235b099c4504.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/d8c066602c73568579eac12ed4cadf5faaddc460e6e1557883d0e8f5d4ede392.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/4b1fc1536fbcb2636e6b9ca65502117973cf8eaa70257e0066ec78861ec482d8.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/f8fd8aa72cd1ddd560b22eec6faf5e192e0f8044a2c71216901e6f9e86e4ef0e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/04ff216ecc6e1a9ded0a0121b92cbfd737f16b7f475d195633e78a98a4268e2c.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/3550da09c72d40014c0872f8bdd583794fac2fb5548b37ffd03bd0255020f09b.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/a7ec7630d61a57b86e7154609028b5b10182cd692df45115b12d8830cec59984.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-05/mobile/b792bec6c0a3ebaeb2d3c3e30fa2513025747b94b51f579198b7b339a1c6771b.webp",
+              "durationMs": 100
+            }
+          ],
+          "startPose": "idle-first-frame",
+          "endPose": "idle-first-frame"
+        }
+      }
+    },
+    {
+      "id": "cat-06",
+      "name": "铃铛",
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "actions": {
+        "idle": {
+          "loop": true,
+          "frameCount": 63,
+          "cycleDurationMs": 9260,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/2677716dbce53fec1a6243645ab61f294349b5f28dfd50817b396c33827c9cbe.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fdf589176c947570c3e45e08f146b108837cae3f39af0543bf480bbcbbadca8d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/233de26f952fed6499b4420b96aa98882f44b9d8ac85c6e16ea68f571beed582.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/4a1735973596f4fce8074b7119fc299643fc9abb371774c259da62ddf069ae78.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ae5e75e1bfa1708bf3fc3fa8c9fa61575e288aea632759a44a16a7ad244ac4da.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/1c66f326383475691296e25a4ed4d5b3b55644634f507a61393afe304f66291f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f09e874c1d29ebb2e0914612cbb87c414b81f57c0cb96247ffad15856fe74914.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3944b2c4c9176b9e60834a959a2719c797ebebbafd741c543fc15122348a1cf1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/55bdfff995de1420804c4e01920b34acdca94d51ae2145dbfa747ab9b04efa6b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/aa00e1d094e843bb8787449eb6f1ec6c1e776ba9a03d84ff4cc459b0a67f55d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c96d6a49319b43e5617fc80bd32a1fd0dea4b68e0f4dbda936d2c8ed899649bd.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c96d6a49319b43e5617fc80bd32a1fd0dea4b68e0f4dbda936d2c8ed899649bd.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/aa00e1d094e843bb8787449eb6f1ec6c1e776ba9a03d84ff4cc459b0a67f55d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/55bdfff995de1420804c4e01920b34acdca94d51ae2145dbfa747ab9b04efa6b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3944b2c4c9176b9e60834a959a2719c797ebebbafd741c543fc15122348a1cf1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f09e874c1d29ebb2e0914612cbb87c414b81f57c0cb96247ffad15856fe74914.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/1c66f326383475691296e25a4ed4d5b3b55644634f507a61393afe304f66291f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ae5e75e1bfa1708bf3fc3fa8c9fa61575e288aea632759a44a16a7ad244ac4da.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/4a1735973596f4fce8074b7119fc299643fc9abb371774c259da62ddf069ae78.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/233de26f952fed6499b4420b96aa98882f44b9d8ac85c6e16ea68f571beed582.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fdf589176c947570c3e45e08f146b108837cae3f39af0543bf480bbcbbadca8d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/449278a6d5c7e2bf953bed1b7a6a60b635587fe51ef41853a6df00bc1684c3a8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/7df3d4a77dfada21f708c224e93f937b039de40bd059d77f965383217a53b710.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/33deab85c83ebbcca725c48937cdcb52e9ec06b5d2e0dab35d5243bd29688889.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/dcadb108d4f00dea33952a325e0ac2ce054596240d439a99a1b51f1502c1e40a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/2fdedc36637e2d3073404d23fac0b354ae4608906a171ecf6ebd7488e405b4a4.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/e6fad7852925edb37bb7dfa7bd520cb9f79c52e03b27171b2a7eefc89e96fda5.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ae9ff04213aa0081e4be500b563623a9e3afda9cc9f4f70e7cbdabe3edf8f9c7.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/9f4947f55086caf1a8e3c24bf55440cd15d2ef72bc3035be2a1d23b0c98df82f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/57074fc5348e6e2e29184822e5ae1f183f47ba324fd4ade8357c4fa04cbfc910.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c5a973d46a402332134f3b7fe54c0a8b92638c10a7dae83d76b41106ede92370.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/747af5140eb238474ceea7122a51974b4db463f31d4f51dc7f46c98d86125a2a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/6bf1f9d6a6dd01e82323a4396e58294d95f5b55e1dfae4d2cbf4038e4f2c6324.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/aa00e1d094e843bb8787449eb6f1ec6c1e776ba9a03d84ff4cc459b0a67f55d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/55bdfff995de1420804c4e01920b34acdca94d51ae2145dbfa747ab9b04efa6b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3944b2c4c9176b9e60834a959a2719c797ebebbafd741c543fc15122348a1cf1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f09e874c1d29ebb2e0914612cbb87c414b81f57c0cb96247ffad15856fe74914.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/1c66f326383475691296e25a4ed4d5b3b55644634f507a61393afe304f66291f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ae5e75e1bfa1708bf3fc3fa8c9fa61575e288aea632759a44a16a7ad244ac4da.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/4a1735973596f4fce8074b7119fc299643fc9abb371774c259da62ddf069ae78.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/233de26f952fed6499b4420b96aa98882f44b9d8ac85c6e16ea68f571beed582.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fdf589176c947570c3e45e08f146b108837cae3f39af0543bf480bbcbbadca8d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/2677716dbce53fec1a6243645ab61f294349b5f28dfd50817b396c33827c9cbe.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fdf589176c947570c3e45e08f146b108837cae3f39af0543bf480bbcbbadca8d.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/aa6785f2e8baa4b084f7fd7671d5e2de8618e6359efa167a04498b85d46f0edf.webp",
+              "durationMs": 80
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/70f91a5f9b791a5cf620de63fe916ff336e640752337d1b2a8184b6e32b7d67e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/73ac690ebf8e2b89a9969527e252d194d79252d311b38d16798af05a99661f27.webp",
+              "durationMs": 80
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/1c66f326383475691296e25a4ed4d5b3b55644634f507a61393afe304f66291f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f09e874c1d29ebb2e0914612cbb87c414b81f57c0cb96247ffad15856fe74914.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3944b2c4c9176b9e60834a959a2719c797ebebbafd741c543fc15122348a1cf1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/55bdfff995de1420804c4e01920b34acdca94d51ae2145dbfa747ab9b04efa6b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/aa00e1d094e843bb8787449eb6f1ec6c1e776ba9a03d84ff4cc459b0a67f55d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c96d6a49319b43e5617fc80bd32a1fd0dea4b68e0f4dbda936d2c8ed899649bd.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c96d6a49319b43e5617fc80bd32a1fd0dea4b68e0f4dbda936d2c8ed899649bd.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/aa00e1d094e843bb8787449eb6f1ec6c1e776ba9a03d84ff4cc459b0a67f55d8.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/55bdfff995de1420804c4e01920b34acdca94d51ae2145dbfa747ab9b04efa6b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3944b2c4c9176b9e60834a959a2719c797ebebbafd741c543fc15122348a1cf1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f09e874c1d29ebb2e0914612cbb87c414b81f57c0cb96247ffad15856fe74914.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/1c66f326383475691296e25a4ed4d5b3b55644634f507a61393afe304f66291f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ae5e75e1bfa1708bf3fc3fa8c9fa61575e288aea632759a44a16a7ad244ac4da.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/4a1735973596f4fce8074b7119fc299643fc9abb371774c259da62ddf069ae78.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/233de26f952fed6499b4420b96aa98882f44b9d8ac85c6e16ea68f571beed582.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fdf589176c947570c3e45e08f146b108837cae3f39af0543bf480bbcbbadca8d.webp",
+              "durationMs": 150
+            }
+          ]
+        },
+        "sleep": {
+          "loop": true,
+          "frameCount": 32,
+          "cycleDurationMs": 4800,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/48b534ba60c42519ca63c0b9a5850a49cbea04a0d014fca464b890fe4e0f77b3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/48b534ba60c42519ca63c0b9a5850a49cbea04a0d014fca464b890fe4e0f77b3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/652cbcf0f671a0cbb5dbeaea448fca9a30e5568215fe7dea422f4f9510d5f839.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/dfc1ff65d7c9f223bbf52a5adfb0206d17f6a7aac545f4637142fd67aeee70e9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/4112eec1cfa82e2731eb6bcb2184d22fce8f07d83877c08066c7a2e5cf9576cc.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3ff332f9a13ee254bf1816430b68507c92044217fefebfa0b3863f993ae93e42.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b638f1ddff056bc03f4c1627c7503f405951e47e014b4aba3f38d8a6d51114e7.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/bc808f39a3a5bb3da291dcd4821b61c05891964cd3d6cfd509e9fb9ca8d40b7e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/031da8bd71c7343eea81889eaeaa5b7a115b3b195285364b6b18824291085338.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/5a796e353d11ef85e10acb74e400684f1b6f5f1c62545ec61aeeca0a9f61bc5f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fa6f0ab81000536870acb4c0c67e895abd33b81521e67468851848569dcb15d3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f0789da8a58fff9d385e24693c928b23bf552926be7e0ccb2a50a38870228a7a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/948d5bbcf6994f3035a6ff8c0d76824be025ba141cb65a7041e356614c8051a9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/bdf9af4df7abd7dca214a8305d20752b5b1ffb38331b4a74e0dee310eceadd87.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/60f83641171d6d672045524f8a469a403577fdaf1d1b05dffa46da2c2acde2d1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/04c6dd039cf5b4ecd499b01fd5839857a6c34c0119f962bd1623ff8920103e3b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3fbdc96d72be84b7ba03012993e97874af6625ed69be66aa300e94c5643ceb96.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/04c6dd039cf5b4ecd499b01fd5839857a6c34c0119f962bd1623ff8920103e3b.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/60f83641171d6d672045524f8a469a403577fdaf1d1b05dffa46da2c2acde2d1.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/bdf9af4df7abd7dca214a8305d20752b5b1ffb38331b4a74e0dee310eceadd87.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/948d5bbcf6994f3035a6ff8c0d76824be025ba141cb65a7041e356614c8051a9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f0789da8a58fff9d385e24693c928b23bf552926be7e0ccb2a50a38870228a7a.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fa6f0ab81000536870acb4c0c67e895abd33b81521e67468851848569dcb15d3.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/5a796e353d11ef85e10acb74e400684f1b6f5f1c62545ec61aeeca0a9f61bc5f.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/031da8bd71c7343eea81889eaeaa5b7a115b3b195285364b6b18824291085338.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/bc808f39a3a5bb3da291dcd4821b61c05891964cd3d6cfd509e9fb9ca8d40b7e.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b638f1ddff056bc03f4c1627c7503f405951e47e014b4aba3f38d8a6d51114e7.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3ff332f9a13ee254bf1816430b68507c92044217fefebfa0b3863f993ae93e42.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/4112eec1cfa82e2731eb6bcb2184d22fce8f07d83877c08066c7a2e5cf9576cc.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/dfc1ff65d7c9f223bbf52a5adfb0206d17f6a7aac545f4637142fd67aeee70e9.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/652cbcf0f671a0cbb5dbeaea448fca9a30e5568215fe7dea422f4f9510d5f839.webp",
+              "durationMs": 150
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/48b534ba60c42519ca63c0b9a5850a49cbea04a0d014fca464b890fe4e0f77b3.webp",
+              "durationMs": 150
+            }
+          ]
+        },
+        "eat": {
+          "loop": true,
+          "frameCount": 16,
+          "cycleDurationMs": 1600,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/876fe3fd036254ea14431da09795db652c119a16d30b514e4e46759d449b204f.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b22221f2d83032fc32d5e44b407edda42c3b0fd9996612fbdfa45c510dafd8d2.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/185de161adecc1bd9e9b5dac34607a6c9e402ba31fd416bf4d2a19e3929f802e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ea79920109d99db6f9a2fd7c97b1d7fb21b4d8eeb0d1bb1d925dabb18168805e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fbd44288784ec27c3ca0cdbe90fcd9298053de1bd1e5f78dcc4597ba5545398d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ea79920109d99db6f9a2fd7c97b1d7fb21b4d8eeb0d1bb1d925dabb18168805e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/185de161adecc1bd9e9b5dac34607a6c9e402ba31fd416bf4d2a19e3929f802e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b22221f2d83032fc32d5e44b407edda42c3b0fd9996612fbdfa45c510dafd8d2.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/876fe3fd036254ea14431da09795db652c119a16d30b514e4e46759d449b204f.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b22221f2d83032fc32d5e44b407edda42c3b0fd9996612fbdfa45c510dafd8d2.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/185de161adecc1bd9e9b5dac34607a6c9e402ba31fd416bf4d2a19e3929f802e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ea79920109d99db6f9a2fd7c97b1d7fb21b4d8eeb0d1bb1d925dabb18168805e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/fbd44288784ec27c3ca0cdbe90fcd9298053de1bd1e5f78dcc4597ba5545398d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/ea79920109d99db6f9a2fd7c97b1d7fb21b4d8eeb0d1bb1d925dabb18168805e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/185de161adecc1bd9e9b5dac34607a6c9e402ba31fd416bf4d2a19e3929f802e.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b22221f2d83032fc32d5e44b407edda42c3b0fd9996612fbdfa45c510dafd8d2.webp",
+              "durationMs": 100
+            }
+          ],
+          "contact": {
+            "kind": "muzzle",
+            "spritePoint": [
+              1054,
+              1153
+            ],
+            "facing": "right"
+          }
+        },
+        "drink": {
+          "loop": true,
+          "frameCount": 20,
+          "cycleDurationMs": 1500,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/876fe3fd036254ea14431da09795db652c119a16d30b514e4e46759d449b204f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/876fe3fd036254ea14431da09795db652c119a16d30b514e4e46759d449b204f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/876fe3fd036254ea14431da09795db652c119a16d30b514e4e46759d449b204f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/876fe3fd036254ea14431da09795db652c119a16d30b514e4e46759d449b204f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/3f277d16a646a5f69ddf3d65d3180a09fd0184c9b52dd1257acaf4126adede4f.webp",
+              "durationMs": 75
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/f26ab4df74eee51e9870002db44dfd3bc9a26844be9e4341f9f2ccd1b7af6c24.webp",
+              "durationMs": 75
+            }
+          ],
+          "contact": {
+            "kind": "muzzle",
+            "spritePoint": [
+              1054,
+              1153
+            ],
+            "facing": "right"
+          }
+        },
+        "scratch": {
+          "loop": true,
+          "frameCount": 24,
+          "cycleDurationMs": 1200,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "right-three-quarter",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/0d25e2c9dea26195938a2790862a0d321f940294e9b8b2427cc8cd015b3b22f0.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/7a62aa4597e3791cbe61d58aa68ffbf6464e87264fc324b7efde2fec0248a0d6.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b630c1fac68f769420dbc4d55d8e8658aa01bd151a961a730bede39d2803e2df.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/0694ecadc487583a136116f8c471d5707fb9032df0e2da3cfe76df571d69d4ef.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/9426ac67408f7fbdb4294af072f5679f9f7ccf388c336e0fe7fad500c8327c54.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c184c50d573bc20acb76d57b4083b9ee509722eaaec7f20fb9a01565ef91f7b5.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c337372cb29e39a4aa62c62619fb538a8ffe4252f230272621ac0c1d1aef64bf.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/76ee842f4cf9ee3d6e66ca3a349d01494d7503237eb41756c0830ca134f9255e.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/27359dfe14dd24c33663c5939658dc5a4b631c14bf3cd574f642a4ee8cb59e3a.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/8fe184737cb231de5e9254f94ac09b8ee9ae079d417b04043dff5497d7b16ba3.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/34f56f251c9e28fd2a183aa1ae4f74ff814bf5827cc070613608488e6cd320c0.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/8c105c0550714f4a9e759b63dd0f039cbd467a5189e8812bf7556721b584a193.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/80c88b7972a6e9ab734a0b9d58a7eab11349ea1521dadffcd4453711a9f91eaf.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/8c105c0550714f4a9e759b63dd0f039cbd467a5189e8812bf7556721b584a193.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/34f56f251c9e28fd2a183aa1ae4f74ff814bf5827cc070613608488e6cd320c0.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/8fe184737cb231de5e9254f94ac09b8ee9ae079d417b04043dff5497d7b16ba3.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/27359dfe14dd24c33663c5939658dc5a4b631c14bf3cd574f642a4ee8cb59e3a.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/76ee842f4cf9ee3d6e66ca3a349d01494d7503237eb41756c0830ca134f9255e.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c337372cb29e39a4aa62c62619fb538a8ffe4252f230272621ac0c1d1aef64bf.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/c184c50d573bc20acb76d57b4083b9ee509722eaaec7f20fb9a01565ef91f7b5.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/9426ac67408f7fbdb4294af072f5679f9f7ccf388c336e0fe7fad500c8327c54.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/0694ecadc487583a136116f8c471d5707fb9032df0e2da3cfe76df571d69d4ef.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/b630c1fac68f769420dbc4d55d8e8658aa01bd151a961a730bede39d2803e2df.webp",
+              "durationMs": 50
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/7a62aa4597e3791cbe61d58aa68ffbf6464e87264fc324b7efde2fec0248a0d6.webp",
+              "durationMs": 50
+            }
+          ],
+          "contact": {
+            "kind": "front-paws",
+            "spritePoint": [
+              1115,
+              466
+            ],
+            "facing": "right"
+          },
+          "contactPointsByFrame": [
+            [
+              [
+                1115,
+                466
+              ],
+              [
+                1152,
+                649
+              ]
+            ],
+            [
+              [
+                1115,
+                466
+              ],
+              [
+                1152,
+                649
+              ]
+            ],
+            [
+              [
+                1116,
+                467
+              ],
+              [
+                1151,
+                647
+              ]
+            ],
+            [
+              [
+                1118,
+                468
+              ],
+              [
+                1150,
+                645
+              ]
+            ],
+            [
+              [
+                1120,
+                470
+              ],
+              [
+                1148,
+                642
+              ]
+            ],
+            [
+              [
+                1122,
+                472
+              ],
+              [
+                1146,
+                638
+              ]
+            ],
+            [
+              [
+                1125,
+                474
+              ],
+              [
+                1144,
+                635
+              ]
+            ],
+            [
+              [
+                1127,
+                477
+              ],
+              [
+                1141,
+                631
+              ]
+            ],
+            [
+              [
+                1130,
+                479
+              ],
+              [
+                1139,
+                628
+              ]
+            ],
+            [
+              [
+                1132,
+                481
+              ],
+              [
+                1137,
+                625
+              ]
+            ],
+            [
+              [
+                1133,
+                482
+              ],
+              [
+                1135,
+                623
+              ]
+            ],
+            [
+              [
+                1134,
+                483
+              ],
+              [
+                1134,
+                621
+              ]
+            ],
+            [
+              [
+                1134,
+                484
+              ],
+              [
+                1134,
+                621
+              ]
+            ],
+            [
+              [
+                1134,
+                483
+              ],
+              [
+                1134,
+                621
+              ]
+            ],
+            [
+              [
+                1133,
+                482
+              ],
+              [
+                1135,
+                623
+              ]
+            ],
+            [
+              [
+                1132,
+                481
+              ],
+              [
+                1137,
+                625
+              ]
+            ],
+            [
+              [
+                1130,
+                479
+              ],
+              [
+                1139,
+                628
+              ]
+            ],
+            [
+              [
+                1127,
+                477
+              ],
+              [
+                1141,
+                631
+              ]
+            ],
+            [
+              [
+                1125,
+                474
+              ],
+              [
+                1144,
+                635
+              ]
+            ],
+            [
+              [
+                1122,
+                472
+              ],
+              [
+                1146,
+                638
+              ]
+            ],
+            [
+              [
+                1120,
+                470
+              ],
+              [
+                1148,
+                642
+              ]
+            ],
+            [
+              [
+                1118,
+                468
+              ],
+              [
+                1150,
+                645
+              ]
+            ],
+            [
+              [
+                1116,
+                467
+              ],
+              [
+                1151,
+                647
+              ]
+            ],
+            [
+              [
+                1115,
+                466
+              ],
+              [
+                1152,
+                649
+              ]
+            ]
+          ]
+        },
+        "pet": {
+          "loop": false,
+          "frameCount": 24,
+          "cycleDurationMs": 2400,
+          "feetAnchor": [
+            627,
+            1200
+          ],
+          "facing": "front",
+          "frames": [
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/2677716dbce53fec1a6243645ab61f294349b5f28dfd50817b396c33827c9cbe.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/63d33e64289fa5f324ee305ae28a6497c7f62693443b6153ec9601ae83497fd0.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/43a4221384f6dc908fe48ead539f5fde0358fb6f7c028d50085bbe8574085012.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/178e22f77d0a42f5386b5749f225c878369cd6a4e59161d0347ecaffc101f0b1.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/394f4d33cd9f94833f1cc6b78b53dee3f82c2356ea30252ca91248675a45ebd9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/7043cb3b4e7697498036eadf385fb690b9ca8553d1fa175c23fd5dcf74f30daa.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/24d6cf2f9f6bf0363c8d9a158dc6dacfdb7ec9762a6c779e79e7b1c5111710e0.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/59a3fc6b315a5a96aa9e835f80ed2e310e0bd47624737e919edbc197f25da7fd.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/880a4cbbd534372e99e7dc4b0a106373e848af9407e467a3a5d721b2dad73c8d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/35310f3167f0dfde9fdb5a7de820241227b81ea2eb19b28ed49f412d087d0279.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/9c69eab0ebecbd1f4b52735f35fca61d2d5eee0aaff617385a4ee09e7f7bfb6d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/0bf311182a336407b9312ff017d576cd3b7f7cc2af41d91b34f158bea8e8144a.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/0bf311182a336407b9312ff017d576cd3b7f7cc2af41d91b34f158bea8e8144a.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/9c69eab0ebecbd1f4b52735f35fca61d2d5eee0aaff617385a4ee09e7f7bfb6d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/35310f3167f0dfde9fdb5a7de820241227b81ea2eb19b28ed49f412d087d0279.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/880a4cbbd534372e99e7dc4b0a106373e848af9407e467a3a5d721b2dad73c8d.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/59a3fc6b315a5a96aa9e835f80ed2e310e0bd47624737e919edbc197f25da7fd.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/9d21e65209ae9834914d678e56b53fe248e440b48d553f21f035811fec510017.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/7043cb3b4e7697498036eadf385fb690b9ca8553d1fa175c23fd5dcf74f30daa.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/394f4d33cd9f94833f1cc6b78b53dee3f82c2356ea30252ca91248675a45ebd9.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/dbf5ab911d7407a14322ca3b087e56b3db56ac653ced1a2b3851f7f718f82cb5.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/43a4221384f6dc908fe48ead539f5fde0358fb6f7c028d50085bbe8574085012.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/63d33e64289fa5f324ee305ae28a6497c7f62693443b6153ec9601ae83497fd0.webp",
+              "durationMs": 100
+            },
+            {
+              "file": "./cat-expansion-v2/cat-06/mobile/2677716dbce53fec1a6243645ab61f294349b5f28dfd50817b396c33827c9cbe.webp",
+              "durationMs": 100
+            }
+          ],
+          "startPose": "idle-first-frame",
+          "endPose": "idle-first-frame"
+        }
+      }
+    }
+  ]
+}

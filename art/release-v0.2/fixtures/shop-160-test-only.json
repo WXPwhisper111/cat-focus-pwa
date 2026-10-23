@@ -1,6 +1,11 @@
 {
   "format": "cat-focus-pwa",
-  "version": 8,
+  "version": 9,
+  "expansion": {
+    "version": 1,
+    "eligible": false,
+    "claimed": null
+  },
   "tasks": [],
   "selectedTaskId": null,
   "catNames": {},

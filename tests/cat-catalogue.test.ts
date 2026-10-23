@@ -5,9 +5,9 @@ import { catDefinitions, frameDuration } from '../src/cat-definition';
 import { roomCatRect } from '../src/room-scene';
 
 it('has three distinct real cats, existing mobile paths, calibrated anchors and valid timings', async () => {
-  expect(catDefinitions.map(cat => cat.name)).toEqual(['喵呜', '芒果', '橘宝']);
+  expect(catDefinitions.map(cat => cat.name)).toEqual(['喵呜', '芒果', '橘宝', '吉吉', '珍珠', '铃铛']);
   expect(catDefinitions[0].preview).toContain('/cat-01/');
-  expect(catDefinitions).toHaveLength(3); expect(new Set(catDefinitions.map(cat => cat.id)).size).toBe(3);
+  expect(catDefinitions).toHaveLength(6); expect(new Set(catDefinitions.map(cat => cat.id)).size).toBe(6);
   for (const cat of catDefinitions) {
     expect(cat.description.length).toBeGreaterThan(0); expect((await stat(join('public', cat.preview))).size).toBeGreaterThan(0);
     for (const state of ['idle', 'sleep_loop'] as const) {
@@ -15,7 +15,7 @@ it('has three distinct real cats, existing mobile paths, calibrated anchors and 
       expect(sequence.frames).toHaveLength(state === 'idle' ? 63 : 32);
       let duration = 0;
       for (const [index, frame] of sequence.frames.entries()) {
-        expect(frame.file.startsWith('./cat-animation-v2/')).toBe(true);
+        expect(frame.file.startsWith(['cat-04','cat-05','cat-06'].includes(cat.id)?`./cat-expansion-v2/${cat.id}/`:'./cat-animation-v2/')).toBe(true);
         expect((await stat(join('public', frame.file))).size).toBeGreaterThan(0);
         expect(frameDuration(sequence, index)).toBeGreaterThan(0); duration += frameDuration(sequence, index);
         const rect = roomCatRect(state, index, cat), anchor = frame.sourceAnchor || cat.feetAnchor;

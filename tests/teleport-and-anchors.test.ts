@@ -72,3 +72,14 @@ it('shares bowl capacity, supports multiple configured anchors and releases idem
   expect(multiple.reserve('b', 'bed', clip).anchor.id).toBe('right');
   expect(() => multiple.reserve('c', 'bed', clip)).toThrow('占用');
 });
+
+it('resolves the latest destination only at complete transparency, never during fade-in', async () => {
+  const app=harness(); let target:AnimationPoint=[200,300];
+  const resolve=vi.fn(()=>target);
+  const move=app.controller.move('cat',target,new AbortController().signal,undefined,resolve);
+  target=[400,500];expect(resolve).not.toHaveBeenCalled();
+  app.animations[0].finish();await flush();
+  expect(app.changes).toEqual([[400,500]]);expect(app.node.style.opacity).toBe('0');
+  target=[600,600];app.animations[1].finish();await move;
+  expect(resolve).toHaveBeenCalledTimes(1);expect(app.feet()).toEqual([400,500]);expect(app.node.style.opacity).toBe('1');
+});

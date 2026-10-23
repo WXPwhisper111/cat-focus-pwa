@@ -5,8 +5,8 @@ import { getInteractionClip, interactionClips } from '../src/cat-interactions';
 import { pointOnCanvas, rectAtAnchor } from '../src/cat-animation';
 
 it('maps the actual V2 manifests: 12 clips / 204 frames, no enter or exit and no crossed cats', async () => {
-  expect(interactionClips).toHaveLength(12);
-  expect(interactionClips.reduce((sum, clip) => sum + clip.frames.length, 0)).toBe(204);
+  expect(interactionClips).toHaveLength(24);
+  expect(interactionClips.reduce((sum, clip) => sum + clip.frames.length, 0)).toBe(456);
   for (const entry of index.cats) {
     const manifest = JSON.parse(await readFile(`public/cat-interactions-v2/${entry.manifest}`, 'utf8'));
     for (const [behavior, phases] of Object.entries(manifest.actions)) for (const [phase, value] of Object.entries(phases as Record<string, { frames: { mobileFile: string; durationMs: number }[] }>)) {
@@ -33,7 +33,7 @@ it('keeps feet anchors distinct from action contact references and reproduces th
     expect(pointOnCanvas(clip, clip.feetAnchor, [288, 288])[1]).toBeCloseTo(275.59809, 4);
     if (clip.contact) {
       expect(clip.contact.spritePoint).not.toEqual(clip.feetAnchor);
-      expect(clip.contact.contactFrame).toBeLessThan(clip.frames.length);
+      if(clip.contact.contactFrame!==undefined)expect(clip.contact.contactFrame).toBeLessThan(clip.frames.length);
       const rect = rectAtAnchor(clip, clip.contact.spritePoint, clip.contact.targetRoomPoint, [144, 144]);
       expect(rect[0]).toBeCloseTo(clip.contact.roomSpriteRect[0], 2);
       expect(rect[1]).toBeCloseTo(clip.contact.roomSpriteRect[1], 2);
