@@ -1,0 +1,167 @@
+{
+  "checks": [
+    {
+      "cat": "cat-04",
+      "action": "idle",
+      "frames": 63,
+      "durationMs": 9260,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.005666873977752849
+    },
+    {
+      "cat": "cat-04",
+      "action": "sleep",
+      "frames": 32,
+      "durationMs": 4800,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0
+    },
+    {
+      "cat": "cat-04",
+      "action": "eat",
+      "frames": 16,
+      "durationMs": 1600,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0031923363577858665
+    },
+    {
+      "cat": "cat-04",
+      "action": "drink",
+      "frames": 20,
+      "durationMs": 1500,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.012848358935616554
+    },
+    {
+      "cat": "cat-04",
+      "action": "scratch",
+      "frames": 24,
+      "durationMs": 1200,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.024997678878943046
+    },
+    {
+      "cat": "cat-04",
+      "action": "pet",
+      "frames": 24,
+      "durationMs": 2400,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0
+    },
+    {
+      "cat": "cat-05",
+      "action": "idle",
+      "frames": 63,
+      "durationMs": 9260,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.005524745058237881
+    },
+    {
+      "cat": "cat-05",
+      "action": "sleep",
+      "frames": 32,
+      "durationMs": 4800,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0
+    },
+    {
+      "cat": "cat-05",
+      "action": "eat",
+      "frames": 16,
+      "durationMs": 1600,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.009070495944079424
+    },
+    {
+      "cat": "cat-05",
+      "action": "drink",
+      "frames": 20,
+      "durationMs": 1500,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.007483071714373653
+    },
+    {
+      "cat": "cat-05",
+      "action": "scratch",
+      "frames": 24,
+      "durationMs": 1200,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.027894310773308506
+    },
+    {
+      "cat": "cat-05",
+      "action": "pet",
+      "frames": 24,
+      "durationMs": 2400,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0
+    },
+    {
+      "cat": "cat-06",
+      "action": "idle",
+      "frames": 63,
+      "durationMs": 9260,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.014200014499057561
+    },
+    {
+      "cat": "cat-06",
+      "action": "sleep",
+      "frames": 32,
+      "durationMs": 4800,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0
+    },
+    {
+      "cat": "cat-06",
+      "action": "eat",
+      "frames": 16,
+      "durationMs": 1600,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.00782329082820143
+    },
+    {
+      "cat": "cat-06",
+      "action": "drink",
+      "frames": 20,
+      "durationMs": 1500,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.01410430800068171
+    },
+    {
+      "cat": "cat-06",
+      "action": "scratch",
+      "frames": 24,
+      "durationMs": 1200,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.04484851028542794
+    },
+    {
+      "cat": "cat-06",
+      "action": "pet",
+      "frames": 24,
+      "durationMs": 2400,
+      "fixedRegionIdentical": true,
+      "losslessMobileMatchesPng": true,
+      "loopEndpointMeanDifference": 0.0
+    }
+  ],
+  "status": "automated checks passed; see phase sheets for visual review"
+}

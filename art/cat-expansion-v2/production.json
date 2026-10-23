@@ -1,0 +1,119 @@
+{
+  "version": "cat-expansion-v2",
+  "mode": "built-in image_gen; no API CLI",
+  "prompts": {
+    "closed-eyes": "Precise edit of reference: ONLY change both eyes into softly closed natural curved eyelids. Every other part identical: fur, whiskers, nose, face shape, paws tail body scale and position. ONE single full cat, no sheet, transparent alpha background, no props shadow or text. Do not change cat dimensions or recenter.",
+    "eating-pose": "Create ONE whole cat in natural eating crouch facing right, side three-quarter view. EXACT reference identity, pixel artwork, fur color and proportions. Body elongated horizontally with relaxed nearly horizontal back (NOT a steep hump, NOT rear up), all four legs folded comfortably underneath, forepaws near muzzle, head down at imaginary low bowl in front of forepaws. Tail rests behind to left, complete whiskers and all edges with generous margin. True alpha background, no bowl props or shadow, no text. ONE single pose only, no sheet. Preserve skull shape and marking pattern.",
+    "scratching-pose": "ONE SINGLE full cat of EXACT reference identity, same pixel art and proportions. A natural scratching pose towards invisible upright post on RIGHT: seated weight on rump and TWO HIND PAWS only; BOTH FRONT LEGS raised forward, both elbows visibly bent, paws near shoulder height in front. Exactly FOUR LIMBS total: 2 raised front paws and 2 grounded hind paws. NO additional ground front legs or paws. Both raised forelegs clearly separate from chest, one slightly above the other. Naturally horizontal forearms towards right, not waving overhead. Head calm looking right, tail rests left. Anatomically correct feline skeleton and joint bends, fixed compact torso. 1254 square, entire cat + all whiskers within generous transparent margin. True alpha, no post or props, shadow, labels, background. Do not show a sprite sheet.",
+    "idle-inhale-reference": "Edit only a SMALL NATURAL INHALATION of the ribcage of the exact seated cat. Keep head, face, eyes, neck, shoulders, front legs, feet, hind paws, tail, whiskers, markings and ALL positions unchanged. Ribcage side outline at lower chest moves outward only about 10-16 pixels on this 1254px canvas, gracefully no puffy ball. No scale change or shift. Preserve pixel art palette and anatomy. ONE cat, same canvas, true alpha, no ground shadow props text.",
+    "sleep-inhale-reference": "Edit ONLY the gently inhaled ribcage/back silhouette of this exact sleeping cat, up by about 12 pixels on 1254px canvas. Head, face, both ears, forepaws, hindfeet, tail and position remain exactly identical. No hunch, no movement of head or limbs, no inflation, preserve all stripes and fur. Gentle natural breath. ONE sleeping cat, same exact composition and canvas, true transparent background without shadow, text, props."
+  },
+  "sources": [
+    {
+      "path": "sources/cat-04/closed.png",
+      "sha256": "890ad1ac7fdb7e8cbad86a3eb9773bf97bb8ca322cd10a17084a23c4bc72fa91",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-04/eat.png",
+      "sha256": "439c25a76b1ed8fb9cdfdf8ba2f24ba82df89559acfc156f6843e0b8fe7dd31c",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-04/idle_peak.png",
+      "sha256": "d8e2858bbd5f35af72a193612aae93bf0a89959e5f3435de2177a2b27b9773ff",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-04/prototype.png",
+      "sha256": "800be844b1adb1b4ff0523f7988462723a691ea580a97a914002537be557a3d8",
+      "role": "approved archived input"
+    },
+    {
+      "path": "sources/cat-04/scratch.png",
+      "sha256": "c191de5d1d1e4787403bce9a0721079ce78bf4fd5e4ec1ed1cc0d791a934bcc4",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-04/sleep.png",
+      "sha256": "7586dce3e8f81e6a05c89f9c3bd3ae93be0eaf873428ac9180b3f7b2ea0902cb",
+      "role": "approved archived input"
+    },
+    {
+      "path": "sources/cat-04/sleep_peak.png",
+      "sha256": "73bcd5c65cb76f6d53432803077712a7cc3cfc63f7b395fb481d1b644a3e68d2",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-05/closed.png",
+      "sha256": "17192ee9982ed07116f813bec4f24aaff802cfd76a0daafabb9d599a4049c03b",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-05/eat.png",
+      "sha256": "5205fe8f7844a15290bc2321448e22306b23ca01382f9b4db814199241caf240",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-05/idle_peak.png",
+      "sha256": "0ff4038022a5bd28a936f5a3459f9405d11e2e7068d8daaf81821786390d1609",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-05/prototype.png",
+      "sha256": "d03ea51c8b6e62c43584bd5bbf68dfa168a47ddeac16c4d669be0503bd96cdf1",
+      "role": "approved archived input"
+    },
+    {
+      "path": "sources/cat-05/scratch.png",
+      "sha256": "e5e1e2bc85ff5a1b9e047d2e3250211c252d1bc739701719db4465afa430bef3",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-05/sleep.png",
+      "sha256": "cfa1028cc37f897e3adeddbba68e2347138e406d8d5e15823c60f87de1194604",
+      "role": "approved archived input"
+    },
+    {
+      "path": "sources/cat-05/sleep_peak.png",
+      "sha256": "536ac20402fe3056eeede3b1948015d9e3d130a5a2e37ee27416ff0b219787ea",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-06/closed.png",
+      "sha256": "10332a30bc05a5ab5cf880f1b13c55bd813ae6eded863aba9f8ff7cb48e3eb0d",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-06/eat.png",
+      "sha256": "d2d8eba3de78e4f0a30b41dc7a8a20b61751d3f6fd994d3b023430f54e7b7e6f",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-06/idle_peak.png",
+      "sha256": "d43b9456b2290c574e975d98bd07fe17284c75eab7c249e6f8b419646f3e5fbf",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-06/prototype.png",
+      "sha256": "d4db9c1703baed6bfb83b08582afe2544357495c311a5165773eb0b90fbd71e3",
+      "role": "approved archived input"
+    },
+    {
+      "path": "sources/cat-06/scratch.png",
+      "sha256": "dc07c635a57511be675593ef0571b19f9fef7a385c62222330adca65e12e16b4",
+      "role": "ImageGen reference or local edit donor"
+    },
+    {
+      "path": "sources/cat-06/sleep.png",
+      "sha256": "0855f33d63c8ebd0568a6b813ec9dc3ad7321f26aa1292aae83be2030c6a2cc9",
+      "role": "approved archived input"
+    },
+    {
+      "path": "sources/cat-06/sleep_peak.png",
+      "sha256": "67c6b54b4eb2f61477da4dde8b7c1a5acde225389fe50cd822cd605c6b006c59",
+      "role": "ImageGen reference or local edit donor"
+    }
+  ],
+  "composition": "Localized drawn eyelids, separate jaw/tongue artwork, rigid elbow/head/tail transforms and a masked rigid upper-back layer. No whole-image displacement field. Earlier multi-cell sheets were rejected and excluded."
+}

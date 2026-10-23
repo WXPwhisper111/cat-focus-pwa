@@ -1,0 +1,5 @@
+keyframes/
+__pycache__/
+build_sheet_rejected.py
+black-motion-review.png
+packages/*.zip

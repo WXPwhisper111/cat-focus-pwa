@@ -1,0 +1,22 @@
+// Pure playback/controller tests; not a substitute for a browser visual review.
+const vm=require('node:vm'),fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const root=path.resolve(__dirname,'../..'),elements=new Map();let clock=0,fail=null;
+function disk(src){const p=path.resolve(root,'.'+new URL(src,'http://preview.local/art/cat-expansion-v2/preview.html').pathname);assert.ok(p.startsWith(root+path.sep));return p}
+class Element{constructor(id){this.id=id;this.value=id==='cat'?'cat-04':id==='action'?'idle':'0';this.options=id==='cat'?['cat-04','cat-05','cat-06'].map(value=>({value,remove(){}})):[];this.width=id.startsWith('room')?1024:id==='zoom'?1254:288;this.height=id.startsWith('room')?768:this.width;this.draws=[]}get selectedOptions(){return[{textContent:this.value}]}getContext(){return{clearRect(){},drawImage:(im,...args)=>{this.draws.push({src:im.src,args});if(this.draws.length>12)this.draws.shift()},beginPath(){},arc(...args){assert.ok(args.every(Number.isFinite))},stroke(){},fillRect(){}}}}
+function element(id){if(!elements.has(id))elements.set(id,new Element(id));return elements.get(id)}
+class MockImage{set src(src){this._src=src;queueMicrotask(()=>{if(fail===src||!fs.existsSync(disk(src)))this.onerror?.();else this.onload?.()})}get src(){return this._src}}
+const listeners={};const context=vm.createContext({Image:MockImage,URL,Promise,Map,Error,Math,performance:{now:()=>clock},requestAnimationFrame(){},document:{getElementById:element,createElement:()=>new Element('offscreen'),addEventListener:(name,fn)=>listeners[name]=fn}});
+vm.runInContext(fs.readFileSync(path.join(__dirname,'preview-data.js'),'utf8'),context);vm.runInContext(fs.readFileSync(path.join(__dirname,'preview.js'),'utf8'),context);
+const run=code=>vm.runInContext(code,context),settle=()=>new Promise(resolve=>setImmediate(resolve));
+(async()=>{await settle();await settle();assert.ok(run('images.length')>0);const cases=[];
+ for(const cat of ['cat-04','cat-05','cat-06'])for(const action of ['idle','sleep','eat','drink','scratch','pet']){
+  element('cat').value=cat;element('action').value=action;await run('load()');const clip=run('clip');let expectedT=0;const total=clip.cycleDurationMs;
+  assert.equal(run('images.length'),clip.frameCount);for(let t=0;t<total*(clip.loop?2:1)+200;t+=50){clock+=50;run('tick('+clock+')');expectedT+=50;let remaining=clip.loop?expectedT%total:Math.min(expectedT,total-1);let expected=0;while(remaining>=clip.frames[expected].durationMs){remaining-=clip.frames[expected].durationMs;expected++}assert.equal(run('index'),expected);if(!clip.loop&&expectedT>=total)break}
+  if(!clip.loop){assert.equal(run('playing'),false);await element('replay').onclick();assert.equal(run('index'),0);assert.equal(run('playing'),true)}
+  const beforeStep=run('index');await element('next').onclick();assert.equal(run('playing'),false);assert.equal(run('index'),Math.min(clip.frameCount-1,beforeStep+1));element('marker').checked=true;element('marker').onchange();cases.push({cat,action,twoCyclesSimulated:clip.loop,singleStops:!clip.loop});
+ }
+ element('cat').value='cat-04';element('action').value='idle';const first=run('load()');element('cat').value='cat-06';element('action').value='scratch';const second=run('load()');await Promise.all([first,second]);assert.equal(run('clip'),run("PREVIEW.cats['cat-06'].actions.scratch"));
+ run('cache.clear()');element('cat').value='cat-05';element('action').value='drink';fail="resources/cat-05/mobile/drink/drink_001.webp";const before=run('clip');await run('load()');assert.equal(run('clip'),before);assert.ok(element('status').textContent.includes('资源加载失败'));fail=null;await run('load()');assert.equal(run('playing'),true);
+ const timeBefore=run('elapsed');clock+=750;run('tick('+clock+')');assert.equal(run('elapsed'),timeBefore+750);context.document.hidden=true;const hiddenTime=run('elapsed');clock+=1000;run('tick('+clock+')');assert.equal(run('elapsed'),hiddenTime);context.document.hidden=false;listeners.visibilitychange();assert.equal(run('last'),clock);
+ fs.writeFileSync(path.join(__dirname,'validation/preview-controller.json'),JSON.stringify({status:'passed',method:'Node VM with image-file existence checks and mocked canvas; no browser visual claims',cases,rapidSelection:true,loadFailureAndRetry:true,visibilityReset:true},null,2)+'\n');console.log('PASS: 18 playback cases, 2-loop timing, pet completion/replay, selection race, load retry and visibility');
+})().catch(e=>{console.error(e);process.exitCode=1});

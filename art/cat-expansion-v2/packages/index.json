@@ -1,0 +1,54 @@
+{
+  "version": "cat-expansion-v2",
+  "packages": [
+    {
+      "file": "cat-04-complete-v2.zip",
+      "bytes": 139610412,
+      "sha256": "c03e3150e51842dbbed4755213626ebbfdee1c00d0b04e25d9c8cc68f8e0650a",
+      "cats": [
+        "cat-04"
+      ],
+      "pngIncluded": true
+    },
+    {
+      "file": "cat-05-complete-v2.zip",
+      "bytes": 214416390,
+      "sha256": "07f78607f168f86a184d2523de46f70cdacb88aa458d884a6af8077433e954e8",
+      "cats": [
+        "cat-05"
+      ],
+      "pngIncluded": true
+    },
+    {
+      "file": "cat-06-complete-v2.zip",
+      "bytes": 174996222,
+      "sha256": "d1915cbd1474202adeaed2ebe3eefefa076d9de24e6215d083b83efac4172076",
+      "cats": [
+        "cat-06"
+      ],
+      "pngIncluded": true
+    },
+    {
+      "file": "three-cats-complete-v2.zip",
+      "bytes": 525751992,
+      "sha256": "f304b53eff025e0f51056d56bdb296f77519abc03f71dfec39c796e1a9a48f0b",
+      "cats": [
+        "cat-04",
+        "cat-05",
+        "cat-06"
+      ],
+      "pngIncluded": true
+    },
+    {
+      "file": "three-cats-mobile-v2.zip",
+      "bytes": 69127780,
+      "sha256": "bfd8d8d0760d12181f0eafffb195fcf7b34b77bab8eb9fd4060ebc2f194dd4ff",
+      "cats": [
+        "cat-04",
+        "cat-05",
+        "cat-06"
+      ],
+      "pngIncluded": false
+    }
+  ]
+}

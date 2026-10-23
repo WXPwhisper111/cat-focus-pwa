@@ -1,0 +1,438 @@
+{
+  "checks": [
+    {
+      "file": "previews/cat-04/idle.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "card-previews/cat-04/idle.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "room-previews/cat-04/idle-390.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "room-previews/cat-04/idle-430.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "previews/cat-04/sleep.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "card-previews/cat-04/sleep.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "room-previews/cat-04/sleep-390.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "room-previews/cat-04/sleep-430.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "previews/cat-04/eat.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "card-previews/cat-04/eat.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "room-previews/cat-04/eat-390.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 5
+    },
+    {
+      "file": "room-previews/cat-04/eat-430.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 8
+    },
+    {
+      "file": "previews/cat-04/drink.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "card-previews/cat-04/drink.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "room-previews/cat-04/drink-390.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 9
+    },
+    {
+      "file": "room-previews/cat-04/drink-430.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 8
+    },
+    {
+      "file": "previews/cat-04/scratch.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "card-previews/cat-04/scratch.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "room-previews/cat-04/scratch-390.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "room-previews/cat-04/scratch-430.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "previews/cat-04/pet.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "card-previews/cat-04/pet.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "room-previews/cat-04/pet-390.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "room-previews/cat-04/pet-430.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "previews/cat-05/idle.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "card-previews/cat-05/idle.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "room-previews/cat-05/idle-390.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "room-previews/cat-05/idle-430.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "previews/cat-05/sleep.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "card-previews/cat-05/sleep.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "room-previews/cat-05/sleep-390.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "room-previews/cat-05/sleep-430.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "previews/cat-05/eat.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "card-previews/cat-05/eat.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "room-previews/cat-05/eat-390.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 8
+    },
+    {
+      "file": "room-previews/cat-05/eat-430.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 5
+    },
+    {
+      "file": "previews/cat-05/drink.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "card-previews/cat-05/drink.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "room-previews/cat-05/drink-390.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 8
+    },
+    {
+      "file": "room-previews/cat-05/drink-430.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 9
+    },
+    {
+      "file": "previews/cat-05/scratch.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "card-previews/cat-05/scratch.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "room-previews/cat-05/scratch-390.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "room-previews/cat-05/scratch-430.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "previews/cat-05/pet.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "card-previews/cat-05/pet.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "room-previews/cat-05/pet-390.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "room-previews/cat-05/pet-430.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "previews/cat-06/idle.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "card-previews/cat-06/idle.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "room-previews/cat-06/idle-390.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "room-previews/cat-06/idle-430.webp",
+      "durationMs": 9260,
+      "loop": 0,
+      "decodedFrames": 61
+    },
+    {
+      "file": "previews/cat-06/sleep.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "card-previews/cat-06/sleep.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "room-previews/cat-06/sleep-390.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "room-previews/cat-06/sleep-430.webp",
+      "durationMs": 4800,
+      "loop": 0,
+      "decodedFrames": 31
+    },
+    {
+      "file": "previews/cat-06/eat.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "card-previews/cat-06/eat.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "room-previews/cat-06/eat-390.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 5
+    },
+    {
+      "file": "room-previews/cat-06/eat-430.webp",
+      "durationMs": 1600,
+      "loop": 0,
+      "decodedFrames": 5
+    },
+    {
+      "file": "previews/cat-06/drink.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "card-previews/cat-06/drink.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "room-previews/cat-06/drink-390.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 9
+    },
+    {
+      "file": "room-previews/cat-06/drink-430.webp",
+      "durationMs": 1500,
+      "loop": 0,
+      "decodedFrames": 16
+    },
+    {
+      "file": "previews/cat-06/scratch.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "card-previews/cat-06/scratch.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "room-previews/cat-06/scratch-390.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "room-previews/cat-06/scratch-430.webp",
+      "durationMs": 1200,
+      "loop": 0,
+      "decodedFrames": 24
+    },
+    {
+      "file": "previews/cat-06/pet.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "card-previews/cat-06/pet.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "room-previews/cat-06/pet-390.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    },
+    {
+      "file": "room-previews/cat-06/pet-430.webp",
+      "durationMs": 2400,
+      "loop": 1,
+      "decodedFrames": 23
+    }
+  ],
+  "reelDurationMs": 20760,
+  "status": "passed"
+}

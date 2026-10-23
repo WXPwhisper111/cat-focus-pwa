@@ -1,0 +1,131 @@
+{
+  "method": "CUA browser UI; desktop simulated viewports, no real phone test",
+  "checks": [
+    {
+      "viewport": 390,
+      "cat": "cat-04",
+      "action": "idle",
+      "status": "黑猫 / 待机 / 4/63 帧 / 9.26 秒 / 循环",
+      "observationMs": 19520
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-04",
+      "action": "sleep",
+      "status": "黑猫 / 睡觉 / 3/32 帧 / 4.80 秒 / 循环",
+      "observationMs": 10600
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-04",
+      "action": "eat",
+      "status": "黑猫 / 进食 / 9/16 帧 / 1.60 秒 / 循环",
+      "observationMs": 4200
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-04",
+      "action": "drink",
+      "status": "黑猫 / 喝水 / 14/20 帧 / 1.50 秒 / 循环",
+      "observed": "2 cycles or full once + replay"
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-04",
+      "action": "scratch",
+      "status": "黑猫 / 磨爪 / 13/24 帧 / 1.20 秒 / 循环",
+      "observed": "2 cycles or full once + replay"
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-04",
+      "action": "pet",
+      "status": "黑猫 / 抚摸反馈 / 24/24 帧 / 2.40 秒 / 单次",
+      "observed": "full once and replay both returned to frame 24"
+    },
+    {
+      "viewport": 430,
+      "cat": "cat-05",
+      "action": "idle",
+      "status": "珍珠 / 待机 / 7/63 帧 / 9.26 秒 / 循环",
+      "observationMs": 19520
+    },
+    {
+      "viewport": 430,
+      "cat": "cat-05",
+      "action": "sleep",
+      "status": "珍珠 / 睡觉 / 3/32 帧 / 4.80 秒 / 循环",
+      "observationMs": 10600
+    },
+    {
+      "viewport": 430,
+      "cat": "cat-05",
+      "action": "eat",
+      "status": "珍珠 / 进食 / 3/16 帧 / 1.60 秒 / 循环",
+      "observationMs": 4200
+    },
+    {
+      "viewport": 430,
+      "cat": "cat-05",
+      "action": "drink",
+      "status": "珍珠 / 喝水 / 14/20 帧 / 1.50 秒 / 循环",
+      "observed": "2 cycles or once + replay"
+    },
+    {
+      "viewport": 430,
+      "cat": "cat-05",
+      "action": "scratch",
+      "status": "珍珠 / 磨爪 / 13/24 帧 / 1.20 秒 / 循环",
+      "observed": "2 cycles or once + replay"
+    },
+    {
+      "viewport": 430,
+      "cat": "cat-05",
+      "action": "pet",
+      "status": "珍珠 / 抚摸反馈 / 24/24 帧 / 2.40 秒 / 单次; replay 珍珠 / 抚摸反馈 / 24/24 帧 / 2.40 秒 / 单次",
+      "observed": "2 cycles or once + replay"
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-06",
+      "action": "idle",
+      "status": "简州狸花白 / 待机 / 11/63 帧 / 9.26 秒 / 循环",
+      "observationMs": 19520
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-06",
+      "action": "sleep",
+      "status": "简州狸花白 / 睡觉 / 10/32 帧 / 4.80 秒 / 循环",
+      "observationMs": 10600
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-06",
+      "action": "eat",
+      "status": "简州狸花白 / 进食 / 9/16 帧 / 1.60 秒 / 循环",
+      "observationMs": 4200
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-06",
+      "action": "drink",
+      "status": "简州狸花白 / 喝水 / 14/20 帧 / 1.50 秒 / 循环",
+      "observed": "2 cycles or full once + replay"
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-06",
+      "action": "scratch",
+      "status": "简州狸花白 / 磨爪 / 9/24 帧 / 1.20 秒 / 循环",
+      "observed": "2 cycles or full once + replay"
+    },
+    {
+      "viewport": 390,
+      "cat": "cat-06",
+      "action": "pet",
+      "status": "简州狸花白 / 抚摸反馈 / 24/24 帧 / 2.40 秒 / 单次; replay 简州狸花白 / 抚摸反馈 / 24/24 帧 / 2.40 秒 / 单次",
+      "observed": "2 cycles or full once + replay"
+    }
+  ]
+}

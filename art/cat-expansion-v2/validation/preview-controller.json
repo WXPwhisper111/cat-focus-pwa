@@ -1,0 +1,117 @@
+{
+  "status": "passed",
+  "method": "Node VM with image-file existence checks and mocked canvas; no browser visual claims",
+  "cases": [
+    {
+      "cat": "cat-04",
+      "action": "idle",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-04",
+      "action": "sleep",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-04",
+      "action": "eat",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-04",
+      "action": "drink",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-04",
+      "action": "scratch",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-04",
+      "action": "pet",
+      "twoCyclesSimulated": false,
+      "singleStops": true
+    },
+    {
+      "cat": "cat-05",
+      "action": "idle",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-05",
+      "action": "sleep",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-05",
+      "action": "eat",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-05",
+      "action": "drink",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-05",
+      "action": "scratch",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-05",
+      "action": "pet",
+      "twoCyclesSimulated": false,
+      "singleStops": true
+    },
+    {
+      "cat": "cat-06",
+      "action": "idle",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-06",
+      "action": "sleep",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-06",
+      "action": "eat",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-06",
+      "action": "drink",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-06",
+      "action": "scratch",
+      "twoCyclesSimulated": true,
+      "singleStops": false
+    },
+    {
+      "cat": "cat-06",
+      "action": "pet",
+      "twoCyclesSimulated": false,
+      "singleStops": true
+    }
+  ],
+  "rapidSelection": true,
+  "loadFailureAndRetry": true,
+  "visibilityReset": true
+}
