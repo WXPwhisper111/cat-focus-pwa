@@ -1,0 +1,60 @@
+{
+  "cats": [
+    {
+      "catId": "cat-01",
+      "pngFrames": 18,
+      "durationMs": 3600,
+      "loop": false,
+      "endpoint": "exact registered official idle",
+      "rearContactErrorPxMax": 0.5,
+      "losslessMobile": true
+    },
+    {
+      "catId": "cat-02",
+      "pngFrames": 18,
+      "durationMs": 3600,
+      "loop": false,
+      "endpoint": "exact registered official idle",
+      "rearContactErrorPxMax": 0.5,
+      "losslessMobile": true
+    },
+    {
+      "catId": "cat-03",
+      "pngFrames": 18,
+      "durationMs": 3600,
+      "loop": false,
+      "endpoint": "exact registered official idle",
+      "rearContactErrorPxMax": 0.5,
+      "losslessMobile": true
+    },
+    {
+      "catId": "cat-04",
+      "pngFrames": 18,
+      "durationMs": 3600,
+      "loop": false,
+      "endpoint": "exact registered official idle",
+      "rearContactErrorPxMax": 0.5,
+      "losslessMobile": true
+    },
+    {
+      "catId": "cat-05",
+      "pngFrames": 18,
+      "durationMs": 3600,
+      "loop": false,
+      "endpoint": "exact registered official idle",
+      "rearContactErrorPxMax": 0.5,
+      "losslessMobile": true
+    },
+    {
+      "catId": "cat-06",
+      "pngFrames": 18,
+      "durationMs": 3600,
+      "loop": false,
+      "endpoint": "exact registered official idle",
+      "rearContactErrorPxMax": 0.5,
+      "losslessMobile": true
+    }
+  ],
+  "protectedApplicationFiles": 3128,
+  "changedApplicationFiles": []
+}

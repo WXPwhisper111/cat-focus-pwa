@@ -1,0 +1,84 @@
+[
+  {
+    "file": "cat-01-stretch-v1.zip",
+    "bytes": 23229138,
+    "sha256": "0970e4644a6a84e48f7062ad34b1747d79e91383873765f279640a6babf17c55",
+    "cats": [
+      "cat-01"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "cat-02-stretch-v1.zip",
+    "bytes": 23612992,
+    "sha256": "68961ffd51d3b9fbceacc41c3d71cbb80e3dfec85c1991a69f30bb9a21316a2e",
+    "cats": [
+      "cat-02"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "cat-03-stretch-v1.zip",
+    "bytes": 23546845,
+    "sha256": "ad40498257a8c46c4fc5c6c9e778263b3b42d157a8c6d1b7ccb2e6556477fc12",
+    "cats": [
+      "cat-03"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "cat-04-stretch-v1.zip",
+    "bytes": 15997785,
+    "sha256": "5877cb6a50b460df7a62cf917f0af14543bae743e4e15ce0e4898d95a0d9f85d",
+    "cats": [
+      "cat-04"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "cat-05-stretch-v1.zip",
+    "bytes": 20920837,
+    "sha256": "1509ddb07d16bf6d8fb49cc9d99d5359cd18a7e4223cc5ab8b8bf68cbc67290e",
+    "cats": [
+      "cat-05"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "cat-06-stretch-v1.zip",
+    "bytes": 19747096,
+    "sha256": "f23c415603f03035e299610b58ddf8b1fc29f2fcb22a2aa77abf936e8bbda4b8",
+    "cats": [
+      "cat-06"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "six-cats-stretch-v1.zip",
+    "bytes": 108871187,
+    "sha256": "2aff3dd5d239d7e1358c1090520a3c9fed708b61591428cf7e91224e63804165",
+    "cats": [
+      "cat-01",
+      "cat-02",
+      "cat-03",
+      "cat-04",
+      "cat-05",
+      "cat-06"
+    ],
+    "mobile": false
+  },
+  {
+    "file": "six-cats-stretch-v1-mobile.zip",
+    "bytes": 28479651,
+    "sha256": "80bdf5f16446a50859889c6499659c3536b261a6f43d9ab41d6188a0d208303c",
+    "cats": [
+      "cat-01",
+      "cat-02",
+      "cat-03",
+      "cat-04",
+      "cat-05",
+      "cat-06"
+    ],
+    "mobile": true
+  }
+]

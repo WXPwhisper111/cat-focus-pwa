@@ -1,0 +1,26 @@
+{
+  "viewport": 430,
+  "cycles": [
+    "待机 · 已计时 17.8 秒 / 阈值 16.3 秒；等待循环边界 · 已完成 6 次",
+    "待机 · 已计时 7.5 秒 / 阈值 15.3 秒；等待循环边界 · 已完成 6 次",
+    "待机 · 已计时 12.9 秒 / 阈值 16.2 秒；等待循环边界 · 已完成 6 次",
+    "伸懒腰 · 1.49 / 3.60 秒 · 已完成 5 次",
+    "伸懒腰 · 2.45 / 3.60 秒 · 已完成 5 次",
+    "待机 · 已计时 16.9 秒 / 阈值 10.4 秒；等待循环边界 · 已完成 6 次"
+  ],
+  "roomScreens": [
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-01-430-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-02-430-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-03-430-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-04-430-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-05-430-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-06-430-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-01-390-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-02-390-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-03-390-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-04-390-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-05-390-peak.jpg",
+    "D:/MyDesktopPet/cat-focus-pwa/art/cat-stretch-v1/validation/browser-cat-06-390-peak.jpg"
+  ],
+  "console": []
+}

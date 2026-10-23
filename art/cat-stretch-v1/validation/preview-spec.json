@@ -1,0 +1,17 @@
+{
+  "cats": [
+    "cat-01",
+    "cat-02",
+    "cat-03",
+    "cat-04",
+    "cat-05",
+    "cat-06"
+  ],
+  "stretchDurationMs": 3600,
+  "alternationTwoRoundsMs": 44240,
+  "roomWidths": [
+    390,
+    430
+  ],
+  "cardSize": 176
+}

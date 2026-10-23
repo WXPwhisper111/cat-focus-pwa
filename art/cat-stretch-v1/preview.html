@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="zh-CN"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>六只猫 · 伸懒腰 V1</title>
+<style>
+*{box-sizing:border-box}body{margin:20px;background:#f6eddf;color:#513e2e;font:15px system-ui}h1{font-size:23px}button,select{font:inherit;padding:7px 12px;border:1px solid #c6ad8f;border-radius:8px;background:#fff9ed;color:inherit;cursor:pointer}nav{display:flex;gap:10px;flex-wrap:wrap;align-items:center}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:16px;margin:20px 0}.panel{background:#fff9ee;padding:15px;border-radius:14px;min-width:0}.views{display:flex;align-items:end;gap:8px;flex-wrap:wrap}.sprite{image-rendering:pixelated;object-fit:contain}.card{width:176px;height:176px;background:#efe1cc;border-radius:12px}.large{width:288px;height:288px;background:repeating-conic-gradient(#e1d9cb 0% 25%,#f4eddf 0% 50%) 0/16px 16px}.status{min-height:40px}.room-scroll{overflow-x:auto;padding-bottom:10px}.room{position:relative;background-size:100% 100%;background-image:url(room.png);margin:12px 0}.room img{position:absolute;image-rendering:pixelated}.room-caption{font-size:13px}input[type=range]{width:100%}.error{color:#a02618}.pending{opacity:.7}a{color:#79562e}
+</style>
+<h1>六只猫 · 伸懒腰 V1</h1>
+<p>独立素材演示。待机随机计时 10–20 秒，到下一循环边界伸展一次，再回待机。各猫起始相位错开；页面隐藏时暂停。</p>
+<nav><button id="pause">暂停</button><button id="all">全部伸展一次</button><label>速度 <select id="speed"><option value="1">正常</option><option value="0.5">半速检查</option></select></label><label>房间宽度 <select id="width"><option>390</option><option>430</option></select></label><label>房间中的猫 <select id="room-cat"></select></label></nav>
+<p id="notice">正在预加载素材…</p><div id="rooms" class="room-scroll"></div><main id="cats" class="grid"></main>
+<p>素材不含背景、地面阴影或标记。棋盘格、房间和接触点均仅用于本页检查。</p>
+<script src="preview-data.js"></script><script type="module" src="preview.mjs"></script>
+</html>

@@ -1,0 +1,155 @@
+{
+  "movies": [
+    {
+      "file": "previews/cat-01/stretch.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-01/card.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-01/room-390.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-01/room-430.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-01/alternation-two-rounds.webp",
+      "durationMs": 44240,
+      "decodedFrames": 287
+    },
+    {
+      "file": "previews/cat-02/stretch.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-02/card.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-02/room-390.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-02/room-430.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-02/alternation-two-rounds.webp",
+      "durationMs": 44240,
+      "decodedFrames": 287
+    },
+    {
+      "file": "previews/cat-03/stretch.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-03/card.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-03/room-390.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-03/room-430.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-03/alternation-two-rounds.webp",
+      "durationMs": 44240,
+      "decodedFrames": 287
+    },
+    {
+      "file": "previews/cat-04/stretch.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-04/card.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-04/room-390.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-04/room-430.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-04/alternation-two-rounds.webp",
+      "durationMs": 44240,
+      "decodedFrames": 279
+    },
+    {
+      "file": "previews/cat-05/stretch.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-05/card.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-05/room-390.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-05/room-430.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-05/alternation-two-rounds.webp",
+      "durationMs": 44240,
+      "decodedFrames": 279
+    },
+    {
+      "file": "previews/cat-06/stretch.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-06/card.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-06/room-390.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-06/room-430.webp",
+      "durationMs": 3600,
+      "decodedFrames": 18
+    },
+    {
+      "file": "previews/cat-06/alternation-two-rounds.webp",
+      "durationMs": 44240,
+      "decodedFrames": 279
+    }
+  ],
+  "reelDurationMs": 3600
+}

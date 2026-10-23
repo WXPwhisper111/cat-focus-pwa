@@ -1,0 +1,1564 @@
+{
+  "cats": [
+    {
+      "id": "cat-01",
+      "name": "喵呜",
+      "source": "public/cat-animation-v2/cat-01/idle/idle_001.png",
+      "sourceSha256": "353ff3416fbc9a5d998ada28bbdb3cb6b89f81eacc7bb85e5c976ddce895a551",
+      "idle": [
+        {
+          "file": "resources/cat-01/idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-01/idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-01/idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-01/idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/idle/063.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "id": "cat-02",
+      "name": "芒果",
+      "source": "public/cat-animation-v2/cat-02/idle/idle_001.png",
+      "sourceSha256": "20272e376cc989d943b76f10e6d3d2a28736b7e96d97239f2b9b74fab8f841bc",
+      "idle": [
+        {
+          "file": "resources/cat-02/idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-02/idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-02/idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-02/idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/idle/063.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "id": "cat-03",
+      "name": "橘宝",
+      "source": "public/cat-animation-v2/cat-03/idle/idle_001.png",
+      "sourceSha256": "cae8ec76983521e8f56d0cb059bf29b2ad841b67318efa2dd18fb177c4f7ea4e",
+      "idle": [
+        {
+          "file": "resources/cat-03/idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-03/idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-03/idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-03/idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/idle/063.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "id": "cat-04",
+      "name": "吉吉",
+      "source": "art/cat-expansion-v2/resources/cat-04/idle/idle_001.png",
+      "sourceSha256": "8f0dead1a59c73fe743ac1da3d6a524461e8c6db09467ff48bb1066c944e4feb",
+      "idle": [
+        {
+          "file": "resources/cat-04/idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-04/idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-04/idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-04/idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/idle/063.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "id": "cat-05",
+      "name": "珍珠",
+      "source": "art/cat-expansion-v2/resources/cat-05/idle/idle_001.png",
+      "sourceSha256": "1ef4b1c7cb31739a337b0ca8604ad37ed8cdaf178461f66cff33c579b6759dd2",
+      "idle": [
+        {
+          "file": "resources/cat-05/idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-05/idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-05/idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-05/idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/idle/063.webp",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "id": "cat-06",
+      "name": "简州狸花白",
+      "source": "art/cat-expansion-v2/resources/cat-06/idle/idle_001.png",
+      "sourceSha256": "664ca30d95c316dd6c5b3383c79aa3db6297bbf0a3af8c27130d5255911151a4",
+      "idle": [
+        {
+          "file": "resources/cat-06/idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-06/idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-06/idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-06/idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/idle/063.webp",
+          "durationMs": 150
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "orangePrompt": "Create a production pixel-art animation sprite sheet of THIS EXACT orange-and-white short-haired cat. Preserve exact character, small head versus large but slim body, coat markings, white chest, tail white tip, face, style. Output a 4 columns x 4 rows regular grid, 16 equal square cells, transparent background, no grid lines, no text, no shadow. Each cell contains exactly ONE entire cat; same camera (three quarter facing viewer-right), identical scale and ground baseline, ample empty margins, fixed rear paw ground position within every cell. Read frames left-to-right then top-to-bottom: 1 seated identical reference; 2 begins leaning forward; 3 rises on hind legs; 4 forward forepaw step; 5 both forepaws reach forward; 6 elbows straighten and chest lowers; 7 deeper stretch hips raised; 8 full natural cat play-bow stretch chest low forelegs reaching right; 9 hold stretch; 10 hold with closed content eyes; 11 begins lifting chest; 12 forepaws pull back; 13 hindquarters lower; 14 sits almost upright; 15 settles seated; 16 exactly same seated pose as frame1. Smooth small pose increments, anatomically correct fixed-length limbs, NO elastic body scaling, no extra paws, no duplicated tails. This is one 3.6second single stretch. All16 cells show SAME cat not different designs. Pixel edges crisp and warm game-sprite shading as reference. Use largest supported square sheet resolution.",
+  "mode": "built-in image_gen",
+  "orangeSheet": "First 4x4 draft explicitly approved by user on 2026-10-24; retained poses and registration-only processing. Later orange drafts were not selected.",
+  "cats": {
+    "cat-02": {
+      "prompt": "为输入1这只正式猫绘制伸懒腰动画姿态表，输入2仅作为已确认的动作顺序和排布参考，绝不能采用输入2的橘白毛色。输出4列4行共16个姿态，透明背景PNG，无网格线、文字、家具、阴影。像素美术、原猫五官、头身比例、毛色花纹、长短毛和尾巴保持输入1一致。同一只猫16帧，全身完整有留白，每帧使用同一固定尺度，后脚落地点稳定，绝不拉长或压扁身体。依次：1原坐姿；2轻前倾；3准备起身；4前爪向前一步；5起身并前伸；6降低胸口；7进一步伸直前腿；8臀部略抬的完整前伸压胸；9保持；10舒服眯眼保持；11抬胸；12收前爪；13坐下；14坐直；15恢复原坐姿；16与1一致。每格完整显示一只猫，角色轮廓彼此不接触，留足空白尤其耳尖、尾尖与胡须。自然真实的关节运动，不额外肢体、不改变头大小、不放大缩小不同帧。角色：灰白重点色长毛猫，蓝眼睛，爪子为深棕近黑色，蓬松棕灰尾巴",
+      "sourceSheet": "sources/cat-02/stretch-sheet.png",
+      "referenceCharacter": "sources/cat-02/idle.png",
+      "referenceMotion": "sources/cat-01/stretch-approved-sheet.png"
+    },
+    "cat-03": {
+      "prompt": "为输入1这只正式猫绘制伸懒腰动画姿态表，输入2仅作为已确认的动作顺序和排布参考，绝不能采用输入2的橘白毛色。输出4列4行共16个姿态，透明背景PNG，无网格线、文字、家具、阴影。像素美术、原猫五官、头身比例、毛色花纹、长短毛和尾巴保持输入1一致。同一只猫16帧，全身完整有留白，每帧使用同一固定尺度，后脚落地点稳定，绝不拉长或压扁身体。依次：1原坐姿；2轻前倾；3准备起身；4前爪向前一步；5起身并前伸；6降低胸口；7进一步伸直前腿；8臀部略抬的完整前伸压胸；9保持；10舒服眯眼保持；11抬胸；12收前爪；13坐下；14坐直；15恢复原坐姿；16与1一致。每格完整显示一只猫，角色轮廓彼此不接触，留足空白尤其耳尖、尾尖与胡须。自然真实的关节运动，不额外肢体、不改变头大小、不放大缩小不同帧。角色：体型最小的淡黄白长毛猫，嘴周不对称黄色斑纹必须对应参考，金绿眼睛",
+      "sourceSheet": "sources/cat-03/stretch-sheet.png",
+      "referenceCharacter": "sources/cat-03/idle.png",
+      "referenceMotion": "sources/cat-01/stretch-approved-sheet.png"
+    },
+    "cat-04": {
+      "prompt": "为输入1这只正式猫绘制伸懒腰动画姿态表，输入2仅作为已确认的动作顺序和排布参考，绝不能采用输入2的橘白毛色。输出4列4行共16个姿态，透明背景PNG，无网格线、文字、家具、阴影。像素美术、原猫五官、头身比例、毛色花纹、长短毛和尾巴保持输入1一致。同一只猫16帧，全身完整有留白，每帧使用同一固定尺度，后脚落地点稳定，绝不拉长或压扁身体。依次：1原坐姿；2轻前倾；3准备起身；4前爪向前一步；5起身并前伸；6降低胸口；7进一步伸直前腿；8臀部略抬的完整前伸压胸；9保持；10舒服眯眼保持；11抬胸；12收前爪；13坐下；14坐直；15恢复原坐姿；16与1一致。每格完整显示一只猫，角色轮廓彼此不接触，留足空白尤其耳尖、尾尖与胡须。自然真实的关节运动，不额外肢体、不改变头大小、不放大缩小不同帧。角色：修长黑色短毛猫，黄绿色眼睛，大三角耳，深灰高光，不可变成灰猫",
+      "sourceSheet": "sources/cat-04/stretch-sheet.png",
+      "referenceCharacter": "sources/cat-04/idle.png",
+      "referenceMotion": "sources/cat-01/stretch-approved-sheet.png"
+    },
+    "cat-05": {
+      "prompt": "为输入1这只正式猫绘制伸懒腰动画姿态表，输入2仅作为已确认的动作顺序和排布参考，绝不能采用输入2的橘白毛色。输出4列4行共16个姿态，透明背景PNG，无网格线、文字、家具、阴影。像素美术、原猫五官、头身比例、毛色花纹、长短毛和尾巴保持输入1一致。同一只猫16帧，全身完整有留白，每帧使用同一固定尺度，后脚落地点稳定，绝不拉长或压扁身体。依次：1原坐姿；2轻前倾；3准备起身；4前爪向前一步；5起身并前伸；6降低胸口；7进一步伸直前腿；8臀部略抬的完整前伸压胸；9保持；10舒服眯眼保持；11抬胸；12收前爪；13坐下；14坐直；15恢复原坐姿；16与1一致。每格完整显示一只猫，角色轮廓彼此不接触，留足空白尤其耳尖、尾尖与胡须。自然真实的关节运动，不额外肢体、不改变头大小、不放大缩小不同帧。角色：珍珠，奶油米白长毛布偶，灰褐色面罩和耳朵，蓝眼睛，粉鼻，蓬松尾巴，不可变成纯白",
+      "sourceSheet": "sources/cat-05/stretch-sheet.png",
+      "referenceCharacter": "sources/cat-05/idle.png",
+      "referenceMotion": "sources/cat-01/stretch-approved-sheet.png"
+    },
+    "cat-06": {
+      "prompt": "为输入1这只正式猫绘制伸懒腰动画姿态表，输入2仅作为已确认的动作顺序和排布参考，绝不能采用输入2的橘白毛色。输出4列4行共16个姿态，透明背景PNG，无网格线、文字、家具、阴影。像素美术、原猫五官、头身比例、毛色花纹、长短毛和尾巴保持输入1一致。同一只猫16帧，全身完整有留白，每帧使用同一固定尺度，后脚落地点稳定，绝不拉长或压扁身体。依次：1原坐姿；2轻前倾；3准备起身；4前爪向前一步；5起身并前伸；6降低胸口；7进一步伸直前腿；8臀部略抬的完整前伸压胸；9保持；10舒服眯眼保持；11抬胸；12收前爪；13坐下；14坐直；15恢复原坐姿；16与1一致。每格完整显示一只猫，角色轮廓彼此不接触，留足空白尤其耳尖、尾尖与胡须。自然真实的关节运动，不额外肢体、不改变头大小、不放大缩小不同帧。角色：简州狸花白短毛猫，灰褐黑色虎斑头背和尾巴，白胸白腿，粉鼻，黄绿眼睛",
+      "sourceSheet": "sources/cat-06/stretch-sheet.png",
+      "referenceCharacter": "sources/cat-06/idle.png",
+      "referenceMotion": "sources/cat-01/stretch-approved-sheet.png"
+    }
+  }
+}

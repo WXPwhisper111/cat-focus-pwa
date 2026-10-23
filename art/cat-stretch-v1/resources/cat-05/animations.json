@@ -1,0 +1,377 @@
+{
+  "version": "stretch-v1",
+  "catId": "cat-05",
+  "name": "珍珠",
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "feetAnchor": [
+    627,
+    1200
+  ],
+  "referenceScale": 0.6921851400538684,
+  "previewDisplayScale": 1.4447001851588093,
+  "previewAnchor": [
+    481.8264854228038,
+    1181.0519518418178
+  ],
+  "registration": {
+    "sheet": "sources/cat-05/stretch-sheet.png",
+    "scale": 2.5481798715203428,
+    "idleScale": 0.6921851400538684,
+    "idleTranslation": [
+      -145.17351457719622,
+      -18.948048158182246
+    ],
+    "sourceRear": [
+      695,
+      1175
+    ],
+    "bleed": 12,
+    "rearPoints": [
+      [
+        200,
+        0
+      ],
+      [
+        200,
+        0
+      ],
+      [
+        200,
+        0
+      ],
+      [
+        200,
+        0
+      ],
+      [
+        100,
+        0
+      ],
+      [
+        85,
+        0
+      ],
+      [
+        85,
+        0
+      ],
+      [
+        75,
+        0
+      ],
+      [
+        80,
+        0
+      ],
+      [
+        80,
+        0
+      ],
+      [
+        180,
+        0
+      ],
+      [
+        190,
+        0
+      ],
+      [
+        195,
+        0
+      ],
+      [
+        195,
+        0
+      ],
+      [
+        195,
+        0
+      ],
+      [
+        195,
+        0
+      ]
+    ],
+    "durationsMs": [
+      150,
+      150,
+      130,
+      120,
+      150,
+      180,
+      200,
+      220,
+      260,
+      280,
+      250,
+      180,
+      160,
+      150,
+      130,
+      130,
+      160,
+      600
+    ]
+  },
+  "actions": {
+    "stretch": {
+      "id": "stretch",
+      "loop": false,
+      "sourceCanvas": [
+        1254,
+        1254
+      ],
+      "feetAnchor": [
+        627,
+        1200
+      ],
+      "rearContact": [
+        528.895,
+        1163.747
+      ],
+      "cycleDurationMs": 3600,
+      "frameCount": 18,
+      "startPose": "approved-idle-registered",
+      "endPose": "approved-idle-registered",
+      "frames": [
+        {
+          "file": "stretch/001.png",
+          "mobileFile": "mobile/001.webp",
+          "durationMs": 150,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/002.png",
+          "mobileFile": "mobile/002.webp",
+          "durationMs": 150,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/003.png",
+          "mobileFile": "mobile/003.webp",
+          "durationMs": 130,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/004.png",
+          "mobileFile": "mobile/004.webp",
+          "durationMs": 120,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/005.png",
+          "mobileFile": "mobile/005.webp",
+          "durationMs": 150,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/006.png",
+          "mobileFile": "mobile/006.webp",
+          "durationMs": 180,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/007.png",
+          "mobileFile": "mobile/007.webp",
+          "durationMs": 200,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/008.png",
+          "mobileFile": "mobile/008.webp",
+          "durationMs": 220,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/009.png",
+          "mobileFile": "mobile/009.webp",
+          "durationMs": 260,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/010.png",
+          "mobileFile": "mobile/010.webp",
+          "durationMs": 280,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/011.png",
+          "mobileFile": "mobile/011.webp",
+          "durationMs": 250,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/012.png",
+          "mobileFile": "mobile/012.webp",
+          "durationMs": 180,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/013.png",
+          "mobileFile": "mobile/013.webp",
+          "durationMs": 160,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/014.png",
+          "mobileFile": "mobile/014.webp",
+          "durationMs": 150,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/015.png",
+          "mobileFile": "mobile/015.webp",
+          "durationMs": 130,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/016.png",
+          "mobileFile": "mobile/016.webp",
+          "durationMs": 130,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/017.png",
+          "mobileFile": "mobile/017.webp",
+          "durationMs": 160,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        },
+        {
+          "file": "stretch/018.png",
+          "mobileFile": "mobile/018.webp",
+          "durationMs": 600,
+          "sourceAnchor": [
+            627,
+            1200
+          ],
+          "rearContact": [
+            528.895,
+            1163.747
+          ]
+        }
+      ]
+    }
+  }
+}

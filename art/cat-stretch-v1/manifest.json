@@ -1,0 +1,3227 @@
+{
+  "version": "stretch-v1",
+  "cats": [
+    {
+      "id": "cat-01",
+      "name": "喵呜",
+      "idle": [
+        {
+          "file": "resources/cat-01/preview-idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-01/preview-idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-01/preview-idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-01/preview-idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-01/preview-idle/063.webp",
+          "durationMs": 150
+        }
+      ],
+      "previewDisplayScale": 1.3888888888888888,
+      "previewAnchor": [
+        483.44,
+        1200
+      ],
+      "stretch": {
+        "id": "stretch",
+        "loop": false,
+        "sourceCanvas": [
+          1254,
+          1254
+        ],
+        "feetAnchor": [
+          627,
+          1200
+        ],
+        "rearContact": [
+          500.0,
+          1191.36
+        ],
+        "cycleDurationMs": 3600,
+        "frameCount": 18,
+        "startPose": "approved-idle-registered",
+        "endPose": "approved-idle-registered",
+        "frames": [
+          {
+            "file": "resources/cat-01/stretch/001.png",
+            "mobileFile": "mobile/001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/001.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/002.png",
+            "mobileFile": "mobile/002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/002.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/003.png",
+            "mobileFile": "mobile/003.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/003.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/004.png",
+            "mobileFile": "mobile/004.webp",
+            "durationMs": 120,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/004.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/005.png",
+            "mobileFile": "mobile/005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/005.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/006.png",
+            "mobileFile": "mobile/006.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/006.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/007.png",
+            "mobileFile": "mobile/007.webp",
+            "durationMs": 200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/007.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/008.png",
+            "mobileFile": "mobile/008.webp",
+            "durationMs": 220,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/008.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/009.png",
+            "mobileFile": "mobile/009.webp",
+            "durationMs": 260,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/009.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/010.png",
+            "mobileFile": "mobile/010.webp",
+            "durationMs": 280,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/010.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/011.png",
+            "mobileFile": "mobile/011.webp",
+            "durationMs": 250,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/011.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/012.png",
+            "mobileFile": "mobile/012.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/012.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/013.png",
+            "mobileFile": "mobile/013.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/013.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/014.png",
+            "mobileFile": "mobile/014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/014.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/015.png",
+            "mobileFile": "mobile/015.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/015.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/016.png",
+            "mobileFile": "mobile/016.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/016.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/017.png",
+            "mobileFile": "mobile/017.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/017.webp"
+          },
+          {
+            "file": "resources/cat-01/stretch/018.png",
+            "mobileFile": "mobile/018.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              500.0,
+              1191.36
+            ],
+            "previewFile": "resources/cat-01/mobile/018.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cat-02",
+      "name": "芒果",
+      "idle": [
+        {
+          "file": "resources/cat-02/preview-idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-02/preview-idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-02/preview-idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-02/preview-idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-02/preview-idle/063.webp",
+          "durationMs": 150
+        }
+      ],
+      "previewDisplayScale": 1.60997273081418,
+      "previewAnchor": [
+        481.70939798683696,
+        1196.335656213705
+      ],
+      "stretch": {
+        "id": "stretch",
+        "loop": false,
+        "sourceCanvas": [
+          1254,
+          1254
+        ],
+        "feetAnchor": [
+          627,
+          1200
+        ],
+        "rearContact": [
+          510.902,
+          1188.882
+        ],
+        "cycleDurationMs": 3600,
+        "frameCount": 18,
+        "startPose": "approved-idle-registered",
+        "endPose": "approved-idle-registered",
+        "frames": [
+          {
+            "file": "resources/cat-02/stretch/001.png",
+            "mobileFile": "mobile/001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/001.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/002.png",
+            "mobileFile": "mobile/002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/002.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/003.png",
+            "mobileFile": "mobile/003.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/003.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/004.png",
+            "mobileFile": "mobile/004.webp",
+            "durationMs": 120,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/004.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/005.png",
+            "mobileFile": "mobile/005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/005.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/006.png",
+            "mobileFile": "mobile/006.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/006.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/007.png",
+            "mobileFile": "mobile/007.webp",
+            "durationMs": 200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/007.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/008.png",
+            "mobileFile": "mobile/008.webp",
+            "durationMs": 220,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/008.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/009.png",
+            "mobileFile": "mobile/009.webp",
+            "durationMs": 260,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/009.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/010.png",
+            "mobileFile": "mobile/010.webp",
+            "durationMs": 280,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/010.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/011.png",
+            "mobileFile": "mobile/011.webp",
+            "durationMs": 250,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/011.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/012.png",
+            "mobileFile": "mobile/012.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/012.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/013.png",
+            "mobileFile": "mobile/013.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/013.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/014.png",
+            "mobileFile": "mobile/014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/014.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/015.png",
+            "mobileFile": "mobile/015.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/015.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/016.png",
+            "mobileFile": "mobile/016.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/016.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/017.png",
+            "mobileFile": "mobile/017.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/017.webp"
+          },
+          {
+            "file": "resources/cat-02/stretch/018.png",
+            "mobileFile": "mobile/018.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              510.902,
+              1188.882
+            ],
+            "previewFile": "resources/cat-02/mobile/018.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cat-03",
+      "name": "橘宝",
+      "idle": [
+        {
+          "file": "resources/cat-03/preview-idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-03/preview-idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-03/preview-idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-03/preview-idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-03/preview-idle/063.webp",
+          "durationMs": 150
+        }
+      ],
+      "previewDisplayScale": 1.261578445811314,
+      "previewAnchor": [
+        478.993627424051,
+        1199.4540735043672
+      ],
+      "stretch": {
+        "id": "stretch",
+        "loop": false,
+        "sourceCanvas": [
+          1254,
+          1254
+        ],
+        "feetAnchor": [
+          627,
+          1200
+        ],
+        "rearContact": [
+          493.261,
+          1183.601
+        ],
+        "cycleDurationMs": 3600,
+        "frameCount": 18,
+        "startPose": "approved-idle-registered",
+        "endPose": "approved-idle-registered",
+        "frames": [
+          {
+            "file": "resources/cat-03/stretch/001.png",
+            "mobileFile": "mobile/001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/001.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/002.png",
+            "mobileFile": "mobile/002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/002.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/003.png",
+            "mobileFile": "mobile/003.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/003.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/004.png",
+            "mobileFile": "mobile/004.webp",
+            "durationMs": 120,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/004.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/005.png",
+            "mobileFile": "mobile/005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/005.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/006.png",
+            "mobileFile": "mobile/006.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/006.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/007.png",
+            "mobileFile": "mobile/007.webp",
+            "durationMs": 200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/007.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/008.png",
+            "mobileFile": "mobile/008.webp",
+            "durationMs": 220,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/008.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/009.png",
+            "mobileFile": "mobile/009.webp",
+            "durationMs": 260,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/009.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/010.png",
+            "mobileFile": "mobile/010.webp",
+            "durationMs": 280,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/010.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/011.png",
+            "mobileFile": "mobile/011.webp",
+            "durationMs": 250,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/011.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/012.png",
+            "mobileFile": "mobile/012.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/012.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/013.png",
+            "mobileFile": "mobile/013.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/013.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/014.png",
+            "mobileFile": "mobile/014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/014.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/015.png",
+            "mobileFile": "mobile/015.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/015.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/016.png",
+            "mobileFile": "mobile/016.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/016.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/017.png",
+            "mobileFile": "mobile/017.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/017.webp"
+          },
+          {
+            "file": "resources/cat-03/stretch/018.png",
+            "mobileFile": "mobile/018.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              493.261,
+              1183.601
+            ],
+            "previewFile": "resources/cat-03/mobile/018.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cat-04",
+      "name": "吉吉",
+      "idle": [
+        {
+          "file": "resources/cat-04/preview-idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-04/preview-idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-04/preview-idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-04/preview-idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-04/preview-idle/063.webp",
+          "durationMs": 150
+        }
+      ],
+      "previewDisplayScale": 1.3733233420756839,
+      "previewAnchor": [
+        453.51224968625525,
+        1200
+      ],
+      "stretch": {
+        "id": "stretch",
+        "loop": false,
+        "sourceCanvas": [
+          1254,
+          1254
+        ],
+        "feetAnchor": [
+          627,
+          1200
+        ],
+        "rearContact": [
+          481.911,
+          1182.524
+        ],
+        "cycleDurationMs": 3600,
+        "frameCount": 18,
+        "startPose": "approved-idle-registered",
+        "endPose": "approved-idle-registered",
+        "frames": [
+          {
+            "file": "resources/cat-04/stretch/001.png",
+            "mobileFile": "mobile/001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/001.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/002.png",
+            "mobileFile": "mobile/002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/002.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/003.png",
+            "mobileFile": "mobile/003.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/003.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/004.png",
+            "mobileFile": "mobile/004.webp",
+            "durationMs": 120,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/004.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/005.png",
+            "mobileFile": "mobile/005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/005.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/006.png",
+            "mobileFile": "mobile/006.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/006.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/007.png",
+            "mobileFile": "mobile/007.webp",
+            "durationMs": 200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/007.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/008.png",
+            "mobileFile": "mobile/008.webp",
+            "durationMs": 220,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/008.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/009.png",
+            "mobileFile": "mobile/009.webp",
+            "durationMs": 260,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/009.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/010.png",
+            "mobileFile": "mobile/010.webp",
+            "durationMs": 280,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/010.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/011.png",
+            "mobileFile": "mobile/011.webp",
+            "durationMs": 250,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/011.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/012.png",
+            "mobileFile": "mobile/012.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/012.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/013.png",
+            "mobileFile": "mobile/013.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/013.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/014.png",
+            "mobileFile": "mobile/014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/014.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/015.png",
+            "mobileFile": "mobile/015.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/015.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/016.png",
+            "mobileFile": "mobile/016.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/016.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/017.png",
+            "mobileFile": "mobile/017.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/017.webp"
+          },
+          {
+            "file": "resources/cat-04/stretch/018.png",
+            "mobileFile": "mobile/018.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              481.911,
+              1182.524
+            ],
+            "previewFile": "resources/cat-04/mobile/018.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cat-05",
+      "name": "珍珠",
+      "idle": [
+        {
+          "file": "resources/cat-05/preview-idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-05/preview-idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-05/preview-idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-05/preview-idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-05/preview-idle/063.webp",
+          "durationMs": 150
+        }
+      ],
+      "previewDisplayScale": 1.4447001851588093,
+      "previewAnchor": [
+        481.8264854228038,
+        1181.0519518418178
+      ],
+      "stretch": {
+        "id": "stretch",
+        "loop": false,
+        "sourceCanvas": [
+          1254,
+          1254
+        ],
+        "feetAnchor": [
+          627,
+          1200
+        ],
+        "rearContact": [
+          528.895,
+          1163.747
+        ],
+        "cycleDurationMs": 3600,
+        "frameCount": 18,
+        "startPose": "approved-idle-registered",
+        "endPose": "approved-idle-registered",
+        "frames": [
+          {
+            "file": "resources/cat-05/stretch/001.png",
+            "mobileFile": "mobile/001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/001.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/002.png",
+            "mobileFile": "mobile/002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/002.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/003.png",
+            "mobileFile": "mobile/003.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/003.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/004.png",
+            "mobileFile": "mobile/004.webp",
+            "durationMs": 120,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/004.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/005.png",
+            "mobileFile": "mobile/005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/005.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/006.png",
+            "mobileFile": "mobile/006.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/006.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/007.png",
+            "mobileFile": "mobile/007.webp",
+            "durationMs": 200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/007.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/008.png",
+            "mobileFile": "mobile/008.webp",
+            "durationMs": 220,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/008.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/009.png",
+            "mobileFile": "mobile/009.webp",
+            "durationMs": 260,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/009.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/010.png",
+            "mobileFile": "mobile/010.webp",
+            "durationMs": 280,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/010.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/011.png",
+            "mobileFile": "mobile/011.webp",
+            "durationMs": 250,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/011.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/012.png",
+            "mobileFile": "mobile/012.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/012.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/013.png",
+            "mobileFile": "mobile/013.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/013.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/014.png",
+            "mobileFile": "mobile/014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/014.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/015.png",
+            "mobileFile": "mobile/015.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/015.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/016.png",
+            "mobileFile": "mobile/016.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/016.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/017.png",
+            "mobileFile": "mobile/017.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/017.webp"
+          },
+          {
+            "file": "resources/cat-05/stretch/018.png",
+            "mobileFile": "mobile/018.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              528.895,
+              1163.747
+            ],
+            "previewFile": "resources/cat-05/mobile/018.webp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cat-06",
+      "name": "简州狸花白",
+      "idle": [
+        {
+          "file": "resources/cat-06/preview-idle/001.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/002.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/003.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/004.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/005.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/006.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/007.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/008.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/009.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/010.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/011.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/012.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/013.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/014.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/015.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/016.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/017.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/018.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/019.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/020.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/021.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/022.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/023.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/024.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/025.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/026.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/027.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/028.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/029.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/030.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/031.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/032.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/033.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/034.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/035.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/036.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/037.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/038.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/039.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/040.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/041.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/042.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/043.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/044.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/045.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-06/preview-idle/046.webp",
+          "durationMs": 100
+        },
+        {
+          "file": "resources/cat-06/preview-idle/047.webp",
+          "durationMs": 80
+        },
+        {
+          "file": "resources/cat-06/preview-idle/048.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/049.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/050.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/051.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/052.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/053.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/054.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/055.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/056.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/057.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/058.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/059.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/060.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/061.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/062.webp",
+          "durationMs": 150
+        },
+        {
+          "file": "resources/cat-06/preview-idle/063.webp",
+          "durationMs": 150
+        }
+      ],
+      "previewDisplayScale": 1.4213253467476956,
+      "previewAnchor": [
+        488.55764635603344,
+        1200
+      ],
+      "stretch": {
+        "id": "stretch",
+        "loop": false,
+        "sourceCanvas": [
+          1254,
+          1254
+        ],
+        "feetAnchor": [
+          627,
+          1200
+        ],
+        "rearContact": [
+          504.74,
+          1182.411
+        ],
+        "cycleDurationMs": 3600,
+        "frameCount": 18,
+        "startPose": "approved-idle-registered",
+        "endPose": "approved-idle-registered",
+        "frames": [
+          {
+            "file": "resources/cat-06/stretch/001.png",
+            "mobileFile": "mobile/001.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/001.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/002.png",
+            "mobileFile": "mobile/002.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/002.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/003.png",
+            "mobileFile": "mobile/003.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/003.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/004.png",
+            "mobileFile": "mobile/004.webp",
+            "durationMs": 120,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/004.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/005.png",
+            "mobileFile": "mobile/005.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/005.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/006.png",
+            "mobileFile": "mobile/006.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/006.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/007.png",
+            "mobileFile": "mobile/007.webp",
+            "durationMs": 200,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/007.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/008.png",
+            "mobileFile": "mobile/008.webp",
+            "durationMs": 220,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/008.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/009.png",
+            "mobileFile": "mobile/009.webp",
+            "durationMs": 260,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/009.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/010.png",
+            "mobileFile": "mobile/010.webp",
+            "durationMs": 280,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/010.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/011.png",
+            "mobileFile": "mobile/011.webp",
+            "durationMs": 250,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/011.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/012.png",
+            "mobileFile": "mobile/012.webp",
+            "durationMs": 180,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/012.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/013.png",
+            "mobileFile": "mobile/013.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/013.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/014.png",
+            "mobileFile": "mobile/014.webp",
+            "durationMs": 150,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/014.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/015.png",
+            "mobileFile": "mobile/015.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/015.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/016.png",
+            "mobileFile": "mobile/016.webp",
+            "durationMs": 130,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/016.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/017.png",
+            "mobileFile": "mobile/017.webp",
+            "durationMs": 160,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/017.webp"
+          },
+          {
+            "file": "resources/cat-06/stretch/018.png",
+            "mobileFile": "mobile/018.webp",
+            "durationMs": 600,
+            "sourceAnchor": [
+              627,
+              1200
+            ],
+            "rearContact": [
+              504.74,
+              1182.411
+            ],
+            "previewFile": "resources/cat-06/mobile/018.webp"
+          }
+        ]
+      }
+    }
+  ]
+}
