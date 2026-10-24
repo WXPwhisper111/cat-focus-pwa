@@ -1,3 +1,5 @@
+import './page-headers.css';
+import { createPageHeaders } from './page-headers';
 import { installDialogDismiss } from './dialog-dismiss';
 import { openResidentManager } from './resident-manager';
 import './app-update.css';
@@ -96,6 +98,7 @@ let refreshRevision = 0;
 const stateChannel = 'BroadcastChannel' in window ? new BroadcastChannel('cat-focus-state') : undefined;
 const appUpdate = createAppUpdate({ enabled: import.meta.env.PROD, hasActiveSession: async () => !!(await getActive(db)), canReload: () => applicationReady && !pendingWelcome && !pendingCompletionCount && !document.querySelector('dialog[open]') });
 installDialogDismiss();
+const pageHeaders=createPageHeaders();
 const appUpdateView = createAppUpdateView(appUpdate, () => !!session, {
   canShow: () => applicationReady && !pendingWelcome && !pendingCompletionCount && !document.querySelector('dialog[open]'),
   openSettings: () => { history.replaceState(history.state, '', '#settings-update'); page = 'settings'; render(); },
@@ -266,6 +269,7 @@ function render() {
   if (page === 'focus') focusCat?.element.remove();
   else { focusCat?.destroy(); focusCat = undefined; }
   app.innerHTML = `<main>${notice ? `<div class="toast" role="status">${escapeHtml(notice)}<button id="close-notice" aria-label="关闭提示">×</button></div>` : ''}<div data-update-banner-slot></div>${page === 'focus' ? focusMarkup() : page === 'stats' ? statMarkup() : page === 'room' ? houseMarkup() : page === 'shop' ? '<div id="shop-slot"></div>' : settingsMarkup()}</main><nav><button data-page="focus" class="${page === 'focus' ? 'active' : ''}">${icon('focus-timer')}<span>专注</span></button><button data-page="stats" class="${page === 'stats' ? 'active' : ''}">${icon('bars')}<span>统计</span></button><button data-page="room" class="${page === 'room' || page === 'shop' ? 'active' : ''}">${icon('cat-house')}<span>猫咪小屋</span></button><button data-page="settings" class="${page === 'settings' ? 'active' : ''}">${icon('settings-gear')}<span>设置</span></button></nav>`;
+  pageHeaders.mount(app.querySelector<HTMLElement>('main')!,page);
   installView.mount(); appUpdateView.mount();
   if (page === 'focus' && focusGoal) {
     document.querySelector('#focus-goal-slot')!.append(focusGoal.element);

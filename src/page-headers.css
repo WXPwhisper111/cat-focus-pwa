@@ -1,0 +1,11 @@
+.page-header-surface { position:relative;isolation:isolate; }
+.page-header-backdrop { position:absolute;top:0;left:0;right:0;height:clamp(190px,calc(50vw + 30px),350px);overflow:hidden;z-index:-1;pointer-events:none;user-select:none;background:#f5ede0; }
+.page-header-art { position:absolute;left:-8px;right:-8px;top:-8px;filter:blur(2px); }
+.page-header-art img { display:block;width:100%;height:auto;image-rendering:pixelated; }
+.page-header-backdrop[data-failed=true] .page-header-art { display:none; }
+.page-header-tint,.page-header-wash,.page-header-fade { position:absolute;inset:0; }
+.page-header-tint { background:rgba(245,237,224,.12); }
+.page-header-wash { background:linear-gradient(90deg,rgba(245,237,224,.4),rgba(245,237,224,.24) 45%,rgba(245,237,224,.05) 78%,transparent); }
+.page-header-fade { background:linear-gradient(180deg,transparent 38%,rgba(245,237,224,.19) 56%,rgba(245,237,224,.66) 76%,#f5ede0 91%); }
+.page-header-surface .hero .eyebrow,.page-header-surface .stats-header .eyebrow { color:#95592e; }
+.page-header-surface .hero p,.page-header-surface .stats-header p { color:#69523f; }

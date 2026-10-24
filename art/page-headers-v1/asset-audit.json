@@ -1,0 +1,50 @@
+{
+  "assets": [
+    {
+      "page": "focus",
+      "runtime": "./page-headers-v1/header_focus.webp",
+      "bytes": 1174676,
+      "sha256": "79bf0bb20f921f32ee1ab4ca7f8af570d9958eba1e7b3591df61f61fff5fa810",
+      "size": [
+        1536,
+        768
+      ],
+      "losslessMatch": true
+    },
+    {
+      "page": "stats",
+      "runtime": "./page-headers-v1/header_stats.webp",
+      "bytes": 1287664,
+      "sha256": "748c10736b6dd4c537772edeb9a7f0e54d81395bb9f8dbde85b09659c773f5bd",
+      "size": [
+        1536,
+        768
+      ],
+      "losslessMatch": true
+    },
+    {
+      "page": "house",
+      "runtime": "./page-headers-v1/header_house.webp",
+      "bytes": 1276198,
+      "sha256": "eb77449a97ac037837b731f374f62899404535f1261e7ab369cf893ae8e39ae8",
+      "size": [
+        1536,
+        768
+      ],
+      "losslessMatch": true
+    },
+    {
+      "page": "settings",
+      "runtime": "./page-headers-v1/header_settings.webp",
+      "bytes": 1221318,
+      "sha256": "07bedee1862d6b5272f44ee66bb97c4347c3ed79c9e179223bbae4ac5d53a61d",
+      "size": [
+        1536,
+        768
+      ],
+      "losslessMatch": true
+    }
+  ],
+  "runtimeBytes": 4959856,
+  "originalPngBytes": 6181410
+}

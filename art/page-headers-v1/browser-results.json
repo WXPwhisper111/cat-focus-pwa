@@ -1,0 +1,100 @@
+{
+  "engine": "Isolated headless Edge",
+  "version": "155.0.4283.62",
+  "realPhone": false,
+  "results": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 690
+      },
+      "passed": true,
+      "checks": [
+        "all four backgrounds decode",
+        "sharp text and stats cat",
+        "no horizontal overflow",
+        "background visibility does not move titles",
+        "navigation and timer controls work"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "passed": true,
+      "checks": [
+        "all four backgrounds decode",
+        "sharp text and stats cat",
+        "no horizontal overflow",
+        "background visibility does not move titles",
+        "navigation and timer controls work"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "all four backgrounds decode",
+        "sharp text and stats cat",
+        "no horizontal overflow",
+        "background visibility does not move titles",
+        "navigation and timer controls work"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 860
+      },
+      "passed": true,
+      "checks": [
+        "all four backgrounds decode",
+        "sharp text and stats cat",
+        "no horizontal overflow",
+        "background visibility does not move titles",
+        "navigation and timer controls work"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "passed": true,
+      "checks": [
+        "all four backgrounds decode",
+        "sharp text and stats cat",
+        "no horizontal overflow",
+        "background visibility does not move titles",
+        "navigation and timer controls work"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "passed": true,
+      "checks": [
+        "all four backgrounds decode",
+        "sharp text and stats cat",
+        "no horizontal overflow",
+        "background visibility does not move titles",
+        "navigation and timer controls work"
+      ]
+    },
+    {
+      "scenario": "background request failure retains text, navigation and timer",
+      "passed": true
+    },
+    {
+      "scenario": "production worker release and four media cache entries",
+      "version": "28f22149f567",
+      "passed": true
+    }
+  ]
+}

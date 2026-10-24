@@ -1,0 +1,108 @@
+{
+  "version": "page-headers-v1-revised",
+  "designDecision": "Clear master art; blur, text, tint and fade are preview-only layers.",
+  "composition": "Continuous room environment across full width; left side simplified, not blank.",
+  "applicationModified": false,
+  "githubPush": false,
+  "assets": [
+    {
+      "page": "focus",
+      "png": "header_focus.png",
+      "webp": "header_focus.webp",
+      "canvas": [
+        1536,
+        768
+      ],
+      "opaque": true,
+      "nativeCanvas": [
+        1774,
+        887
+      ],
+      "adaptation": "nearest-neighbor resize",
+      "source": "sources/header_focus_revised.png",
+      "sourceSha256": "42a300c56f77fa40c57202031e3b0f4d67f21ec66373c2bb958452d3c3ccadb6",
+      "pngSha256": "a6430df5008baa311024134b8e1e3d317416d692c2428f9a45310dbb2247a15e",
+      "webpSha256": "79bf0bb20f921f32ee1ab4ca7f8af570d9958eba1e7b3591df61f61fff5fa810",
+      "pngBytes": 1452557,
+      "webpBytes": 1174676
+    },
+    {
+      "page": "stats",
+      "png": "header_stats.png",
+      "webp": "header_stats.webp",
+      "canvas": [
+        1536,
+        768
+      ],
+      "opaque": true,
+      "nativeCanvas": [
+        1774,
+        887
+      ],
+      "adaptation": "nearest-neighbor resize",
+      "source": "sources/header_stats_revised.png",
+      "sourceSha256": "a6abcabd679454dc4754b9d08af3dded048cdac3db89209c5884d0aa4e9719ef",
+      "pngSha256": "29d522aa334e8df4c3bee833226e31c41d20546fc8ef3fd7acef243be79330ed",
+      "webpSha256": "748c10736b6dd4c537772edeb9a7f0e54d81395bb9f8dbde85b09659c773f5bd",
+      "pngBytes": 1607836,
+      "webpBytes": 1287664
+    },
+    {
+      "page": "house",
+      "png": "header_house.png",
+      "webp": "header_house.webp",
+      "canvas": [
+        1536,
+        768
+      ],
+      "opaque": true,
+      "nativeCanvas": [
+        1774,
+        887
+      ],
+      "adaptation": "nearest-neighbor resize",
+      "source": "sources/header_house_revised.png",
+      "sourceSha256": "a5016ec69b8856b60e4ed63607f19af652acedf1070d1d981ddb4af0f20f6d61",
+      "pngSha256": "e9afe6d78fdabba6c397d748e15396661637152ce7771aa1678ad4bd44aeb5b1",
+      "webpSha256": "eb77449a97ac037837b731f374f62899404535f1261e7ab369cf893ae8e39ae8",
+      "pngBytes": 1584606,
+      "webpBytes": 1276198
+    },
+    {
+      "page": "settings",
+      "png": "header_settings.png",
+      "webp": "header_settings.webp",
+      "canvas": [
+        1536,
+        768
+      ],
+      "opaque": true,
+      "nativeCanvas": [
+        1774,
+        887
+      ],
+      "adaptation": "nearest-neighbor resize",
+      "source": "sources/header_settings_revised.png",
+      "sourceSha256": "68c81eb6f64c5f19d054dbe67f5d2b93b97da84c13425339663ffc0f0b84b7f4",
+      "pngSha256": "f3f00e1d97c97e7d47ab94785ed3ab6fced9fd4d61312424ace0e60fa2d57d92",
+      "webpSha256": "07bedee1862d6b5272f44ee66bb97c4347c3ed79c9e179223bbae4ac5d53a61d",
+      "pngBytes": 1536411,
+      "webpBytes": 1221318
+    }
+  ],
+  "preview": {
+    "file": "preview.html",
+    "widths": [
+      390,
+      430
+    ],
+    "blurCssPx": 2,
+    "globalCreamTint": 0.12,
+    "leftWash": "40% at left, 24% at 45%, 5% at 78%, transparent at right",
+    "bottomFade": "transparent at 38%, cream 19% at 56%, cream 66% at 76%, opaque at 91%",
+    "textColor": "#49372f",
+    "subtitleColor": "#69523f",
+    "statsCat": "preview-assets/stats-cat.webp",
+    "statsCatIsSeparate": true
+  }
+}

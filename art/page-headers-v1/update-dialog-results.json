@@ -1,0 +1,15 @@
+{
+  "engine": "Edge headless",
+  "viewport": {
+    "width": 320,
+    "height": 690
+  },
+  "simulatedUpdateState": true,
+  "passed": true,
+  "checks": [
+    "five merged user release notes",
+    "update modal backdrop exception",
+    "update action remains inside viewport",
+    "later closes safely"
+  ]
+}
