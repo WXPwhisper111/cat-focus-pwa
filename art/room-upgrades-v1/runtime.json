@@ -1,0 +1,274 @@
+{
+  "version": "room-upgrades-v1",
+  "furniture": {
+    "bed": {
+      "file": "./room-upgrades-v1/zone_sleep_bed_advanced.webp",
+      "rect": [
+        0,
+        492,
+        288,
+        216
+      ]
+    },
+    "rug": {
+      "file": "./room-upgrades-v1/zone_activity_rug_advanced.webp",
+      "rect": [
+        256,
+        536,
+        512,
+        256
+      ]
+    },
+    "foodBowl": {
+      "file": "./room-upgrades-v1/zone_food_bowl_advanced.webp",
+      "rect": [
+        755,
+        607,
+        128,
+        96
+      ]
+    },
+    "waterBowl": {
+      "file": "./room-upgrades-v1/zone_water_bowl_advanced.webp",
+      "rect": [
+        850,
+        607,
+        128,
+        96
+      ]
+    },
+    "scratcher": {
+      "file": "./room-upgrades-v1/zone_play_scratcher_advanced.webp",
+      "rect": [
+        772,
+        440,
+        224,
+        224
+      ]
+    }
+  },
+  "curtains": {
+    "rect": [
+      36.0,
+      28.0,
+      432.0,
+      312.0
+    ],
+    "canvas": [
+      576,
+      416
+    ],
+    "frames": [
+      {
+        "file": "./room-upgrades-v1/curtains/04c34bb87f7c38a4e3c1d602cada3310dbe77d9c4d7e28e6c0fc7ddc95011962.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/5e5cac3f88d21c4266d5f6286b2403f8274a3440481620fe5ad957b60a27580b.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/18b00f8fec7971bdfc1f43aedd9508d2376bb89fc42272699b9f6defecb0cc10.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/1ac0a518f43f2270286c9c7f3b8fb31877816d6263199f7e655dfda2569926fe.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/fd43acd28d0ece53758655e6088b8c13e04cb5f2d654b643dfcc3ee83f0c03ac.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/e2161b4d244d885b81d52ba010f59d6dddf405d53d00fe25cacee2da920bb9ce.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/0bedda71a1a66714f022d94497591af99baa78f8c0c76ca1d728f78a879296df.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/443c48790782972b1b3a678e565c1119635a40a31207ecef848545dbaf214ab9.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/519c654e3b4556d10cbd15e0489fcc0c8becfbad05fb7b12e6ce802dbddb4e78.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/5b0342cc217a3f067dc5e61541b250e16baafb5a282032540231a7b4e25c1f8b.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/b9183ba3e826b637becc7c263365822f27ec07070b3f2af595544d5a9d8ef28a.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/1b5e11501ef1fe75805e67bbb31a752f7e8d8365da0eb49589068521108c66f1.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/ee731c4aebb173bdcd10444cf32299e92f57b490757a2c3176064bf8c3ed2331.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/2f7095624b2936a1e9c95c2f1a0095cbe809031000a9dd516812bc98b598b7a6.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/7f837aa28842c379a580779ad4a6e9cb05a3df0a7239e142d7603a6af7a34b2c.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/8b98a9f83a6cefa3ece32312f42c0efcda2b7110a9988614b5d2e1fefc31fbd7.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/129a534ae2c2e3536ea3aed73e9fdf36e7af05664a9b8d92356984c9aee7e09c.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/1a98db82ce56cfc6c08e122ccd6b0296e399255610c1ebf6a3de92b92b7f0b4d.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/c2a4df964b07167452620a930ab9ed24e889019130390b7d5a3a7c2778c0ef9f.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/9e0efe2b76b65fad89a9c5c73113a06b673e8013888294458157e0c2217756db.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/f2734be0be68509b1d5f31f8bd84946e273c4e670b7e5180230364b2651bade6.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/2b57d7b7ffea92ff580ecf7776d0868724e8a5e9c1ce40ac357429bf1ff78159.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/bf51a3099ce9e7cb86d7bc39659ad8c06ab48c7cb1f00574e0bbaf842d44a790.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/ca607b81d00f0e55951c237a7cee1d89fb25ae85785109651e017f594f3d9312.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/86a1444c6bf59e839b3ff139dc84588533af5e2fb506201db4335a682c992f2f.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/eda3e33c6c8480a0b13717f391394d91e0e9dd1ba39445b978845b740064ae55.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/cce7679b7ea4aa229c2d0ceaaf47757ca6dd5cc58d49a289f4a168bf3038451d.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/2ac9d88cd126fd3c559c46aa0c3152d5d2d70652cd9f0151aa131482fb441888.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/614af3ad4d82fcb97bf3f4c76714325f301b3463a8eaa6e6a17ea78138473614.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/0cf29da95dd63d8aea7f3c0a37dab8362fe5cba50de207172a53b31cf555d1df.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/8aa096b7e8c11b704d6cbb8a169085177de3001386a0d73332205812ed9b4d17.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/32fb401b7b502ba2ca46ac1bfb8ea1516ca4a362249f59476785cc521fd7d7d6.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/3c0d91b0fefc8a9c4c9390b772be2dea75762d574fff571804da709b8333577d.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/f2e71d3926dbdd0839ea9e05ee47a7a33afa67849a8884db8442547e342c77cc.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/4da19911919c1f28ba0b5c5208fa23e9d71d39ad0a3b0df4b13a9e0d272ada21.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/08b26ec6ea7777d3232479faf4ae734196c6233a409024b274451676e55a8b55.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/06d58a06752489103c5aa821e83ce2a2c7e4e8660112bbc9f7142d4793770bfe.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/c44e13a6556c030f9d3c38df1101a529d9eefc60cc8bfeed2326b8c6c7e1d4f1.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/5dea79968f171e1a40c5cdec1a0015ebde7519bab552431ecad6b68efe1181d1.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/9f718e4b81da16520e7778cdf54b3459e511b3fe5c8b0827b2e2334cb8e576e7.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/f70f9cf0ae0fb901adc3efc92ba5e0f40d03fef91ff92c86a02f659857f3233d.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/cb6f682f6e3ddb3c2597fabd8b03e4caab211baeb3f938eff88f9b76f895ae0d.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/282db24c8fce7962541ccce1f9b46fe30bf7de7c0561389c9013522a47f733b2.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/d320980788bb97413f35a93a1ed9cec8c433851307893058633bb49608757432.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/06cb1efffa06c5c1a7e7a0c585b13ef3285bd68a239f50c9aaab07a59e955bbb.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/ca996088cf608068666143131b0f2c333cfec0c5ec57ae162ff579abd4a015a5.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/e569186bcece814613081a764a67c7aa8263cdfc558efcb16ab6b64bf2150bd0.webp",
+        "durationMs": 125
+      },
+      {
+        "file": "./room-upgrades-v1/curtains/40ed6eac3c801dd4afe980a72473bb6c23064663eae0cd1e13beada78be8a30a.webp",
+        "durationMs": 125
+      }
+    ],
+    "fallback": "./room-upgrades-v1/curtains-static.webp"
+  },
+  "plant": {
+    "file": "./room-upgrades-v1/plant.webp",
+    "rect": [
+      31.61212341780802,
+      373.6946472019465,
+      159.68856447688566,
+      199.61070559610707
+    ],
+    "potBaseAnchor": [
+      245.5191011235955,
+      594.0
+    ]
+  },
+  "sleepOffsetRoom": [
+    0,
+    -12
+  ]
+}

@@ -1,4 +1,4 @@
-import assets from '../public/room-upgrades-v1/manifest.json';
+import assets from '../art/room-upgrades-v1/runtime.json';
 import layout from '../art/room-v0.1/scene-calibration/layout.json';
 import { defaultCommerce, getProduct, type FurnitureInventory, type FurnitureZone } from './shop';
 import { furnitureAnchors } from './room-anchors';

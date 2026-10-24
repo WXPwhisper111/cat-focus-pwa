@@ -68,5 +68,6 @@ for package in packages:
         assert sum(f['durationMs'] for f in frames) == manifest['cycleDurationMs'] == 6000
         data['curtains'] = {'rect': manifest['roomRect'], 'canvas': [576,416], 'frames': frames, 'fallback': export(package, manifest['fallback'], 'curtains-static.webp', True)}
 (runtime / 'manifest.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+(archive / 'runtime.json').write_text(json.dumps(data, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 (archive / 'asset-audit.json').write_text(json.dumps({'assets': audit, 'runtimeBytes': sum(p.stat().st_size for p in runtime.rglob('*') if p.is_file())}, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
 print('Exported', len(audit), 'time positions/assets;', len(list(runtime.rglob('*.webp'))), 'unique runtime WebPs')

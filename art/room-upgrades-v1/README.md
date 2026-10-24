@@ -11,6 +11,7 @@
 - `src/room-furnishings.ts`、`src/room-scene.ts`、`src/room-behavior.ts`：装备快照决定图层和行为可用性；升级猫窝睡觉目标上移 12 个逻辑像素，其他接触点和基础款不变。装备快照变化清理旧场景任务后重建，防止保留旧家具动作占用；正常同装备渲染不重建。
 - `src/room-curtains.ts`：一条可取消环境 RAF、真实 48×125ms 时长、只预加载下一帧；后台/切页/销毁清理，减少动态效果或加载错误回退静态窗帘。猫咪继续使用原播放器与行为执行器。
 - `scripts/export-room-upgrades.py`、`public/room-upgrades-v1/`：从归档的正式无损 WebP 导出五件家具、盆栽及 576×416 窗帘衍生帧，按内容哈希识别相同帧，时间位置和时长保留。
+- `runtime.json` 为发布清单的相同编译镜像，避免开发服务器直接导入 public 文件的警告；运行素材 URL 和数据内容保持一致。
 - `scripts/generate-sw.mjs`：用新清单明确选取运行资源并加入原有可选媒体机制；沿用现有缓存/更新策略和 100MB 构建门禁。`release-notes.json` 维护五条本轮用户说明。
 - 测试改动：`tests/room-upgrades.test.ts` 新增；`categories/category-ui/shop/shop-ui/room-behavior/distribution` 等测试补充行为及相应新预期；`adoption-ui/house-ui` 明确区分猫咪播放器与新增的一条窗帘环境任务，仍检查离页任务归零；统计图标断言改为货币图标。未删除已有测试。
 

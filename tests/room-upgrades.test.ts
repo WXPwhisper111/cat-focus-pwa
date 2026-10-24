@@ -17,6 +17,7 @@ import audit from '../art/room-upgrades-v1/asset-audit.json';
 const flush=async()=>{for(let i=0;i<12;i++)await Promise.resolve();};
 afterEach(()=>{vi.restoreAllMocks();vi.unstubAllGlobals();document.body.replaceChildren();});
 it('ships exact approved runtime hashes, real 48 frame timings, alpha WebP and retained source masters',()=>{
+  expect(roomUpgradeAssets).toEqual(JSON.parse(readFileSync('public/room-upgrades-v1/manifest.json','utf8')));
   expect(roomUpgradeAssets.curtains.frames).toHaveLength(48);expect(roomUpgradeAssets.curtains.frames.reduce((n,f)=>n+f.durationMs,0)).toBe(6000);
   expect(roomUpgradeAssets.curtains.canvas).toEqual([576,416]);
   for(const item of audit.assets){const bytes=readFileSync('public/'+item.runtime.slice(2));expect(createHash('sha256').update(bytes).digest('hex')).toBe(item.sha256);expect(bytes.toString('ascii',0,4)).toBe('RIFF');expect(readFileSync(item.source).length).toBeGreaterThan(0);}
