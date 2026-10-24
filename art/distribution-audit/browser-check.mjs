@@ -22,4 +22,3 @@ try{
  const raw=await(await p.request.get(base+'/sw.js')).text();const config=JSON.parse(raw.split('const CONFIG = ')[1].split(';\n')[0]);assert.equal(config.media.filter(a=>a.startsWith('./page-headers-v1/')).length,4);assert.equal(config.release.id,release.id);results.push({scenario:'production worker release and four media cache entries',version:config.version,passed:true});await pwa.close();
 }finally{await writeFile(new URL('./browser-results.json',import.meta.url),JSON.stringify({engine:'Isolated headless Edge',version:browser.version(),realPhone:false,results},null,2));await browser.close();}
 console.log(JSON.stringify(results));
-
