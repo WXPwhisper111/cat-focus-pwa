@@ -1,0 +1,312 @@
+{
+  "version": "window-curtains-breeze-v1",
+  "loop": true,
+  "frameCount": 48,
+  "cycleDurationMs": 6000,
+  "sourceCanvas": [
+    1024,
+    768
+  ],
+  "canvas": [
+    1152,
+    832
+  ],
+  "sourcePasteOffset": [
+    64,
+    32
+  ],
+  "fixedSourceRows": [
+    0,
+    150
+  ],
+  "hangAnchors": [
+    [
+      154,
+      132
+    ],
+    [
+      209,
+      132
+    ],
+    [
+      264,
+      132
+    ],
+    [
+      319,
+      132
+    ],
+    [
+      829,
+      132
+    ],
+    [
+      884,
+      132
+    ],
+    [
+      939,
+      132
+    ],
+    [
+      994,
+      132
+    ]
+  ],
+  "roomRect": [
+    36.0,
+    28.0,
+    432.0,
+    312.0
+  ],
+  "fallback": "window_curtains_static.webp",
+  "maximumSourceDisplacement": [
+    20,
+    4
+  ],
+  "rightDelayMs": 600,
+  "keyPoseRole": "AI-designed breeze silhouette reference; local inbetweens preserve original cloth colours and fixed hardware",
+  "frames": [
+    {
+      "file": "png/breeze_001.png",
+      "mobileFile": "webp/breeze_001.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_002.png",
+      "mobileFile": "webp/breeze_002.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_003.png",
+      "mobileFile": "webp/breeze_003.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_004.png",
+      "mobileFile": "webp/breeze_004.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_005.png",
+      "mobileFile": "webp/breeze_005.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_006.png",
+      "mobileFile": "webp/breeze_006.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_007.png",
+      "mobileFile": "webp/breeze_007.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_008.png",
+      "mobileFile": "webp/breeze_008.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_009.png",
+      "mobileFile": "webp/breeze_009.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_010.png",
+      "mobileFile": "webp/breeze_010.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_011.png",
+      "mobileFile": "webp/breeze_011.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_012.png",
+      "mobileFile": "webp/breeze_012.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_013.png",
+      "mobileFile": "webp/breeze_013.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_014.png",
+      "mobileFile": "webp/breeze_014.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_015.png",
+      "mobileFile": "webp/breeze_015.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_016.png",
+      "mobileFile": "webp/breeze_016.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_017.png",
+      "mobileFile": "webp/breeze_017.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_018.png",
+      "mobileFile": "webp/breeze_018.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_019.png",
+      "mobileFile": "webp/breeze_019.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_020.png",
+      "mobileFile": "webp/breeze_020.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_021.png",
+      "mobileFile": "webp/breeze_021.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_022.png",
+      "mobileFile": "webp/breeze_022.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_023.png",
+      "mobileFile": "webp/breeze_023.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_024.png",
+      "mobileFile": "webp/breeze_024.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_025.png",
+      "mobileFile": "webp/breeze_025.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_026.png",
+      "mobileFile": "webp/breeze_026.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_027.png",
+      "mobileFile": "webp/breeze_027.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_028.png",
+      "mobileFile": "webp/breeze_028.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_029.png",
+      "mobileFile": "webp/breeze_029.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_030.png",
+      "mobileFile": "webp/breeze_030.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_031.png",
+      "mobileFile": "webp/breeze_031.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_032.png",
+      "mobileFile": "webp/breeze_032.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_033.png",
+      "mobileFile": "webp/breeze_033.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_034.png",
+      "mobileFile": "webp/breeze_034.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_035.png",
+      "mobileFile": "webp/breeze_035.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_036.png",
+      "mobileFile": "webp/breeze_036.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_037.png",
+      "mobileFile": "webp/breeze_037.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_038.png",
+      "mobileFile": "webp/breeze_038.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_039.png",
+      "mobileFile": "webp/breeze_039.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_040.png",
+      "mobileFile": "webp/breeze_040.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_041.png",
+      "mobileFile": "webp/breeze_041.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_042.png",
+      "mobileFile": "webp/breeze_042.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_043.png",
+      "mobileFile": "webp/breeze_043.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_044.png",
+      "mobileFile": "webp/breeze_044.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_045.png",
+      "mobileFile": "webp/breeze_045.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_046.png",
+      "mobileFile": "webp/breeze_046.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_047.png",
+      "mobileFile": "webp/breeze_047.webp",
+      "durationMs": 125
+    },
+    {
+      "file": "png/breeze_048.png",
+      "mobileFile": "webp/breeze_048.webp",
+      "durationMs": 125
+    }
+  ],
+  "appIntegrated": false
+}

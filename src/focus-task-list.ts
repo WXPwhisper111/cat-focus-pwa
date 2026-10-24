@@ -11,6 +11,7 @@ export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<voi
     <form class="focus-task-add"><label for="new-focus-task">接下来想做什么？</label><div><input id="new-focus-task" autocomplete="off" placeholder="写下一件小事…" aria-describedby="task-title-help"/><button class="primary" type="submit">添加</button></div><small id="task-title-help">最多 100 个字符；相同标题可以重复添加。</small></form>
     <div class="focus-task-selection"><p data-selection-note></p><button type="button" data-selection-clear>清除选择，自由专注</button></div><p class="focus-task-feedback" role="status" aria-live="polite"></p><div class="focus-task-scroll"><h3>未完成 <span data-pending-count></span></h3><ul data-pending-list aria-label="未完成任务"></ul><details><summary>已完成 <span data-completed-count></span></summary><ul data-completed-list aria-label="已完成任务"></ul></details></div>`;
   document.body.append(dialog);
+  dialog.querySelector('[data-list-close]')!.setAttribute('autofocus','');
   const viewport=window.visualViewport;
   const resize=()=>{if(!dialog.open)return;const height=viewport?.height||window.innerHeight;dialog.style.setProperty('--task-available-height',`${height}px`);dialog.style.setProperty('--task-keyboard-inset',`${Math.max(0,window.innerHeight-height-(viewport?.offsetTop||0))}px`);};
   window.addEventListener('resize',resize);viewport?.addEventListener('resize',resize);viewport?.addEventListener('scroll',resize);
@@ -76,13 +77,13 @@ export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<voi
     }
     if(restoreEditor){const field=dialog.querySelector<HTMLInputElement>('.focus-task-editor input');field?.focus({preventScroll:true});if(field&&selection)field.setSelectionRange(selection[0],selection[1]);}
   }
-  function rowFocus(id: string) { dialog.querySelector<HTMLInputElement>(`[data-task-id="${id}"] .focus-task-editor input`)?.focus(); }
+  function rowFocus(id: string) { const editor=dialog.querySelector<HTMLElement>(`[data-task-id="${id}"] .focus-task-editor`); if(editor){editor.tabIndex=-1;editor.focus({preventScroll:true});} }
   form.onsubmit=event=>{event.preventDefault();const title=input.value;void run(async()=>{await addFocusTask(db,title);input.value='';});};
   async function open() {
     if (destroyed || document.querySelector('dialog[open]')) return;
     const revision = ++openRevision;
     returnFocus=document.activeElement instanceof HTMLElement ? document.activeElement : null;
-    deleting=null;feedback.textContent='';dialog.showModal(); resize(); input.focus();
+    deleting=null;feedback.textContent='';dialog.showModal(); resize(); dialog.querySelector<HTMLButtonElement>('[data-list-close]')!.focus({preventScroll:true});
     try { const loaded=await getFocusTasks(db);if(!destroyed && dialog.open && revision===openRevision){tasks=loaded;renderRows();} } catch(error) { if(!destroyed && dialog.open && revision===openRevision)feedback.textContent=`无法读取清单：${(error as Error).message}`; }
   }
   dialog.querySelector<HTMLButtonElement>('[data-selection-clear]')!.onclick=()=>{if(onSelect&&!locked)void run(async()=>{await onSelect(null);dialog.close();});};

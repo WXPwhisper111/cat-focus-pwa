@@ -5,11 +5,14 @@ import { behaviorPlan } from '../src/room-behavior-config';
 import { getInteractionClip } from '../src/cat-interactions';
 import type { AnimationPoint } from '../src/cat-animation';
 import type { PlayOptions } from '../src/cat-player';
+import { catDefinitions } from '../src/cat-definition';
+import { defaultCommerce, shopProducts } from '../src/shop';
+import { equippedAnchors, furnitureAvailable } from '../src/room-furnishings';
 const ids = ['orange-white', 'cat-02', 'cat-03'];
 const runners: ReturnType<typeof createRoomBehavior>[] = [];
 afterEach(() => { runners.splice(0).forEach(runner => runner.destroy()); });
 const flush = async () => { for (let i = 0; i < 30; i++) await Promise.resolve(); };
-function fixture(roster = ids) {
+function fixture(roster = ids, advanced = false) {
   const ids=roster;
   const homes = new Map<string, AnimationPoint>([[ids[0], [512, 716]], [ids[1], [365, 688]], [ids[2], [659, 688]]]);
   const offscreen=new Set<string>();
@@ -22,9 +25,22 @@ function fixture(roster = ids) {
     stop: vi.fn(id => { pending.delete(id); }), idle: vi.fn(async () => {}),
   };
   const teleport = { move: vi.fn(async (id: string, target: AnimationPoint, _signal: AbortSignal, placed?: () => Promise<void>, resolveTarget?:()=>AnimationPoint) => { port.setFeet(id, resolveTarget?resolveTarget():target); await placed?.(); }), isMoving: () => false, destroy: vi.fn() };
-  const runner = createRoomBehavior(port, { teleport }); runners.push(runner);
+  const inventory=defaultCommerce().inventory;
+  if(advanced)for(const product of shopProducts)if(product.kind==='furniture'&&!product.defaultOwned){inventory.ownedFurnitureIds.push(product.id);inventory.equipped[product.zone]=product.id;}
+  const runner = createRoomBehavior(port, { teleport, anchorDefinitions: equippedAnchors(inventory), equipped: item=>furnitureAvailable(inventory,item) }); runners.push(runner);
   return { port, teleport, runner, offscreen, positions, nodes, pending, played, finish(id = ids[0]) { pending.get(id)?.onComplete?.(); } };
 }
+
+it('all six cats complete each basic and upgraded furniture behavior, including corrected advanced sleep, without leaking anchors', async()=>{
+  for(const advanced of [false,true])for(const cat of catDefinitions)for(const action of ['eat','drink','scratch','sleep'] as const){
+    const app=fixture([cat.id,...catDefinitions.filter(c=>c.id!==cat.id).slice(0,2).map(c=>c.id)],advanced);
+    const running=app.runner.execute({catId:cat.id,behavior:action,source:'manual'},new AbortController().signal);
+    await flush();expect(app.runner.stage(cat.id)).toBe('loop');expect(app.runner.anchors.snapshot()).toHaveLength(1);
+    if(action==='sleep')expect(app.positions.get(cat.id)).toEqual([134,advanced?649:661]);
+    expect(app.played[0]).toBe(`${cat.id}/${action==='sleep'?'sleep_loop':action+':loop'}`);
+    app.finish(cat.id);await running;expect(app.runner.anchors.snapshot()).toHaveLength(0);expect(app.runner.busy(cat.id)).toBe(false);app.runner.destroy();
+  }
+});
 
 it('all cats complete real loops, rest nearby and release action occupancy', async () => {
   for (const id of ids) for (const action of ['eat', 'drink', 'scratch', 'sleep'] as const) {

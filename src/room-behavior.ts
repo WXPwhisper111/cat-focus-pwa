@@ -18,15 +18,17 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
   teleport?: ReturnType<typeof createTeleportController>;
   plan?: (id: string, action: ManualBehavior) => BehaviorPlan | undefined;
   equipped?: (item: InteractionItem) => boolean;
+  anchorDefinitions?: typeof furnitureAnchors;
   initialLocations?: Record<string, string>;
   onLocations?: (locations: Record<string, string>) => void;
   onSettled?: (id: string, action?: ManualBehavior) => void;
 } = {}) {
+  const actionAnchors=dependencies.anchorDefinitions || furnitureAnchors;
   let toiletOwner:string|undefined;
   const away=new Set<string>();
   const nearbyReservations=new Map<string,AnimationPoint>();
   const anchorHomes=new Map(port.ids.map(id=>[id,port.home(id)]));
-  const teleport = dependencies.teleport || createTeleportController(port), anchors = createAnchorManager(()=>new Map([...port.positions(),...[...nearbyReservations].map(([id,point])=>[`${id}#nearby`,point] as [string,AnimationPoint])]), furnitureAnchors, anchorHomes);
+  const teleport = dependencies.teleport || createTeleportController(port), anchors = createAnchorManager(()=>new Map([...port.positions(),...[...nearbyReservations].map(([id,point])=>[`${id}#nearby`,point] as [string,AnimationPoint])]), actionAnchors, anchorHomes);
   const lifetime = new AbortController(); let destroyed = false, suspended = false;
   const listeners = new Set<() => void>();
   const emit = () => { for (const listener of listeners) listener(); };
@@ -128,14 +130,14 @@ export function createRoomBehavior(port: BehaviorPort, dependencies: {
     }
     const requestedPlan = request.behavior === 'return-home' ? undefined : planFor(request.catId, request.behavior);
     if (request.source === 'manual' && requestedPlan?.item) {
-      const group = furnitureAnchors.find(anchor => anchor.itemId === requestedPlan.item)?.group;
+      const group = actionAnchors.find(anchor => anchor.itemId === requestedPlan.item)?.group;
       const occupant = anchors.snapshot().find(lease => lease.catId !== request.catId && lease.anchor.group === group);
       const occupiedTask = occupant && tasks.get(occupant.catId);
       if (occupiedTask) { interrupt(occupiedTask, 'displace'); await occupiedTask.done.catch(() => {}); checkSignal(signal); return executeInternal(request, signal, report, token, prepared); }
       if (occupant && carry.has(occupant.catId)) { await home(occupant.catId, lifetime.signal); checkSignal(signal); return executeInternal(request, signal, report, token, prepared); }
     }
     if(request.source==='manual' && requestedPlan?.item && !anchors.available(request.catId,requestedPlan.item,requestedPlan.loop||requestedPlan.once!,request.anchorId)) {
-      const target=furnitureAnchors.find(anchor=>anchor.itemId===requestedPlan.item);
+      const target=actionAnchors.find(anchor=>anchor.itemId===requestedPlan.item);
       if(target){
         const feet=anchorFeet(target,requestedPlan.loop||requestedPlan.once!);
         for(const [id,point] of port.positions())if(id!==request.catId && positionsOverlap(point,feet)) {

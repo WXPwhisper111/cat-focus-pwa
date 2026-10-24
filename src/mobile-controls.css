@@ -1,0 +1,10 @@
+/* Suppress only WebKit/Blink touch paint, preserving selection, native inputs and keyboard focus. */
+button,a,label,summary,[role=button],[role=combobox],input,select,textarea{-webkit-tap-highlight-color:transparent;}
+.shop-zones{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;margin:16px 0;}
+.shop-zones button{min-width:0;min-height:44px;padding:10px 2px;font-size:12px;}
+.shop-zones [aria-pressed=true]{background:#ffecd5;border-color:#d47b39;color:#a45f2d;}
+.shop-new{display:inline-flex;margin:3px 0 0 5px;padding:2px 6px;border-radius:8px;background:#fce3c5;color:#9d501f;font-size:10px;line-height:1.5;white-space:nowrap;}
+.shop-card [data-shop-equip]{min-height:44px;margin-top:10px;width:100%;padding:8px;}
+.shop-detail-close,.dialog-close,[data-list-close]{min-width:44px;min-height:44px;}
+.focus-task-editor:focus-visible{outline:2px solid #e99753;outline-offset:2px;}
+.coin-symbol{display:inline-flex;align-items:center;gap:4px;}.coin-symbol svg{width:20px;height:20px;color:#c87835;}

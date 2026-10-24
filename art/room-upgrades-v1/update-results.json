@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "realPhone": false,
+  "simulatedUpdate": true,
+  "checks": [
+    "real release copy and five bullets",
+    "320px visible actions",
+    "outside does not dismiss",
+    "later dismisses"
+  ]
+}

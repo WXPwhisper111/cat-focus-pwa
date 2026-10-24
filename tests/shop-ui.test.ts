@@ -47,10 +47,10 @@ it('buys two real cats, renders three residents, shares the companion with focus
   expect(document.querySelector('.toast')).toBeNull();
   click('[data-page=room]');
   click('[data-page=shop]');
-  click('[data-shop-tab=furniture]'); expect(document.querySelectorAll('.shop-furniture .shop-card')).toHaveLength(4);
+  click('[data-shop-tab=furniture]'); expect(document.querySelectorAll('.shop-furniture .shop-card')).toHaveLength(2);
   expect(document.querySelector('.shop-furniture')!.textContent).toContain('已装备');
   click('#shop-back'); await flush();
-  expect(document.querySelectorAll('[data-room-cat]')).toHaveLength(3); expect(callbacks.size).toBe(3);
+  expect(document.querySelectorAll('[data-room-cat]')).toHaveLength(3); expect(callbacks.size).toBe(4);
   click('[data-room-cat-target=cat-02]');
   expect(document.querySelector<HTMLElement>('.room-interaction-panel')!.hidden).toBe(true);
   expect(document.querySelector('[data-room-cat-target=orange-white]')!.getAttribute('aria-pressed')).toBe('true');
@@ -63,7 +63,7 @@ it('buys two real cats, renders three residents, shares the companion with focus
   await vi.waitFor(()=>expect(document.querySelector('.focus-cat-view')!.getAttribute('data-cat-id')).toBe('cat-03'));
   expect((await getCatHouseState(db))!.residentCatIds).toEqual(['orange-white','cat-02','cat-03']);
   click('[data-page=stats]'); await flush(); expect(callbacks.size).toBe(0);
-  click('[data-page=room]'); await flush(); expect(callbacks.size).toBe(3);
+  click('[data-page=room]'); await flush(); expect(callbacks.size).toBe(4);
   expect(document.querySelector('.room-scene')!.getAttribute('data-cat-id')).toBe('orange-white');
   expect(document.querySelector('[data-action-cat=cat-03]')!.getAttribute('aria-pressed')).toBe('true');
   expect(document.querySelector<HTMLElement>('.room-interaction-panel')!.hidden).toBe(true);

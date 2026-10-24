@@ -1,3 +1,6 @@
+import { createCurtains } from './room-curtains';
+import { roomLayerAsset, equipmentKey } from './room-furnishings';
+import { defaultCommerce, type FurnitureInventory } from './shop';
 import { displayedRect } from './cat-animation';
 import { createPetFeedback } from './cat-pet-feedback';
 import { catDisplayName } from './cat-names';
@@ -17,6 +20,7 @@ export type RoomRect = readonly [number, number, number, number];
 export type RoomItemId = typeof layout.layers[number]['id'];
 export type RoomHotspot = { itemId: RoomItemId; rect: RoomRect; minTargetPx: number };
 export type RoomOptions = {
+  inventory?: FurnitureInventory;
   hotspots?: readonly RoomHotspot[];
   onItemAction?: (itemId: RoomItemId) => void;
   onCatAction?: (catId: string) => void;
@@ -58,7 +62,7 @@ export function roomCatRect(state: RoomAnimation, frame: number, definition: Cat
   return [rect[0] + offset[0], rect[1] + offset[1], rect[2], rect[3]];
 }
 
-export function roomMarkup(state: RoomAnimation, theme: RoomTheme = 'day', definition: CatDefinition = orangeWhiteCat, residents: readonly CatDefinition[] = [definition]) {
+export function roomMarkup(state: RoomAnimation, theme: RoomTheme = 'day', definition: CatDefinition = orangeWhiteCat, residents: readonly CatDefinition[] = [definition], inventory: FurnitureInventory = defaultCommerce().inventory) {
   const cats = [...new Map([definition, ...residents].map(cat => [cat.id, cat])).values()].slice(0, 3);
   return `<div class="room-scene" data-theme="${theme}" data-cat-id="${escape(definition.id)}" role="group" aria-label="${roomLabel(theme, cats.length)}">${layout.layers.map(layer => {
     if (layer.id === 'cat') return cats.map((cat, slot) => ({ cat, slot })).sort((a, b) => layout.catReferencePoints[a.slot].feet[1] - layout.catReferencePoints[b.slot].feet[1]).map(({ cat, slot }) => `<img ${slot === 0 ? 'id="cat"' : ''} class="room-layer room-cat" data-room-object="cat" data-room-cat="${cat.id}" draggable="false" src="${catSequence(cat, state).frames[0].file}" alt="${escape(`${catDisplayName(cat)}${state === 'sleep_loop' ? '正在睡觉' : '正在陪伴'}`)}" style="${roomRectStyle(roomCatRect(state, 0, cat, slot))}"/>`).join('');
@@ -71,7 +75,8 @@ export function roomMarkup(state: RoomAnimation, theme: RoomTheme = 'day', defin
           .map(rect => `<span data-cat-shadow="${cat.id}" style="${roomRectStyle(rect)}"></span>`).join('');
       }).join('')}</div>`;
     }
-    return `<img class="room-layer" data-room-object="${layer.id}" draggable="false" src="./room/${layer.id === 'outside' ? outsideFile(theme) : layer.file}" alt="" aria-hidden="true" style="${roomRectStyle(layer.rect)}"/>`;
+    const appearance = roomLayerAsset(layer,inventory);
+    return `<img class="room-layer" data-room-object="${layer.id}" draggable="false" src="${layer.id === 'outside' ? './room/'+outsideFile(theme) : appearance.file}" alt="" aria-hidden="true" style="${roomRectStyle(appearance.rect)}"/>`;
   }).join('')}<div class="room-night-shade" aria-hidden="true"></div><div class="room-warm-light" aria-hidden="true"></div></div><div class="room-period"><span data-room-period>${theme === 'day' ? '白天' : '夜晚'}</span><small>随本地时间自动变化</small></div><p class="room-error" role="status" hidden>部分房间画面未能加载，请联网后重新打开；专注计时不受影响。</p>`;
 }
 
@@ -92,8 +97,9 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   const element = document.createElement('div');
   element.className = 'room-view';
   let appliedTheme = themeNow();
-  element.innerHTML = roomMarkup(initialState, appliedTheme, definition, definitions);
+  element.innerHTML = roomMarkup(initialState, appliedTheme, definition, definitions, options.inventory);
   const scene = element.querySelector<HTMLDivElement>('.room-scene')!;
+  const curtains = createCurtains(scene.querySelector<HTMLImageElement>('[data-room-object=curtains]')!,loadImage);
   const petFeedback = createPetFeedback(scene);
   const outside = scene.querySelector<HTMLImageElement>('[data-room-object=outside]')!;
   const error = element.querySelector<HTMLParagraphElement>('.room-error')!;
@@ -177,8 +183,8 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   checkEnvironment();
   for (const layer of layout.layers) {
     if (layer.file && layer.id !== 'cat') {
-      const file = layer.id === 'outside' ? outsideFile(appliedTheme) : layer.file;
-      void loadImage(`./room/${file}`).catch(showError);
+      const file = layer.id === 'outside' ? './room/'+outsideFile(appliedTheme) : roomLayerAsset(layer,options.inventory).file;
+      void loadImage(file).catch(showError);
     }
   }
   const targets: HitTarget[] = [];
@@ -243,7 +249,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
     stop: id => playerFor(id)?.stop(), idle: id => playerFor(id).updateState('idle'),
   };
   return {
-    behaviorPort,
+    behaviorPort, equipmentKey: equipmentKey(options.inventory),
     updateResidents(next: readonly CatDefinition[]) {
       if(destroyed || !next.length || next.length>3)return;
       const oldPlayers=new Map(definitions.map((cat,index)=>[cat.id,players[index]]));
@@ -293,7 +299,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
     },
     destroy() {
       if (destroyed) return;
-      petFeedback.destroy(); destroyed = true; ++themeRevision; stopClock(); players.forEach(player => player.destroy()); scene.onclick = null;
+      curtains.destroy(); petFeedback.destroy(); destroyed = true; ++themeRevision; stopClock(); players.forEach(player => player.destroy()); scene.onclick = null;
       document.removeEventListener('visibilitychange', checkEnvironment);
       window.removeEventListener('focus', checkEnvironment);
       window.removeEventListener('pagehide', pageHide);

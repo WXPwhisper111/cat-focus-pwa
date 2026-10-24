@@ -1,0 +1,64 @@
+{
+  "version": "room-plant-replacement-v1",
+  "file": "room_plant_large.png",
+  "webp": "room_plant_large.webp",
+  "canvas": [
+    512,
+    640
+  ],
+  "sourceBounds": [
+    172,
+    83,
+    1062,
+    1350
+  ],
+  "sourcePasteBounds": [
+    44,
+    46,
+    468,
+    594
+  ],
+  "visibleScaleVsOriginal": {
+    "height": 1.6,
+    "width": 1.4004678296649102
+  },
+  "originalCanvas": [
+    384,
+    384
+  ],
+  "originalSolidBounds": [
+    66,
+    51,
+    325,
+    344
+  ],
+  "originalRoomRect": [
+    36,
+    435,
+    140,
+    140
+  ],
+  "originalPotBaseAnchor": [
+    198,
+    340
+  ],
+  "potBaseAnchor": [
+    245.5191011235955,
+    594.0
+  ],
+  "potBaseRoom": [
+    108.1875,
+    558.9583333333334
+  ],
+  "roomRect": [
+    31.61212341780802,
+    373.6946472019465,
+    159.68856447688566,
+    199.61070559610707
+  ],
+  "layer": "plant; original fixed-decoration layer order",
+  "pngSha256": "04d2755e72b5894a36e5de296a9cf0e3946d155960eaed8bc29de53e15d79e39",
+  "webpSha256": "bc118097d497c376d21c0e325a25eacf3f6c3f46e5232164d8ed7bdb97fb152f",
+  "appIntegrated": false,
+  "gitPush": false
+}

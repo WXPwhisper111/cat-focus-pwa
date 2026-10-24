@@ -7,7 +7,7 @@ import { COIN_INTERVAL_MS, initialWallet, validateWalletSnapshot, walletSignatur
 import { checkinsFromTransactions, localDayKey, validCheckinDate, type DailyCheckinRecord } from './daily-checkin';
 import { DAILY_CHECKIN_COINS } from './wallet';
 import { elapsedMs, isDue, isRecord, makeRecord, parseBackup, progress, recordSignature, type ActiveSession, type FocusRecord, type TimerConfiguration, type TimerMode, validMinutes } from './domain';
-import { ArchivedCategoryError, categoryKey, DEFAULT_CATEGORIES, normalizeCategoryName, sortCategories, type FocusCategory } from './categories';
+import { categoryKey, DEFAULT_CATEGORIES, normalizeCategoryName, sortCategories, type FocusCategory } from './categories';
 import { getCatDefinition } from './cat-definition';
 import { catHouseSignature, hasAdoptedCat, validateCatHouseState, type CatHouseState } from './cat-house-state';
 
@@ -240,7 +240,7 @@ export async function getCategoryState(db: IDBDatabase) {
 export async function selectCategory(db: IDBDatabase, id: string) {
   return transact(db, ['categories', 'settings'], 'readwrite', async tx => {
     const category = await request<FocusCategory | undefined>(tx.objectStore('categories').get(id));
-    if (!category || category.archived) throw Error('此类别已停用或不存在，请重新选择');
+    if (!category || category.archived) throw Error('此类别已删除或不存在，请重新选择');
     tx.objectStore('settings').put(id, SELECTED_CATEGORY_KEY);
   });
 }
@@ -251,7 +251,10 @@ export async function addCategory(db: IDBDatabase, rawName: string) {
     const store = tx.objectStore('categories');
     const existing = await request<FocusCategory[]>(store.getAll());
     const duplicate = existing.find(item => categoryKey(item.name) === categoryKey(name));
-    if (duplicate?.archived) throw new ArchivedCategoryError(duplicate);
+    if (duplicate?.archived) {
+      const restored = { ...duplicate, archived: false }; store.put(restored);
+      tx.objectStore('settings').put(restored.id, SELECTED_CATEGORY_KEY); return restored;
+    }
     if (duplicate) throw Error('已存在同名类别，请直接选择');
     const category: FocusCategory = { id: crypto.randomUUID(), name, archived: false,
       order: Math.max(-1, ...existing.map(item => item.order)) + 1 };
@@ -289,7 +292,7 @@ export async function startStopwatch(db: IDBDatabase, categoryId: string, now = 
 async function startFocus(db: IDBDatabase, categoryId: string, timing: TimerConfiguration, now: number) {
   return transact(db, ['active', 'categories', 'settings', 'focusTasks'], 'readwrite', async tx => {
     const category = await request<FocusCategory | undefined>(tx.objectStore('categories').get(categoryId));
-    if (!category || category.archived) throw Error('此类别已停用或不存在，请重新选择');
+    if (!category || category.archived) throw Error('此类别已删除或不存在，请重新选择');
     const store = tx.objectStore('active');
     if (await request<ActiveSession | undefined>(store.get(ACTIVE_KEY))) throw Error('已有进行中的专注');
     const settings = tx.objectStore('settings'), selected = await request(settings.get(SELECTED_FOCUS_TASK_KEY));
@@ -497,6 +500,15 @@ export async function purchaseProduct(db: IDBDatabase, productId: string, now = 
     shop.purchases.push({ productId: product.id, price: product.price, transactionId: `spend:${operationId}`, purchasedAt: now });
     settings.put(validateCommerce(shop), COMMERCE_KEY);
     return { created: true, balance: payment.balance };
+  });
+}
+export async function equipFurniture(db: IDBDatabase, id: string) {
+  return transact(db, ['settings'], 'readwrite', async tx => {
+    const shop = await commerceIn(tx), product = getProduct(id);
+    if (product?.kind !== 'furniture' || !shop.inventory.ownedFurnitureIds.includes(id)) throw Error('只能装备已拥有的家具');
+    shop.inventory.equipped[product.zone] = id;
+    tx.objectStore('settings').put(validateCommerce(shop), COMMERCE_KEY);
+    return shop;
   });
 }
 export async function setCompanionCat(db: IDBDatabase, id: string) {

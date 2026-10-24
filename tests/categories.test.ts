@@ -1,6 +1,6 @@
 import 'fake-indexeddb/auto';
 import { afterEach, beforeEach, describe, expect, it } from 'vitest';
-import { ArchivedCategoryError, DEFAULT_CATEGORIES } from '../src/categories';
+import { DEFAULT_CATEGORIES } from '../src/categories';
 import { parseBackup, progress } from '../src/domain';
 import { addCategory, exportBackup, getActive, getCategoryState, getRecords, importBackup, openDatabase, selectCategory, setCategoryArchived, settle, startSession, togglePause } from '../src/storage';
 
@@ -12,6 +12,11 @@ beforeEach(async () => { db = await openDatabase(`categories-${crypto.randomUUID
 afterEach(() => db.close());
 
 describe('category management', () => {
+  it('keeps a deleted category hidden when an older backup is merged, preserving existing records',async()=>{
+    const category=await addCategory(db,'备份阅读');await startSession(db,category.id,1,start);await settle(db,'due',start+60_000);const backup=await exportBackup(db),records=await getRecords(db);
+    await setCategoryArchived(db,category.id,true);await importBackup(db,backup);
+    expect((await getCategoryState(db)).categories.find(item=>item.id===category.id)?.archived).toBe(true);expect((await getCategoryState(db)).selectedId).not.toBe(category.id);expect(await getRecords(db)).toEqual(records);
+  });
   it.each([['builtin-fitness', '健身'], ['builtin-math', '数学']])('saves focus records and rewards for %s', async (id, name) => {
     await selectCategory(db, id); await startSession(db, id, 1, start);
     await settle(db, 'due', start + 60_000);
@@ -75,10 +80,8 @@ describe('category management', () => {
     const category = await addCategory(db, 'Reading');
     await expect(addCategory(db, ' reading ')).rejects.toThrow('同名');
     await setCategoryArchived(db, category.id, true);
-    await expect(addCategory(db, 'READING')).rejects.toBeInstanceOf(ArchivedCategoryError);
     expect((await getCategoryState(db)).selectedId).toBe(english);
-    await setCategoryArchived(db, category.id, false);
-    await selectCategory(db, category.id);
+    expect(await addCategory(db, 'READING')).toMatchObject({id:category.id,name:'Reading',archived:false});
     const state = await getCategoryState(db);
     expect(state.categories).toHaveLength(5);
     expect(state.selectedId).toBe(category.id);
@@ -113,8 +116,8 @@ describe('category management', () => {
     expect((await getActive(db))?.category).toBe('<阅读>');
     await settle(db, 'due', start + 60_000);
     expect((await getRecords(db))[0]).toMatchObject({ category: '<阅读>', categoryId: category.id, completed: true });
-    await expect(startSession(db, category.id, 1, start + 61_000)).rejects.toThrow('已停用');
-    await expect(selectCategory(db, category.id)).rejects.toThrow('已停用');
+    await expect(startSession(db, category.id, 1, start + 61_000)).rejects.toThrow('已删除');
+    await expect(selectCategory(db, category.id)).rejects.toThrow('已删除');
     other.close();
   });
 

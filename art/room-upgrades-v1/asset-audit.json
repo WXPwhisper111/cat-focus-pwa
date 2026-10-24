@@ -1,0 +1,775 @@
+{
+  "assets": [
+    {
+      "source": "art/room-upgrades-v1/sources/furniture-advanced-v1/zone_sleep_bed_advanced.webp",
+      "runtime": "./room-upgrades-v1/zone_sleep_bed_advanced.webp",
+      "sourceSize": [
+        512,
+        384
+      ],
+      "size": [
+        512,
+        384
+      ],
+      "bytes": 96584,
+      "sha256": "92726fd80832a8f0d17c9915e125534176e7d817a89a160c3301dff7b5afad8f"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/furniture-advanced-v1/zone_activity_rug_advanced.webp",
+      "runtime": "./room-upgrades-v1/zone_activity_rug_advanced.webp",
+      "sourceSize": [
+        512,
+        256
+      ],
+      "size": [
+        512,
+        256
+      ],
+      "bytes": 34906,
+      "sha256": "4f256a489e4012542acc214da4a9fb389bf1af93172c8e33d7d77bd37655cc7f"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/furniture-advanced-v1/zone_food_bowl_advanced.webp",
+      "runtime": "./room-upgrades-v1/zone_food_bowl_advanced.webp",
+      "sourceSize": [
+        256,
+        192
+      ],
+      "size": [
+        256,
+        192
+      ],
+      "bytes": 12868,
+      "sha256": "5a37b0a11ede1de50da38db0a60ebc2961e8a55a8fdf8a4ccfbadb281257c10f"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/furniture-advanced-v1/zone_water_bowl_advanced.webp",
+      "runtime": "./room-upgrades-v1/zone_water_bowl_advanced.webp",
+      "sourceSize": [
+        256,
+        192
+      ],
+      "size": [
+        256,
+        192
+      ],
+      "bytes": 12028,
+      "sha256": "6da89013b77c99f3bba1d48693270a5890c1fc24500d5cbc48739f1d2534b14b"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/furniture-advanced-v1/zone_play_scratcher_advanced.webp",
+      "runtime": "./room-upgrades-v1/zone_play_scratcher_advanced.webp",
+      "sourceSize": [
+        256,
+        256
+      ],
+      "size": [
+        256,
+        256
+      ],
+      "bytes": 21146,
+      "sha256": "63c35835bbb98ab061b2e49d0d5ff1fab3a36176568abbb18902bc1cfc8a94d4"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/room-plant-replacement-v1/room_plant_large.webp",
+      "runtime": "./room-upgrades-v1/plant.webp",
+      "sourceSize": [
+        512,
+        640
+      ],
+      "size": [
+        512,
+        640
+      ],
+      "bytes": 175832,
+      "sha256": "441556424f835f9022bb9306f6378538780cc7986ea0f58dce92705b84c521b9"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_001.webp",
+      "runtime": "./room-upgrades-v1/curtains/04c34bb87f7c38a4e3c1d602cada3310dbe77d9c4d7e28e6c0fc7ddc95011962.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85174,
+      "sha256": "7aa1f3b8119db371d7d31450ea07e6e20998c62084273805b7a1e0919bfa14cf"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_002.webp",
+      "runtime": "./room-upgrades-v1/curtains/5e5cac3f88d21c4266d5f6286b2403f8274a3440481620fe5ad957b60a27580b.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85074,
+      "sha256": "dc4ba1464f8c7bc9f05698e6bb7412755f0cd39e5d5fa8b9bdede9a54fd91c4c"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_003.webp",
+      "runtime": "./room-upgrades-v1/curtains/18b00f8fec7971bdfc1f43aedd9508d2376bb89fc42272699b9f6defecb0cc10.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84908,
+      "sha256": "d472182931f110d374bf2cb8a244d484581764e1122722774d9ccd2beb1984fa"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_004.webp",
+      "runtime": "./room-upgrades-v1/curtains/1ac0a518f43f2270286c9c7f3b8fb31877816d6263199f7e655dfda2569926fe.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84754,
+      "sha256": "37ff6510506ca74a179edcf29c3d7824e393a2b2eda9d8e744b6d84b92013425"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_005.webp",
+      "runtime": "./room-upgrades-v1/curtains/fd43acd28d0ece53758655e6088b8c13e04cb5f2d654b643dfcc3ee83f0c03ac.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85032,
+      "sha256": "69fbc65f87d71c0b4b4609f2d1c96c55edbe57bbc6c5efb3079b043d1fc81adc"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_006.webp",
+      "runtime": "./room-upgrades-v1/curtains/e2161b4d244d885b81d52ba010f59d6dddf405d53d00fe25cacee2da920bb9ce.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85010,
+      "sha256": "e477c2fac2798fbd32002dc4bc25c30b08024c6157de85a71e72f0afd721f776"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_007.webp",
+      "runtime": "./room-upgrades-v1/curtains/0bedda71a1a66714f022d94497591af99baa78f8c0c76ca1d728f78a879296df.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85216,
+      "sha256": "97520b2a99e0cb3c2ab15ae8a0caed936ff0f8970c5af04bfacf1e1b6ca67389"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_008.webp",
+      "runtime": "./room-upgrades-v1/curtains/443c48790782972b1b3a678e565c1119635a40a31207ecef848545dbaf214ab9.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85094,
+      "sha256": "7e99e5a0d7c8c9a7583f7902b04b63bf42aabbf09e5fdaace7086bb4d17860e9"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_009.webp",
+      "runtime": "./room-upgrades-v1/curtains/519c654e3b4556d10cbd15e0489fcc0c8becfbad05fb7b12e6ce802dbddb4e78.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85272,
+      "sha256": "585be5b06d8eafc0e649e95baca4866bf491c9b5e793e74a9324418d9a90c78d"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_010.webp",
+      "runtime": "./room-upgrades-v1/curtains/5b0342cc217a3f067dc5e61541b250e16baafb5a282032540231a7b4e25c1f8b.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85590,
+      "sha256": "989e0622992ec16849c59639bd852444b49828ba66375acc7ad56ba7425c43b1"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_011.webp",
+      "runtime": "./room-upgrades-v1/curtains/b9183ba3e826b637becc7c263365822f27ec07070b3f2af595544d5a9d8ef28a.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85898,
+      "sha256": "b672b6b8c0382ecc9ec845071d53a5682f2d36b3381cf4b605a3af7afdce57dc"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_012.webp",
+      "runtime": "./room-upgrades-v1/curtains/1b5e11501ef1fe75805e67bbb31a752f7e8d8365da0eb49589068521108c66f1.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85918,
+      "sha256": "5b0a4bef42fb3e348e72f950b1c1f0903fa9c09ba15929f7db6cdd7645521e46"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_013.webp",
+      "runtime": "./room-upgrades-v1/curtains/ee731c4aebb173bdcd10444cf32299e92f57b490757a2c3176064bf8c3ed2331.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86070,
+      "sha256": "06e091b456419e091baae66d74789ce5973028fab6bc3039bece9bded4ac4462"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_014.webp",
+      "runtime": "./room-upgrades-v1/curtains/2f7095624b2936a1e9c95c2f1a0095cbe809031000a9dd516812bc98b598b7a6.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86308,
+      "sha256": "095d2f61716bb9bb5f579d316cec6003d2dd9eb07c2f35a0ccf533752ef3cadb"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_015.webp",
+      "runtime": "./room-upgrades-v1/curtains/7f837aa28842c379a580779ad4a6e9cb05a3df0a7239e142d7603a6af7a34b2c.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86032,
+      "sha256": "f60d8ef011f039d3b9ebf653041379ac7b79cd7f2374eed473b8fb4e074f4bc6"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_016.webp",
+      "runtime": "./room-upgrades-v1/curtains/8b98a9f83a6cefa3ece32312f42c0efcda2b7110a9988614b5d2e1fefc31fbd7.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86324,
+      "sha256": "0890f3d0059fa537f8a9d182551c27213c68c402172fbc326f3da8439d7313aa"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_017.webp",
+      "runtime": "./room-upgrades-v1/curtains/129a534ae2c2e3536ea3aed73e9fdf36e7af05664a9b8d92356984c9aee7e09c.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86348,
+      "sha256": "943a53e2a7acaa0d5a7280ee9bc40cc96c21715dc5f077e5f6270357d0941027"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_018.webp",
+      "runtime": "./room-upgrades-v1/curtains/1a98db82ce56cfc6c08e122ccd6b0296e399255610c1ebf6a3de92b92b7f0b4d.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86344,
+      "sha256": "392b99018caee2385338d33d0fdf4b060c0e64834c4a7f8fcdc316a250c85df0"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_019.webp",
+      "runtime": "./room-upgrades-v1/curtains/c2a4df964b07167452620a930ab9ed24e889019130390b7d5a3a7c2778c0ef9f.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86420,
+      "sha256": "e0834cc83f568a15e684f864632e5d722e6fedbe58172ff7b8aab79dd020fa4b"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_020.webp",
+      "runtime": "./room-upgrades-v1/curtains/9e0efe2b76b65fad89a9c5c73113a06b673e8013888294458157e0c2217756db.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86380,
+      "sha256": "0ac401029a0628f11f8509541529a5e80a122a1bac64b43e669274876bf9273d"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_021.webp",
+      "runtime": "./room-upgrades-v1/curtains/f2734be0be68509b1d5f31f8bd84946e273c4e670b7e5180230364b2651bade6.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86428,
+      "sha256": "fe22190cad4cba7229d567f3d455b8ee96568a39989835e1ccdf177ce45b56da"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_022.webp",
+      "runtime": "./room-upgrades-v1/curtains/2b57d7b7ffea92ff580ecf7776d0868724e8a5e9c1ce40ac357429bf1ff78159.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86482,
+      "sha256": "8d9d8b1cfd0abce2d0e573e2b08e13df8dfc1ee4e7cf76078793e42af4fb65c7"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_023.webp",
+      "runtime": "./room-upgrades-v1/curtains/bf51a3099ce9e7cb86d7bc39659ad8c06ab48c7cb1f00574e0bbaf842d44a790.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86448,
+      "sha256": "7b36e016a8a0d4ba5d0d1c79e48bab046a859bf9002862f1a7ec90962f93e6e5"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_024.webp",
+      "runtime": "./room-upgrades-v1/curtains/ca607b81d00f0e55951c237a7cee1d89fb25ae85785109651e017f594f3d9312.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86590,
+      "sha256": "0f9a382bfad70338b534457ff553b881ac180c77d320e7394a835c78a22f79ce"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_025.webp",
+      "runtime": "./room-upgrades-v1/curtains/86a1444c6bf59e839b3ff139dc84588533af5e2fb506201db4335a682c992f2f.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86364,
+      "sha256": "da8acfdd8fe87b8121149c00ef1cdb847bc0900f3a3c2a58773e42c842b3a570"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_026.webp",
+      "runtime": "./room-upgrades-v1/curtains/eda3e33c6c8480a0b13717f391394d91e0e9dd1ba39445b978845b740064ae55.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86354,
+      "sha256": "8580158f2dcd68372bd3caf635f0c6c656d472a5ead85b7fc16291ca13ee9853"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_027.webp",
+      "runtime": "./room-upgrades-v1/curtains/cce7679b7ea4aa229c2d0ceaaf47757ca6dd5cc58d49a289f4a168bf3038451d.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86444,
+      "sha256": "14c53cdc27fa7790aa0b8c67b4a60b249571923de83381838f42fa52f1abac32"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_028.webp",
+      "runtime": "./room-upgrades-v1/curtains/2ac9d88cd126fd3c559c46aa0c3152d5d2d70652cd9f0151aa131482fb441888.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86080,
+      "sha256": "4839779c76d308795730bc8e48e9a67bc4d922d1db2e9d268012477078164f50"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_029.webp",
+      "runtime": "./room-upgrades-v1/curtains/614af3ad4d82fcb97bf3f4c76714325f301b3463a8eaa6e6a17ea78138473614.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86248,
+      "sha256": "474e486826a77bfcc354139cf88b4243e8fc3d6542f400cd91fb10a9e7234343"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_030.webp",
+      "runtime": "./room-upgrades-v1/curtains/0cf29da95dd63d8aea7f3c0a37dab8362fe5cba50de207172a53b31cf555d1df.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 86134,
+      "sha256": "ac0de970914789cc503dec1b1264eba2cd35c5b35d058ac4d710285da6c00f60"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_031.webp",
+      "runtime": "./room-upgrades-v1/curtains/8aa096b7e8c11b704d6cbb8a169085177de3001386a0d73332205812ed9b4d17.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85986,
+      "sha256": "3bed8cbc70f933484da1b2ed34c92b7b705ca6b38963486398878286f070493c"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_032.webp",
+      "runtime": "./room-upgrades-v1/curtains/32fb401b7b502ba2ca46ac1bfb8ea1516ca4a362249f59476785cc521fd7d7d6.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85756,
+      "sha256": "a72006e4b953689b1ff40bc57c18dec20baf385e5565f221a6129896b5701962"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_033.webp",
+      "runtime": "./room-upgrades-v1/curtains/3c0d91b0fefc8a9c4c9390b772be2dea75762d574fff571804da709b8333577d.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85874,
+      "sha256": "319d7c27da25596d4fee847b037ffe7f721e61a418d697e8bf82d16f6f6b93e4"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_034.webp",
+      "runtime": "./room-upgrades-v1/curtains/f2e71d3926dbdd0839ea9e05ee47a7a33afa67849a8884db8442547e342c77cc.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85572,
+      "sha256": "b6be331a366ab46a4858dcc3a3764971847b2608a75b7b9e0f666c881de26735"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_035.webp",
+      "runtime": "./room-upgrades-v1/curtains/4da19911919c1f28ba0b5c5208fa23e9d71d39ad0a3b0df4b13a9e0d272ada21.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85424,
+      "sha256": "e1c86a19ef1fac6f217087d3605c6ca437b8deb4d69184f7202fc46b49e32317"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_036.webp",
+      "runtime": "./room-upgrades-v1/curtains/08b26ec6ea7777d3232479faf4ae734196c6233a409024b274451676e55a8b55.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85372,
+      "sha256": "d29e7d54fc27d468f521ab739f7d1059a8b433e418a71fc664600c77e401500d"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_037.webp",
+      "runtime": "./room-upgrades-v1/curtains/06d58a06752489103c5aa821e83ce2a2c7e4e8660112bbc9f7142d4793770bfe.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85256,
+      "sha256": "6b5db17ef243d01afbcd0ae8065da2094353994e0f1059f8caf2029e802bb24f"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_038.webp",
+      "runtime": "./room-upgrades-v1/curtains/c44e13a6556c030f9d3c38df1101a529d9eefc60cc8bfeed2326b8c6c7e1d4f1.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85208,
+      "sha256": "93f6a4964bf4233b4fe81cdd6084924ffedbc954cd0ce7f3fd4c1b45eb05c231"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_039.webp",
+      "runtime": "./room-upgrades-v1/curtains/5dea79968f171e1a40c5cdec1a0015ebde7519bab552431ecad6b68efe1181d1.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85004,
+      "sha256": "ce0e3084810418d36f1e8a4bcfcb25328f99debe6d38baf6d1ecb22a2a4aaace"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_040.webp",
+      "runtime": "./room-upgrades-v1/curtains/9f718e4b81da16520e7778cdf54b3459e511b3fe5c8b0827b2e2334cb8e576e7.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84944,
+      "sha256": "b4b2a951ccea0cde474ef047cb326afaa325f0d5eea0e554170805c0da39ad2f"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_041.webp",
+      "runtime": "./room-upgrades-v1/curtains/f70f9cf0ae0fb901adc3efc92ba5e0f40d03fef91ff92c86a02f659857f3233d.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84778,
+      "sha256": "6e694adb6a14f095164e6a313ffa5fdba0120d7c3f00f0ead7ad1d23b78ae8d9"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_042.webp",
+      "runtime": "./room-upgrades-v1/curtains/cb6f682f6e3ddb3c2597fabd8b03e4caab211baeb3f938eff88f9b76f895ae0d.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84388,
+      "sha256": "c9b41418dba3564f039850526869d220218f101476b0fb549b04089454f8b701"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_043.webp",
+      "runtime": "./room-upgrades-v1/curtains/282db24c8fce7962541ccce1f9b46fe30bf7de7c0561389c9013522a47f733b2.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84506,
+      "sha256": "e6deb75fadd77c297a7e858ae648f2d76c2b564b018e52121e0860fd0b6499e5"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_044.webp",
+      "runtime": "./room-upgrades-v1/curtains/d320980788bb97413f35a93a1ed9cec8c433851307893058633bb49608757432.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84816,
+      "sha256": "616c9f400b104cbf9830a8c3cd4150ed56644007cd83b057450890429dbf79f9"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_045.webp",
+      "runtime": "./room-upgrades-v1/curtains/06cb1efffa06c5c1a7e7a0c585b13ef3285bd68a239f50c9aaab07a59e955bbb.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85174,
+      "sha256": "92334d382d4b8bf3a92010ff21c66a6a3ee99470c795c79f848b7916f453cc79"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_046.webp",
+      "runtime": "./room-upgrades-v1/curtains/ca996088cf608068666143131b0f2c333cfec0c5ec57ae162ff579abd4a015a5.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84868,
+      "sha256": "2ae8ee7f69e04ad4c15cf3ebb7bb632cd10aa97ac4e40ccb311a0a6e96aad036"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_047.webp",
+      "runtime": "./room-upgrades-v1/curtains/e569186bcece814613081a764a67c7aa8263cdfc558efcb16ab6b64bf2150bd0.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85190,
+      "sha256": "c31301438698ea7ec6d75db2bb478e5be15403ed96a1f161a271d69d54a758c6"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/webp/breeze_048.webp",
+      "runtime": "./room-upgrades-v1/curtains/40ed6eac3c801dd4afe980a72473bb6c23064663eae0cd1e13beada78be8a30a.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 84952,
+      "sha256": "8e5eb12ce1f3afd310e3df95e417ead5d6d7c6f25d19dbf5a00aba359450c33a"
+    },
+    {
+      "source": "art/room-upgrades-v1/sources/window-curtains-breeze-v1/window_curtains_static.webp",
+      "runtime": "./room-upgrades-v1/curtains-static.webp",
+      "sourceSize": [
+        1152,
+        832
+      ],
+      "size": [
+        576,
+        416
+      ],
+      "bytes": 85206,
+      "sha256": "3e233801d68cc120163cd885eca445bc310bbaaa59b5fb82a11514b1edde4706"
+    }
+  ],
+  "runtimeBytes": 4557718
+}

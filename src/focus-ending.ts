@@ -1,3 +1,4 @@
+import { icon } from './category-icons';
 import type { FocusTask } from './focus-tasks';
 import type { FocusRecord } from './domain';
 import { elapsedMs, type ActiveSession } from './domain';
@@ -32,7 +33,7 @@ export function createFocusEnding(
   summaryDialog.setAttribute('aria-labelledby', 'summary-title');
   summaryDialog.innerHTML = `<div class="eyebrow">每一点努力都算数</div><h2 id="summary-title"></h2><p class="hint">记录已保存</p>
     <dl class="summary-details"><div><dt>专注类别</dt><dd id="summary-category"></dd></div><div><dt>计时模式</dt><dd id="summary-mode"></dd></div><div><dt>有效专注</dt><dd id="summary-duration"></dd></div></dl>
-    <div class="summary-task" hidden><small>本次专注目标</small><strong data-summary-task-title></strong><p data-summary-task-note></p><button type="button" id="summary-task-complete">标记目标已完成</button></div><div class="summary-rewards"><div><strong id="summary-experience"></strong><span>经验</span></div><div><strong id="summary-coins"></strong><span>猫爪币</span></div></div>
+    <div class="summary-task" hidden><small>本次专注目标</small><strong data-summary-task-title></strong><p data-summary-task-note></p><button type="button" id="summary-task-complete">标记目标已完成</button></div><div class="summary-rewards"><div><strong id="summary-experience"></strong><span>经验</span></div><div><strong id="summary-coins"></strong><span class="coin-symbol">${icon('paw-coin')}猫爪币</span></div></div>
     <p id="summary-reward-note" class="hint"></p><p class="ending-error" role="alert"></p><button id="summary-done" type="button" class="primary wide">知道了</button>`;
   document.body.append(confirmationDialog, summaryDialog);
   let confirmation: { action: EndAction; session: ActiveSession } | null = null;

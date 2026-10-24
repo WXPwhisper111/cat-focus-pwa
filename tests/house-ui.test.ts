@@ -43,7 +43,7 @@ it('keeps four-page navigation, one player, paused focus recovery, and single se
     click('[data-page=room]'); await flush();
     expect(document.querySelector('h1')!.textContent).toBe('猫咪小屋');
     expect(document.querySelector('#cat')!.getAttribute('data-animation')).toBe('idle');
-    expect(document.querySelectorAll('.room-scene')).toHaveLength(1); expect(callbacks.size).toBe(1);
+    expect(document.querySelectorAll('.room-scene')).toHaveLength(1); expect(callbacks.size).toBe(2);
     expect(document.querySelectorAll('.room-item-hit')).toHaveLength(5);
     expect(document.querySelectorAll('.room-cat-hit')).toHaveLength(1);
     click('[data-room-cat-target="orange-white"]');
@@ -67,6 +67,6 @@ it('keeps four-page navigation, one player, paused focus recovery, and single se
   tick(); tick(); await flush(); expect(await getRecords(db)).toHaveLength(1);
   expect(document.querySelector('h1')!.textContent).toBe('猫咪小屋');
   expect(document.querySelector('#cat')!.getAttribute('data-animation')).toBe('idle');
-  expect(callbacks.size).toBe(1); expect(db.version).toBe(6);
+  expect(callbacks.size).toBe(2); expect(db.version).toBe(6);
   click('[data-page=settings]'); await flush(); expect(callbacks.size).toBe(0); db.close();
 });

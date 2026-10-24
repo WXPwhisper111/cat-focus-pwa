@@ -17,6 +17,10 @@ export const shopProducts: readonly ShopProduct[] = [
   { id: 'basic-tableware', kind: 'furniture', zone: 'food', name: '基础餐具组', previews: ['./room/zone_food_bowl_basic.png', './room/zone_water_bowl_basic.png'], defaultOwned: true, price: 0 },
   { id: 'basic-rug', kind: 'furniture', zone: 'activity', name: '基础地毯', previews: ['./room/zone_activity_rug_basic.png'], defaultOwned: true, price: 0 },
   { id: 'basic-scratcher', kind: 'furniture', zone: 'play', name: '基础猫抓板', previews: ['./room/zone_play_scratcher_basic.png'], defaultOwned: true, price: 0 },
+  { id: 'advanced-bed', kind: 'furniture', zone: 'sleep', name: '升级猫窝', previews: ['./room-upgrades-v1/zone_sleep_bed_advanced.webp'], defaultOwned: false, price: 10 },
+  { id: 'advanced-tableware', kind: 'furniture', zone: 'food', name: '升级餐具套装', previews: ['./room-upgrades-v1/zone_food_bowl_advanced.webp','./room-upgrades-v1/zone_water_bowl_advanced.webp'], defaultOwned: false, price: 10 },
+  { id: 'advanced-rug', kind: 'furniture', zone: 'activity', name: '升级地毯', previews: ['./room-upgrades-v1/zone_activity_rug_advanced.webp'], defaultOwned: false, price: 10 },
+  { id: 'advanced-scratcher', kind: 'furniture', zone: 'play', name: '升级猫抓板', previews: ['./room-upgrades-v1/zone_play_scratcher_advanced.webp'], defaultOwned: false, price: 10 },
 ];
 export const getProduct = (id: string) => shopProducts.find(product => product.id === id);
 export const productName = (product: ShopProduct) => product.kind === 'cat' ? catDisplayName(getCatDefinition(product.catId)!) : product.name;
@@ -46,6 +50,7 @@ export function validateCommerce(value: unknown): CommerceState {
         receipt.transactionId !== `spend:purchase_${product.id}` || !Number.isSafeInteger(receipt.purchasedAt) || receipt.purchasedAt < 0) fail();
     seen.add(receipt.productId);
   }
+  if (owned.some(id => getProduct(id)!.price > 0 && !seen.has(id))) fail();
   return { version: 1, inventory: { ownedFurnitureIds: [...owned], equipped: Object.fromEntries(furnitureZones.map(zone => [zone.id, state.inventory.equipped[zone.id]])) as Record<FurnitureZone, string> },
     purchases: state.purchases.map(receipt => ({ productId: receipt.productId, price: receipt.price, transactionId: receipt.transactionId, purchasedAt: receipt.purchasedAt })) };
 }

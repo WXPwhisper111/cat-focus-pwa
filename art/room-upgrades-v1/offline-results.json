@@ -1,0 +1,39 @@
+{
+  "realPhone": false,
+  "engine": "Isolated headless Edge",
+  "passed": true,
+  "warm": {
+    "ok": true,
+    "release": {
+      "id": "room-mobile-shop-v1",
+      "label": "手机操作与小屋焕新",
+      "title": "微风吹进小屋，新家具上架啦",
+      "summary": [
+        "输入框点击后才弹出键盘，类别管理更顺手。",
+        "四区升级家具各10猫爪币，支持购买、装备和切回基础款。",
+        "新盆栽与微风窗帘让小屋更有生活感。",
+        "商城按功能区收纳，家具与猫咪上新分别提示。",
+        "更新保留专注记录、猫咪、任务和猫爪币存档。"
+      ]
+    },
+    "version": "5fa29d4fffe4",
+    "entry": "http://127.0.0.1:4238/assets/index-1XVKmCmW.js",
+    "media": {
+      "total": 898,
+      "cached": 898
+    },
+    "failed": [],
+    "remaining": 0
+  },
+  "inventory": {
+    "version": "5fa29d4fffe4",
+    "count": 898,
+    "missing": []
+  },
+  "checks": [
+    "all 898 media cached",
+    "offline reload",
+    "offline background decode",
+    "offline navigation and timer start/pause/resume"
+  ]
+}

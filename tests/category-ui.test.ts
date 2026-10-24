@@ -5,7 +5,7 @@ import { getActive, getCategoryState, getRecords, openDatabase, setCategoryArchi
 
 afterEach(() => { vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 
-it('adds, selects, saves, archives and restores a category without losing the draft duration', async () => {
+it('adds, selects, saves, deletes and re-adds a category without losing the draft duration', async () => {
   vi.stubGlobal('indexedDB', new IDBFactory());
   vi.stubGlobal('BroadcastChannel', class { onmessage = null; postMessage() {} close() {} });
   vi.spyOn(globalThis, 'setInterval').mockReturnValue(0 as never);
@@ -24,13 +24,15 @@ it('adds, selects, saves, archives and restores a category without losing the dr
   const dialog = document.querySelector<HTMLDialogElement>('dialog')!;
   const input = dialog.querySelector<HTMLInputElement>('input')!;
   const submit = () => dialog.querySelector('form')!.dispatchEvent(new Event('submit', { bubbles: true, cancelable: true }));
+  const confirmDelete = () => [...dialog.querySelectorAll<HTMLButtonElement>('button')].find(button=>button.textContent==='确认删除')!.click();
   const action = (label: string) => [...dialog.querySelectorAll<HTMLButtonElement>('button')].find(button => button.getAttribute('aria-label') === label)!;
 
   minutes().value = '42'; minutes().dispatchEvent(new Event('input', { bubbles: true }));
   expect(document.querySelector('#clock')!.textContent).toBe('42:00');
   click('#manage-categories');
   expect(dialog.open).toBe(true);
-  expect(document.activeElement).toBe(input);
+  expect(document.activeElement).toBe(dialog.querySelector('.dialog-close'));
+  input.focus();expect(document.activeElement).toBe(input);
   click('.dialog-close');
   expect(minutes().value).toBe('42');
   expect(document.activeElement).toBe(document.querySelector('#manage-categories'));
@@ -58,14 +60,11 @@ it('adds, selects, saves, archives and restores a category without losing the dr
   nowSpy.mockRestore();
   expect((await getRecords(db))[0]).toMatchObject({ categoryId, category: '<阅读>', durationSeconds: 30 });
 
-  click('#manage-categories'); action('停用<阅读>').click();
-  await vi.waitFor(() => expect(action('恢复<阅读>')).toBeDefined());
+  click('#manage-categories'); action('删除<阅读>').click(); confirmDelete();
+  await vi.waitFor(() => expect(action('删除<阅读>')).toBeUndefined());
   expect([...selected().options].some(option => option.value === categoryId)).toBe(false);
   expect(minutes().value).toBe('42');
   input.value = '<阅读>'; submit();
-  await vi.waitFor(() => expect(dialog.querySelector('.category-error')!.textContent).toContain('恢复原类别'));
-  const restore = [...dialog.querySelectorAll<HTMLButtonElement>('.category-error button')][0];
-  expect(restore.textContent).toBe('恢复并选中'); restore.click();
   await vi.waitFor(() => expect(dialog.open).toBe(false));
   expect(selected().value).toBe(categoryId);
   expect((await getCategoryState(db)).categories).toHaveLength(5);
@@ -77,15 +76,15 @@ it('adds, selects, saves, archives and restores a category without losing the dr
   await vi.waitFor(() => expect(selected().value).toBe('builtin-computer'));
   expect(minutes().value).toBe('42');
 
-  click('#manage-categories'); action('停用英语').click();
-  await vi.waitFor(() => expect(action('恢复英语')).toBeDefined());
-  action('停用<阅读>').click();
-  await vi.waitFor(() => expect(action('恢复<阅读>')).toBeDefined());
-  action('停用健身').click();
-  await vi.waitFor(() => expect(action('恢复健身')).toBeDefined());
-  action('停用数学').click();
-  await vi.waitFor(() => expect(action('恢复数学')).toBeDefined());
-  expect(action('停用计算机').disabled).toBe(true);
+  click('#manage-categories'); action('删除英语').click(); confirmDelete();
+  await vi.waitFor(() => expect(action('删除英语')).toBeUndefined());
+  action('删除<阅读>').click(); confirmDelete();
+  await vi.waitFor(() => expect(action('删除<阅读>')).toBeUndefined());
+  action('删除健身').click(); confirmDelete();
+  await vi.waitFor(() => expect(action('删除健身')).toBeUndefined());
+  action('删除数学').click(); confirmDelete();
+  await vi.waitFor(() => expect(action('删除数学')).toBeUndefined());
+  expect(action('删除计算机').disabled).toBe(true);
   click('.dialog-close');
 
   // Simulate a category being disabled by another page after this page rendered.
@@ -97,7 +96,7 @@ it('adds, selects, saves, archives and restores a category without losing the dr
   const other = await openDatabase(db.name);
   await setCategoryArchived(other, categoryId, true);
   click('#start');
-  await vi.waitFor(() => expect(document.querySelector('.toast')!.textContent).toContain('已停用'));
+  await vi.waitFor(() => expect(document.querySelector('.toast')!.textContent).toContain('已删除'));
   expect(await getActive(db)).toBeUndefined();
   other.close(); db.close();
 });

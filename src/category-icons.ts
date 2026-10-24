@@ -12,7 +12,7 @@ export function categoryColor(id: string, name?: string) {
   const matched = index >= 0 ? index : names.indexOf(name || '');
   return CATEGORY_COLORS[matched >= 0 ? matched : categoryHash(`color:${id}`) % CATEGORY_COLORS.length];
 }
-type IconName = 'focus-timer' | 'settings-gear' | 'cat-house' | 'goal' | 'clock' | 'bars' | 'flame' | 'book' | 'computer' | 'star' | 'paw' | 'dumbbell' | 'math' | typeof customIcons[number];
+type IconName = 'paw-coin' | 'focus-timer' | 'settings-gear' | 'cat-house' | 'goal' | 'clock' | 'bars' | 'flame' | 'book' | 'computer' | 'star' | 'paw' | 'dumbbell' | 'math' | typeof customIcons[number];
 export function icon(name: IconName) {
   const paths = {
     'focus-timer': '<circle cx="12" cy="14" r="8"/><path d="M10 2h4m-2 0v4m6.5 1.5L20 6M12 10v4l3-2"/>',
@@ -37,6 +37,7 @@ export function icon(name: IconName) {
     leaf: '<path d="M20 3C8 1 2 7 5 15c3 8 17 3 15-12ZM3 22 16 9"/>',
     flag: '<path d="M5 22V3c5-4 9 4 15 0v12c-6 4-10-4-15 0"/>',
     star: '<path d="m12 2 3 6 7 1-5 5 1 8-6-4-6 4 1-8-5-5 7-1 3-6Z"/>',
+    'paw-coin': '<circle cx="12" cy="12" r="10"/><path d="M6.5 10V6l4 2h3l4-2v4M8.2 16.5c0-2 2.5-4 3.8-4s3.8 2 3.8 4c0 2.8-2.4 1-3.8 1s-3.8 1.8-3.8-1Z"/><ellipse cx="8" cy="11.5" rx=".6" ry="1"/><ellipse cx="10.5" cy="10.5" rx=".6" ry="1"/><ellipse cx="13.5" cy="10.5" rx=".6" ry="1"/><ellipse cx="16" cy="11.5" rx=".6" ry="1"/>',
     paw: '<ellipse cx="5" cy="9" rx="2" ry="3" transform="rotate(-25 5 9)"/><ellipse cx="10" cy="5" rx="2" ry="3"/><ellipse cx="16" cy="6" rx="2" ry="3"/><ellipse cx="20" cy="11" rx="2" ry="3" transform="rotate(25 20 11)"/><path d="M6 18c0-3 4-7 6-7s6 4 6 7c0 5-4 2-6 2s-6 3-6-2Z"/>',
   };
   return `<svg data-stats-icon="${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;

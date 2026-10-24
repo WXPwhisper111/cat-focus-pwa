@@ -1,3 +1,7 @@
+import './mobile-controls.css';
+import { createShopNews } from './shop-news';
+import { equipmentKey, equippedAnchors, furnitureAvailable } from './room-furnishings';
+import { equipFurniture } from './storage';
 import './page-headers.css';
 import { createPageHeaders } from './page-headers';
 import { installDialogDismiss } from './dialog-dismiss';
@@ -75,6 +79,7 @@ let catHouse: CatHouseState | null = null;
 let catHouseIssue = '';
 let commerce: CommerceState = defaultCommerce();
 let commerceIssue = '';
+const shopNews = createShopNews();
 let catShop: ReturnType<typeof createCatShop> | undefined;
 let notifiedId: string | null = null;
 let categories: FocusCategory[] = [];
@@ -219,7 +224,7 @@ function focusMarkup() {
   <section class="cat-card">${getCatDefinition(catHouse?.companionCatId) ? `<div id="focus-cat-slot"></div><span class="cat-caption">${escapeHtml(name)}${paused ? '在等你回来' : active ? '正陪你专注' : '准备好啦'}</span>` : '<div class="focus-cat-empty"><strong>这里还空空的</strong><p>去猫咪小屋领养一位小伙伴，让它陪你专注吧。</p><button type="button" data-page="room">去领养猫咪</button></div>'}${catHouse?.ownedCatIds.length ? '<button type="button" class="focus-companion-change" id="focus-companion">更换猫咪</button>' : ''}</section>
   <div id="focus-goal-slot"></div><section class="timer-card">${!active ? `<div class="timer-modes" role="group" aria-label="计时模式"><button type="button" data-mode="countdown" aria-pressed="${mode === 'countdown'}">倒计时</button><button type="button" data-mode="stopwatch" aria-pressed="${mode === 'stopwatch'}">正计时</button></div>` : `<div class="timer-mode-label">${mode === 'stopwatch' ? '正计时' : '倒计时'}</div>`}<span class="eyebrow">${active ? paused ? '已暂停' : '专注进行中' : '准备开始'}</span><div class="clock${display.length >= 8 ? ' long-clock' : ''}" id="clock">${display}</div>
   <div class="time-note">${active ? `${escapeHtml(session!.category)} · ${mode === 'stopwatch' ? '自由专注，手动结束' : `目标 ${session!.targetMinutes} 分钟`}` : mode === 'stopwatch' ? '不预设时长，按自己的节奏专注' : '选一个小目标，开始专注'}</div>
-  ${active ? `<div class="actions"><button class="primary" id="pause">${paused ? '继续专注' : '暂停'}</button><button id="early">${mode === 'stopwatch' ? '结束并保存' : '提前结束并保存'}</button><button class="danger" id="discard">放弃且不保存</button></div>` : `<div class="form"><div class="category-heading"><label for="category">专注类别</label><button id="manage-categories" type="button">管理</button></div><select id="category">${categories.filter(item => !item.archived).map(item => `<option value="${escapeHtml(item.id)}"${item.id === selectedCategoryId ? ' selected' : ''}>${escapeHtml(item.name)}</option>`).join('')}</select>${durationMarkup}<button class="primary wide" id="start">开始专注</button></div>`}</section>
+  ${active ? `<div class="actions"><button class="primary" id="pause">${paused ? '继续专注' : '暂停'}</button><button id="early">${mode === 'stopwatch' ? '结束并保存' : '提前结束并保存'}</button><button class="danger" id="discard">放弃且不保存</button></div>` : `<div class="form"><div class="category-heading"><label for="category">专注类别</label></div><div class="category-controls"><select id="category">${categories.filter(item => !item.archived).map(item => `<option value="${escapeHtml(item.id)}"${item.id === selectedCategoryId ? ' selected' : ''}>${escapeHtml(item.name)}</option>`).join('')}</select><button id="manage-categories" type="button">管理</button></div>${durationMarkup}<button class="primary wide" id="start">开始专注</button></div>`}</section>
   <div data-install-reminder-slot></div><div id="focus-list-slot"></div><p class="hint">${mode === 'stopwatch' ? '正计时不会自动结束。结束并保存会' : '提前结束会'}保存已专注时长并计入统计、奖励；放弃会删除本次时长。</p>`;
 }
 function statMarkup() {
@@ -228,7 +233,7 @@ function statMarkup() {
 function houseMarkup() {
   if (catHouseIssue) return `<section class="hero"><h1>猫咪小屋</h1><p class="cat-house-error">暂时无法读取领养状态：${escapeHtml(catHouseIssue)}。现有记录仍保留，请重试。</p><button id="retry-cat-house">重新读取</button></section>`;
   if (!hasAdoptedCat(catHouse)) return '<div id="adoption-slot"></div>';
-  return `<section class="hero"><div class="eyebrow">猫咪的日常</div><h1>猫咪小屋</h1><p>一个安静的小角落。</p>${roomPreview ? `<p class="room-preview-note">开发预览 · ${roomPreview === 'day' ? '白天' : '夜间'}</p>` : ''}</section><section class="room-card"><div id="room-slot" class="room-slot"></div></section><div id="interaction-slot"></div><div class="house-actions"><p>已入住 ${catHouse!.residentCatIds.length} / 3</p><button type="button" id="manage-residents">管理入住与新伙伴</button><button type="button" data-page="shop">猫咪商城</button></div><div class="house-companions" aria-label="选择行动猫">${catHouse!.residentCatIds.map(id => { const cat = getCatDefinition(id)!, selected = roomInteraction?.snapshot().selectedCatId === id; return `<div class="house-cat-card"><button type="button" data-action-cat="${id}" aria-pressed="${selected}" class="${selected ? 'is-selected' : ''}"><img src="${cat.preview}" alt=""/>${escapeHtml(catDisplayName(cat))}<small>选择行动猫</small></button><button type="button" class="cat-rename-button" data-rename-cat="${id}" aria-label="修改${escapeHtml(catDisplayName(cat))}的名称">改名</button></div>`; }).join('')}</div>`;
+  return `<section class="hero"><div class="eyebrow">猫咪的日常</div><h1>猫咪小屋</h1><p>一个安静的小角落。</p>${roomPreview ? `<p class="room-preview-note">开发预览 · ${roomPreview === 'day' ? '白天' : '夜间'}</p>` : ''}</section><section class="room-card"><div id="room-slot" class="room-slot"></div></section><div id="interaction-slot"></div><div class="house-actions"><p>已入住 ${catHouse!.residentCatIds.length} / 3</p><button type="button" id="manage-residents">管理入住与新伙伴</button><button type="button" data-page="shop">猫咪商城${shopNews.has('cat')?'<small class="shop-new">猫咪上新</small>':''}${shopNews.has('furniture')?'<small class="shop-new">家具上新</small>':''}</button></div><div class="house-companions" aria-label="选择行动猫">${catHouse!.residentCatIds.map(id => { const cat = getCatDefinition(id)!, selected = roomInteraction?.snapshot().selectedCatId === id; return `<div class="house-cat-card"><button type="button" data-action-cat="${id}" aria-pressed="${selected}" class="${selected ? 'is-selected' : ''}"><img src="${cat.preview}" alt=""/>${escapeHtml(catDisplayName(cat))}<small>选择行动猫</small></button><button type="button" class="cat-rename-button" data-rename-cat="${id}" aria-label="修改${escapeHtml(catDisplayName(cat))}的名称">改名</button></div>`; }).join('')}</div>`;
 }
 function settingsMarkup() {
   return `<section class="hero"><div class="eyebrow">安心专注</div><h1>设置与备份</h1><p>数据保存在这台设备的浏览器中。</p></section>
@@ -248,7 +253,7 @@ function render() {
   const residentKey = residents.map(cat => cat.id).join('|');
   if (page === 'shop') catShop?.element.remove(); else { catShop?.destroy(); catShop = undefined; }
   const showRoom = page === 'room' && hasAdoptedCat(catHouse) && !catHouseIssue;
-  if (roomScene && !showRoom) {
+  if (roomScene && (!showRoom || roomScene.equipmentKey !== equipmentKey(commerce.inventory))) {
     roomAutonomy?.destroy(); roomAutonomy = undefined; roomLifecycleCleanup?.(); roomLifecycleCleanup = undefined;
     roomInteraction?.setExecutor(undefined); roomBehavior?.destroy(); roomBehavior = undefined;
     roomScene.destroy(); roomScene = undefined;
@@ -291,7 +296,7 @@ function render() {
       unsubscribeInteraction = roomInteraction.subscribe(state => { roomScene?.setSelected(state.selectedCatId); document.querySelectorAll<HTMLButtonElement>('[data-action-cat]').forEach(button => { const selected = button.dataset.actionCat === state.selectedCatId; button.classList.toggle('is-selected', selected); button.setAttribute('aria-pressed', String(selected)); }); roomAutonomy?.changed(); });
     } else { roomInteraction.reconcile(residents.map(cat => cat.id)); if(!roomInteraction.snapshot().selectedCatId)roomInteraction.selectCat(residents.find(cat=>cat.id===catHouse?.companionCatId)?.id || residents[0].id); }
     roomScene ??= createRoomScene('idle', {
-      theme: roomPreview || 'auto', cat: residents[0], cats: residents, homeOrder: catHouse?.residentCatIds,
+      inventory: commerce.inventory, theme: roomPreview || 'auto', cat: residents[0], cats: residents, homeOrder: catHouse?.residentCatIds,
       hotspots: roomHotspots.filter(hotspot => hotspot.itemId !== 'curtains'),
       onCatAction: id => { roomAutonomy?.userInteraction(); void roomInteraction?.request('pet', id, null).catch(error => setNotice((error as Error).message)); },
       onItemAction: id => { roomAutonomy?.userInteraction(); roomInteraction?.selectItem(id as InteractionItem); void roomInteraction?.request(roomItems[id as InteractionItem].action).catch(error => setNotice((error as Error).message)); },
@@ -301,11 +306,8 @@ function render() {
       const scene = roomScene;
       const runner = createRoomBehavior(scene.behaviorPort, {
         initialLocations: stableLocations,
-        equipped: item => {
-          const zone = item === 'bed' ? 'sleep' : item === 'scratcher' ? 'play' : item === 'rug' ? 'activity' : 'food';
-          const product = item === 'bed' ? 'basic-bed' : item === 'scratcher' ? 'basic-scratcher' : item === 'rug' ? 'basic-rug' : 'basic-tableware';
-          return commerce.inventory.equipped[zone] === product && commerce.inventory.ownedFurnitureIds.includes(product);
-        },
+        anchorDefinitions: equippedAnchors(commerce.inventory),
+        equipped: item => furnitureAvailable(commerce.inventory,item),
         onLocations: locations => {
           stableLocations = locations;
           locationWrites = locationWrites.then(() => saveRoomLocations(db, locations)).catch(error => { setNotice(`小屋位置保存失败：${(error as Error).message}`); });
@@ -356,8 +358,10 @@ function render() {
     if (commerceIssue || catHouseIssue) host.textContent = `暂时无法读取商城：${commerceIssue || catHouseIssue}`;
     else {
       catShop ??= createCatShop({ balance: coinBalance, house: catHouse, commerce }, {
+        news: shopNews,
+        equip: async id => { await equipFurniture(db,id); await refresh(); stateChannel?.postMessage('changed'); },
         back: () => { page = 'room'; render(); },
-        buy: async id => { const result = await purchaseProduct(db, id); assignNotice(result.created ? '购买成功，已永久拥有；满员时可在管理入住中安排。' : '已经拥有这只猫咪，无需重复购买。'); await refresh(); stateChannel?.postMessage('changed'); },
+        buy: async id => { const result = await purchaseProduct(db, id); assignNotice(result.created ? '购买成功，已永久拥有；家具已自动装备，猫咪可在管理入住中安排。' : '已经拥有，无需重复购买。'); await refresh(); stateChannel?.postMessage('changed'); },
         companion: async id => { await setCompanionCat(db, id); await refresh(); stateChannel?.postMessage('changed'); },
       });
       catShop.update({ balance: coinBalance, house: catHouse, commerce }); host.append(catShop.element);

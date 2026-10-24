@@ -48,7 +48,7 @@ it('lets old users choose once, previews one cat, persists confirmation and shar
   expect(await getCatHouseState(db)).toEqual(saved);
   expect(document.querySelector('.room-scene')!.getAttribute('data-cat-id')).toBe('cat-03');
   expect(document.querySelector('#cat')!.getAttribute('src')).toContain('cat-03/mobile/idle/');
-  expect(document.querySelectorAll('[data-room-object=cat]')).toHaveLength(1); expect(callbacks.size).toBe(1);
+  expect(document.querySelectorAll('[data-room-object=cat]')).toHaveLength(1); expect(callbacks.size).toBe(2);
   click('[data-page=focus]'); await flush();
   expect(document.querySelector('.focus-cat-view')!.getAttribute('data-cat-id')).toBe('cat-03');
   click('[data-mode=stopwatch]'); await vi.waitFor(() => expect(document.querySelector('[data-mode=stopwatch]')!.getAttribute('aria-pressed')).toBe('true'));
@@ -59,7 +59,7 @@ it('lets old users choose once, previews one cat, persists confirmation and shar
   for (let count = 0; count < 3; count++) {
     click('[data-page=room]'); await flush();
     expect(document.querySelector('#confirm-adoption')).toBeNull(); expect(document.querySelector('#cat')!.getAttribute('data-animation')).toBe('idle');
-    expect(callbacks.size).toBe(1);
+    expect(callbacks.size).toBe(2);
     click('[data-page=focus]'); await flush(); expect(callbacks.size).toBe(1);
     expect(document.querySelector('#cat')!.getAttribute('src')).toContain('cat-03/mobile/sleep_loop/');
   }

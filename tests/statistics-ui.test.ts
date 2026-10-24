@@ -86,7 +86,7 @@ it('uses stored records for working range controls, chart details, growth and pr
   expect(document.querySelector('.stats-growth-body')!.textContent).toContain(`${growth.experience} 经验`);
   expect(document.querySelector('.stats-growth-body')!.textContent).toContain(`${(await getWallet(db)).state.balance} 猫爪币`);
   expect(document.querySelector('.stats-growth [data-stats-icon=star]')).not.toBeNull();
-  expect(document.querySelector('.stats-growth [data-stats-icon=paw]')).not.toBeNull();
+  expect(document.querySelector('.stats-growth [data-stats-icon=paw-coin]')).not.toBeNull();
   expect(document.querySelector('.stats-growth progress')!.getAttribute('value')).toBe(String(growth.experience - growth.current));
   expect(JSON.stringify(await getRecords(db))).toBe(originalJson);
   const reopened = await openDatabase(db.name);

@@ -1,6 +1,8 @@
 import { readdir, readFile, writeFile } from 'node:fs/promises';
 import { join, relative } from 'node:path';
 import { createHash } from 'node:crypto';
+const roomUpgrade = JSON.parse(await readFile(new URL('../public/room-upgrades-v1/manifest.json',import.meta.url),'utf8'));
+const roomUpgradeFiles = new Set(['./room-upgrades-v1/manifest.json',roomUpgrade.plant.file,roomUpgrade.curtains.fallback,...roomUpgrade.curtains.frames.map(frame=>frame.file),...Object.values(roomUpgrade.furniture).map(item=>item.file)]);
 
 async function files(dir) {
   const result = [];
@@ -18,6 +20,7 @@ async function files(dir) {
       if (asset.startsWith('./cat-expansion-v2/') && !/^\.\/cat-expansion-v2\/cat-0[456]\/(?:animations\.json|mobile\/[a-f0-9]{64}\.webp)$/.test(asset)) continue;
       if(asset.startsWith('./cat-stretch-v1/')&&!/^\.\/cat-stretch-v1\/(?:animations\.json|cat-0[1-6]\/[a-f0-9]{64}\.webp)$/.test(asset))continue;
       if(asset.startsWith('./page-headers-v1/')&&!/^\.\/page-headers-v1\/header_(focus|stats|house|settings)\.webp$/.test(asset))continue;
+      if(asset.startsWith('./room-upgrades-v1/')&&!roomUpgradeFiles.has(asset))continue;
       result.push(asset);
     }
   }
@@ -36,7 +39,7 @@ const release=JSON.parse(await readFile(new URL('../release-notes.json',import.m
 if(!release.id||!release.label||!release.title||!Array.isArray(release.summary)||release.summary.length<2||release.summary.length>5||release.summary.some(text=>typeof text!=='string'||!text.trim()))throw Error('User release notes are required');
 hash.update(JSON.stringify(release));
 const version = hash.digest('hex').slice(0, 12);
-const media = assets.filter(asset => /^\.\/(?:room|cat-animation-v2|cat-interactions-v2|cat-expansion-v2|cat-stretch-v1|page-headers-v1)\//.test(asset));
+const media = assets.filter(asset => /^\.\/(?:room|room-upgrades-v1|cat-animation-v2|cat-interactions-v2|cat-expansion-v2|cat-stretch-v1|page-headers-v1)\//.test(asset));
 const core = assets.filter(asset => !media.includes(asset));
 const html = await readFile('dist/index.html', 'utf8');
 const entry = /<script[^>]*src="([^"]+)"/.exec(html)?.[1] || './index.html';

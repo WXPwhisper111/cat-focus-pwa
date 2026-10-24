@@ -12,6 +12,7 @@ import { stretchClip } from '../src/cat-stretch';
 import { pageHeaderAssets } from '../src/page-headers';
 import images from '../src/install-guide-images.json';
 import layout from '../art/room-v0.1/scene-calibration/layout.json';
+import { roomUpgradeAssets } from '../src/room-furnishings';
 
 const finalize = resolve('scripts/finalize-distribution.mjs');
 it('prunes generated extras only after validating every retained byte; rejects traversal before deleting', async () => {
@@ -48,6 +49,8 @@ it.skipIf(!existsSync('dist/sw.js'))('retains all six cats and every runtime fra
   const manifest = new Set<string>(config.assets);
   const hash = (path:string) => createHash('sha256').update(readFileSync(path)).digest('hex');
   const urls = new Set<string>([...Object.values(pageHeaderAssets), ...Object.values(images).map(image=>image.src), './icon-192.png','./icon-512.png']);
+  for(const item of Object.values(roomUpgradeAssets.furniture))urls.add(item.file);
+  urls.add(roomUpgradeAssets.plant.file);urls.add(roomUpgradeAssets.curtains.fallback);for(const frame of roomUpgradeAssets.curtains.frames)urls.add(frame.file);
   for (const cat of catDefinitions) {
     urls.add(cat.preview);
     for (const sequence of Object.values(cat.animations)) for (const frame of sequence.frames) urls.add(frame.file);

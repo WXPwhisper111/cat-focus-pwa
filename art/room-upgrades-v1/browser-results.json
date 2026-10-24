@@ -1,0 +1,116 @@
+{
+  "engine": "Isolated headless Edge",
+  "realPhone": false,
+  "results": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 690
+      },
+      "passed": true,
+      "checks": [
+        "manual input focus",
+        "category delete/re-add",
+        "task edit",
+        "rename",
+        "real test settlement",
+        "four furniture purchases",
+        "equip switch",
+        "new badges persist",
+        "curtain motion/reduced motion",
+        "no horizontal overflow",
+        "transparent touch highlight",
+        "keyboard focus remains visible",
+        "reload persistence"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "passed": true,
+      "checks": [
+        "manual input focus",
+        "category delete/re-add",
+        "task edit",
+        "rename",
+        "real test settlement",
+        "four furniture purchases",
+        "equip switch",
+        "new badges persist",
+        "curtain motion/reduced motion",
+        "no horizontal overflow",
+        "transparent touch highlight",
+        "keyboard focus remains visible",
+        "reload persistence"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "manual input focus",
+        "category delete/re-add",
+        "task edit",
+        "rename",
+        "real test settlement",
+        "four furniture purchases",
+        "equip switch",
+        "new badges persist",
+        "curtain motion/reduced motion",
+        "no horizontal overflow",
+        "transparent touch highlight",
+        "keyboard focus remains visible",
+        "reload persistence"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 860
+      },
+      "passed": true,
+      "checks": [
+        "manual input focus",
+        "category delete/re-add",
+        "task edit",
+        "rename",
+        "real test settlement",
+        "four furniture purchases",
+        "equip switch",
+        "new badges persist",
+        "curtain motion/reduced motion",
+        "no horizontal overflow",
+        "transparent touch highlight",
+        "keyboard focus remains visible",
+        "reload persistence"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "passed": true,
+      "checks": [
+        "manual input focus",
+        "category delete/re-add",
+        "task edit",
+        "rename",
+        "real test settlement",
+        "four furniture purchases",
+        "equip switch",
+        "new badges persist",
+        "curtain motion/reduced motion",
+        "no horizontal overflow",
+        "transparent touch highlight",
+        "keyboard focus remains visible",
+        "reload persistence"
+      ]
+    }
+  ]
+}

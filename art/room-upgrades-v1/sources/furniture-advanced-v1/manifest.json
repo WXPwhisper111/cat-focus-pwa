@@ -1,0 +1,258 @@
+{
+  "version": "furniture-advanced-v1",
+  "style": "cream-sage-warm-wood",
+  "coordinateSystem": "source canvas pixels; room rectangles use 1024x768 logical units",
+  "sleepOffsetRoom": [
+    0,
+    -12
+  ],
+  "items": [
+    {
+      "id": "bed",
+      "basic": "zone_sleep_bed_basic.png",
+      "file": "zone_sleep_bed_advanced.png",
+      "generated": "exec-9577e09d-2752-4466-ac48-b63aed62f63b.png",
+      "scale": 1.08,
+      "anchor": [
+        256,
+        300
+      ],
+      "contactKind": "sleep support",
+      "roomRect": [
+        0,
+        492,
+        288,
+        216
+      ],
+      "canvas": [
+        512,
+        384
+      ],
+      "originalSolidBounds": [
+        37,
+        142,
+        475,
+        337
+      ],
+      "solidBounds": [
+        19,
+        129,
+        492,
+        340
+      ],
+      "sourceBounds": [
+        101,
+        397,
+        1345,
+        953
+      ],
+      "exportScaleXY": [
+        0.3802572347266881,
+        0.3787769784172662
+      ],
+      "registeredTopLeft": [
+        19,
+        129
+      ],
+      "pngSha256": "bb4321654a729db4b7f5bcabd326475e9fc2728d80c29ef949eff9a0346ca6a4"
+    },
+    {
+      "id": "rug",
+      "basic": "zone_activity_rug_basic.png",
+      "file": "zone_activity_rug_advanced.png",
+      "generated": "exec-1d0b8408-2cfe-404e-a7e6-193d1afb4d95.png",
+      "scale": 1.08,
+      "anchor": [
+        256,
+        139
+      ],
+      "contactKind": "floor plane",
+      "roomRect": [
+        256,
+        536,
+        512,
+        256
+      ],
+      "canvas": [
+        512,
+        256
+      ],
+      "originalSolidBounds": [
+        63,
+        99,
+        450,
+        179
+      ],
+      "solidBounds": [
+        48,
+        96,
+        466,
+        182
+      ],
+      "sourceBounds": [
+        212,
+        337,
+        1563,
+        628
+      ],
+      "exportScaleXY": [
+        0.30937083641746854,
+        0.29690721649484536
+      ],
+      "registeredTopLeft": [
+        48,
+        96
+      ],
+      "pngSha256": "e95ede54efd547156848734e16d0549f561a52334a4eb8126ec1f2c573119960"
+    },
+    {
+      "id": "foodBowl",
+      "basic": "zone_food_bowl_basic.png",
+      "file": "zone_food_bowl_advanced.png",
+      "generated": "exec-7dd054d8-5011-440e-ac4b-c4bca8525e48.png",
+      "scale": 1,
+      "anchor": [
+        128,
+        90
+      ],
+      "contactKind": "muzzle",
+      "roomRect": [
+        755,
+        607,
+        128,
+        96
+      ],
+      "canvas": [
+        256,
+        192
+      ],
+      "originalSolidBounds": [
+        50,
+        88,
+        212,
+        155
+      ],
+      "solidBounds": [
+        50,
+        88,
+        212,
+        155
+      ],
+      "sourceBounds": [
+        276,
+        465,
+        1170,
+        858
+      ],
+      "exportScaleXY": [
+        0.18120805369127516,
+        0.17048346055979643
+      ],
+      "registeredTopLeft": [
+        50,
+        88
+      ],
+      "pngSha256": "0b597ea4f2fcfab815057562d08fc0d78bb735800624284368a904c408e64cf5"
+    },
+    {
+      "id": "waterBowl",
+      "basic": "zone_water_bowl_basic.png",
+      "file": "zone_water_bowl_advanced.png",
+      "generated": "exec-21ad1b4e-4d43-4fdc-95d9-83ee04ef5ded.png",
+      "scale": 1,
+      "anchor": [
+        128,
+        90
+      ],
+      "contactKind": "muzzle",
+      "roomRect": [
+        850,
+        607,
+        128,
+        96
+      ],
+      "canvas": [
+        256,
+        192
+      ],
+      "originalSolidBounds": [
+        50,
+        87,
+        212,
+        155
+      ],
+      "solidBounds": [
+        50,
+        87,
+        212,
+        155
+      ],
+      "sourceBounds": [
+        276,
+        465,
+        1171,
+        860
+      ],
+      "exportScaleXY": [
+        0.18100558659217877,
+        0.17215189873417722
+      ],
+      "registeredTopLeft": [
+        50,
+        87
+      ],
+      "pngSha256": "8a666a9f09ca2499ba4dd6547da1c993beffb87700a01d981fb4d0f8a21a564f"
+    },
+    {
+      "id": "scratcher",
+      "basic": "zone_play_scratcher_basic.png",
+      "file": "zone_play_scratcher_advanced.png",
+      "generated": "exec-036eb166-2c20-4962-88f1-562407d6cc8c.png",
+      "scale": 1.1,
+      "anchor": [
+        128,
+        112
+      ],
+      "contactKind": "front-paw",
+      "roomRect": [
+        772,
+        440,
+        224,
+        224
+      ],
+      "canvas": [
+        256,
+        256
+      ],
+      "originalSolidBounds": [
+        67,
+        74,
+        193,
+        187
+      ],
+      "solidBounds": [
+        61,
+        70,
+        200,
+        194
+      ],
+      "sourceBounds": [
+        323,
+        328,
+        932,
+        957
+      ],
+      "exportScaleXY": [
+        0.22758620689655176,
+        0.19761526232114468
+      ],
+      "registeredTopLeft": [
+        61,
+        70
+      ],
+      "pngSha256": "0603918cd024668693574e5dd1e9cebec55535df4d6f411d225634a330831db2"
+    }
+  ],
+  "appIntegrated": false,
+  "gitPush": false
+}
