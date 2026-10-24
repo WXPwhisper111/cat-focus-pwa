@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/index-cat-interactions.mjs && vite --host 0.0.0.0",
-    "build": "node scripts/index-cat-interactions.mjs && tsc --noEmit && vite build && node scripts/generate-sw.mjs",
+    "build": "node scripts/index-cat-interactions.mjs && tsc --noEmit && vite build && node scripts/generate-sw.mjs && node scripts/finalize-distribution.mjs",
     "preview": "vite preview --host 0.0.0.0",
     "pretest": "node scripts/index-cat-interactions.mjs",
     "test": "vitest run"

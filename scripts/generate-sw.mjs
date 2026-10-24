@@ -9,7 +9,7 @@ async function files(dir) {
     if (entry.isDirectory()) result.push(...await files(path));
     else if (entry.name !== 'sw.js' && entry.name !== 'update-manifest.json') {
       const asset = './' + relative('dist', path).replaceAll('\\', '/');
-      // Keep original artwork in the distribution, but cache only mobile derivatives.
+      // This runtime manifest also controls final distribution pruning after generation.
       if (/^\.\/cat(?:\/|_\d+\/)/.test(asset) || asset.startsWith('./cat-mobile/')) continue;
       if (asset.startsWith('./cat-animation-v2/') && !/^\.\/cat-animation-v2\/cat-0[123]\/mobile\/.+\.webp$/.test(asset)) continue;
       if (asset.startsWith('./cat-interactions-v1/')) continue;
