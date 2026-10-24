@@ -1,3 +1,4 @@
+import { stretchClip, idleMotionTiming } from './cat-stretch';
 import { catDisplayName } from './cat-names';
 import { validateClip, clipDuration, type AnimationClip } from './cat-animation';
 import { orangeWhiteCat, catSequence, resolveCatAnimation, frameDuration, type CatAnimation, type CatDefinition } from './cat-definition';
@@ -10,6 +11,7 @@ export type CatRuntime = {
 };
 export type CatPlayerOptions = {
   definition?: CatDefinition;
+  idleMotion?: boolean;
   onPlayback?: (clip: AnimationClip, event: 'start' | 'complete' | 'stop' | 'switch' | 'hidden') => void;
   onFrame?: (state: CatAnimation, index: number) => void;
   onError?: (error?: Error) => void;
@@ -50,6 +52,9 @@ export function createCatPlayer(image: HTMLImageElement, initialState: CatAnimat
   let active: Playback | undefined, frame = 0, playhead = 0, last = 0;
   let destroyed = false, stopped = false, pageActive = true, pendingFrame: number | undefined, revision = 0;
   let intent = '';
+  let stretchPending=false, ambient=false, idleThreshold=0;
+  const resetIdleThreshold=()=>{idleThreshold=idleMotionTiming.minimumMs+Math.random()*(idleMotionTiming.maximumMs-idleMotionTiming.minimumMs);};
+  resetIdleThreshold();
   const readyClips = new Set<AnimationClip>();
   const legacyClips = new Map<CatAnimation, AnimationClip>();
   function legacyClip(state: CatAnimation) {
@@ -86,6 +91,7 @@ export function createCatPlayer(image: HTMLImageElement, initialState: CatAnimat
     if (destroyed || stopped || !active || !pageActive || document.hidden) return;
     const playback = active, duration = clipDuration(playback.clip);
     const elapsed = Math.max(0, now - last); last = now;
+    const before=playback.elapsed;
     playback.elapsed += elapsed;
     const complete = playback.clip.loop ? playback.iterations !== undefined && playback.elapsed >= duration * playback.iterations : playback.elapsed >= duration;
     playhead = complete ? duration : playback.clip.loop ? playback.elapsed % duration : Math.min(duration, playback.elapsed);
@@ -98,6 +104,15 @@ export function createCatPlayer(image: HTMLImageElement, initialState: CatAnimat
       // Mark completed before calling user code, which may stop, destroy or switch clips.
       if (!destroyed && active === playback && !stopped) { options.onPlayback?.(playback.clip, 'complete'); playback.onComplete?.(); }
       return;
+    }
+    if(options.idleMotion && playback.legacy?.actual==='idle' && !playback.legacy.fallback && !stretchPending && playback.elapsed>=idleThreshold && Math.floor(before/duration)!==Math.floor(playback.elapsed/duration)) {
+      const clip=stretchClip(definition.id);
+      if(clip){stretchPending=true;ambient=true;
+        void start(clip,{onComplete:()=>{ambient=false;void updateState('idle');}}).then(result=>{
+          stretchPending=false;
+          if(result.status==='failed'){ambient=false;idleThreshold=playback.elapsed+idleMotionTiming.maximumMs;schedule();}
+        });
+      }
     }
     schedule();
   }
@@ -137,14 +152,15 @@ export function createCatPlayer(image: HTMLImageElement, initialState: CatAnimat
   async function updateState(state: CatAnimation) {
     const actual = resolveCatAnimation(definition, state);
     if (destroyed || (intent === `legacy:${state}` && active?.legacy?.requested === state && !stopped && !active.completed)) return;
+    ambient=false; resetIdleThreshold();
     await start(legacyClip(actual), {}, { actual, requested: state, fallback: state !== actual });
   }
   const stop = () => {
     if (destroyed) return;
-    ++revision; intent = ''; stopped = true; stopFrame();
+    ++revision; ambient=false; stretchPending=false; intent = ''; stopped = true; stopFrame();
     if (active) { options.onPlayback?.(active.clip, 'stop'); image.dataset.playback = 'stopped'; }
   };
-  const visibility = () => { if (document.hidden && active) options.onPlayback?.(active.clip, 'hidden'); stopFrame(); if (!document.hidden) { last = env.now(); schedule(); } };
+  const visibility = () => { if (document.hidden && active) options.onPlayback?.(active.clip, 'hidden'); stopFrame(); if (!document.hidden) { if(ambient){ambient=false;void updateState('idle');} else {if(active?.legacy?.actual==='idle'){resetIdleThreshold();idleThreshold+=active.elapsed;} if(active&&!stopped)options.onPlayback?.(active.clip,'start'); last = env.now(); schedule();} } };
   const pageHide = () => { if (active) options.onPlayback?.(active.clip, 'hidden'); pageActive = false; stopFrame(); };
   const pageShow = () => { pageActive = true; visibility(); };
   document.addEventListener('visibilitychange', visibility);
@@ -162,7 +178,7 @@ export function createCatPlayer(image: HTMLImageElement, initialState: CatAnimat
       const legacy = active.legacy;
       image.alt = legacy ? `${catDisplayName(definition)}${legacy.fallback ? '正在休息（暂无睡眠动画，显示本猫待机首帧）' : legacy.actual === 'sleep_loop' ? '正在睡觉' : '正在陪伴'}` : `${catDisplayName(definition)} · ${active.clip.id}`;
     },
-    play: (clip: AnimationClip, playOptions: PlayOptions = {}) => start(clip, playOptions),
+    play: (clip: AnimationClip, playOptions: PlayOptions = {}) => { ambient=false; return start(clip, playOptions); },
     stop, cancel: stop,
     getState: () => ({ clipId: active?.clip.id || null, frame, playheadMs: playhead, stopped, completed: active?.completed || false }),
     destroy() {

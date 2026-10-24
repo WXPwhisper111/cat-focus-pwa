@@ -1,1 +1,17 @@
 .app-update-card{background:#fff8ed;}.app-update-card p{overflow-wrap:anywhere;font-size:14px;}.app-update-card button,.app-update-banner button{min-height:44px;}.app-update-card [hidden],.app-update-banner[hidden]{display:none!important;}.update-media{margin-top:18px;padding-top:15px;border-top:1px solid #e4cdb3;}.update-media strong{font-size:14px;}.app-update-banner{display:flex;align-items:center;gap:12px;margin-bottom:16px;padding:12px 14px;border:1px solid #e9c59e;border-radius:18px;background:#fff0db;}.app-update-banner>div{flex:1;min-width:0;}.app-update-banner strong{font-size:14px;}.app-update-banner p{font-size:12px;line-height:1.5;color:#826e60;margin:5px 0 0;}.app-update-banner button{flex:none;max-width:45%;font-size:12px;padding:8px 10px;}@media(max-width:350px){.app-update-banner{align-items:stretch;flex-direction:column;}.app-update-banner button{max-width:100%;}}
+
+.version-update-dialog{width:min(92vw,490px);max-height:90dvh;overflow:auto;border:1px solid #e3cbb1;border-radius:26px;background:#fffaf3;color:#49372f;padding:28px;text-align:center;box-shadow:0 18px 60px #30221630;}
+.version-update-dialog::backdrop{background:#342b2466;}
+.version-update-close{position:absolute;right:12px;top:10px;width:44px;height:44px;padding:0;border:0;background:transparent;font-size:28px;color:#826e60;}
+.version-update-icon{display:grid;place-items:center;margin:8px auto 16px;width:64px;height:64px;border-radius:50%;background:#ffecd6;}
+.version-update-icon svg{width:32px;height:32px;fill:none;stroke:#ce793b;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.version-update-dialog h2{font-size:clamp(22px,6vw,30px);line-height:1.4;margin:8px 0 12px;}
+.version-update-label{display:inline-block;padding:5px 12px;border-radius:20px;background:#ffecd6;color:#b66b34;font-size:13px;}
+.version-update-list{list-style:none;text-align:left;padding:0;margin:20px 0;display:grid;gap:12px;}
+.version-update-list li{padding:12px 12px 12px 34px;border-radius:12px;background:#fff2e1;position:relative;font-size:14px;line-height:1.7;overflow-wrap:anywhere;}
+.version-update-list li:before{content:'✓';position:absolute;left:12px;color:#ce793b;font-weight:800;}
+.version-update-dialog .hint{font-size:12px;color:#947f6c;line-height:1.6;}
+.version-update-actions{display:grid;grid-template-columns:1fr 1.2fr;gap:10px;margin-top:20px;position:sticky;bottom:-28px;background:#fffaf3;padding:12px 0;}
+.version-update-actions button{min-width:0;min-height:44px;padding:12px 8px;}
+.update-release-notes{margin-top:14px;border-top:1px solid #e4cdb3;padding-top:12px;font-size:14px;line-height:1.8;}.update-release-notes summary{min-height:44px;cursor:pointer;}.update-release-notes ul{padding-left:22px;}
+@media(max-width:360px){.version-update-dialog{padding:22px 18px;}.version-update-list{gap:8px;margin:14px 0;}.version-update-list li{padding-top:9px;padding-bottom:9px;}.version-update-actions{bottom:-22px;}}

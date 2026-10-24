@@ -5,8 +5,9 @@ import type { InteractionItem } from './room-interaction';
 
 export const behaviorLimits = { maxActive: 2 };
 export const teleportTiming = { outMs: 150, inMs: 180, watchdogMs: 4000 };
-export type ManualBehavior = 'eat' | 'drink' | 'scratch' | 'pet' | 'sleep';
+export type ManualBehavior = 'eat' | 'drink' | 'scratch' | 'pet' | 'sleep' | 'toilet';
 export type BehaviorPlan = { item: InteractionItem | null; enter?: AnimationClip; loop?: AnimationClip; exit?: AnimationClip; once?: AnimationClip; minimumMs: number };
+export const toiletTiming={initial:[60000,90000],cooldown:[120000,180000],durationMs:6000,weight:1,ordinaryWeight:4} as const;
 export const behaviorTiming = { eat: 4800, drink: 6000, scratch: 3840, sleep: 9600, pet: 0 };
 const base = new Map<string, AnimationClip>();
 export function baseClip(catId: string, action: 'idle' | 'sleep_loop') {
@@ -21,6 +22,7 @@ export function baseClip(catId: string, action: 'idle' | 'sleep_loop') {
   return base.get(key)!;
 }
 export function behaviorPlan(catId: string, action: ManualBehavior): BehaviorPlan | undefined {
+  if(action==='toilet')return {item:null,minimumMs:toiletTiming.durationMs};
   if (action === 'sleep') {
     const clip = baseClip(catId, 'sleep_loop');
     return clip ? { item: 'bed', loop: clip, minimumMs: behaviorTiming.sleep } : undefined;

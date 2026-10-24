@@ -74,3 +74,11 @@ it('waits a full cooldown after execution failure instead of retrying in a loop'
   app.jobs.get('a')!.reject(Error('unavailable'));await vi.advanceTimersByTimeAsync(9999);expect(app.log).toHaveLength(1);
   await vi.advanceTimersByTimeAsync(1);expect(app.log).toHaveLength(2);expect(app.log[1].action).not.toBe(app.log[0].action);
 });
+
+it('allows toilet only after its initial grace period and enforces the longer cooldown',async()=>{
+  const app=fixture();app.port.ids=['a'];app.port.available=(_id,action)=>action==='toilet';app.scheduler.setActive(true);
+  await vi.advanceTimersByTimeAsync(59999);expect(app.log).toEqual([]);await vi.advanceTimersByTimeAsync(8001);expect(app.log[0]?.action).toBe('toilet');
+  app.jobs.get('a')!.done();await vi.advanceTimersByTimeAsync(119999);expect(app.log).toHaveLength(1);
+  // The normal scheduler only wakes at its configured cooldown, never high-frequency polls.
+  await vi.advanceTimersByTimeAsync(30000);expect(app.log).toHaveLength(1);
+});

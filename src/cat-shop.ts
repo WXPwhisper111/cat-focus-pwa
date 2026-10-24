@@ -39,7 +39,7 @@ export function createCatShop(initial: ShopViewState, actions: {
     const product = getProduct(selected)!;
     const isOwned = owned(product), missing = Math.max(0, product.price - state.balance);
     dialog.innerHTML = `<button type="button" id="shop-detail-close" class="shop-detail-close" aria-label="关闭商品详情">×</button><div class="shop-preview detail-preview">${preview(product)}</div><h2 id="shop-detail-title">${escape(productName(product))}</h2>${product.kind === 'cat' ? `<p>${escape(getCatDefinition(product.catId)!.description)}</p>` : ''}<p class="shop-price">${product.price} 猫爪币</p><p>当前余额：<strong>${state.balance}</strong> 猫爪币</p><p class="shop-purchase-note">${isOwned ? '已永久拥有，无需重复购买。' : missing ? `余额不足，还差 ${missing} 猫爪币。` : '确认后扣除猫爪币，永久解锁；有空位自动入住，满员时暂不入住。'}</p><p class="shop-error" role="alert">${escape(error)}</p><button type="button" id="shop-buy" class="primary wide" ${isOwned || missing || busy || !state.house?.companionCatId ? 'disabled' : ''}>${isOwned ? '已拥有' : busy ? '正在购买…' : `确认购买 · ${product.price} 猫爪币`}</button>`;
-    dialog.querySelector<HTMLButtonElement>('#shop-detail-close')!.onclick = () => dialog.close();
+    dialog.querySelector<HTMLButtonElement>('#shop-detail-close')!.onclick = () => {if(!busy)dialog.close();};
     dialog.querySelector<HTMLButtonElement>('#shop-buy')!.onclick = async () => {
       if (busy || isOwned || missing) return;
       const id = selected!; busy = true; error = ''; renderDetail();
@@ -47,6 +47,7 @@ export function createCatShop(initial: ShopViewState, actions: {
       finally { busy = false; render(); renderDetail(); }
     };
   }
+  dialog.addEventListener('cancel',event=>{if(busy)event.preventDefault();});
   dialog.addEventListener('close', () => { const id = selected; selected = null; element.querySelector<HTMLButtonElement>(`[data-shop-detail="${id}"]`)?.focus(); });
   render();
   return {

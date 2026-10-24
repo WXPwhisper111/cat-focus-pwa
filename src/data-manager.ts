@@ -70,12 +70,13 @@ export async function previewImport(db: IDBDatabase, file: File, changed: () => 
     dialog.append(title, summary, error);
     const buttons = ['先导出当前数据', '确认导入', '取消'].map(text => { const button = document.createElement('button'); button.textContent = text; dialog!.append(button); return button; });
     const opener = document.activeElement as HTMLElement | null;
-    const close = () => { dialog?.close(); dialog?.remove(); if (opener?.isConnected) opener.focus(); }; dialog.addEventListener('cancel', close); buttons[2].onclick = close;
+    let importing=false;
+    const close = () => { if(importing)return; dialog?.close(); dialog?.remove(); if (opener?.isConnected) opener.focus(); }; dialog.addEventListener('cancel', event=>{if(importing)event.preventDefault();else close();}); buttons[2].onclick = close;
     buttons[0].onclick = async () => { try { await downloadBackup(db); error.textContent = '已发起下载，请确认文件已保存。'; } catch { error.textContent = '导出失败，请重试。'; } };
     buttons[1].onclick = async () => {
-      buttons[1].disabled = true;
-      try { const result = await importBackup(db, raw, false, true); close(); await changed(); notice(`导入完成：新增 ${result.added} 条，跳过 ${result.skipped} 条。`); }
-      catch (cause) { error.textContent = cause instanceof Error ? cause.message : '导入失败，原数据已保留'; buttons[1].disabled = false; }
+      importing=true;buttons.forEach(button=>button.disabled=true);
+      try { const result = await importBackup(db, raw, false, true); importing=false;close(); await changed(); notice(`导入完成：新增 ${result.added} 条，跳过 ${result.skipped} 条。`); }
+      catch (cause) { error.textContent = cause instanceof Error ? cause.message : '导入失败，原数据已保留'; importing=false;buttons.forEach(button=>button.disabled=false); }
     };
     document.body.append(dialog); dialog.showModal();
   } catch (error) { dialog?.remove(); notice(error instanceof Error ? error.message : '无法读取备份'); }

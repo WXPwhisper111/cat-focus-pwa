@@ -1,3 +1,4 @@
+import { installDialogDismiss } from './dialog-dismiss';
 import { openResidentManager } from './resident-manager';
 import './app-update.css';
 import { createAppUpdate } from './app-update';
@@ -94,6 +95,7 @@ let finishing = false;
 let refreshRevision = 0;
 const stateChannel = 'BroadcastChannel' in window ? new BroadcastChannel('cat-focus-state') : undefined;
 const appUpdate = createAppUpdate({ enabled: import.meta.env.PROD, hasActiveSession: async () => !!(await getActive(db)), canReload: () => applicationReady && !pendingWelcome && !pendingCompletionCount && !document.querySelector('dialog[open]') });
+installDialogDismiss();
 const appUpdateView = createAppUpdateView(appUpdate, () => !!session, {
   canShow: () => applicationReady && !pendingWelcome && !pendingCompletionCount && !document.querySelector('dialog[open]'),
   openSettings: () => { history.replaceState(history.state, '', '#settings-update'); page = 'settings'; render(); },

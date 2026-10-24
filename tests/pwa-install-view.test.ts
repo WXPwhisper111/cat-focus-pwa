@@ -62,3 +62,9 @@ it('keeps the native button conditional on a real deferred event even in a recom
   window.dispatchEvent(event);
   expect(dialog.querySelector<HTMLButtonElement>('[data-native-install]')!.hidden).toBe(false);
 });
+
+it('closes the full-image guide for backdrop cancellation while Escape still returns to steps',()=>{
+  view.open();const dialog=document.querySelector<HTMLDialogElement>('dialog')!;dialog.querySelector<HTMLButtonElement>('[data-platform="edge"]')!.click();dialog.querySelector<HTMLButtonElement>('.install-shot')!.click();
+  const escape=new Event('cancel',{cancelable:true});expect(dialog.dispatchEvent(escape)).toBe(false);expect(dialog.querySelector<HTMLElement>('[data-image-view]')!.hidden).toBe(true);
+  dialog.querySelector<HTMLButtonElement>('.install-shot')!.click();expect(dialog.dispatchEvent(new CustomEvent('cancel',{cancelable:true,detail:{source:'backdrop'}}))).toBe(true);dialog.close();expect(document.querySelector('dialog')).toBeNull();
+});

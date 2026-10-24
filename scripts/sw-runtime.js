@@ -58,7 +58,7 @@ async function mediaState() {
   const keys = new Set((await (await caches.open(CONFIG.mediaCache)).keys()).map(request => request.url));
   return { total: CONFIG.media.length, cached: CONFIG.media.filter(path => keys.has(full(path))).length };
 }
-async function status() { return { version: CONFIG.version, entry: full(CONFIG.entry), media: await mediaState() }; }
+async function status() { return { release:CONFIG.release, version: CONFIG.version, entry: full(CONFIG.entry), media: await mediaState() }; }
 async function rememberVersion() {
   const meta = await caches.open(META_CACHE);
   await meta.put(metaURL(CONFIG.version), new Response(JSON.stringify({ ...CONFIG, savedAt: Date.now() }), { headers: { 'Content-Type': 'application/json' } }));

@@ -61,3 +61,9 @@ it('does not let a late old-worker response overwrite the newly controlling vers
   resolveOld({ ok: true, version: 'a', entry: 'https://test/assets/a.js', media: { cached: 0, total: 0 } }); await checking;
   expect(f.controller.snapshot()).toMatchObject({ phase: 'ready', latest: 'b' }); expect(f.reload).not.toHaveBeenCalled();
 });
+
+it('binds release notes to each worker version and clears them for legacy workers without metadata',async()=>{
+  const f=fixture('b');const release={id:'life',label:'猫咪日常更新',title:'陪伴有了更多小动作',summary:['新的动作']};
+  f.send.mockImplementation(async()=>({ok:true,version:'b',entry:'https://test/assets/b.js',media:{total:0,cached:0},release}));await f.controller.start();expect(f.controller.snapshot().release).toEqual(release);
+  f.send.mockImplementation(async()=>({ok:true,version:'c',entry:'https://test/assets/c.js',media:{total:0,cached:0}}));await f.controller.check();expect(f.controller.snapshot().latest).toBe('c');expect(f.controller.snapshot().release).toBeUndefined();
+});

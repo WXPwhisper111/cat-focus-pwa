@@ -1,5 +1,6 @@
-export type UpdateReply = { ok: boolean; version: string; entry: string; media: { total: number; cached: number }; failed?: string[]; remaining?: number };
-export type UpdateState = { phase: 'idle' | 'checking' | 'current' | 'ready' | 'offline' | 'error' | 'unsupported'; current: string; latest: string; message: string; applying: boolean; mediaPhase: 'pending' | 'downloading' | 'complete' | 'paused' | 'error'; cached: number; total: number };
+import { userRelease,type UserRelease } from './release-notes';
+export type UpdateReply = { release?:UserRelease; ok: boolean; version: string; entry: string; media: { total: number; cached: number }; failed?: string[]; remaining?: number };
+export type UpdateState = { release?:UserRelease; phase: 'idle' | 'checking' | 'current' | 'ready' | 'offline' | 'error' | 'unsupported'; current: string; latest: string; message: string; applying: boolean; mediaPhase: 'pending' | 'downloading' | 'complete' | 'paused' | 'error'; cached: number; total: number };
 export type UpdateOptions = { enabled: boolean; hasActiveSession: () => Promise<boolean>; canReload: () => boolean; reload?: () => void; container?: ServiceWorkerContainer; entry?: string; send?: (worker: ServiceWorker, action: string, payload?: object) => Promise<UpdateReply> };
 export function workerMessage(worker: ServiceWorker, action: string, payload: object = {}, signal?: AbortSignal): Promise<UpdateReply> {
   return new Promise((resolve, reject) => {
@@ -31,6 +32,7 @@ export function createAppUpdate(options: UpdateOptions) {
   const worker = () => container?.controller || registration?.active;
   function applyReply(reply: UpdateReply) {
     if (state.latest !== reply.version) { generation++; failed.clear(); }
+    state.release=userRelease(reply.release);
     state.latest = reply.version; state.cached = reply.media.cached; state.total = reply.media.total;
     if (reply.entry === entry) state.current = reply.version;
     state.phase = entry && reply.entry !== entry ? 'ready' : 'current';

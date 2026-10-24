@@ -1,0 +1,13 @@
+{
+  "engine": "Edge headless",
+  "productionBuild": true,
+  "version": "9b5825a3e62b",
+  "release": "cat-life-v1",
+  "stretchMediaFiles": 103,
+  "checks": [
+    "fresh install does not advertise update",
+    "worker-bound release notes visible in settings",
+    "refresh remains current",
+    "no page errors"
+  ]
+}

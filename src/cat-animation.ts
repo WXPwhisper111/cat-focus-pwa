@@ -9,6 +9,7 @@ export type AnimationContact = {
 export type AnimationClip = {
   id: string; catId: string; loop: boolean; sourceCanvas: readonly number[];
   feetAnchor: readonly number[]; frames: readonly AnimationFrame[];
+  display?: { scale:number; anchor:readonly number[] };
   contact?: AnimationContact; facing?: string; contactPointsByFrame?: readonly (readonly (readonly number[])[])[];
 };
 export function clipDuration(clip: AnimationClip) { return clip.frames.reduce((sum, frame) => sum + frame.durationMs, 0); }
@@ -17,6 +18,7 @@ export function validateClip(clip: AnimationClip) {
       clip.sourceCanvas.some(value => !Number.isFinite(value) || value <= 0) ||
       clip.feetAnchor.length !== 2 || clip.feetAnchor.some(value => !Number.isFinite(value)) ||
       clip.frames.some(frame => !frame.file || !Number.isFinite(frame.durationMs) || frame.durationMs <= 0) ||
+      clip.display && (!Number.isFinite(clip.display.scale)||clip.display.scale<=0||clip.display.anchor.length!==2||clip.display.anchor.some(v=>!Number.isFinite(v))) ||
       !Number.isFinite(clipDuration(clip))) throw Error('动画资源或逐帧时长无效');
 }
 // Pure coordinate conversions. The caller chooses the anchor and its world position.
@@ -27,4 +29,10 @@ export function pointOnCanvas(clip: AnimationClip, point: readonly number[], can
 export function rectAtAnchor(clip: AnimationClip, anchor: readonly number[], target: readonly number[], size: readonly number[]): readonly [number, number, number, number] {
   const point = pointOnCanvas(clip, anchor, size);
   return [target[0] - point[0], target[1] - point[1], size[0], size[1]];
+}
+
+// Display registration belongs to the clip, not to world feet or action contacts.
+export function displayedRect(clip:AnimationClip, frame:number, feet:AnimationPoint, size=144):readonly [number,number,number,number] {
+  const width=size*(clip.display?.scale ?? 1);
+  return rectAtAnchor(clip,clip.display?.anchor || clip.frames[frame].sourceAnchor || clip.feetAnchor,feet,[width,width]);
 }

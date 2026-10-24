@@ -28,12 +28,12 @@ export function createTeleportController(port: TeleportPort, animate = (node: HT
   const pageHide = () => { pageActive = false; visibility(); };
   const pageShow = () => { pageActive = true; visibility(); };
   window.addEventListener('pagehide', pageHide); window.addEventListener('pageshow', pageShow);
-  async function move(id: string, target: AnimationPoint, signal: AbortSignal, whileInvisible?: () => Promise<void>, resolveTarget?: () => AnimationPoint) {
+  async function move(id: string, target: AnimationPoint, signal: AbortSignal, whileInvisible?: () => Promise<void>, resolveTarget?: () => AnimationPoint, mode?: 'out'|'in') {
     checkSignal(signal);
     if (destroyed) throw cancelled();
     if (active.has(id)) throw Error('猫咪正在传送，请稍候');
     const origin = port.getFeet(id);
-    if (!resolveTarget && Math.hypot(origin[0] - target[0], origin[1] - target[1]) < .01) { if (whileInvisible) await awaitAbortable(whileInvisible(), signal); return; }
+    if (!mode && !resolveTarget && Math.hypot(origin[0] - target[0], origin[1] - target[1]) < .01) { if (whileInvisible) await awaitAbortable(whileInvisible(), signal); return; }
     const task = { abort: new AbortController(), animations: new Set<Animation>(), nodes: port.fadeElements(id), guards: new Map<() => void, () => void>() };
     active.set(id, task);
     const abort = () => task.abort.abort(); signal.addEventListener('abort', abort, { once: true });
@@ -61,10 +61,11 @@ export function createTeleportController(port: TeleportPort, animate = (node: HT
       }
     };
     try {
-      await fade(1, 0, teleportTiming.outMs);
+      if(mode!=='in')await fade(1, 0, teleportTiming.outMs);
+      else task.nodes.forEach(node=>{node.style.opacity='0';});
       checkSignal(task.abort.signal); port.setFeet(id, resolveTarget ? resolveTarget() : target);
       if (whileInvisible) await awaitAbortable(whileInvisible(), task.abort.signal); checkSignal(task.abort.signal);
-      await fade(0, 1, teleportTiming.inMs);
+      if(mode!=='out')await fade(0, 1, teleportTiming.inMs);
     } catch (error) {
       if (!destroyed) port.setFeet(id, origin);
       throw error;

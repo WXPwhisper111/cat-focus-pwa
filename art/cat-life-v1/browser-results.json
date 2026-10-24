@@ -1,0 +1,49 @@
+{
+  "engine": "Microsoft Edge headless, isolated contexts",
+  "realPhone": false,
+  "results": [
+    {
+      "width": 320,
+      "passed": true,
+      "checks": [
+        "update modal and backdrop exception",
+        "ordinary backdrop dismissal",
+        "sleep Zzz",
+        "toilet disappearance and manual return",
+        "focus pet",
+        "stretch decode and recovery",
+        "no overflow or page errors"
+      ]
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "checks": [
+        "update modal and backdrop exception",
+        "ordinary backdrop dismissal",
+        "sleep Zzz",
+        "toilet disappearance and manual return",
+        "focus pet",
+        "stretch decode and recovery",
+        "no overflow or page errors"
+      ]
+    },
+    {
+      "width": 430,
+      "passed": true,
+      "checks": [
+        "update modal and backdrop exception",
+        "ordinary backdrop dismissal",
+        "sleep Zzz",
+        "toilet disappearance and manual return",
+        "focus pet",
+        "stretch decode and recovery",
+        "no overflow or page errors"
+      ]
+    },
+    {
+      "integration": "real app initial adoption, pet, countdown pause and refreshed session/companion retention",
+      "passed": true
+    }
+  ]
+}

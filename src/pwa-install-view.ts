@@ -1,3 +1,4 @@
+import {isBackdropCancel} from './dialog-dismiss';
 import type { InstallController, InstallState } from './pwa-install';
 import { installBrowsers, initialInstallBrowser, renderGuide, fullGuideImage, type InstallBrowser } from './install-guide';
 export { installBrowsers, initialInstallBrowser, installSteps } from './install-guide';
@@ -46,7 +47,7 @@ export function createInstallView(controller: InstallController, canRemind: () =
     select.onchange = () => { browser = select.value as InstallBrowser; steps(); };
     dialog.querySelector<HTMLButtonElement>('[data-image-back]')!.onclick = back;
     dialog.addEventListener('cancel', event => {
-      if (!dialog!.querySelector<HTMLElement>('[data-image-view]')!.hidden) { event.preventDefault(); back(); }
+      if (!isBackdropCancel(event) && !dialog!.querySelector<HTMLElement>('[data-image-view]')!.hidden) { event.preventDefault(); back(); }
     });
     dialog.querySelectorAll<HTMLButtonElement>('[data-platform]').forEach(button => button.onclick = () => { browser = button.dataset.platform as InstallBrowser; select.value = browser; steps(); });
     dialog.querySelector<HTMLButtonElement>('[data-native-install]')!.onclick = () => { void controller.install(); };

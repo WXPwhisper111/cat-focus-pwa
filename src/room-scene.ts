@@ -1,3 +1,4 @@
+import { displayedRect } from './cat-animation';
 import { createPetFeedback } from './cat-pet-feedback';
 import { catDisplayName } from './cat-names';
 import layout from '../art/room-v0.1/scene-calibration/layout.json';
@@ -101,6 +102,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   const showError = () => { if (!destroyed) error.hidden = false; };
   const homeOrder = [...new Set([...(options.homeOrder || []).filter(id => definitions.some(cat => cat.id === id)), ...definitions.map(cat => cat.id)])];
   const homes = new Map(definitions.map(cat => [cat.id, [...layout.catReferencePoints[homeOrder.indexOf(cat.id)].feet] as unknown as AnimationPoint]));
+  const offscreen=new Set<string>();
   const feet = new Map(homes), rendered = new Map<string, { clip: AnimationClip; frame: number }>(definitions.map(cat => {
     const sequence = catSequence(cat, initialState);
     const clip: AnimationClip = { id: initialState, catId: cat.id, loop: true, sourceCanvas: cat.sourceCanvas, feetAnchor: cat.feetAnchor,
@@ -116,7 +118,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
     if (destroyed) return;
     const pose = rendered.get(id); if (!pose) return;
     const point = feet.get(id)!;
-    const rect = rectAtAnchor(pose.clip, pose.clip.frames[pose.frame].sourceAnchor || pose.clip.feetAnchor, point, [144, 144]);
+    const rect = displayedRect(pose.clip,pose.frame,point);
     const image = scene.querySelector<HTMLImageElement>(`[data-room-cat="${id}"]`)!; setRect(image, rect); image.style.zIndex = '1';
     petFeedback.position(id, rect);
     const hitRect: RoomRect = [rect[0] + rect[2] * .12, rect[1] + rect[3] * .06, rect[2] * .76, rect[3] * .9];
@@ -134,7 +136,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   function createPlayer(cat: CatDefinition) {
     const image = scene.querySelector<HTMLImageElement>(`[data-room-cat="${cat.id}"]`)!;
     return createCatPlayer(image, initialState, {
-      definition: cat, onError: showError,
+      definition: cat, idleMotion:true, onError: showError,
       onPlayback: (clip, event) => { petFeedback.event(cat.id, clip.id, event); paintPosition(cat.id); },
       onClipFrame: (clip, frame) => { rendered.set(cat.id, { clip, frame }); paintPosition(cat.id); },
     }, runtime);
@@ -212,7 +214,8 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
     const bounds = scene.getBoundingClientRect();
     // An exposed part of a furniture button is already a deliberate furniture tap.
     // Do not reinterpret its enlarged touch area as a nearby cat's bounding box.
-    const candidates = direct.target.kind === 'item' ? targets.filter(entry => entry.target.kind === 'item') : targets;
+    const visibleTargets=targets.filter(entry=>entry.target.kind!=='cat'||!offscreen.has(entry.target.id));
+    const candidates = direct.target.kind === 'item' ? visibleTargets.filter(entry => entry.target.kind === 'item') : visibleTargets;
     const hits = resolveRoomTargets(candidates, (event.clientX - bounds.left) * layout.canvas[0] / bounds.width, (event.clientY - bounds.top) * layout.canvas[1] / bounds.height, bounds.width);
     if (hits.length === 1) activate(hits[0]);
     else if (hits.length > 1) options.onTargetAmbiguity?.(hits);
@@ -221,7 +224,13 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
   for (const cat of definitions) paintPosition(cat.id);
   const behaviorPort: BehaviorPort = {
     get ids(){return definitions.map(cat=>cat.id);},
-    home: id => homes.get(id)!, getFeet: id => feet.get(id)!, positions: () => new Map(feet),
+    home: id => homes.get(id)!, getFeet: id => feet.get(id)!, positions: () => new Map([...feet].filter(([id])=>!offscreen.has(id))),
+    setOffscreen(id,value) {
+      if(value)offscreen.add(id);else offscreen.delete(id);
+      scene.querySelectorAll<HTMLElement>(`[data-room-cat="${id}"],[data-cat-shadow="${id}"],[data-room-cat-target="${id}"]`).forEach(node=>{node.hidden=value;node.style.visibility=value?'hidden':'';});
+      petFeedback.clear(id);
+    },
+    toiletFeedback:(id,value)=>{if(value)petFeedback.toilet(id,getCatName(id),layout.wcExit.triggerPoint);else petFeedback.clear(id);},
     setFeet(id, point) {
       if (destroyed || !feet.has(id)) return;
       feet.set(id, [...point] as unknown as AnimationPoint); paintPosition(id);
@@ -242,7 +251,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
         oldPlayers.get(cat.id)?.destroy(); oldPlayers.delete(cat.id); petFeedback.event(cat.id,'pet:once','stop');
         scene.querySelectorAll(`[data-room-cat="${cat.id}"],[data-cat-shadow="${cat.id}"],[data-room-cat-target="${cat.id}"]`).forEach(node=>node.remove());
         for(let index=targets.length-1;index>=0;index--)if(targets[index].target.kind==='cat'&&targets[index].target.id===cat.id)targets.splice(index,1);
-        homes.delete(cat.id);feet.delete(cat.id);rendered.delete(cat.id);
+        offscreen.delete(cat.id);homes.delete(cat.id);feet.delete(cat.id);rendered.delete(cat.id);
       }
       const added=next.filter(cat=>!oldPlayers.has(cat.id));definitions=[...next];
       for(const cat of added) {
@@ -262,6 +271,7 @@ export function createRoomScene(initialState: RoomAnimation, options: RoomOption
     },
     refreshNames() {
       players.forEach(player => player.refreshName());
+      definitions.forEach(cat=>petFeedback.refreshName(cat.id,catDisplayName(cat)));
       scene.querySelectorAll<HTMLButtonElement>('[data-room-cat-target]').forEach(button => {
         const name = getCatName(button.dataset.roomCatTarget!);
         button.setAttribute('aria-label', `与${name}互动`);

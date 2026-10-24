@@ -1,0 +1,86 @@
+{
+  "segments": 6,
+  "frames": 108,
+  "mobileBeforeBytes": 3421898,
+  "mobileUniqueBytes": 3234830,
+  "rows": [
+    {
+      "catId": "orange-white",
+      "frames": 18,
+      "durationMs": 3600,
+      "uniqueFrames": 17,
+      "display": {
+        "scale": 1.3888888888888888,
+        "anchor": [
+          483.44,
+          1200
+        ]
+      }
+    },
+    {
+      "catId": "cat-02",
+      "frames": 18,
+      "durationMs": 3600,
+      "uniqueFrames": 17,
+      "display": {
+        "scale": 1.60997273081418,
+        "anchor": [
+          481.70939798683696,
+          1196.335656213705
+        ]
+      }
+    },
+    {
+      "catId": "cat-03",
+      "frames": 18,
+      "durationMs": 3600,
+      "uniqueFrames": 17,
+      "display": {
+        "scale": 1.261578445811314,
+        "anchor": [
+          478.993627424051,
+          1199.4540735043672
+        ]
+      }
+    },
+    {
+      "catId": "cat-04",
+      "frames": 18,
+      "durationMs": 3600,
+      "uniqueFrames": 17,
+      "display": {
+        "scale": 1.3733233420756839,
+        "anchor": [
+          453.51224968625525,
+          1200
+        ]
+      }
+    },
+    {
+      "catId": "cat-05",
+      "frames": 18,
+      "durationMs": 3600,
+      "uniqueFrames": 17,
+      "display": {
+        "scale": 1.4447001851588093,
+        "anchor": [
+          481.8264854228038,
+          1181.0519518418178
+        ]
+      }
+    },
+    {
+      "catId": "cat-06",
+      "frames": 18,
+      "durationMs": 3600,
+      "uniqueFrames": 17,
+      "display": {
+        "scale": 1.4213253467476956,
+        "anchor": [
+          488.55764635603344,
+          1200
+        ]
+      }
+    }
+  ]
+}

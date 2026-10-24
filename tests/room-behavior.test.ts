@@ -12,17 +12,18 @@ const flush = async () => { for (let i = 0; i < 30; i++) await Promise.resolve()
 function fixture(roster = ids) {
   const ids=roster;
   const homes = new Map<string, AnimationPoint>([[ids[0], [512, 716]], [ids[1], [365, 688]], [ids[2], [659, 688]]]);
+  const offscreen=new Set<string>();
   const positions = new Map(homes), nodes = new Map(ids.map(id => [id, document.createElement('div')]));
   const pending = new Map<string, PlayOptions>(), played: string[] = [];
   const port: BehaviorPort = {
     ids, home: id => homes.get(id)!, getFeet: id => positions.get(id)!, setFeet: (id, point) => { positions.set(id, point); },
-    positions: () => positions, fadeElements: id => [nodes.get(id)!], preload: vi.fn(async () => {}),
+    positions: () => new Map([...positions].filter(([id])=>!offscreen.has(id))), setOffscreen:(id,value)=>{if(value)offscreen.add(id);else offscreen.delete(id);},toiletFeedback:vi.fn(), fadeElements: id => [nodes.get(id)!], preload: vi.fn(async () => {}),
     play: vi.fn(async (id, clip, options = {}) => { played.push(`${id}/${clip.id}`); pending.set(id, options); return { status: 'started' as const }; }),
     stop: vi.fn(id => { pending.delete(id); }), idle: vi.fn(async () => {}),
   };
   const teleport = { move: vi.fn(async (id: string, target: AnimationPoint, _signal: AbortSignal, placed?: () => Promise<void>, resolveTarget?:()=>AnimationPoint) => { port.setFeet(id, resolveTarget?resolveTarget():target); await placed?.(); }), isMoving: () => false, destroy: vi.fn() };
   const runner = createRoomBehavior(port, { teleport }); runners.push(runner);
-  return { port, teleport, runner, positions, nodes, pending, played, finish(id = ids[0]) { pending.get(id)?.onComplete?.(); } };
+  return { port, teleport, runner, offscreen, positions, nodes, pending, played, finish(id = ids[0]) { pending.get(id)?.onComplete?.(); } };
 }
 
 it('all cats complete real loops, rest nearby and release action occupancy', async () => {
@@ -293,4 +294,27 @@ it('executes each new cat own five interactions and preserves its independent ho
     expect(app.positions.get('orange-white')).toEqual(app.port.home('orange-white'));
     app.runner.destroy();
   }
+});
+
+it('uses one toilet slot, hides only after departure and returns visible after six seconds',async()=>{
+  vi.useFakeTimers();const app=fixture(),id=ids[0];
+  try {
+    const run=app.runner.execute({catId:id,behavior:'toilet',source:'autonomous'},new AbortController().signal);await flush();
+    expect(app.offscreen.has(id)).toBe(true);expect(app.port.positions().has(id)).toBe(false);expect(app.runner.activeCount()).toBe(1);
+    await expect(app.runner.execute({catId:ids[1],behavior:'toilet',source:'autonomous'},new AbortController().signal)).rejects.toThrow('厕所');
+    await vi.advanceTimersByTimeAsync(6000);await run;expect(app.offscreen.size).toBe(0);expect(app.positions.get(id)).toEqual(app.port.home(id));expect(app.runner.available(ids[1],'toilet')).toBe(true);
+  }finally{app.runner.destroy();vi.useRealTimers();}
+});
+it('interrupts toilet waiting for a direct manual target and clears hidden state on suspension or failure',async()=>{
+  vi.useFakeTimers();const app=fixture(),id=ids[0];
+  try {
+    const first=app.runner.execute({catId:id,behavior:'toilet',source:'autonomous'},new AbortController().signal);const cancelled=expect(first).rejects.toMatchObject({name:'AbortError'});await flush();
+    app.teleport.move.mockClear();const next=app.runner.execute({catId:id,behavior:'drink',source:'manual'},new AbortController().signal);await cancelled;await flush();
+    expect(app.offscreen.size).toBe(0);expect(app.teleport.move).toHaveBeenCalledTimes(1);expect(app.runner.stage(id)).toBe('loop');
+    app.finish();await next;
+    const background=app.runner.execute({catId:id,behavior:'toilet',source:'autonomous'},new AbortController().signal);const stopped=expect(background).rejects.toMatchObject({name:'AbortError'});await flush();await app.runner.setSuspended(true);await stopped;
+    expect(app.offscreen.size).toBe(0);expect(app.runner.activeCount()).toBe(0);expect(vi.getTimerCount()).toBe(0);
+    await app.runner.setSuspended(false);app.teleport.move.mockRejectedValueOnce(Error('fade failure'));
+    await expect(app.runner.execute({catId:id,behavior:'toilet',source:'autonomous'},new AbortController().signal)).rejects.toThrow('fade failure');expect(app.offscreen.size).toBe(0);
+  }finally{app.runner.destroy();vi.useRealTimers();}
 });

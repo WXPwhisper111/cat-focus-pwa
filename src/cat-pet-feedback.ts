@@ -12,12 +12,13 @@ export function createPetFeedback(scene: HTMLElement) {
     event(id: string, clip: string, event: 'start' | 'complete' | 'stop' | 'switch' | 'hidden') {
       if (event === 'hidden') { clear(id); return; }
       const previous = entries.get(id);
-      if (clip === 'pet:once' && event === 'start') {
+      if ((clip === 'pet:once' || clip === 'sleep_loop') && event === 'start') {
         clear(id);
         if (document.hidden) return;
         const node = document.createElement('div'); node.className = 'cat-pet-bubble'; node.dataset.petCat = id;
-        node.setAttribute('role', 'status'); node.setAttribute('aria-label', '很享受你的抚摸');
+        node.setAttribute('role', 'status'); node.setAttribute('aria-label', clip==='sleep_loop'?'正在睡觉':'很享受你的抚摸'); node.dataset.feedback=clip==='sleep_loop'?'sleep':'pet';
         node.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21S2 15 2 8a5 5 0 0 1 10-1 5 5 0 0 1 10 1c0 7-10 13-10 13Z"/></svg>';
+        if(clip==='sleep_loop')node.innerHTML='<span aria-hidden="true" class="cat-sleep-symbol">Zzz</span>';
         scene.append(node); entries.set(id, { node, completed: false });
       } else if (clip === 'pet:once' && event === 'complete' && previous) {
         previous.completed = true;
@@ -38,6 +39,16 @@ export function createPetFeedback(scene: HTMLElement) {
       entry.node.style.top = `clamp(36px, ${(y + height * .18) / 768 * 100}%, calc(100% - 22px))`;
       entry.node.classList.toggle('is-left', flip);
     },
+    clear,
+    toilet(id:string,name:string,point:readonly number[]) {
+      clear(id);const node=document.createElement('div');node.className='cat-pet-bubble cat-toilet-bubble';node.dataset.toiletCat=id;
+      node.setAttribute('role','status');node.setAttribute('aria-label',name+'正在上厕所');
+      node.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 3h6v8H4zM3 12h17v2a7 7 0 0 1-7 7H9v-4a6 6 0 0 1-6-5ZM17 3h3v8h-3" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg>';
+      node.style.left=`clamp(22px, ${point[0]/1024*100}%, calc(100% - 22px))`;node.style.top=`clamp(36px, ${point[1]/768*100}%, calc(100% - 6px))`;
+      scene.append(node);entries.set(id,{node,completed:false});
+    },
+    refreshName(id:string,name:string) {const entry=entries.get(id);if(entry?.node.dataset.toiletCat)entry.node.setAttribute('aria-label',name+'正在上厕所');},
+    focusPosition(id:string) {const entry=entries.get(id);if(entry){entry.node.style.left='calc(50% + 48px)';entry.node.style.top='30px';}},
     destroy() { clearAll(); document.removeEventListener('visibilitychange', visibility); window.removeEventListener('pagehide', clearAll); },
   };
 }
