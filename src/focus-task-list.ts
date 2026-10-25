@@ -1,7 +1,11 @@
-import { addFocusTask, changeFocusTask, getFocusTasks } from './focus-task-storage';
+import { createLocalRepository, type FocusTaskRepository } from './local-repository';
 import type { FocusTask } from './focus-tasks';
 
 export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<void>, onSelect?: (id: string | null) => Promise<void>) {
+  return createFocusTaskListWithRepository(createLocalRepository(db).focusTasks, onChange, onSelect);
+}
+
+export function createFocusTaskListWithRepository(repository: FocusTaskRepository, onChange: () => Promise<void>, onSelect?: (id: string | null) => Promise<void>) {
   const element = document.createElement('section'); element.className = 'focus-list-entry';
   const openButton = document.createElement('button'); openButton.type = 'button'; openButton.className = 'focus-list-open';
   openButton.innerHTML = '<span aria-hidden="true">☷</span><span><strong>专注清单</strong><small>把下一步变得具体一点</small></span><span class="focus-list-count"></span><span aria-hidden="true">›</span>';
@@ -27,7 +31,7 @@ export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<voi
   };
   async function run(operation: () => Promise<unknown>) {
     if (busy || destroyed) return; const restoreInputFocus=document.activeElement===input; busy=true; feedback.textContent=''; form.querySelector('button')!.disabled=true; input.disabled=true; renderRows();
-    try { await operation(); tasks=await getFocusTasks(db); await onChange(); }
+    try { await operation(); tasks=await repository.list(); await onChange(); }
     catch(error) { feedback.textContent=(error as Error).message; }
     finally { busy=false; if (!destroyed) { input.disabled=false; form.querySelector('button')!.disabled=false; renderRows(); if(restoreInputFocus&&dialog.open)input.focus({preventScroll:true}); } }
   }
@@ -53,7 +57,7 @@ export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<voi
         const label=document.createElement('div'); label.className='focus-task-check';
         const hit=document.createElement('label');hit.className='focus-task-toggle';
         const check=document.createElement('input');check.type='checkbox';check.checked=task.status==='completed';check.disabled=busy;check.setAttribute('aria-label',`${check.checked?'恢复':'完成'}任务：${task.title}`);
-        check.onchange=()=>void run(()=>changeFocusTask(db,task.id,{status:check.checked?'completed':'pending'},task.updatedAt));
+        check.onchange=()=>void run(()=>repository.change(task.id,{status:check.checked?'completed':'pending'},task.updatedAt));
         const title=document.createElement('span');title.textContent=task.title;title.className=check.checked?'completed':'';hit.append(check);label.append(hit,title);row.append(label);
         const actions=document.createElement('div');actions.className='focus-task-actions';
         if(onSelect && task.status==='pending') {
@@ -65,12 +69,12 @@ export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<voi
         if (editing?.id===task.id) {
           const editor=document.createElement('form');editor.className='focus-task-editor';const field=document.createElement('input');field.value=editing.draft;field.setAttribute('aria-label','修改任务标题');field.disabled=busy;
           field.oninput=()=>{if(editing)editing.draft=field.value;}; const save=button('保存',()=>{});save.type='submit';
-          editor.onsubmit=event=>{event.preventDefault();const captured=editing!;void run(async()=>{await changeFocusTask(db,captured.id,{title:captured.draft},captured.version);editing=null;});};
+          editor.onsubmit=event=>{event.preventDefault();const captured=editing!;void run(async()=>{await repository.change(captured.id,{title:captured.draft},captured.version);editing=null;});};
           editor.append(field,save,button('取消',()=>{editing=null;renderRows();}));row.append(editor);
         }
         if (deleting===task.id) {
           const confirmation=document.createElement('div');confirmation.className='focus-task-delete';const prompt=document.createElement('span');prompt.textContent='删除这项任务？';
-          confirmation.append(prompt,button('确认删除',()=>void run(async()=>{await changeFocusTask(db,task.id,{delete:true},task.updatedAt);deleting=null;})),button('保留',()=>{deleting=null;renderRows();}));row.append(confirmation);
+          confirmation.append(prompt,button('确认删除',()=>void run(async()=>{await repository.change(task.id,{delete:true},task.updatedAt);deleting=null;})),button('保留',()=>{deleting=null;renderRows();}));row.append(confirmation);
         }
         list.append(row);
       }
@@ -78,13 +82,13 @@ export function createFocusTaskList(db: IDBDatabase, onChange: () => Promise<voi
     if(restoreEditor){const field=dialog.querySelector<HTMLInputElement>('.focus-task-editor input');field?.focus({preventScroll:true});if(field&&selection)field.setSelectionRange(selection[0],selection[1]);}
   }
   function rowFocus(id: string) { const editor=dialog.querySelector<HTMLElement>(`[data-task-id="${id}"] .focus-task-editor`); if(editor){editor.tabIndex=-1;editor.focus({preventScroll:true});} }
-  form.onsubmit=event=>{event.preventDefault();const title=input.value;void run(async()=>{await addFocusTask(db,title);input.value='';});};
+  form.onsubmit=event=>{event.preventDefault();const title=input.value;void run(async()=>{await repository.add(title);input.value='';});};
   async function open() {
     if (destroyed || document.querySelector('dialog[open]')) return;
     const revision = ++openRevision;
     returnFocus=document.activeElement instanceof HTMLElement ? document.activeElement : null;
     deleting=null;feedback.textContent='';dialog.showModal(); resize(); dialog.querySelector<HTMLButtonElement>('[data-list-close]')!.focus({preventScroll:true});
-    try { const loaded=await getFocusTasks(db);if(!destroyed && dialog.open && revision===openRevision){tasks=loaded;renderRows();} } catch(error) { if(!destroyed && dialog.open && revision===openRevision)feedback.textContent=`无法读取清单：${(error as Error).message}`; }
+    try { const loaded=await repository.list();if(!destroyed && dialog.open && revision===openRevision){tasks=loaded;renderRows();} } catch(error) { if(!destroyed && dialog.open && revision===openRevision)feedback.textContent=`无法读取清单：${(error as Error).message}`; }
   }
   dialog.querySelector<HTMLButtonElement>('[data-selection-clear]')!.onclick=()=>{if(onSelect&&!locked)void run(async()=>{await onSelect(null);dialog.close();});};
   openButton.onclick=()=>void open();dialog.querySelector<HTMLButtonElement>('[data-list-close]')!.onclick=()=>dialog.close();

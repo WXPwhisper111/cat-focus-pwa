@@ -20,8 +20,8 @@ import { openCatRename } from './cat-rename';
 import { openCompanionPicker } from './companion-picker';
 import { icon } from './category-icons';
 import './focus-tasks.css';
-import { createFocusTaskList } from './focus-task-list';
-import { completeSummaryTask, getFocusTaskState, selectFocusTask } from './focus-task-storage';
+import { createFocusTaskListWithRepository } from './focus-task-list';
+import { createLocalRepository, type LocalRepository } from './local-repository';
 import { createFocusGoal } from './focus-goal-card';
 import type { FocusTask } from './focus-tasks';
 import { createRoomAutonomy } from './room-autonomy';
@@ -66,6 +66,7 @@ import type { StatisticsState } from './statistics';
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 let db: IDBDatabase;
+let repository: LocalRepository;
 let applicationReady = false;
 let initialSummaries: Awaited<ReturnType<typeof getPendingCompletions>> = [];
 let session: ActiveSession | undefined;
@@ -88,7 +89,7 @@ let selectedCategoryId = DEFAULT_CATEGORIES[0].id;
 let focusTasks: FocusTask[] = [];
 let selectedFocusTaskId: string | null = null;
 let focusGoal: ReturnType<typeof createFocusGoal> | undefined;
-let focusTaskList: ReturnType<typeof createFocusTaskList> | undefined;
+let focusTaskList: ReturnType<typeof createFocusTaskListWithRepository> | undefined;
 let categoryPicker: ReturnType<typeof createCategoryPicker> | undefined;
 let dailyWelcome: ReturnType<typeof createDailyWelcome> | undefined;
 let dailyCheckin: ReturnType<typeof createDailyCheckinRunner> | undefined;
@@ -141,7 +142,7 @@ const setNotice = (message: string) => { assignNotice(message); render(); };
 
 async function refresh() {
   const revision = ++refreshRevision;
-  const [active, savedRecords, categoryState, savedMode, pending, house, wallet, shop, locations, taskState, names] = await Promise.all([getActive(db), getRecords(db), getCategoryState(db), getTimerMode(db), getPendingCompletions(db), getCatHouseState(db).then(state => ({ state, error: '' })).catch(error => ({ state: null, error: (error as Error).message })), getWallet(db), getCommerceState(db).then(state => ({ state, error: '' })).catch(error => ({ state: defaultCommerce(), error: (error as Error).message })), getRoomLocations(db), getFocusTaskState(db).then(state => ({ ...state, error: '' })).catch(error => ({ tasks: focusTasks, selectedId: selectedFocusTaskId, error: `无法读取专注清单：${(error as Error).message}` })), getCatNames(db)]);
+  const [active, savedRecords, categoryState, savedMode, pending, house, wallet, shop, locations, taskState, names] = await Promise.all([getActive(db), getRecords(db), getCategoryState(db), getTimerMode(db), getPendingCompletions(db), getCatHouseState(db).then(state => ({ state, error: '' })).catch(error => ({ state: null, error: (error as Error).message })), getWallet(db), getCommerceState(db).then(state => ({ state, error: '' })).catch(error => ({ state: defaultCommerce(), error: (error as Error).message })), getRoomLocations(db), repository.focusTasks.getState().then(state => ({ ...state, error: '' })).catch(error => ({ tasks: focusTasks, selectedId: selectedFocusTaskId, error: `无法读取专注清单：${(error as Error).message}` })), getCatNames(db)]);
   if (revision !== refreshRevision) return;
   applyCatNames(names);
   if (!roomScene) stableLocations = locations;
@@ -469,6 +470,7 @@ function tick() {
 async function initializeApplication() {
  try {
   db = await openDatabase();
+  repository = createLocalRepository(db);
   categoryManager = createCategoryManager(db, async message => {
     assignNotice(message);
     await refresh();
@@ -482,14 +484,14 @@ async function initializeApplication() {
     installView.mount();
   }, {
     getTask: id => focusTasks.find(task => task.id === id),
-    completeTask: async record => { const result = await completeSummaryTask(db, record.id); await refresh(); stateChannel?.postMessage('changed'); return result; },
+    completeTask: async record => { const result = await repository.focusTasks.completeSummary(record.id); await refresh(); stateChannel?.postMessage('changed'); return result; },
   });
   dailyWelcome = createDailyWelcome(() => { page = 'focus'; render(); });
-  focusTaskList = createFocusTaskList(db, async () => { await refresh(); stateChannel?.postMessage('changed'); }, id => selectFocusTask(db, id));
+  focusTaskList = createFocusTaskListWithRepository(repository.focusTasks, async () => { await refresh(); stateChannel?.postMessage('changed'); }, id => repository.focusTasks.select(id));
   focusGoal = createFocusGoal(() => void focusTaskList?.open(), async () => {
     if (session) return;
     try {
-      await selectFocusTask(db, null);
+      await repository.focusTasks.select(null);
       await refresh(); stateChannel?.postMessage('changed');
     } catch (error) { setNotice(`清除目标失败：${(error as Error).message}`); }
   });
