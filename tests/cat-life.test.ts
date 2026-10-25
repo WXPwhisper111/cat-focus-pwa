@@ -27,9 +27,9 @@ it('alternates at idle boundaries using the same RAF and lets real sleep preempt
     await advance(22120);expect(image.dataset.animation).toBe('idle');await advance(40640);expect(image.dataset.animation).toBe('stretch:once');await player.updateState('sleep_loop');expect(image.dataset.animation).toBe('sleep_loop');expect(frames.size).toBe(1);
   }finally{player.destroy();expect(frames.size).toBe(0);}
 });
-it('shows Zzz only during real sleep and renders a named toilet symbol with no click capture',()=>{
+it('shows the moon only during real sleep and renders a named toilet symbol with no click capture',()=>{
   vi.spyOn(document,'hidden','get').mockReturnValue(false);const host=document.createElement('div');document.body.append(host);const view=createPetFeedback(host);
-  try{view.event('cat-04','sleep_loop','start');expect(host.querySelector('[data-feedback=sleep]')?.textContent).toBe('Zzz');view.event('cat-04','sleep_loop','stop');expect(host.children).toHaveLength(0);
+  try{view.event('cat-04','sleep_loop','start');expect(host.querySelector('[data-feedback=sleep] .cat-sleep-moon')).not.toBeNull();expect(host.textContent).not.toContain('Zzz');view.event('cat-04','sleep_loop','stop');expect(host.children).toHaveLength(0);
     view.toilet('cat-04','吉吉',[1008,754]);expect(host.querySelector('[data-toilet-cat]')?.getAttribute('aria-label')).toBe('吉吉正在上厕所');view.refreshName('cat-04','新名字');expect(host.querySelector('[data-toilet-cat]')?.getAttribute('aria-label')).toBe('新名字正在上厕所');document.dispatchEvent(new Event('pagehide'));window.dispatchEvent(new Event('pagehide'));expect(host.children).toHaveLength(0);
   }finally{view.destroy();}
 });

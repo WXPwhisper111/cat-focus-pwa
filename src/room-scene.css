@@ -55,7 +55,8 @@
 @keyframes pet-heart-pulse{0%,100%{transform:scale(1)}45%{transform:scale(1.15)}}
 @media(prefers-reduced-motion:reduce){.cat-pet-bubble,.cat-pet-bubble svg{animation:none}.cat-pet-bubble.is-leaving{transition:none}}
 
-.cat-sleep-symbol{font-size:13px;font-weight:800;color:#b77b40;letter-spacing:-1px;}
+.cat-pet-bubble[data-feedback="sleep"] svg{width:28px;height:22px;fill:#dcaa50;animation:none;}
+.cat-pet-bubble[data-feedback="sleep"] .sleep-star{fill:#e7bd6a;}
 .cat-toilet-bubble svg{fill:none;color:#b77b40;animation:none;}
 .focus-cat-view{position:relative;isolation:isolate;}
 .focus-cat-touch{position:absolute;inset:0;z-index:3;border:0;background:transparent;padding:0;min-width:44px;min-height:44px;}

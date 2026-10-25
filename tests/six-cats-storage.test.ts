@@ -18,7 +18,7 @@ it('serializes concurrent free claims and keeps wallet untouched across reopen a
   await legacy();const wallet=await getWallet(db);const second=await openDatabase('six');
   try{const results=await Promise.allSettled([claimExpansionCat(db,'cat-04',1000),claimExpansionCat(second,'cat-05',1001)]);expect(results.filter(r=>r.status==='fulfilled')).toHaveLength(1);}finally{second.close();}
   expect(await getWallet(db)).toEqual(wallet);const grant=await getCatExpansion(db);expect(grant.claimed).not.toBeNull();
-  const raw=await exportBackup(db);expect(JSON.parse(raw).version).toBe(9);expect(parseBackup(raw).expansion).toEqual(grant);
+  const raw=await exportBackup(db);expect(JSON.parse(raw).version).toBe(10);expect(parseBackup(raw).expansion).toEqual(grant);
   db.close();db=await openDatabase('six');expect(await getCatExpansion(db)).toEqual(grant);
   const target=await openDatabase('restore');try{await importBackup(target,raw);await importBackup(target,raw);expect(await getCatExpansion(target)).toEqual(grant);await expect(claimExpansionCat(target,'cat-06')).rejects.toThrow('名额');}finally{target.close();}
 });

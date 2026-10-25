@@ -1,0 +1,126 @@
+{
+  "realPhone": false,
+  "engine": "headless Edge",
+  "results": [
+    {
+      "viewport": {
+        "width": 320,
+        "height": 690
+      },
+      "passed": true,
+      "checks": [
+        "seven committed calendar days",
+        "day7 +30 breakdown",
+        "formal SVG",
+        "scrollable dialog fits",
+        "focus pause moon",
+        "no sleep pulse",
+        "reduced motion",
+        "paused refresh recovery",
+        "resume cleanup",
+        "stats/settings/room navigation",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 360,
+        "height": 740
+      },
+      "passed": true,
+      "checks": [
+        "seven committed calendar days",
+        "day7 +30 breakdown",
+        "formal SVG",
+        "scrollable dialog fits",
+        "focus pause moon",
+        "no sleep pulse",
+        "reduced motion",
+        "paused refresh recovery",
+        "resume cleanup",
+        "stats/settings/room navigation",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "passed": true,
+      "checks": [
+        "seven committed calendar days",
+        "day7 +30 breakdown",
+        "formal SVG",
+        "scrollable dialog fits",
+        "focus pause moon",
+        "no sleep pulse",
+        "reduced motion",
+        "paused refresh recovery",
+        "resume cleanup",
+        "stats/settings/room navigation",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 430,
+        "height": 860
+      },
+      "passed": true,
+      "checks": [
+        "seven committed calendar days",
+        "day7 +30 breakdown",
+        "formal SVG",
+        "scrollable dialog fits",
+        "focus pause moon",
+        "no sleep pulse",
+        "reduced motion",
+        "paused refresh recovery",
+        "resume cleanup",
+        "stats/settings/room navigation",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 320,
+        "height": 480
+      },
+      "passed": true,
+      "checks": [
+        "seven committed calendar days",
+        "day7 +30 breakdown",
+        "formal SVG",
+        "scrollable dialog fits",
+        "focus pause moon",
+        "no sleep pulse",
+        "reduced motion",
+        "paused refresh recovery",
+        "resume cleanup",
+        "stats/settings/room navigation",
+        "no horizontal overflow"
+      ]
+    },
+    {
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "passed": true,
+      "checks": [
+        "seven committed calendar days",
+        "day7 +30 breakdown",
+        "formal SVG",
+        "scrollable dialog fits",
+        "focus pause moon",
+        "no sleep pulse",
+        "reduced motion",
+        "paused refresh recovery",
+        "resume cleanup",
+        "stats/settings/room navigation",
+        "no horizontal overflow"
+      ]
+    }
+  ]
+}

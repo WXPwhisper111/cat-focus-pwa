@@ -1,4 +1,5 @@
 import { DAILY_CHECKIN_COINS, type WalletTransaction } from './wallet';
+import type { CheckinPresentation } from './checkin-rewards';
 
 export type DailyCheckinRecord = { date: string; claimedAt: number; reward: number; transactionId: string };
 export function localDayKey(now = Date.now()) {
@@ -31,8 +32,8 @@ export function validateCheckinHistory(value: unknown, transactions: WalletTrans
 }
 
 export function createDailyCheckinRunner(options: {
-  claim: (now: number) => Promise<{ created: boolean; record: DailyCheckinRecord }>;
-  onSuccess: (record: DailyCheckinRecord) => Promise<void> | void;
+  claim: (now: number) => Promise<{ created: boolean; record: DailyCheckinRecord; presentation?: CheckinPresentation }>;
+  onSuccess: (record: DailyCheckinRecord, presentation?: CheckinPresentation) => Promise<void> | void;
   onChecked?: () => Promise<void> | void;
   onError: (error: unknown) => void;
   now?: () => number;
@@ -50,7 +51,7 @@ export function createDailyCheckinRunner(options: {
         catch (error) { failedDay = day; retryAt = now + 60_000; options.onError(error); return; }
         checkedDay = day; failedDay = ''; retryAt = 0;
         await options.onChecked?.();
-        if (result.created) await options.onSuccess(result.record);
+        if (result.created) await options.onSuccess(result.record, result.presentation);
       })().finally(() => { running = undefined; });
       return running;
     },

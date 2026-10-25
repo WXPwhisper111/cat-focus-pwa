@@ -1,6 +1,6 @@
 export const COIN_INTERVAL_MS = 5 * 60_000;
 export const DAILY_CHECKIN_COINS = 5; // Daily automatic check-in; focus rewards remain independent.
-export type WalletIncomeKind = 'focus' | 'daily_checkin' | 'test_grant';
+export type WalletIncomeKind = 'focus' | 'daily_checkin' | 'checkin_bonus' | 'test_grant';
 export type WalletState = {
   version: 1; balance: number; totalIncome: number; totalSpent: number; remainderMs: number;
   migratedAt: number; baseline: { sessionId: string; effectiveMs: number } | null;
@@ -28,7 +28,7 @@ export function validateWalletSnapshot(value: unknown): WalletSnapshot {
   for (const tx of transactions) {
     if (!tx || !key(tx.id) || !key(tx.sourceId) || txIds.has(tx.id) || tx.id !== `${tx.kind}:${tx.sourceId}` ||
         !Number.isSafeInteger(tx.amount) || !tx.amount || !natural(tx.createdAt) || typeof tx.description !== 'string' || tx.description.length > 200 ||
-        !['focus', 'daily_checkin', 'test_grant', 'spend'].includes(tx.kind) || (tx.kind === 'spend' ? tx.amount >= 0 : tx.amount <= 0) ||
+        !['focus', 'daily_checkin', 'checkin_bonus', 'test_grant', 'spend'].includes(tx.kind) || (tx.kind === 'spend' ? tx.amount >= 0 : tx.amount <= 0) ||
         (tx.kind === 'daily_checkin' && tx.amount !== DAILY_CHECKIN_COINS)) fail();
     txIds.add(tx.id); if (tx.amount > 0) income += tx.amount; else spent -= tx.amount;
   }

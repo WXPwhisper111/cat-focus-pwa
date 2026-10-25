@@ -118,7 +118,7 @@ describe('stopwatch backup compatibility', () => {
     await startStopwatch(db, category.id, start);
     await settle(db, 'early', start + 12_000_000);
     const raw = await exportBackup(db);
-    expect(JSON.parse(raw).version).toBe(9);
+    expect(JSON.parse(raw).version).toBe(10);
     expect(parseBackup(raw).records[0].mode).toBe('stopwatch');
     const target = await openDatabase(`target-${crypto.randomUUID()}`);
     expect(await importBackup(target, raw)).toEqual({ added: 1, skipped: 0 });

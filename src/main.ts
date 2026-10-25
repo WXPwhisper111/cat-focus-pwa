@@ -33,6 +33,7 @@ import { defaultCommerce, type CommerceState } from './shop';
 import './daily-welcome.css';
 import { createDailyWelcome } from './daily-welcome';
 import { createDailyCheckinRunner, localDayKey, type DailyCheckinRecord } from './daily-checkin';
+import type { CheckinPresentation } from './checkin-rewards';
 import './style.css';
 import './category-manager.css';
 import './timer.css';
@@ -91,7 +92,7 @@ let focusTaskList: ReturnType<typeof createFocusTaskList> | undefined;
 let categoryPicker: ReturnType<typeof createCategoryPicker> | undefined;
 let dailyWelcome: ReturnType<typeof createDailyWelcome> | undefined;
 let dailyCheckin: ReturnType<typeof createDailyCheckinRunner> | undefined;
-let pendingWelcome: DailyCheckinRecord | undefined;
+let pendingWelcome: (DailyCheckinRecord & { presentation?: CheckinPresentation }) | undefined;
 let pendingCompletionCount = 0;
 let draftMinutes = '25';
 let draftMode: TimerMode = 'countdown';
@@ -166,12 +167,14 @@ function presentWelcome() {
   if (!applicationReady || !pendingWelcome || document.hidden) return;
   if (pendingWelcome.date !== localDayKey()) { pendingWelcome = undefined; return; }
   if (session) {
+    const reward = pendingWelcome.presentation?.totalReward ?? pendingWelcome.reward;
     pendingWelcome = undefined;
-    assignNotice('今日已自动签到，+5 猫爪币已存入钱包。安心继续专注吧。'); render(); return;
+    assignNotice(`今日已自动签到，+${reward} 猫爪币已存入钱包。安心继续专注吧。`); render(); return;
   }
   if (pendingCompletionCount || document.querySelector('dialog[open]')) return;
+  const presentation = pendingWelcome.presentation;
   pendingWelcome = undefined;
-  dailyWelcome?.show(getCatDefinition(catHouse?.companionCatId));
+  dailyWelcome?.show(getCatDefinition(catHouse?.companionCatId), presentation);
 }
 async function returnToForeground() {
   if (document.hidden) return;
@@ -493,9 +496,9 @@ async function initializeApplication() {
   dailyCheckin = createDailyCheckinRunner({
     claim: now => checkinToday(db, now),
     onChecked: async () => { try { await refresh(); } catch { setNotice('签到状态已保存，页面刷新失败，请重新打开应用。'); } },
-    onSuccess: record => {
+    onSuccess: (record, presentation) => {
       if (notice.startsWith('今日签到暂未完成：')) { assignNotice(''); render(); }
-      pendingWelcome = record; stateChannel?.postMessage('changed'); presentWelcome();
+      pendingWelcome = { ...record, presentation }; stateChannel?.postMessage('changed'); presentWelcome();
     },
     onError: error => setNotice(`今日签到暂未完成：${(error as Error).message}。返回应用时会自动重试。`),
   });

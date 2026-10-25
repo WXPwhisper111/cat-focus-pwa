@@ -1,0 +1,45 @@
+{
+  "realPhone": false,
+  "simulatedUpdate": true,
+  "results": [
+    {
+      "width": 320,
+      "passed": true,
+      "checks": [
+        "real room sleep clip",
+        "moon within scene bounds",
+        "no heart pulse",
+        "manual interruption cleanup",
+        "current release notes and v10 notice",
+        "outside click does not close update",
+        "later closes"
+      ]
+    },
+    {
+      "width": 390,
+      "passed": true,
+      "checks": [
+        "real room sleep clip",
+        "moon within scene bounds",
+        "no heart pulse",
+        "manual interruption cleanup",
+        "current release notes and v10 notice",
+        "outside click does not close update",
+        "later closes"
+      ]
+    },
+    {
+      "width": 430,
+      "passed": true,
+      "checks": [
+        "real room sleep clip",
+        "moon within scene bounds",
+        "no heart pulse",
+        "manual interruption cleanup",
+        "current release notes and v10 notice",
+        "outside click does not close update",
+        "later closes"
+      ]
+    }
+  ]
+}

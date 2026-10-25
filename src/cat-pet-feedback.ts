@@ -18,7 +18,7 @@ export function createPetFeedback(scene: HTMLElement) {
         const node = document.createElement('div'); node.className = 'cat-pet-bubble'; node.dataset.petCat = id;
         node.setAttribute('role', 'status'); node.setAttribute('aria-label', clip==='sleep_loop'?'正在睡觉':'很享受你的抚摸'); node.dataset.feedback=clip==='sleep_loop'?'sleep':'pet';
         node.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21S2 15 2 8a5 5 0 0 1 10-1 5 5 0 0 1 10 1c0 7-10 13-10 13Z"/></svg>';
-        if(clip==='sleep_loop')node.innerHTML='<span aria-hidden="true" class="cat-sleep-symbol">Zzz</span>';
+        if(clip==='sleep_loop')node.innerHTML='<svg class="cat-sleep-moon" viewBox="0 0 32 24" aria-hidden="true"><path d="M17 3a9 9 0 1 0 5 15A9 9 0 0 1 17 3Z"/><path class="sleep-star" d="m25 3 1.1 2.9L29 7l-2.9 1.1L25 11l-1.1-2.9L21 7l2.9-1.1ZM28 14l.7 1.8 1.8.7-1.8.7L28 19l-.7-1.8-1.8-.7 1.8-.7Z"/></svg>';
         scene.append(node); entries.set(id, { node, completed: false });
       } else if (clip === 'pet:once' && event === 'complete' && previous) {
         previous.completed = true;

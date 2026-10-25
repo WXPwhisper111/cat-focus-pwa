@@ -5,9 +5,29 @@ import { createDailyWelcome } from '../src/daily-welcome';
 import { catDefinitions } from '../src/cat-definition';
 import { getActive, getDailyCheckins, getRecords, getWallet, openDatabase, startStopwatch } from '../src/storage';
 import { mockDialogs } from './dialog-mocks';
+import { checkinPresentation, rewardNodes } from '../src/checkin-rewards';
 
 afterEach(() => { vi.useRealTimers(); vi.restoreAllMocks(); vi.unstubAllGlobals(); });
 const flush = async () => { for (let index = 0; index < 20; index++) await Promise.resolve(); };
+
+it('renders only committed bonus breakdowns, next targets and the formal four-toe currency icon', () => {
+  document.body.innerHTML = ''; mockDialogs();
+  const history = Array.from({ length: 7 }, (_, index) => ({ date: `2026-10-${21 + index}`, reward:5, claimedAt:0, transactionId:`daily_checkin:2026-10-${21 + index}` }));
+  const bonuses = rewardNodes(history).entries.filter(entry => entry.date === history[6].date).map(entry => ({ ...entry, status:'paid' as const }));
+  const welcome = createDailyWelcome(() => {});
+  try {
+    welcome.show(undefined, checkinPresentation(history, bonuses));
+    const dialog = document.querySelector('.daily-welcome')!;
+    expect(dialog.querySelector('.welcome-reward')!.textContent).toContain('+30');
+    expect(dialog.textContent).toContain('基础 +5 · 连续 +15 · 累计 +10');
+    expect(dialog.textContent).toContain('连续签到 7 天 · 本轮第 7/7 天');
+    const currency=dialog.querySelector('[data-stats-icon=paw-coin]')!;
+    expect(currency.getAttribute('viewBox')).toBe('0 0 64 64'); expect(currency.querySelectorAll('ellipse')).toHaveLength(4);
+    welcome.hide(); welcome.show(undefined,checkinPresentation(history));
+    expect(dialog.querySelector('.welcome-reward')!.textContent).toContain('+5');
+    expect(dialog.querySelector('.welcome-breakdown')!.textContent).toBe('基础 +5');
+  } finally { welcome.destroy(); }
+});
 
 it('shows the committed first-day bonus once, never starts a timer, and checks returning foreground dates without interrupting focus', async () => {
   mockDialogs(); vi.stubGlobal('indexedDB', new IDBFactory());
@@ -48,14 +68,14 @@ it('shows the committed first-day bonus once, never starts a timer, and checks r
   expect(await getDailyCheckins(db)).toHaveLength(2);
   spy.mockRestore(); window.dispatchEvent(new Event('focus'));
   await vi.waitFor(() => expect(welcome().open).toBe(true));
-  expect((await getWallet(db)).state.balance).toBe(15);
+  expect((await getWallet(db)).state.balance).toBe(20);
   click('#welcome-close'); expect(welcome().open).toBe(false); expect(await getActive(db)).toBeUndefined();
   expect(document.querySelector('.toast')?.textContent || '').not.toContain('签到暂未完成');
   window.dispatchEvent(new Event('pageshow')); await flush(); expect(welcome().open).toBe(false);
   expect(await getDailyCheckins(db)).toHaveLength(3);
   click('#manage-categories'); vi.setSystemTime(new Date(2026, 9, 24, 12));
   window.dispatchEvent(new Event('focus'));
-  await vi.waitFor(async () => expect((await getWallet(db)).state.balance).toBe(20));
+  await vi.waitFor(async () => expect((await getWallet(db)).state.balance).toBe(25));
   expect(welcome().open).toBe(false); // Defer instead of stacking over an existing dialog.
   click('.dialog-close'); await vi.waitFor(() => expect(welcome().open).toBe(true));
   click('#welcome-close'); expect(await getDailyCheckins(db)).toHaveLength(4); db.close();

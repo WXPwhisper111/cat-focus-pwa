@@ -57,7 +57,7 @@ it('round-trips house state with backup v4 and skips repeated import without exp
   const backup = await sourceBackup(), target = await openDatabase('target');
   const tx = target.transaction('settings', 'readwrite'); tx.objectStore('settings').put('keep-local', 'test-setting');
   await new Promise<void>(resolve => { tx.oncomplete = () => resolve(); });
-  expect(backup.version).toBe(9); expect(backup.catHouse).toEqual(owned('cat-03')); expect(backup.settings).toBeUndefined();
+  expect(backup.version).toBe(10); expect(backup.catHouse).toEqual(owned('cat-03')); expect(backup.settings).toBeUndefined();
   expect((await importBackup(target, JSON.stringify(backup))).added).toBe(1);
   expect((await importBackup(target, JSON.stringify(backup))).skipped).toBe(1);
   expect(await getCatHouseState(target)).toEqual(owned('cat-03'));

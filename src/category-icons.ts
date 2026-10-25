@@ -1,3 +1,5 @@
+import pawCoinSvg from './assets/paw_coin.svg?raw';
+
 const customIcons = ['category', 'pencil', 'music', 'palette', 'bulb', 'target', 'coffee', 'heart', 'leaf', 'flag'] as const;
 export const CATEGORY_COLORS = ['#eb884b', '#f4bd62', '#9c9e70', '#b17b65', '#bd8f98', '#c4a45e', '#91816b', '#c67d66'];
 function categoryHash(id: string) {
@@ -14,6 +16,7 @@ export function categoryColor(id: string, name?: string) {
 }
 type IconName = 'paw-coin' | 'focus-timer' | 'settings-gear' | 'cat-house' | 'goal' | 'clock' | 'bars' | 'flame' | 'book' | 'computer' | 'star' | 'paw' | 'dumbbell' | 'math' | typeof customIcons[number];
 export function icon(name: IconName) {
+  if (name === 'paw-coin') return pawCoinSvg.replace('<svg ', '<svg data-stats-icon="paw-coin" aria-hidden="true" ');
   const paths = {
     'focus-timer': '<circle cx="12" cy="14" r="8"/><path d="M10 2h4m-2 0v4m6.5 1.5L20 6M12 10v4l3-2"/>',
     'settings-gear': '<path d="M19.75 9.63L22.14 10.21 22.14 13.79 19.75 14.37 19.15 15.80 20.44 17.91 17.91 20.44 15.80 19.15 14.37 19.75 13.79 22.14 10.21 22.14 9.63 19.75 8.20 19.15 6.09 20.44 3.56 17.91 4.85 15.80 4.25 14.37 1.86 13.79 1.86 10.21 4.25 9.63 4.85 8.20 3.56 6.09 6.09 3.56 8.20 4.85 9.63 4.25 10.21 1.86 13.79 1.86 14.37 4.25 15.80 4.85 17.91 3.56 20.44 6.09 19.15 8.20Z"/><circle cx="12" cy="12" r="3.2"/>',
@@ -37,7 +40,6 @@ export function icon(name: IconName) {
     leaf: '<path d="M20 3C8 1 2 7 5 15c3 8 17 3 15-12ZM3 22 16 9"/>',
     flag: '<path d="M5 22V3c5-4 9 4 15 0v12c-6 4-10-4-15 0"/>',
     star: '<path d="m12 2 3 6 7 1-5 5 1 8-6-4-6 4 1-8-5-5 7-1 3-6Z"/>',
-    'paw-coin': '<circle cx="12" cy="12" r="10"/><path d="M6.5 10V6l4 2h3l4-2v4M8.2 16.5c0-2 2.5-4 3.8-4s3.8 2 3.8 4c0 2.8-2.4 1-3.8 1s-3.8 1.8-3.8-1Z"/><ellipse cx="8" cy="11.5" rx=".6" ry="1"/><ellipse cx="10.5" cy="10.5" rx=".6" ry="1"/><ellipse cx="13.5" cy="10.5" rx=".6" ry="1"/><ellipse cx="16" cy="11.5" rx=".6" ry="1"/>',
     paw: '<ellipse cx="5" cy="9" rx="2" ry="3" transform="rotate(-25 5 9)"/><ellipse cx="10" cy="5" rx="2" ry="3"/><ellipse cx="16" cy="6" rx="2" ry="3"/><ellipse cx="20" cy="11" rx="2" ry="3" transform="rotate(25 20 11)"/><path d="M6 18c0-3 4-7 6-7s6 4 6 7c0 5-4 2-6 2s-6 3-6-2Z"/>',
   };
   return `<svg data-stats-icon="${name}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${paths[name]}</svg>`;

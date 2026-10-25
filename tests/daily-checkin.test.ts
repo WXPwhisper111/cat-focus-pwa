@@ -14,7 +14,7 @@ afterEach(() => { db.close(); vi.useRealTimers(); vi.restoreAllMocks(); vi.unstu
 
 it('awards five coins once per local day, retains full history, and does not repeat after reopening or a rolled-back clock', async () => {
   const first = await checkinToday(db, now);
-  expect(first).toEqual({ created: true, record: { date: '2026-10-21', claimedAt: now, reward: 5, transactionId: 'daily_checkin:2026-10-21' } });
+  expect(first).toMatchObject({ created: true, record: { date: '2026-10-21', claimedAt: now, reward: 5, transactionId: 'daily_checkin:2026-10-21' } });
   const name = db.name; db.close(); db = await openDatabase(name);
   expect((await checkinToday(db, now + 1000)).created).toBe(false);
   const nextDay = new Date(2026, 9, 22, 0, 1).getTime();

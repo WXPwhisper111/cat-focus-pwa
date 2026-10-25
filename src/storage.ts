@@ -5,6 +5,7 @@ import { validateRoomLocations, type RoomLocations } from './room-locations';
 import { commerceSignature, defaultCommerce, getProduct, productName, validateCommerce, validateCommerceLinks, type CommerceState } from './shop';
 import { COIN_INTERVAL_MS, initialWallet, validateWalletSnapshot, walletSignature, type WalletState, type WalletTransaction, type WalletSnapshot, type CoinReceipt } from './wallet';
 import { checkinsFromTransactions, localDayKey, validCheckinDate, type DailyCheckinRecord } from './daily-checkin';
+import { CHECKIN_REWARDS_KEY, rewardBaseline, rewardNodes, validateCheckinRewards, checkinPresentation } from './checkin-rewards';
 import { DAILY_CHECKIN_COINS } from './wallet';
 import { elapsedMs, isDue, isRecord, makeRecord, parseBackup, progress, recordSignature, type ActiveSession, type FocusRecord, type TimerConfiguration, type TimerMode, validMinutes } from './domain';
 import { categoryKey, DEFAULT_CATEGORIES, normalizeCategoryName, sortCategories, type FocusCategory } from './categories';
@@ -412,6 +413,9 @@ export async function checkinToday(db: IDBDatabase, now = Date.now()) {
   return transact(db, ['wallet', 'walletTransactions', 'coinReceipts', 'settings'], 'readwrite', async tx => {
     const snapshot = await walletSnapshotIn(tx);
     const history = await checkinHistoryIn(tx, snapshot), date = localDayKey(now);
+    const savedRewards = await request(tx.objectStore('settings').get(CHECKIN_REWARDS_KEY));
+    const rewards = validateCheckinRewards(savedRewards ?? rewardBaseline(history), history, snapshot.transactions);
+    tx.objectStore('settings').put(rewards, CHECKIN_REWARDS_KEY);
     const previous = history.find(record => record.date === date);
     if (previous) {
       // Also materialize history restored from a pre-M2 wallet backup.
@@ -420,14 +424,25 @@ export async function checkinToday(db: IDBDatabase, now = Date.now()) {
       return { created: false, record: previous };
     }
     const record: DailyCheckinRecord = { date, claimedAt: now, reward: DAILY_CHECKIN_COINS, transactionId: `daily_checkin:${date}` };
+    const updatedHistory = [...history, record].sort((left, right) => left.date.localeCompare(right.date));
+    const known = new Set(rewards.entries.map(entry => entry.id));
+    const rollback = history.some(entry => entry.date > date);
+    const updatedNodes = rewardNodes(updatedHistory).entries;
+    if (rollback && rewards.entries.some(entry => !updatedNodes.some(node => node.id === entry.id && node.date === entry.date))) throw Error('系统日期早于签到历史，请校准日期后重试');
+    const additions = updatedNodes.filter(entry => !known.has(entry.id)).map(entry => ({ ...entry, status: !rollback && entry.date === date ? 'paid' as const : 'waived' as const }));
+    rewards.entries.push(...additions);
+    const bonuses = additions.filter(entry => entry.status === 'paid');
+    const presentation = checkinPresentation(updatedHistory, bonuses);
     const wallet = snapshot.state;
-    wallet.balance += DAILY_CHECKIN_COINS; wallet.totalIncome += DAILY_CHECKIN_COINS;
+    wallet.balance += presentation.totalReward; wallet.totalIncome += presentation.totalReward;
     if (!Number.isSafeInteger(wallet.balance) || !Number.isSafeInteger(wallet.totalIncome)) throw Error('钱包累计超出可保存范围');
     tx.objectStore('wallet').put(wallet, 'only');
     tx.objectStore('walletTransactions').add({ id: record.transactionId, kind: 'daily_checkin', sourceId: date, amount: DAILY_CHECKIN_COINS,
       description: '每日自动签到', createdAt: now } satisfies WalletTransaction);
-    tx.objectStore('settings').put([...history, record].sort((a, b) => a.date.localeCompare(b.date)), DAILY_CHECKINS_KEY);
-    return { created: true, record };
+    for (const bonus of bonuses) tx.objectStore('walletTransactions').add({ id: `checkin_bonus:${bonus.id}`, kind: 'checkin_bonus', sourceId: bonus.id, amount: bonus.amount, description: bonus.type === 'streak' ? '连续签到额外奖励' : '累计签到额外奖励', createdAt: now } satisfies WalletTransaction);
+    tx.objectStore('settings').put(updatedHistory, DAILY_CHECKINS_KEY);
+    tx.objectStore('settings').put(rewards, CHECKIN_REWARDS_KEY);
+    return { created: true, record, presentation };
   });
 }
 async function awardFocusCoins(tx: IDBTransaction, record: FocusRecord, now: number) {
@@ -531,13 +546,14 @@ export async function exportBackup(db: IDBDatabase) {
     const commerce = await commerceIn(tx);
     validateCommerceLinks(commerce, catHouse, wallet);
     const checkins = await checkinHistoryIn(tx, wallet);
+    const checkinRewards = validateCheckinRewards(await request(tx.objectStore('settings').get(CHECKIN_REWARDS_KEY)) ?? rewardBaseline(checkins), checkins, wallet.transactions);
     const { experience, level } = progress(records);
     const tasks = validateFocusTasks(await request(tx.objectStore('focusTasks').getAll()));
     const savedSelection = await request(tx.objectStore('settings').get(SELECTED_FOCUS_TASK_KEY));
     const catNames = validateCatNames(await request(tx.objectStore('settings').get(CAT_NAMES_KEY)));
     const selectedTaskId = tasks.find(task => task.id === savedSelection && task.status === 'pending')?.id ?? null;
     const expansion=validateExpansion(await request(tx.objectStore('settings').get(EXPANSION_KEY)),catHouse?.ownedCatIds ?? []);
-    return JSON.stringify({ format: 'cat-focus-pwa', version: 9, expansion, tasks, selectedTaskId, catNames, versions: { database: DB_VERSION, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' }, growth: { experience, level }, commerce, checkins, wallet, exportedAt: new Date().toISOString(), categories, records, ...(catHouse ? { catHouse } : {}) }, null, 2);
+    return JSON.stringify({ format: 'cat-focus-pwa', version: 10, checkinRewards, expansion, tasks, selectedTaskId, catNames, versions: { database: DB_VERSION, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' }, growth: { experience, level }, commerce, checkins, wallet, exportedAt: new Date().toISOString(), categories, records, ...(catHouse ? { catHouse } : {}) }, null, 2);
   });
 }
 export async function importBackup(db: IDBDatabase, raw: string, preview = false, requireIdle = false) {
@@ -547,7 +563,8 @@ export async function importBackup(db: IDBDatabase, raw: string, preview = false
     if ((preview || requireIdle) && await request(tx.objectStore('active').get(ACTIVE_KEY))) throw Error('请先结束当前专注，再导入备份');
     if (incoming.wallet) {
       const local = await walletSnapshotIn(tx);
-      await checkinHistoryIn(tx, local);
+      const localHistory = await checkinHistoryIn(tx, local);
+      const localRewards = validateCheckinRewards(await request(tx.objectStore('settings').get(CHECKIN_REWARDS_KEY)) ?? rewardBaseline(localHistory), localHistory, local.transactions);
       const restored = validateWalletSnapshot(incoming.wallet);
       // First launch awards a daily bonus before a user can import. Preserve those
       // unspent daily dates, deduplicating by transaction ID rather than adding twice.
@@ -558,6 +575,17 @@ export async function importBackup(db: IDBDatabase, raw: string, preview = false
         restored.state.balance += entry.amount; restored.state.totalIncome += entry.amount;
       }
       validateWalletSnapshot(restored);
+      const restoredHistory = checkinsFromTransactions(restored.transactions);
+      const mergedRewards = rewardBaseline(restoredHistory);
+      const retained = [...localRewards.entries, ...(incoming.checkinRewards?.entries ?? [])];
+      for (const entry of retained) {
+        const other = retained.find(item => item.id === entry.id && (item.status !== entry.status || item.date !== entry.date));
+        const index = mergedRewards.entries.findIndex(item => item.id === entry.id && item.date === entry.date);
+        if (other || index < 0) throw Error('签到额外奖励领取状态冲突，未导入任何数据');
+        mergedRewards.entries[index] = entry;
+      }
+      validateCheckinRewards(mergedRewards, restoredHistory, restored.transactions);
+      tx.objectStore('settings').put(mergedRewards, CHECKIN_REWARDS_KEY);
       if (walletSignature(local) !== walletSignature(restored)) {
         if (local.receipts.length || local.transactions.some(entry => entry.kind !== 'daily_checkin') || local.state.totalSpent || local.state.remainderMs) throw Error('钱包与本机冲突，未导入任何数据');
         if (await request(tx.objectStore('active').get(ACTIVE_KEY))) throw Error('请先结束当前专注，再恢复钱包备份');

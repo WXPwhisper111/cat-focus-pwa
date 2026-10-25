@@ -17,7 +17,7 @@ async function purchasedBackup() {
 
 it('restores all v6 fields atomically, reopens offline-ready local data, and deduplicates same-day rewards and repeated import', async () => {
   const backup = await purchasedBackup(), target = await openDatabase('target');
-  expect(backup.version).toBe(9); expect(backup.versions).toEqual({ database: 6, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' });
+  expect(backup.version).toBe(10); expect(backup.versions).toEqual({ database: 6, wallet: 1, commerce: 1, growth: 'focus-minutes-v1' });
   expect(backup.commerce.purchases).toHaveLength(2); expect(backup.checkins).toHaveLength(1);
   expect(backup.growth).toEqual({ experience: progress(backup.records).experience, level: progress(backup.records).level });
   await checkinToday(target, now + 1000); await importBackup(target, JSON.stringify(backup)); await importBackup(target, JSON.stringify(backup));
@@ -94,12 +94,12 @@ it('prepares explicit isolated browser fixtures through public storage APIs, wit
   // Synthetic calendar days are test data for the shop UI, never real account rewards.
   await adoptInitialCat(db, 'orange-white');
   for (let day = 1; day <= 16; day++) await checkinToday(db, new Date(2026, 8, day, 12).getTime());
-  const raw = await exportBackup(db); expect((await getWallet(db)).state.balance).toBe(80);
+  const raw = await exportBackup(db); expect((await getWallet(db)).state.balance).toBe(130);
   expect(await getRecords(db)).toEqual([]);
   const directory = 'art/release-v0.2/fixtures'; await mkdir(directory, { recursive: true });
-  await writeFile(`${directory}/shop-80-test-only.json`, raw);
+  await writeFile(`${directory}/shop-130-test-only.json`, raw);
   for (let day = 17; day <= 32; day++) await checkinToday(db, new Date(2026, 8, day, 12).getTime());
-  await writeFile(`${directory}/shop-160-test-only.json`, await exportBackup(db));
+  await writeFile(`${directory}/shop-with-checkin-bonuses-test-only.json`, await exportBackup(db));
   await purchaseProduct(db, 'cat-cat-02');
   await writeFile(`${directory}/owned-two-test-only.json`, await exportBackup(db));
   await purchaseProduct(db, 'cat-cat-03');

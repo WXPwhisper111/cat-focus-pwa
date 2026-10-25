@@ -12,3 +12,11 @@
 .welcome-reward span { font-size: 18px; }
 .daily-welcome p { margin: 20px 0; color: #8b715e; line-height: 1.7; }
 .daily-welcome small { display: block; margin-top: 14px; color: #9b826d; font-size: 12px; }
+.welcome-reward { flex-wrap: wrap; justify-content: center; gap: 6px; padding: 10px 14px; }
+.welcome-reward > span { font-size: 14px; }
+.welcome-progress { margin-top: 12px; padding: 10px 12px; border: 1px solid #ead6b9; border-radius: 14px; background: #fff8ed; white-space: pre-line; }
+.welcome-progress p { margin: 4px 0; font-size: 14px; line-height: 1.6; }
+.welcome-progress .welcome-breakdown { color: #b56e35; font-size: 12px; }
+.welcome-progress small { margin-top: 6px; line-height: 1.6; }
+.daily-welcome .welcome-close { min-width: 44px; min-height: 44px; }
+@media(max-height:650px) { .daily-welcome { padding: 16px 18px; } .welcome-cat { height: 76px; } .welcome-cat img { width: 84px; height: 84px; } .daily-welcome h2 { font-size: 22px; margin-bottom: 10px; } .daily-welcome > p { margin: 10px 0; } }
