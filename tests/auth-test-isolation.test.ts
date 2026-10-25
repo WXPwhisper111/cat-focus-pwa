@@ -17,7 +17,7 @@ it('keeps the dev authentication entry and Supabase client out of production ass
       expect(path).not.toMatch(/auth-test/);
       if (entry.isDirectory()) check(path);
       else if (/\.(js|html|css|json)$/.test(entry.name)) {
-        expect(readFileSync(path, 'utf8')).not.toMatch(/auth-test|cat-focus-auth-test-session|supabase|pvmoyaxkraelgdvozcrg/);
+        expect(readFileSync(path, 'utf8')).not.toMatch(/auth-test|cat-focus-auth-test-session|supabase|pvmoyaxkraelgdvozcrg|cat-focus-local-protection-v1|cat-focus-local-migration|data-protection-panel/);
       }
     }
   }

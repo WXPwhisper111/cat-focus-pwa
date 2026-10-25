@@ -17,3 +17,5 @@ dt { font-weight: 600; }
 #message { min-height: 26px; }
 #message[data-error="true"] { color: #a62020; }
 @media (max-width: 400px) { body { padding: 12px; } main { padding: 16px; margin: 0 auto; } }
+.data-protection-panel select { display: block; width: 100%; max-width: 100%; min-height: 48px; font: inherit; margin: 8px 0; }
+.data-protection-panel pre { font: inherit; max-width: 100%; }

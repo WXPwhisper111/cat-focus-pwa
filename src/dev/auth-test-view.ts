@@ -12,10 +12,10 @@ export function authErrorMessage(error: unknown): string {
   return '操作失败，请检查邮箱、最新验证码和公开配置后重试；也可在 Supabase Auth 日志中检查原因。';
 }
 
-export function mountAuthTest(root: HTMLElement, auth: Auth): () => void {
+export function mountAuthTest(root: HTMLElement, auth: Auth, lifecycle?: { beforeSignOut?: () => void }): () => void {
   root.innerHTML = `
     <h1>邮箱认证测试</h1>
-    <p>仅开发环境 · 不同步业务数据，不读取专注与猫咪数据。</p>
+    <p>仅开发环境 · 邮箱认证本身不读取业务数据；下方保护工具仅在明确操作后读取本地存档，不上传数据。</p>
     <form id="email-form">
       <label for="email">邮箱</label>
       <input id="email" name="email" type="email" autocomplete="email" required maxlength="254" placeholder="you@example.com">
@@ -119,6 +119,7 @@ export function mountAuthTest(root: HTMLElement, auth: Auth): () => void {
   }
   function onLogout() {
     void run(async () => {
+      lifecycle?.beforeSignOut?.();
       const { error } = await auth.signOut({ scope: 'local' });
       if (error) throw error;
       render(null);

@@ -1,5 +1,6 @@
 import { createClient } from '@supabase/supabase-js';
 import { mountAuthTest } from './auth-test-view';
+import { mountDataProtectionPanel } from './data-protection-panel';
 import './auth-test.css';
 
 if (import.meta.env.DEV) {
@@ -19,8 +20,11 @@ if (import.meta.env.DEV) {
           storageKey: 'cat-focus-auth-test-session',
         },
       });
-      const dispose = mountAuthTest(root, client.auth);
-      import.meta.hot?.dispose(dispose);
+      const authRoot = document.createElement('section'), protectionRoot = document.createElement('section');
+      root.replaceChildren(authRoot, protectionRoot);
+      const protection = mountDataProtectionPanel(protectionRoot, client.auth);
+      const dispose = mountAuthTest(authRoot, client.auth, { beforeSignOut: () => protection.suspend() });
+      import.meta.hot?.dispose(() => { protection.destroy(); dispose(); });
     } catch {
       root.textContent = '认证初始化失败。请检查项目 URL、公开密钥和浏览器本地存储设置，然后刷新。';
     }

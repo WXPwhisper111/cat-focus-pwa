@@ -90,3 +90,21 @@
 ## 清单维护方法
 
 后续改持久化时先复查 `createObjectStore/createIndex`、`put/add/delete/clear`、`setItem/removeItem`、Cache API 和 SDK 存储调用；需要同时追踪封装后的事务和 UI 回调，不应仅搜索“save”命名。新增/迁移入口必须在本表更新覆盖状态；在清单完整覆盖之前，不宣称所有业务已由 Repository 管理。
+
+## V0.2.3 新增：仅开发页的数据保护入口
+
+原表描述 Repository 薄适配完成时的真实业务写入口；V0.2.3 重新复核后，正式 PWA 的这些原入口和事务保持不变。账号上下文只接入开发页，不以更换全局 db 的方式接管尚未适配的业务。
+
+| 新入口 / context.ts | 新持久化写入及保护 |
+| --- | --- |
+| `openMetadata` | 只创建独立 cat-focus-local-protection-v1 日志库的 accounts/jobs/snapshots/guestClaims，不升级访客库 |
+| `prepareGuestMigration(true)` → `prepare` | 明确操作后只读源库，保存完整镜像与 prepared 任务；源归属其他 UID 时先拒绝读取 |
+| `prepareRecovery` → `prepare` | 验证文件、UID 与业务关联后保存新计划；旧镜像不覆盖；不是调用旧 importBackup |
+| `confirmAndActivate` → `openShadow` / `copyAndVerify` | 只在任务专属新/空影子库建原 v6 schema，并在一个事务 add 全部 8 stores 行；非空副本只核验，不 clear/upsert；写入 copied/verified 日志 |
+| `confirmAndActivate` 的激活事务 | 在日志库的 accounts + jobs + guestClaims 单事务中核对旧指针 revision、登记归属、激活；失败整体回滚；独立钱包明确选择、不相加 |
+| `rollback` | 验证保留分支后仅更新 accounts/jobs；不删除或回写任何业务分支，首次回滚后账号未归属；不自动释放源归属 |
+| `taskRepository` | 为现有任务 Repository 提供 UID/代际/指针保护；原任务事务留在旧存储函数，仅作用于已确认账号分支，不作用于访客源 |
+| `setIdentity` / `destroy` / 登录退出保护钩子 | 内存身份撤销、事务 abort、连接 close；本身不读取/复制/删除访客或账号数据 |
+| `captureSnapshot` / `verifySnapshot` / status / migration / export 方法 | 快照捕获和验证本身纯读；status 等首次访问可能初始化新日志库；导出仅发起用户文件下载，不记录业务导出偏好、不上传 |
+
+具体归属、恢复与残余风险见 [ADR-002](adr-002-local-data-protection.md)。没有建立云同步、outbox、正式账号业务入口或云数据库写入。
