@@ -1,0 +1,19 @@
+:root { font: 16px/1.6 system-ui, sans-serif; color: #362b28; background: #f7f1e9; }
+* { box-sizing: border-box; }
+body { margin: 0; padding: 20px; }
+main { max-width: 560px; margin: 20px auto; padding: 24px; background: white; border-radius: 16px; }
+h1 { font-size: 1.6rem; margin-top: 0; }
+h2 { font-size: 1.2rem; }
+form, section { margin-top: 24px; }
+label { display: block; font-weight: 600; }
+input, button { width: 100%; min-height: 48px; font: inherit; border-radius: 8px; padding: 10px 12px; margin-top: 8px; }
+input { border: 1px solid #8f8279; }
+button { border: 0; background: #714a36; color: white; cursor: pointer; }
+button:disabled { opacity: .55; cursor: default; }
+:focus-visible { outline: 3px solid #1c7884; outline-offset: 3px; }
+p { color: #65564e; }
+dd { margin: 0 0 12px; overflow-wrap: anywhere; user-select: text; }
+dt { font-weight: 600; }
+#message { min-height: 26px; }
+#message[data-error="true"] { color: #a62020; }
+@media (max-width: 400px) { body { padding: 12px; } main { padding: 16px; margin: 0 auto; } }
